@@ -2,11 +2,22 @@
 
 **Rol:** fuente de verdad + candados. Es la base que todas las demás skills respetan.
 
-## Contexto de FAP
-- Modelo **high-ticket B2B**.
+## Fuente de verdad (cargar SIEMPRE antes de escribir)
+
+La verdad canónica de FAP/PBS vive en [`../contexto/`](../contexto/) — archivos reales de Jorge:
+ICP, métricas, voz, filosofía, proceso de venta, decisiones y los 6 pilares. **Regla 0:** ninguna
+pieza escribe sin cargar `contexto/` primero; **cifras, ICP y precio salen solo de ahí** (si falta
+el dato, se pregunta — no se inventa). Índice y decisiones fijadas en
+[`../contexto/README.md`](../contexto/README.md).
+
+## Contexto de FAP (datos fijados)
+- Modelo **high-ticket B2B**. Producto: **FAP — Forecast Accelerator Program** (en los archivos de
+  Jorge, "PAF"); mentoría 1:1 de 6 meses.
+- **ICP:** ≥$1M USD/año + **≥2 vendedores**, B2B, LATAM + hispano US. Excluye B2C y bienes raíces.
+  Piso de descalificación <$500K.
 - **Sin precio en captación.**
 - CTA siempre a **llamada de diagnóstico** (no a checkout).
-- Voz: Jorge Conde.
+- Voz: Jorge Conde (vocabulario obligatorio/prohibido en `contexto/jorge_voice.md`).
 
 ## Candados (no se rompen en captación)
 - ❌ Nada de precio visible en piezas de captación.

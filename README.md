@@ -18,6 +18,10 @@ ya producidas y validadas.
 cerebro-operativo-fap/
 ├── README.md                  ← este índice
 ├── HANDOFF.md                 ← documento de continuidad (contexto completo de la sesión)
+├── contexto/                  ← FUENTE DE VERDAD: archivos reales de Jorge (ICP, voz, métricas…)
+│   ├── README.md              ← índice + decisiones FAP fijadas (ICP, nombre, 6 pilares, candados)
+│   ├── jorge_icp.md · jorge_voice.md · jorge_philosophy.md · jorge_process.md
+│   ├── jorge_decisions.md · pbs_metrics.md · pbs_indice.md
 ├── seguimiento/
 │   └── seguimiento.md         ← fases 1–3, hallazgo skills-vs-squad, 5 huecos y reglas
 ├── skills/                    ← las 7 skills del cerebro (fuente de verdad de cada pieza)
@@ -76,15 +80,19 @@ fuente de verdad `fap` les obliga a **preguntar si el dato no está** en vez de 
 
 ---
 
-## Lo que falta (5 huecos, orden de impacto)
+## Los 5 huecos — estado actualizado
 
-1. **`fap-voz-jorge.md`** — perfil de voz real de Jorge desde las transcripciones.
-2. **Swipe de ads y correos ganadores** — depende de que Jorge comparta su material real.
-3. **Mapa de objeciones expandido** — "concede antes de contraatacar", craft puro.
-4. **Banco de prueba claim→evidencia** — estructurar la prueba por tipo y afirmación.
-5. **Reconciliar discrepancia del ICP** — victoria rápida; confirmar con Jorge, no inventar.
+1. **Voz de Jorge** — ✅ voz escrita cargada (`contexto/jorge_voice.md`: vocabulario obligatorio/
+   prohibido + frases signature). Pendiente opcional: cadencia hablada desde transcripciones.
+2. **Swipe de ganadores** — ✅ **cerrado.** Correos, ads (con métricas), landings y páginas en
+   [`swipe/`](swipe/).
+3. **Mapa de objeciones** — 🟡 material ya disponible (`contexto/jorge_philosophy.md`: framework de
+   4 pasos + "concede primero"); pendiente ensamblarlo como pieza.
+4. **Banco de prueba claim→evidencia** — 🟡 material ya disponible (`contexto/pbs_metrics.md`);
+   pendiente estructurarlo por afirmación.
+5. **Discrepancia del ICP** — ✅ **resuelto:** ≥$1M/año + ≥2 vendedores (ver `contexto/README.md`).
 
-Detalle en [`seguimiento/seguimiento.md`](seguimiento/seguimiento.md) y contexto completo en
+Fuente de verdad completa en [`contexto/`](contexto/), craft en [`swipe/`](swipe/), continuidad en
 [`HANDOFF.md`](HANDOFF.md).
 
 ---

@@ -90,6 +90,25 @@ Del audit del cerebro `fap`. Detalle completo en [`../HANDOFF.md`](../HANDOFF.md
 > de verdad contradictorias y la regla de Jorge es preguntar. Confirmar con él antes de fijar
 > el ICP canónico en el cerebro.
 
+### Actualización — fuente de verdad cargada y huecos cerrados
+
+Jorge compartió sus 7 archivos canónicos (voz, ICP, métricas, filosofía, proceso, decisiones),
+ahora en [`../contexto/`](../contexto/). Esto cierra o desbloquea casi todos los huecos:
+
+- **#5 ICP — ✅ resuelto:** ≥$1M/año + **≥2 vendedores** (Jorge confirmó 2; `jorge_icp.md` decía 3).
+  Piso de descalificación <$500K. Producto confirmado: **FAP** (= "PAF" en los archivos).
+- **#2 swipe — ✅ cerrado:** correos, ads (con métricas), landings y páginas en `../swipe/`.
+- **#1 voz — ✅ (escrita):** `jorge_voice.md` trae vocabulario y frases signature; falta opcional la
+  cadencia hablada.
+- **#3 objeciones — 🟡 desbloqueado:** framework de 4 pasos + "concede primero" en
+  `jorge_philosophy.md`; pendiente ensamblar la pieza.
+- **#4 prueba — 🟡 desbloqueado:** métricas reales en `pbs_metrics.md`; pendiente estructurar por
+  afirmación.
+
+> **Hallazgo:** la cifra "75% / 1 de cada 4 vendedores" que el handoff creía inventada por el squad
+> **es real** — es la posición polémica de Jorge en `jorge_philosophy.md`. No fue alucinación: el
+> squad la usó sin tenerla cargada. Refuerza el diseño del cerebro (cargar la verdad completa).
+
 ---
 
 ## Segunda ola · mecanismos del squad para portar (no urgente)
