@@ -7,7 +7,8 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
 ## Reglas del banco
 
 1. **Un archivo por canal**, no uno gigante. Cada skill carga el suyo y se mantiene afilada.
-   - `swipe-landings.md` → `fap-landings` *(landing ganadora de PGE: anatomía + promesas + ICP ✅)*
+   - `swipe-landings.md` → `fap-landings` *(opt-in de registro: landing ganadora de PGE + ICP ✅)*
+   - `swipe-paginas-venta.md` → `fap-landings` / diagnóstico *(páginas de pago: workshop $11 + OTOs $197/$47 ✅)*
    - `swipe-correos.md` → `fap-narrativa` / correos *(funnel de correo completo: invitación, recordatorio, venta y postventa ✅)*
    - `swipe-ads.md` → `fap-video-ads-meta` *(11 ads reales CON métricas: píldoras, video largo y la VSL de FAP ✅)*
 2. **Cada ejemplo con su "por qué ganó"**, no solo el texto. Copy + métrica + el elemento

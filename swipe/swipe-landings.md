@@ -10,6 +10,11 @@ aprenda la **estructura, los ángulos de promesa y los recursos** que funcionan.
 
 > **Tipo:** opt-in corto de **registro a webinar** (captura solo email → confirmación). No es
 > página de ventas ni lleva precio. Los guardarraíles de FAP se aplican al generar, no aquí.
+>
+> **Páginas que venden** (workshop de pago, OTOs) viven en
+> [`swipe-paginas-venta.md`](swipe-paginas-venta.md) — son de otra naturaleza (precio, checkout,
+> upsells). La versión PDF renderizada de la Landing #1 (`prospeccion-frio-1`) confirma esta pieza
+> como la ganadora.
 
 ---
 

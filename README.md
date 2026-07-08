@@ -32,7 +32,8 @@ cerebro-operativo-fap/
 │   ├── README.md
 │   ├── swipe-correos.md       ← funnel de correo completo (invitación, recordatorio, venta, postventa) con análisis
 │   ├── swipe-ads.md           ← 11 ads reales CON métricas (píldoras, video largo, VSL de FAP) + lecciones
-│   └── swipe-landings.md      ← landing GANADORA de PGE (anatomía + ángulos de promesa + ICP)
+│   ├── swipe-landings.md      ← opt-in de registro: landing GANADORA de PGE (anatomía + promesa + ICP)
+│   └── swipe-paginas-venta.md ← páginas de pago: workshop $11 (V1/V2) + OTOs $197/$47 (dx FAP)
 └── piezas/                    ← piezas ya producidas y validadas
     └── whatsapp-confirmacion-compra.md
 ```
