@@ -17,8 +17,9 @@ ya producidas y validadas.
 ```
 cerebro-operativo-fap/
 ├── README.md                  ← este índice
+├── HANDOFF.md                 ← documento de continuidad (contexto completo de la sesión)
 ├── seguimiento/
-│   └── seguimiento.md         ← fases 1–3, método probado y pendientes abiertos
+│   └── seguimiento.md         ← fases 1–3, hallazgo skills-vs-squad, 5 huecos y reglas
 ├── skills/                    ← las 7 skills del cerebro (fuente de verdad de cada pieza)
 │   ├── fap.md
 │   ├── fap-lanzamientos.md
@@ -58,3 +59,36 @@ cerebro-operativo-fap/
 - **En curso — Swipe de ganadoras:** piloto en `landings`. La brecha del testeo es la falta de ejemplos reales; el swipe la cierra.
 
 Detalle y pendientes abiertos en [`seguimiento/seguimiento.md`](seguimiento/seguimiento.md).
+
+---
+
+## Por qué skills y no squad (hallazgo validado)
+
+Con el **mismo brief**, skills y squad escriben con calidad casi idéntica — pero el squad
+**inventó datos falsos** y hasta "verificó" que eran reales. Las skills no, porque la
+fuente de verdad `fap` les obliga a **preguntar si el dato no está** en vez de inventarlo.
+
+> La calidad del copy no depende de skill vs. squad, sino de que el **cerebro** (contexto +
+> candados + brief) esté completo. El squad vale como **revisión adversarial**, no como motor.
+
+---
+
+## Lo que falta (5 huecos, orden de impacto)
+
+1. **`fap-voz-jorge.md`** — perfil de voz real de Jorge desde las transcripciones.
+2. **Swipe de ads y correos ganadores** — depende de que Jorge comparta su material real.
+3. **Mapa de objeciones expandido** — "concede antes de contraatacar", craft puro.
+4. **Banco de prueba claim→evidencia** — estructurar la prueba por tipo y afirmación.
+5. **Reconciliar discrepancia del ICP** — victoria rápida; confirmar con Jorge, no inventar.
+
+Detalle en [`seguimiento/seguimiento.md`](seguimiento/seguimiento.md) y contexto completo en
+[`HANDOFF.md`](HANDOFF.md).
+
+---
+
+## Arquitectura escalable (cuando haya más de un producto)
+
+Separar **CRAFT** (cómo se escribe: landing, ads, emails, narrativa — reutilizable) de
+**CONTEXTO** (qué es verdad de cada producto: verdad + voz + swipe + candados). Hoy las
+skills FAP fusionan ambos por diseño (un solo producto); con un segundo producto se extrae
+el craft a skills genéricas y lo FAP-específico a una cápsula propia — sin reescribir nada.
