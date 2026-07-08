@@ -11,8 +11,13 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
    - `swipe-paginas-venta.md` → `fap-landings` / diagnóstico *(páginas de pago: workshop $11 + OTOs $197/$47 ✅)*
    - `swipe-correos.md` → `fap-narrativa` / correos *(funnel de correo completo: invitación, recordatorio, venta y postventa ✅)*
    - `swipe-ads.md` → `fap-video-ads-meta` *(11 ads reales CON métricas: píldoras, video largo y la VSL de FAP ✅)*
+   - **WhatsApp → sin swipe (decisión).** No hay data de desempeño de los mensajes, así que no se
+     construye un swipe (crearlo sería inventar cuál "ganó" y romper la regla de oro). El canal se
+     cubre con las skills existentes `fap-whatsapp-api` y `fap-whatsapp-grupos`, que ya cargan la
+     guía de mensajes que funcionan.
 2. **Cada ejemplo con su "por qué ganó"**, no solo el texto. Copy + métrica + el elemento
    que lo hizo funcionar (hook / oferta / ángulo). Sin anotar, el modelo copia la superficie.
+   Sin data (p. ej. WhatsApp), no se fabrica un swipe: se usa la skill del canal.
 3. **Marcar qué NO copiar.** Si una ganadora tenía precio visible o CTA a checkout (que en
    FAP no van), se anota — el swipe no debe romper un candado.
 
