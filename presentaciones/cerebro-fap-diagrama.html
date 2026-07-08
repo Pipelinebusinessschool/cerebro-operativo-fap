@@ -1,0 +1,285 @@
+<title>El cerebro FAP — cómo se conecta</title>
+<style>
+  :root{
+    --paper:#F6F7FB; --panel:#FFFFFF; --panel-2:#FCFDFF;
+    --ink:#0E1526; --muted:#5B6577; --line:#D9DEEA; --line-2:#E7EBF3;
+    --ctx:#4338CA; --ctx-soft:#EEF0FD; --ctx-line:#C7CCF6;
+    --swp:#C2570C; --swp-soft:#FBF1E7; --swp-line:#F0D2B4;
+    --lock:#DC2626; --lock-soft:#FCEDED; --lock-line:#F3C9C9;
+    --ok:#0F766E; --ok-soft:#E7F3F1;
+    --font-sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --font-mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+    --r:14px; --shadow:0 1px 2px rgba(14,21,38,.05),0 6px 20px rgba(14,21,38,.04);
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --paper:#0A0F1E; --panel:#121A2E; --panel-2:#0F1728;
+      --ink:#EAEEF6; --muted:#98A4BB; --line:#26314A; --line-2:#1D2740;
+      --ctx:#A9B6FF; --ctx-soft:#191E3C; --ctx-line:#333B66;
+      --swp:#FDBA74; --swp-soft:#271A0F; --swp-line:#49341C;
+      --lock:#F98A8A; --lock-soft:#2A1616; --lock-line:#4A2626;
+      --ok:#5EEAD4; --ok-soft:#122A27;
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.28);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#0A0F1E; --panel:#121A2E; --panel-2:#0F1728;
+    --ink:#EAEEF6; --muted:#98A4BB; --line:#26314A; --line-2:#1D2740;
+    --ctx:#A9B6FF; --ctx-soft:#191E3C; --ctx-line:#333B66;
+    --swp:#FDBA74; --swp-soft:#271A0F; --swp-line:#49341C;
+    --lock:#F98A8A; --lock-soft:#2A1616; --lock-line:#4A2626;
+    --ok:#5EEAD4; --ok-soft:#122A27;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.28);
+  }
+  :root[data-theme="light"]{
+    --paper:#F6F7FB; --panel:#FFFFFF; --panel-2:#FCFDFF;
+    --ink:#0E1526; --muted:#5B6577; --line:#D9DEEA; --line-2:#E7EBF3;
+    --ctx:#4338CA; --ctx-soft:#EEF0FD; --ctx-line:#C7CCF6;
+    --swp:#C2570C; --swp-soft:#FBF1E7; --swp-line:#F0D2B4;
+    --lock:#DC2626; --lock-soft:#FCEDED; --lock-line:#F3C9C9;
+    --ok:#0F766E; --ok-soft:#E7F3F1;
+    --shadow:0 1px 2px rgba(14,21,38,.05),0 6px 20px rgba(14,21,38,.04);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-sans);
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:40px 22px 64px}
+  .eyebrow{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(28px,4.6vw,42px);line-height:1.05;letter-spacing:-.025em;margin:.35em 0 .2em;text-wrap:balance;font-weight:800}
+  .lede{font-size:16px;color:var(--muted);max-width:64ch;margin:0}
+  .mono{font-family:var(--font-mono)}
+
+  /* legend */
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 6px}
+  .key{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:600;color:var(--muted);
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px 11px}
+  .dot{width:9px;height:9px;border-radius:50%}
+
+  section{margin-top:34px}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+
+  /* how a skill works — flow strip */
+  .flow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap;
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:16px;box-shadow:var(--shadow)}
+  .step{flex:1 1 0;min-width:130px;display:flex;flex-direction:column;gap:4px;padding:6px 12px;position:relative}
+  .step + .step::before{content:"→";position:absolute;left:-9px;top:14px;color:var(--muted);font-weight:700}
+  .step .n{font-family:var(--font-mono);font-size:11px;color:var(--muted)}
+  .step .t{font-weight:700;font-size:14px}
+  .step .d{font-size:12.5px;color:var(--muted)}
+  .step.lockstep .t{color:var(--lock)}
+
+  /* map */
+  .layer{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+  .band{padding:14px 18px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .band .tag{font-family:var(--font-mono);font-size:12.5px;font-weight:600}
+  .band .role{font-size:13px;color:var(--muted)}
+  .band-title{font-weight:800;font-size:15px;letter-spacing:-.01em}
+
+  .arrow{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 0;color:var(--muted)}
+  .arrow .lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  .arrow .ln{width:2px;height:14px;background:var(--line)}
+  .arrow .ar{font-size:15px;line-height:1;margin-top:-4px}
+
+  /* two halves */
+  .halves{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:640px){.halves{grid-template-columns:1fr}}
+  .half{border-radius:var(--r);border:1px solid;padding:16px 17px;box-shadow:var(--shadow)}
+  .half.ctx{background:var(--ctx-soft);border-color:var(--ctx-line)}
+  .half.swp{background:var(--swp-soft);border-color:var(--swp-line)}
+  .half h3{margin:0 0 2px;font-size:16px;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .half.ctx h3{color:var(--ctx)} .half.swp h3{color:var(--swp)}
+  .half .sub{font-size:12.5px;color:var(--muted);margin:0 0 11px}
+  .files{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+  .files li{font-family:var(--font-mono);font-size:12.5px;color:var(--ink);display:flex;gap:8px;align-items:baseline}
+  .files li::before{content:"";width:6px;height:6px;border-radius:2px;flex:none;margin-top:6px}
+  .half.ctx .files li::before{background:var(--ctx)} .half.swp .files li::before{background:var(--swp)}
+  .files li span{font-family:var(--font-sans);color:var(--muted);font-size:11.5px}
+  .badge{font-family:var(--font-sans);font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    padding:3px 8px;border-radius:6px;color:#fff}
+
+  /* skills grid */
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+  @media(max-width:820px){.skills{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.skills{grid-template-columns:1fr}}
+  .skill{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 14px;
+    box-shadow:var(--shadow);display:flex;flex-direction:column;gap:8px;transition:transform .12s ease,border-color .12s ease}
+  .skill:hover{transform:translateY(-2px);border-color:var(--ink)}
+  .skill .name{font-family:var(--font-mono);font-weight:700;font-size:13.5px;letter-spacing:-.01em}
+  .skill .st{align-self:flex-start;font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+    padding:2px 7px;border-radius:5px}
+  .st.creada{background:var(--ok-soft);color:var(--ok)}
+  .st.ajustar{background:var(--swp-soft);color:var(--swp)}
+  .st.crear{background:var(--ctx-soft);color:var(--ctx)}
+  .skill .rowline{font-size:12px;display:flex;gap:6px;align-items:baseline}
+  .skill .rk{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);flex:none;width:44px}
+  .skill .rv{color:var(--ink)}
+  .skill .rv .m{font-family:var(--font-mono);font-size:11.5px}
+  .skill .rv .ctxk{color:var(--ctx);font-weight:600} .skill .rv .swpk{color:var(--swp);font-weight:600}
+
+  /* gate + output */
+  .gate{background:var(--lock-soft);border:1px solid var(--lock-line);border-radius:var(--r);padding:14px 18px;
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;box-shadow:var(--shadow)}
+  .gate .ic{font-size:18px}
+  .gate b{color:var(--lock)}
+  .gate .txt{font-size:13.5px;color:var(--ink)}
+  .out{background:var(--ink);color:var(--paper);border-radius:var(--r);padding:16px 18px;display:flex;
+    align-items:center;gap:12px;flex-wrap:wrap;box-shadow:var(--shadow)}
+  :root[data-theme="dark"] .out{background:#1B2540}
+  @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .out{background:#1B2540}}
+  .out .pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:999px;
+    padding:5px 12px;font-size:12.5px;font-weight:600}
+  .out .fin{margin-left:auto;font-weight:800;letter-spacing:-.01em;font-size:15px;display:flex;align-items:center;gap:8px}
+
+  /* golden rule */
+  .rule{margin-top:34px;border:1px solid var(--lock-line);background:var(--lock-soft);border-radius:var(--r);
+    padding:20px 22px;box-shadow:var(--shadow)}
+  .rule h3{margin:0 0 6px;color:var(--lock);font-size:17px;letter-spacing:-.01em;display:flex;gap:9px;align-items:center}
+  .rule p{margin:0;font-size:14px;color:var(--ink)}
+  .rule .proof{margin-top:10px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--lock-line);padding-top:10px}
+  .rule .proof b{color:var(--ink)}
+
+  footer{margin-top:30px;font-size:12px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">PIPELINE Business School · Arquitectura</div>
+    <h1>El cerebro FAP, y cómo trabaja cada skill</h1>
+    <p class="lede">Una máquina que escribe todo el copy de un lanzamiento de FAP en la voz real de
+    Jorge — sin inventar datos. No es magia de IA: es un cerebro bien cableado, con dos mitades y un
+    candado.</p>
+    <div class="legend">
+      <span class="key"><span class="dot" style="background:var(--ctx)"></span>Contexto · la verdad</span>
+      <span class="key"><span class="dot" style="background:var(--swp)"></span>Swipe · el craft</span>
+      <span class="key"><span class="dot" style="background:var(--lock)"></span>Candado · no inventar</span>
+      <span class="key"><span class="dot" style="background:var(--ok)"></span>Ya construido</span>
+    </div>
+  </header>
+
+  <section>
+    <p class="kicker">Cómo trabaja cualquier skill</p>
+    <div class="flow">
+      <div class="step"><span class="n">01</span><span class="t">Encargo</span><span class="d">"Escríbeme el correo de invitación FAP"</span></div>
+      <div class="step"><span class="n">02</span><span class="t">Regla&nbsp;0</span><span class="d">Carga <b style="color:var(--ctx)">contexto</b> + su <b style="color:var(--swp)">swipe</b></span></div>
+      <div class="step"><span class="n">03</span><span class="t">Escribe</span><span class="d">En voz de Jorge, con cifras reales</span></div>
+      <div class="step lockstep"><span class="n">04</span><span class="t">Auto-crítica</span><span class="d">Checklist de 8 puntos · caza inventos</span></div>
+      <div class="step"><span class="n">05</span><span class="t">Pieza</span><span class="d">Lista — o marca <span class="mono">[FALTA]</span> y pregunta</span></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">El mapa del cerebro</p>
+
+    <div class="layer band">
+      <span class="band-title">El encargo</span>
+      <span class="role">Jorge (o tú) pide una pieza, o el lanzamiento completo.</span>
+    </div>
+
+    <div class="arrow"><div class="ln"></div><div class="ar">↓</div></div>
+
+    <div class="layer band">
+      <span class="tag">fap-lanzamientos</span>
+      <span class="band-title">Orquestador</span>
+      <span class="role">Decide qué piezas y en qué orden, según la ruta — A: Ads→VSL→Diagnóstico · B: Workshop→Oferta→Diagnóstico.</span>
+    </div>
+
+    <div class="arrow"><div class="lbl">delega a las skills, que cargan…</div><div class="ln"></div><div class="ar">↓</div></div>
+
+    <div class="halves">
+      <div class="half ctx">
+        <h3><span class="badge" style="background:var(--ctx)">Regla 0 · A</span> Contexto — la verdad</h3>
+        <p class="sub">Qué es cierto de FAP + los candados. <b>Cifras, ICP y precio salen SOLO de aquí.</b></p>
+        <ul class="files">
+          <li>jorge_icp.md <span>· ≥$1M/año · ≥2 vendedores</span></li>
+          <li>jorge_voice.md <span>· vocabulario obligatorio/prohibido</span></li>
+          <li>pbs_metrics.md <span>· SROI &gt;5X, +$150M… (Set B)</span></li>
+          <li>jorge_philosophy.md <span>· objeciones · creencias</span></li>
+          <li>jorge_process.md <span>· la llamada de diagnóstico</span></li>
+          <li>jorge_decisions.md <span>· 6 pilares · qué NO hace PBS</span></li>
+        </ul>
+      </div>
+      <div class="half swp">
+        <h3><span class="badge" style="background:var(--swp)">Regla 0 · B</span> Swipe — el craft</h3>
+        <p class="sub">Cómo se escribe, según ganadores reales. Da la <b>mecánica</b>, nunca las cifras.</p>
+        <ul class="files">
+          <li>swipe-correos.md <span>· funnel de correo completo</span></li>
+          <li>swipe-ads.md <span>· 11 ads CON métricas</span></li>
+          <li>swipe-landings.md <span>· opt-in ganador + ICP</span></li>
+          <li>swipe-paginas-venta.md <span>· workshop $11 + OTOs</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="arrow"><div class="lbl">cada skill toma su combinación y produce</div><div class="ln"></div><div class="ar">↓</div></div>
+
+    <div class="skills">
+      <div class="skill">
+        <span class="name">fap-narrativa</span><span class="st ajustar">ajustar</span>
+        <div class="rowline"><span class="rk">carga</span><span class="rv"><span class="ctxk">contexto</span></span></div>
+        <div class="rowline"><span class="rk">produce</span><span class="rv">Big Ideas + brief → alimenta a las demás</span></div>
+      </div>
+      <div class="skill">
+        <span class="name">fap-correos</span><span class="st creada">creada ✓</span>
+        <div class="rowline"><span class="rk">carga</span><span class="rv"><span class="ctxk">contexto</span> + <span class="swpk">swipe-correos</span></span></div>
+        <div class="rowline"><span class="rk">produce</span><span class="rv">invitación · recordatorio · venta · postventa</span></div>
+      </div>
+      <div class="skill">
+        <span class="name">fap-landings</span><span class="st ajustar">ajustar</span>
+        <div class="rowline"><span class="rk">carga</span><span class="rv"><span class="ctxk">contexto</span> + <span class="swpk">swipe-landings</span></span></div>
+        <div class="rowline"><span class="rk">produce</span><span class="rv">landing de registro (opt-in)</span></div>
+      </div>
+      <div class="skill">
+        <span class="name">fap-paginas-venta</span><span class="st crear">crear</span>
+        <div class="rowline"><span class="rk">carga</span><span class="rv"><span class="ctxk">contexto</span> + <span class="swpk">swipe-paginas-venta</span></span></div>
+        <div class="rowline"><span class="rk">produce</span><span class="rv">workshop $11 · OTOs · diagnóstico</span></div>
+      </div>
+      <div class="skill">
+        <span class="name">fap-video-ads-meta</span><span class="st ajustar">ajustar</span>
+        <div class="rowline"><span class="rk">carga</span><span class="rv"><span class="ctxk">contexto</span> + <span class="swpk">swipe-ads</span></span></div>
+        <div class="rowline"><span class="rk">produce</span><span class="rv">guiones de video ad (Jorge a cámara)</span></div>
+      </div>
+      <div class="skill">
+        <span class="name">fap-whatsapp-*</span><span class="st ajustar">ajustar</span>
+        <div class="rowline"><span class="rk">carga</span><span class="rv"><span class="ctxk">contexto</span> <span style="color:var(--muted)">(sin swipe — usa su guía)</span></span></div>
+        <div class="rowline"><span class="rk">produce</span><span class="rv">mensajes 1:1 (API) · comunidad (grupos)</span></div>
+      </div>
+    </div>
+
+    <div class="arrow"><div class="lbl">todo pasa por el candado antes de salir</div><div class="ln"></div><div class="ar">↓</div></div>
+
+    <div class="gate">
+      <span class="ic">🔒</span>
+      <span class="txt"><b>fap</b> (candados) + auto-crítica — sin precio de FAP en captación · CTA único · cifras sourced · voz de Jorge · nada inventado.</span>
+    </div>
+
+    <div class="arrow"><div class="ln"></div><div class="ar">↓</div></div>
+
+    <div class="out">
+      <span class="pill">Landing</span>
+      <span class="pill">Correos</span>
+      <span class="pill">Ads</span>
+      <span class="pill">Páginas / OTOs</span>
+      <span class="pill">WhatsApp</span>
+      <span class="fin">→ Lanzamiento completo</span>
+    </div>
+  </section>
+
+  <div class="rule">
+    <h3>🔴 La regla que hace todo esto confiable</h3>
+    <p>Las cifras, el ICP y el precio salen <b>solo del contexto</b>. Si un dato no está en la
+    fuente, la skill lo marca <span class="mono">[FALTA]</span> y <b>pregunta</b> — nunca lo inventa.
+    Ese es el candado que separa una herramienta usable de una peligrosa frente a un CEO que decide
+    con cifras.</p>
+    <p class="proof">La prueba: la cifra <b>"75% de equipos / 1 de cada 4 vendedores funciona"</b>
+    se creyó inventada por un agente… hasta que apareció, textual, en <span class="mono">jorge_philosophy.md</span>.
+    No era alucinación: se usó sin tenerla cargada. Con el contexto completo enchufado, ese dato
+    pasa de "peligroso" a citable.</p>
+  </div>
+
+  <footer>
+    Estado: <span class="mono">fap-correos</span> creada como molde del cableado · el resto en cola
+    (ajustar 5, crear 1). Contexto y swipe ya viven en el repositorio · las dos mitades del cerebro.
+  </footer>
+</div>
