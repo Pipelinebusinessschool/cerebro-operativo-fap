@@ -8,7 +8,7 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
 
 1. **Un archivo por canal**, no uno gigante. Cada skill carga el suyo y se mantiene afilada.
    - `swipe-landings.md` → `fap-landings` *(piloto — plantilla, pendiente de llenar)*
-   - `swipe-correos.md` → `fap-narrativa` / correos *(11 correos ganadores reales cargados ✅)*
+   - `swipe-correos.md` → `fap-narrativa` / correos *(funnel de correo completo: invitación, recordatorio, venta y postventa ✅)*
    - `swipe-ads.md` → `fap-video-ads-meta` (pendiente)
 2. **Cada ejemplo con su "por qué ganó"**, no solo el texto. Copy + métrica + el elemento
    que lo hizo funcionar (hook / oferta / ángulo). Sin anotar, el modelo copia la superficie.

@@ -30,7 +30,7 @@ cerebro-operativo-fap/
 │   └── fap-video-ads-meta.md
 ├── swipe/                     ← banco de ejemplos ganadores reales (inyección de contexto)
 │   ├── README.md
-│   ├── swipe-correos.md       ← 11 correos ganadores reales (invitación + venta) con análisis
+│   ├── swipe-correos.md       ← funnel de correo completo (invitación, recordatorio, venta, postventa) con análisis
 │   └── swipe-landings.md      ← PILOTO: plantilla por ficha (llenar con ganadoras reales)
 └── piezas/                    ← piezas ya producidas y validadas
     └── whatsapp-confirmacion-compra.md
