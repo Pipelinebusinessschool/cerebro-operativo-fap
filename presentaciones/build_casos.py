@@ -378,6 +378,39 @@ ADS_LESSONS = [
  "Autoridad estandarizada en los ganadores de venta: Forbes + “40.000 entrenados” + muro de logos (Google, Microsoft, Oracle, SAP…) + “$150M en nueva facturación”.",
 ]
 
+PAGE_COLOR="#4F46E5"
+pages = [
+{"tcol":"#2563EB","tier":"OPT-IN · gratis","camp":PGE,"lens":"Registro a webinar — fricción mínima",
+ "h1":"Cómo estructurar tu sistema de Prospección B2B con IA para lograr un crecimiento exponencial de tu PIPELINE en 2026",
+ "anat":["Eyebrow: Entrenamiento EN VIVO","H1 = promesa","Formulario (solo email) + botón en 1ª persona","Prueba social (logos de medios)","Cronograma de 4 clases numeradas","CTA","Antes / Después (tabla)","Bio de Jorge","Footer"],
+ "angulo":"Promesa (sistema con IA + resultado + plazo + ventaja) resuelta con una sola decisión: el email.",
+ "recursos":"Botón que nombra el deseo (“Quiero escalar mi PIPELINE”) · 4 clases numeradas que hacen tangible el valor gratis · tabla Antes/Después · doble autoridad (medios + Jorge).",
+ "mecanismo":"Todo el copy reduce la fricción del único paso (dar el email). No argumenta precio ni oferta: vende el clic de registro. Es la Landing #1, marcada como ganadora."},
+
+{"tcol":"#059669","tier":"VENTA · $11","camp":SUP,"lens":"Tripwire de entrada (versiones V1 y V2)",
+ "h1":"Cómo instalar un Sistema de Supervisión Comercial con IA que detecte caídas de ventas 2 meses antes de que impacten la facturación",
+ "anat":["Countdown","H1 (mecanismo + resultado + plazo)","CTA $11 + garantía","Prueba social (12.000 directivos)","Modelo bow-tie con métricas","“Para ti si…” (5 dolores)","Tablas de resultados (11.7X · +$553K/año)","Testimonios con nombre","Bio de Jorge + Harvard","Demo del producto (dashboard)","Stack + garantía 7 días","Por qué cuesta solo $11","FAQ"],
+ "angulo":"Tripwire: el $11 no busca ganancia, busca convertir un lead en comprador — el primer “sí” con tarjeta, que es el paso más difícil del funnel.",
+ "recursos":"Prueba cuantificada (tablas antes/después con % y $) · justificación honesta del precio simbólico · garantía sin riesgo · demo del dashboard. V2 añade escasez (“87% ocupados”) y callout de audiencia.",
+ "mecanismo":"Combina autoridad + prueba dura + garantía + precio bajo para bajar al mínimo la barrera del primer pago. Todo lo demás se monetiza en los OTO."},
+
+{"tcol":"#B45309","tier":"OTO · $197 · molde FAP","camp":"Diagnóstico Fábrica de Ingresos","highlight":True,
+ "lens":"Upsell 1:1 — el molde del diagnóstico de FAP",
+ "h1":"¡ESPERA! ¿Quieres que un Revenue Architect diagnostique TU operación comercial, 1:1?",
+ "anat":["Interrupción: “aún NO está completa” + barra 80%","H1 de deseo","Reencuadre: “no es una llamada de ventas, es el diagnóstico…”","Autoridad (+47.000, 120+ operaciones, Harvard)","Demo del Scorecard (6 pilares, Factor Fundador 78%)","Cómo funciona (4 pasos)","Entregables (Scorecard + 1:1 + Plan)","Ancla de precio ($2.000 → $197)","Doble CTA sí / no"],
+ "angulo":"Upsell inmediato con reencuadre anti-venta: “no es una llamada de ventas, es un diagnóstico que ningún CRM te dio”.",
+ "recursos":"Interrupción + barra de progreso · demo del entregable antes de comprarlo · ancla de precio ($2.000→$197) · honestidad (“sin contadores falsos ni cupos inventados”) · doble CTA con el “no” que reafirma lo que se pierde.",
+ "mecanismo":"Es la plantilla DIRECTA de la llamada de diagnóstico de FAP: 6 pilares, Revenue Architect, sesión 1:1, Scorecard, Índice de Dependencia del Fundador y Mapa de Facturación Oculta en USD. Referencia núcleo para la pieza de diagnóstico de FAP."},
+
+{"tcol":"#7C3AED","tier":"OTO · $47","camp":"Pipeline Predecible con IA (grabado)",
+ "lens":"Downsell — entrenamiento grabado",
+ "h1":"El método para construir un pipeline de +$1M con IA en 60 días",
+ "anat":["Interrupción + barra 90%","H1 + “acceso inmediato”","Logos (Google, Microsoft, Oracle…)","El principio (facturación predecible = generación predecible)","“Lo que descubrirás” (8 piezas: 3×3×30, agentes IA, vender al C-Level…)","Stack + ancla ($477 → $47)","Honestidad / escasez real","Doble CTA sí / no"],
+ "angulo":"Downsell más barato para quien no tomó el diagnóstico: captura al comprador en otro nivel de compromiso.",
+ "recursos":"Barra de progreso · “el principio” como tesis · 8 piezas numeradas · ancla de precio · misma honestidad que el OTO1.",
+ "mecanismo":"Segundo upsell/downsell con el mismo patrón de ancla y honestidad. Es el entrenamiento cuya confirmación de compra ya vive en el cerebro (pieza de WhatsApp)."},
+]
+
 PATRONES = [
  ("Un ángulo por correo","Cada envío rota un solo gancho —recap, autoridad, futuro, prueba social, tiempo, ROI, escasez— en vez de amontonar varios. Evita fatiga y permite testear qué ángulo mueve más."),
  ("Precio sin argumentar de frente","El número casi nunca se defiende: se reencuadra como ROI (“de 1/10 a 2/10 = 2X”), como costo de inacción (los PD) o con ancla de precio ($997 → $247, $67 → $97)."),
@@ -479,6 +512,41 @@ ads_section=f"""
       </div>
     </section>"""
 
+def pagecard(e, idx):
+    anat=" › ".join(e["anat"])
+    hi=" adhi" if e.get("highlight") else ""
+    return f"""
+    <article class="card pagecard{hi}">
+      <div class="card-top">
+        <span class="badge" style="background:{PAGE_COLOR}">PÁGINA</span>
+        <span class="num">P{idx:02d}</span>
+        <span class="tier" style="background:{e['tcol']}">{esc(e['tier'])}</span>
+        <span class="lens">{esc(e['lens'])}</span>
+        <span class="camp">{esc(e['camp'])}</span>
+      </div>
+      <div class="subject">{esc(e['h1'])}</div>
+      <div class="anat"><b>Anatomía de la página</b>{esc(anat)}</div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">{esc(e['angulo'])}</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">{esc(e['recursos'])}</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">{esc(e['mecanismo'])}</span></div>
+      </div>
+    </article>"""
+
+pagecards="".join(pagecard(e,i+1) for i,e in enumerate(pages))
+PAGES_TOTAL=len(pages)
+pages_section=f"""
+    <section class="phase">
+      <div class="phase-head" style="--c:{PAGE_COLOR}">
+        <h2>LANDINGS Y PÁGINAS</h2>
+        <p>Del opt-in gratuito al funnel de pago. PBS asciende al prospecto por precio: registro
+        gratis → workshop $11 (tripwire) → diagnóstico $197 → entrenamiento $47. Las páginas no
+        traen métricas por pieza; son las marcadas como ganadoras. El diagnóstico $197 es el molde
+        directo de la llamada de diagnóstico de FAP.</p>
+      </div>
+      {pagecards}
+    </section>"""
+
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
 @page {{ size:A4; margin:16mm 15mm 18mm 15mm; }}
 *{{box-sizing:border-box}} html{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
@@ -529,6 +597,8 @@ h1,h2,h3{{margin:0}}
 .databox{{border:1px solid #FED7AA;border-left:4px solid #EA580C;background:#FFF7ED;border-radius:10px;padding:12px 16px;margin-top:4px;page-break-inside:avoid}}
 .databox h3{{font-size:12.5px;margin-bottom:6px;color:#9A3412}}
 .databox ul{{margin:0;padding-left:16px}} .databox li{{font-size:9.7px;color:#7C2D12;margin-bottom:4px;line-height:1.5}}
+.anat{{font-size:9.3px;color:#334155;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:8px;padding:8px 12px;margin:6px 0 10px;line-height:1.75}}
+.anat b{{color:#4F46E5;text-transform:uppercase;font-size:8px;letter-spacing:.06em;display:block;margin-bottom:3px}}
 .patrones{{page-break-before:always}}
 .patrones h2{{font-size:20px;margin-bottom:4px}} .patrones .sub{{color:#64748B;font-size:11px;margin-bottom:16px}}
 .pat{{border:1px solid #E2E8F0;border-left:4px solid #059669;border-radius:9px;padding:11px 14px;margin-bottom:9px;page-break-inside:avoid}}
@@ -551,11 +621,12 @@ h1,h2,h3{{margin:0}}
       <span class="tag" style="background:#059669">VENTA</span>
       <span class="tag" style="background:#7C3AED">POSTVENTA</span>
       <span class="tag" style="background:#EA580C">ADS</span>
+      <span class="tag" style="background:#4F46E5">PÁGINAS</span>
     </div>
   </div>
   <div class="meta">
     Preparado para <b>Jorge Conde</b> — CEO, PIPELINE Business School<br>
-    {TOTAL} correos + {ADS_TOTAL} anuncios seleccionados · Fuentes: Prospección a Gran Escala con IA,
+    {TOTAL} correos + {ADS_TOTAL} anuncios + {PAGES_TOTAL} páginas · Fuentes: Prospección a Gran Escala con IA,
     Pipeline Predecible con IA, Supervisión Comercial Predictiva con IA, AI Strategic Pipeline
     Generation y la VSL del Forecast Accelerator Program (FAP)
   </div>
@@ -575,7 +646,8 @@ h1,h2,h3{{margin:0}}
       <li><b>Recordatorio</b> — asistencia en vivo + apertura de la oferta.</li>
       <li><b>Venta</b> — retargeting al programa pago.</li>
       <li><b>Postventa</b> — confirmación, downsell y upsell.</li>
-      <li><b>Ads</b> — anuncios de Meta con métricas reales de desempeño.</li></ul></div>
+      <li><b>Ads</b> — anuncios de Meta con métricas reales de desempeño.</li>
+      <li><b>Landings y páginas</b> — del opt-in al funnel de pago (workshop + OTOs).</li></ul></div>
     <div class="box"><h3>Qué trae cada ficha</h3>
       <ul><li><b>Copy verbatim</b> — el texto real (enlaces y UTMs abreviados).</li>
       <li><b>Ángulo</b> — el gancho psicológico dominante.</li>
@@ -596,6 +668,7 @@ h1,h2,h3{{margin:0}}
 
 {sections}
 {ads_section}
+{pages_section}
 
 <div class="patrones">
   <h2>El patrón detrás de todos</h2>
