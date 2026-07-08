@@ -9,7 +9,7 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
 1. **Un archivo por canal**, no uno gigante. Cada skill carga el suyo y se mantiene afilada.
    - `swipe-landings.md` → `fap-landings` *(opt-in de registro: landing ganadora de PGE + ICP ✅)*
    - `swipe-paginas-venta.md` → `fap-landings` / diagnóstico *(páginas de pago: workshop $11 + OTOs $197/$47 ✅)*
-   - `swipe-correos.md` → `fap-narrativa` / correos *(funnel de correo completo: invitación, recordatorio, venta y postventa ✅)*
+   - `swipe-correos.md` → `fap-correos` *(funnel de correo completo: invitación, recordatorio, venta y postventa ✅)*
    - `swipe-ads.md` → `fap-video-ads-meta` *(11 ads reales CON métricas: píldoras, video largo y la VSL de FAP ✅)*
    - **WhatsApp → sin swipe (decisión).** No hay data de desempeño de los mensajes, así que no se
      construye un swipe (crearlo sería inventar cuál "ganó" y romper la regla de oro). El canal se

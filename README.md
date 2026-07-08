@@ -51,6 +51,7 @@ cerebro-operativo-fap/
 | [`fap`](skills/fap.md) | Fuente de verdad + candados |
 | [`fap-lanzamientos`](skills/fap-lanzamientos.md) | Director (2 rutas, piezas, cadencia) |
 | [`fap-narrativa`](skills/fap-narrativa.md) | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
+| [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · carga `swipe-correos` |
 | [`fap-landings`](skills/fap-landings.md) | Dos modelos (Largo Brunson / Corto Brasil) |
 | [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API |
 | [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad |
