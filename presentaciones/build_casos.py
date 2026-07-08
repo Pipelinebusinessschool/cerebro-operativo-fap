@@ -3,10 +3,12 @@ import html
 def esc(s): return html.escape(s)
 
 PHASES = {"INVITACIÓN":"#2563EB","RECORDATORIO":"#0891B2","VENTA":"#059669","POSTVENTA":"#7C3AED"}
+ADS_COLOR="#EA580C"
 PGE="Prospección a Gran Escala con IA · Nov 2025"
 SUP="Supervisión Comercial Predictiva con IA"
 PP="Pipeline Predecible con IA"
 SPG="AI Strategic Pipeline Generation"
+FAP="Forecast Accelerator Program (FAP)"
 
 emails = [
 # ---------------- INVITACIÓN ----------------
@@ -296,6 +298,86 @@ emails = [
  "mecanismo":"Justo cuando el cliente resolvió “generar pipeline”, se le muestra el siguiente cuello de botella (“convertirlo”). El deseo de completar el sistema hace natural el segundo sí."},
 ]
 
+ads = [
+{"fmt":"Píldora · video corto","camp":SUP,"tier":"GANADOR","lens":"Callout de identidad — la gran ganadora",
+ "metrics":[("Stop Ratio","63.53%"),("Retención","47.47%"),("CTR","3.08%"),("Costo 50%","$0.019")],
+ "script":[
+   "Tu cargo dice director comercial, pero tu día a día dice que eres el policía de tu operación de ventas. Tú estás detrás de cada vendedor para que prospecte, para que haga seguimiento, para que reporte en el CRM. Y lo único que tienes para dirigir es lo que te cuentan en el comité de forecast, donde te cuentan lo que quieres escuchar, no la realidad.",
+   "Un directivo que dirige a ciegas su operación de ventas no sabe cuál es su punto de escala real: qué proceso mejorar, dónde entrenar a su equipo, qué problema resolver primero.",
+   "Y si quieres que eso cambie, necesitas instalar un modelo de supervisión comercial predictivo que use IA para detectar caídas de ventas dos meses antes de que impacten tu facturación.",
+   "En pocos días inicia la masterclass 'Supervisión comercial con IA', a la que ya te registraste… Da clic aquí abajo y agrega este entrenamiento a tu calendario corporativo. Da clic.",
+ ],
+ "angulo":"Callout de identidad: contrasta el rol formal con la realidad diaria del directivo (“tu cargo dice X, tu día a día dice Y”).",
+ "recursos":"Espejo incómodo en la 1ª frase · metáfora de identidad (“el policía”) · acusación al ritual (comité = “lo que quieres escuchar”) · promesa contraintuitiva (“caídas 2 meses antes”).",
+ "mecanismo":"El hook ataca la brecha entre el rol y la realidad en la primera frase: un espejo que obliga a quedarse. Stop del 63.53% y el costo más barato de todo el banco ($0.019) lo confirman."},
+
+{"fmt":"Píldora · video corto","camp":SUP,"tier":"MEJOR CTR","lens":"Autoridad + densidad de valor",
+ "metrics":[("Stop Ratio","57.63%"),("Retención","38.95%"),("CTR","3.75%"),("Costo 50%","$0.120")],
+ "script":[
+   "Voy a comprimir 15 años de ingeniería comercial en 60 segundos. Pon atención: tu comité semanal de ventas no es supervisión, es un ritual donde cada vendedor te cuenta lo que quieres escuchar. Tu CRM no te dice lo que pasa en tu operación, te dice lo que cada vendedor decidió reportar.",
+   "Medir la cuota, número de propuestas y número de reuniones no es supervisión, es hacer arqueología comercial: revisar restos de lo que ya pasó. Perseguir a tu equipo los viernes no es liderazgo, es ser el policía más caro de tu operación.",
+   "Las operaciones que escalan tienen un sistema de supervisión comercial predictivo que usa agentes de IA para auditar cada paso del proceso. Por eso creamos la masterclass 'Supervisión comercial predictiva con IA'… Da clic y agrega este entrenamiento a tu calendario. Da clic.",
+ ],
+ "angulo":"Autoridad + densidad de valor: promete comprimir 15 años en 60 segundos.",
+ "recursos":"Promesa de densidad (“15 años en 60 seg”) · anáforas de reencuadre (“X no es supervisión, es…”) · frases-sentencia memorizables (“arqueología comercial”, “el policía más caro”).",
+ "mecanismo":"La promesa de valor comprimido dispara el CTR más alto del set (3.75%): quien se queda, quiere el clic. Las anáforas hacen el guion citable."},
+
+{"fmt":"Video largo · CPL/ROAS","camp":PGE,"tier":"MÁS VENTAS","lens":"Metáfora de obsolescencia",
+ "metrics":[("Ventas","33"),("CPL","$2.77"),("ROAS","2.29"),("ROAS tibio","4.03")],
+ "script":[
+   "Si eres un gerente comercial B2B y en pleno 2025 tienes un equipo de ventas prospectando con llamadas en frío, eso es como tratar de enviar un mensaje con un telégrafo en plena era de los smartphones.",
+   "Dame 4 noches y te voy a mostrar cómo integrar la IA en tu operación de ventas para conseguir un crecimiento exponencial de pipeline en los próximos 90 días.",
+   "Mi nombre es Jorge Conde y, según la revista Forbes, soy experto en llenar embudos de ventas B2B. He asesorado a más de 100 compañías y entrenado a más de 40.000 directores de ventas B2B en Latinoamérica; generamos más de 150 millones de dólares en nuevas ventas.",
+   "Y hoy quiero invitarte a un entrenamiento comercial avanzado de 4 noches… escala tu pipeline mínimo a 1 millón de dólares en los próximos 90 días. Da clic y regístrate únicamente si quieres crecer tu cartera de clientes rápidamente. Regístrate.",
+ ],
+ "angulo":"Metáfora de obsolescencia: prospectar en frío hoy = enviar un mensaje con telégrafo en la era del smartphone.",
+ "recursos":"Metáfora visual que ridiculiza la práctica actual · “dame 4 noches” (compromiso acotado) · bloque de autoridad (Forbes + 40.000 + $150M) · CTA con filtro.",
+ "mecanismo":"La metáfora hace evidente y ridícula la práctica actual del prospecto en una frase. Fue el ad de más ventas (33). Nota el salto de ROAS frío→tibio (1.41 → 4.03)."},
+
+{"fmt":"Video largo · CPL/ROAS","camp":PGE,"tier":"MEJOR CPL","lens":"Reducción del rol a una misión",
+ "metrics":[("Ventas","16"),("CPL","$2.07"),("ROAS","2.49"),("ROAS tibio","4.05")],
+ "script":[
+   "Como director de ventas tienes un solo trabajo: generar facturación predecible. Pero ¿cómo hacerlo cuando tu equipo no cuenta con un sistema de prospección predecible que los mantenga operando a máxima capacidad y conversando con tomadores de decisión?",
+   "Dame 4 noches y te voy a mostrar cómo usar la IA para prospectar a gran escala y conseguir que tu equipo deje de depender del mismo pipeline de siempre.",
+   "Mi nombre es Jorge Conde, fundador de Pipeline Business School… hemos entrenado a directores que hoy trabajan en Google, Microsoft, Oracle, Sophos, SAP, Fortinet, Cisco, Telmex, Bimbo, Movistar, HubSpot…",
+   "Regístrate sin costo únicamente si quieres un sistema de ventas que sí genere facturación predecible. Regístrate.",
+ ],
+ "angulo":"Reducción del rol a una sola misión (“tienes un solo trabajo: facturación predecible”).",
+ "recursos":"Reducción del rol · pregunta que expone el gap · muro de logos (prueba social de marcas) · CTA con filtro.",
+ "mecanismo":"El CPL más bajo del set ($2.07). El “un solo trabajo” enfoca al directivo en su responsabilidad #1 y el muro de logos da permiso para confiar."},
+
+{"fmt":"VSL de captación","camp":FAP,"tier":"MEJOR AD · FAP","lens":"Callout de identidad + reencuadre de creencia","highlight":True,
+ "metrics":[("Agendas","19"),("Costo/agenda","$64.77"),("CTR","1.33%"),("Rompe scroll","29.43%")],
+ "script":[
+   "No eres el CEO fundador de tu compañía. En realidad, eres el vendedor más caro que tiene tu empresa. ¿Por qué? Porque cierras los negocios más grandes, rescatas los trimestres de ventas, trabajas más de 70 horas semanales… Tu título dice director general, pero tu realidad grita: vendedor sénior exhausto.",
+   "Y lo peor es que lo has normalizado y dices: 'así son las ventas B2B', lo cual es una gran mentira. Las ventas B2B son sistemas y no heroísmos; procesos escalables, no personalidades. Un sistema bien diseñado convierte vendedores toma-pedidos en consultores que venden por valor sin depender de ti.",
+   "Mi nombre es Jorge Conde, fundador de Pipeline Business School, y hemos estado en el backstage de más de 100 operaciones comerciales B2B. En el 87% de los casos el problema era idéntico: directivos esclavos de su operación comercial por falta de una estructura de ventas escalable.",
+   "Por eso creamos el programa de aceleración de Forecast, donde trabajamos contigo para estructurar todo tu sistema de ventas B2B, de tal forma que genere facturación predecible y elimine la dependencia del directivo para que las ventas sucedan.",
+   "Si quieres saber cómo funciona, hemos preparado un video corto… Da clic aquí abajo para verlo únicamente si estás cansado de tener una operación de ventas desgastante e ineficiente. Da clic.",
+ ],
+ "angulo":"Callout de identidad que niega el autoconcepto (“no eres el CEO… eres el vendedor más caro”) + reencuadre de creencia.",
+ "recursos":"Negación del autoconcepto · reencuadre (“'así son las ventas B2B' es una gran mentira”) · antítesis (“sistemas, no heroísmos; procesos, no personalidades”) · dato de autoridad (“87% de los casos”) · CTA a VSL con filtro.",
+ "mecanismo":"Rompe scroll casi al 30% y agenda llamadas a $64.77 — muy eficiente para un high-ticket como FAP. Confirma el hallazgo del banco: el callout de identidad es el mecanismo que más rinde."},
+
+{"fmt":"Video largo · CPL/ROAS","camp":SUP,"tier":"APRENDIZAJE","lens":"El mismo ángulo, estirado a video largo, no vendió",
+ "metrics":[("Ventas","0"),("ROAS","0.00"),("CPL","$3.45")],
+ "script":[
+   "Ejemplo (ADS14): “Empresario, si hoy tienes una operación de ventas desgastante, ineficiente, desorganizada y no sabes cómo estructurarla para que venda por valor y no por precio, en los próximos días impartiremos una masterclass avanzada sin costo…”",
+   "Tres anuncios de video largo con el ángulo de “supervisión” (ADS13 / ADS10 / ADS14) rindieron 0–1 ventas y CPL alto ($3.4–4.0) — el mismo ángulo que fue la GRAN GANADORA en píldora corta.",
+ ],
+ "angulo":"Mismo ángulo de “supervisión” de la píldora ganadora, pero en formato de video largo.",
+ "recursos":"Estructura larga hook → problema → autoridad, pero el gancho de identidad se diluye al estirarse.",
+ "mecanismo":"Lección: el hook de identidad funciona comprimido; estirado a 90 seg pierde fuerza. El formato manda sobre el ángulo. (Ojo: ADS13 tiene ROAS 10.98 pero sobre 1 sola venta — n=1 es ruido, no señal.)"},
+]
+
+ADS_LESSONS = [
+ "El callout de identidad es el mecanismo #1: gana en la píldora más barata ($0.019) y en la VSL de FAP (el mejor ad). Es el gancho a replicar en FAP.",
+ "El formato manda sobre el ángulo: “supervisión” ganó en píldora corta y perdió en video largo. No hay ángulo bueno en abstracto, sino bueno para un formato.",
+ "Tibio > frío en ROAS, siempre: el retargeting convirtió 2–3× mejor (ADS25: 4.03 vs 1.41). El frío trae volumen; el tibio, la venta.",
+ "El canal cambia el desempeño: una píldora floja en feed fue la mejor en WhatsApp (CTR 4.64%). La misma pieza no rinde igual en todos lados.",
+ "Autoridad estandarizada en los ganadores de venta: Forbes + “40.000 entrenados” + muro de logos (Google, Microsoft, Oracle, SAP…) + “$150M en nueva facturación”.",
+]
+
 PATRONES = [
  ("Un ángulo por correo","Cada envío rota un solo gancho —recap, autoridad, futuro, prueba social, tiempo, ROI, escasez— en vez de amontonar varios. Evita fatiga y permite testear qué ángulo mueve más."),
  ("Precio sin argumentar de frente","El número casi nunca se defiende: se reencuadra como ROI (“de 1/10 a 2/10 = 2X”), como costo de inacción (los PD) o con ancla de precio ($997 → $247, $67 → $97)."),
@@ -353,6 +435,50 @@ for ph in order:
 TOTAL=idx
 patrones_html = "\n".join(f'<div class="pat"><h3>{esc(t)}</h3><p>{esc(d)}</p></div>' for t,d in PATRONES)
 
+TIER_COLOR={"GANADOR":"#059669","MEJOR CTR":"#059669","MÁS VENTAS":"#059669","MEJOR CPL":"#059669",
+            "MEJOR AD · FAP":"#B45309","APRENDIZAJE":"#DC2626"}
+def adcard(e, idx):
+    tcol=TIER_COLOR.get(e["tier"],"#EA580C")
+    metrics_html="".join(f'<div class="metric"><span class="mv">{esc(v)}</span><span class="ml">{esc(l)}</span></div>' for l,v in e["metrics"])
+    script_html="\n".join(f'<p class="line">{esc(l)}</p>' for l in e["script"])
+    hi=" adhi" if e.get("highlight") else ""
+    return f"""
+    <article class="card adcard{hi}">
+      <div class="card-top">
+        <span class="badge" style="background:{ADS_COLOR}">ADS</span>
+        <span class="num">A{idx:02d}</span>
+        <span class="tier" style="background:{tcol}">{esc(e['tier'])}</span>
+        <span class="lens">{esc(e['lens'])}</span>
+        <span class="camp">{esc(e['camp'])}</span>
+      </div>
+      <div class="fmt">{esc(e['fmt'])}</div>
+      <div class="metrics">{metrics_html}</div>
+      <div class="email" style="--c:{ADS_COLOR}">{script_html}</div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">{esc(e['angulo'])}</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">{esc(e['recursos'])}</span></div>
+        <div class="why-row"><span class="k">Por qué {'/ qué aprende' if e['tier']=='APRENDIZAJE' else 'funciona'}</span><span class="v">{esc(e['mecanismo'])}</span></div>
+      </div>
+    </article>"""
+
+adcards="".join(adcard(e,i+1) for i,e in enumerate(ads))
+ADS_TOTAL=len(ads)
+ads_lessons_html="\n".join(f'<li>{esc(x)}</li>' for x in ADS_LESSONS)
+ads_section=f"""
+    <section class="phase">
+      <div class="phase-head" style="--c:{ADS_COLOR}">
+        <h2>ADS · anuncios (con métricas)</h2>
+        <p>Anuncios reales en Meta, rankeados por desempeño. A diferencia de los correos, aquí hay
+        datos: Stop Ratio y Retención miden el video; CTR, CPL y ROAS miden captación y venta; y en
+        la VSL, el costo por agenda. Incluye la VSL de FAP (el mejor ad) y un caso de aprendizaje.</p>
+      </div>
+      {adcards}
+      <div class="databox">
+        <h3>Lo que dicen los datos</h3>
+        <ul>{ads_lessons_html}</ul>
+      </div>
+    </section>"""
+
 HTML = f"""<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
 @page {{ size:A4; margin:16mm 15mm 18mm 15mm; }}
 *{{box-sizing:border-box}} html{{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
@@ -393,6 +519,16 @@ h1,h2,h3{{margin:0}}
 .why-row{{display:flex;gap:10px;margin-bottom:5px}} .why-row:last-child{{margin-bottom:0}}
 .why .k{{flex:0 0 92px;font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#059669;padding-top:1px}}
 .why .v{{flex:1;font-size:9.7px;color:#334155;line-height:1.5}}
+.tier{{color:#fff;font-size:8px;font-weight:800;letter-spacing:.06em;padding:3px 8px;border-radius:5px}}
+.fmt{{font-size:9px;font-weight:700;color:#EA580C;text-transform:uppercase;letter-spacing:.05em;margin:1px 0 6px}}
+.adcard.adhi{{border:1.5px solid #B45309;background:#FFFBEB;box-shadow:0 2px 6px rgba(180,83,9,.10)}}
+.metrics{{display:flex;gap:7px;margin:2px 0 8px;flex-wrap:wrap}}
+.metric{{flex:1;min-width:70px;border:1px solid #E2E8F0;border-radius:8px;padding:6px 8px;text-align:center;background:#F8FAFC}}
+.metric .mv{{display:block;font-size:14px;font-weight:800;color:#0F172A;letter-spacing:-.02em}}
+.metric .ml{{display:block;font-size:7.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748B;margin-top:1px}}
+.databox{{border:1px solid #FED7AA;border-left:4px solid #EA580C;background:#FFF7ED;border-radius:10px;padding:12px 16px;margin-top:4px;page-break-inside:avoid}}
+.databox h3{{font-size:12.5px;margin-bottom:6px;color:#9A3412}}
+.databox ul{{margin:0;padding-left:16px}} .databox li{{font-size:9.7px;color:#7C2D12;margin-bottom:4px;line-height:1.5}}
 .patrones{{page-break-before:always}}
 .patrones h2{{font-size:20px;margin-bottom:4px}} .patrones .sub{{color:#64748B;font-size:11px;margin-bottom:16px}}
 .pat{{border:1px solid #E2E8F0;border-left:4px solid #059669;border-radius:9px;padding:11px 14px;margin-bottom:9px;page-break-inside:avoid}}
@@ -403,22 +539,25 @@ h1,h2,h3{{margin:0}}
 <div class="cover">
   <div class="brandbar">PIPELINE Business School · Selección de casos de éxito</div>
   <div class="mid">
-    <h1>Casos de éxito en copy<br><span class="accent">del funnel de correo</span></h1>
+    <h1>Casos de éxito en copy<br><span class="accent">correos y anuncios</span></h1>
     <div class="rule"></div>
-    <p class="lead">Una selección curada de los correos con mejor desempeño de los lanzamientos de
-    PBS. De cada pieza: el <b>copy real</b>, el <b>ángulo</b> que usa, los <b>recursos</b> de
-    persuasión y <b>por qué funcionó</b>.</p>
+    <p class="lead">Una selección curada de las piezas con mejor desempeño de los lanzamientos de
+    PBS: el <b>funnel de correo</b> completo y los <b>anuncios de Meta con métricas reales</b>. De
+    cada pieza: el <b>copy real</b>, el <b>ángulo</b>, los <b>recursos</b> de persuasión y <b>por
+    qué funcionó</b>.</p>
     <div class="tag-row">
       <span class="tag" style="background:#2563EB">INVITACIÓN</span>
       <span class="tag" style="background:#0891B2">RECORDATORIO</span>
       <span class="tag" style="background:#059669">VENTA</span>
       <span class="tag" style="background:#7C3AED">POSTVENTA</span>
+      <span class="tag" style="background:#EA580C">ADS</span>
     </div>
   </div>
   <div class="meta">
     Preparado para <b>Jorge Conde</b> — CEO, PIPELINE Business School<br>
-    {TOTAL} correos seleccionados · 4 fases del funnel · Fuentes: Prospección a Gran Escala con IA,
-    Pipeline Predecible con IA, Supervisión Comercial Predictiva con IA y AI Strategic Pipeline Generation
+    {TOTAL} correos + {ADS_TOTAL} anuncios seleccionados · Fuentes: Prospección a Gran Escala con IA,
+    Pipeline Predecible con IA, Supervisión Comercial Predictiva con IA, AI Strategic Pipeline
+    Generation y la VSL del Forecast Accelerator Program (FAP)
   </div>
 </div>
 
@@ -431,11 +570,12 @@ h1,h2,h3{{margin:0}}
       (varios lanzamientos), presentados para revisión. No es un lanzamiento completo: es la
       curaduría de las piezas que mejor enseñan un mecanismo de persuasión.</p></div>
     <div class="box"><h3>Cómo se organiza</h3>
-      <p>Por las <b>4 fases del funnel</b>, en el orden en que las vive el prospecto:</p>
+      <p>Por las <b>4 fases del funnel de correo</b> + una sección de <b>anuncios</b>:</p>
       <ul><li><b>Invitación</b> — registro al entrenamiento/masterclass.</li>
       <li><b>Recordatorio</b> — asistencia en vivo + apertura de la oferta.</li>
       <li><b>Venta</b> — retargeting al programa pago.</li>
-      <li><b>Postventa</b> — confirmación, downsell y upsell.</li></ul></div>
+      <li><b>Postventa</b> — confirmación, downsell y upsell.</li>
+      <li><b>Ads</b> — anuncios de Meta con métricas reales de desempeño.</li></ul></div>
     <div class="box"><h3>Qué trae cada ficha</h3>
       <ul><li><b>Copy verbatim</b> — el texto real (enlaces y UTMs abreviados).</li>
       <li><b>Ángulo</b> — el gancho psicológico dominante.</li>
@@ -447,13 +587,15 @@ h1,h2,h3{{margin:0}}
       miedo específico, storytelling, checklist, prueba social, ROI, cierre binario, upsell…) por
       encima de repetir el mismo recurso. Así la muestra cubre todo el repertorio.</p></div>
   </div>
-  <p style="font-size:9.5px;color:#94A3B8;margin-top:16px;">Nota: no se incluyen métricas
-  cuantitativas de envío. La lectura de “por qué funciona” es análisis de craft sobre piezas ya
-  validadas, no una medición de resultados. En algunos correos provenientes de PDF no se registró
-  la línea de asunto en la fuente; se indica en la ficha.</p>
+  <p style="font-size:9.5px;color:#94A3B8;margin-top:16px;">Nota: los <b>correos</b> no tienen
+  métricas de envío — su “por qué funciona” es análisis de craft sobre piezas ya validadas. Los
+  <b>anuncios</b> sí traen métricas reales de Meta (Stop Ratio, CTR, CPL, ROAS, costo por agenda),
+  y ahí el desempeño está medido, no inferido. En algunos correos provenientes de PDF no se
+  registró la línea de asunto en la fuente; se indica en la ficha.</p>
 </div>
 
 {sections}
+{ads_section}
 
 <div class="patrones">
   <h2>El patrón detrás de todos</h2>
