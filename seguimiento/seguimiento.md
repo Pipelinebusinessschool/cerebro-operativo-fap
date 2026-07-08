@@ -43,8 +43,9 @@ Kit completo de prueba (**workshop gratuito de Contratación**): narrativa + 2 l
 
 ## Pendientes abiertos
 
-- [ ] **Actualizar `fap-lanzamientos`** para nombrar las 4 skills de ejecución nuevas
-      (A1/B1 aún dicen `agora` / `million-dollar-ads`).
+- [x] **Actualizar `fap-lanzamientos`** para nombrar las skills de ejecución de FAP — hecho: ahora
+      delega a `fap-correos`, `fap-landings`, `fap-paginas-venta`, `fap-video-ads-meta`,
+      `fap-whatsapp-*` según ruta A/B.
 - [ ] **Test de activación** de cada skill en chat nuevo (que disparen sin nombrarlas).
 - [ ] **Decidir consolidación de secuencias de momento** (pre-call, recordatorios,
       reactivación) en skill propia — o dejarlas dentro de las de canal.

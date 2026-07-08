@@ -24,14 +24,12 @@ cerebro-operativo-fap/
 │   ├── jorge_decisions.md · pbs_metrics.md · pbs_indice.md
 ├── seguimiento/
 │   └── seguimiento.md         ← fases 1–3, hallazgo skills-vs-squad, 5 huecos y reglas
-├── skills/                    ← las 7 skills del cerebro (fuente de verdad de cada pieza)
-│   ├── fap.md
-│   ├── fap-lanzamientos.md
-│   ├── fap-narrativa.md
-│   ├── fap-landings.md
-│   ├── fap-whatsapp-api.md
-│   ├── fap-whatsapp-grupos.md
-│   └── fap-video-ads-meta.md
+├── skills/                    ← las 9 skills del cerebro (cada una carga contexto + su swipe)
+│   ├── fap.md                 ← candados + puerta a contexto/
+│   ├── fap-lanzamientos.md    ← orquestador (2 rutas, delega)
+│   ├── fap-narrativa.md · fap-correos.md · fap-landings.md
+│   ├── fap-paginas-venta.md · fap-video-ads-meta.md
+│   └── fap-whatsapp-api.md · fap-whatsapp-grupos.md
 ├── swipe/                     ← banco de ejemplos ganadores reales (inyección de contexto)
 │   ├── README.md
 │   ├── swipe-correos.md       ← funnel de correo completo (invitación, recordatorio, venta, postventa) con análisis
@@ -44,7 +42,7 @@ cerebro-operativo-fap/
 
 ---
 
-## Las 7 skills del cerebro
+## Las 9 skills del cerebro
 
 | Skill | Rol |
 |---|---|
@@ -52,10 +50,11 @@ cerebro-operativo-fap/
 | [`fap-lanzamientos`](skills/fap-lanzamientos.md) | Director (2 rutas, piezas, cadencia) |
 | [`fap-narrativa`](skills/fap-narrativa.md) | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
 | [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · carga `swipe-correos` |
-| [`fap-landings`](skills/fap-landings.md) | Dos modelos (Largo Brunson / Corto Brasil) |
-| [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API |
-| [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad |
-| [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Jorge a cámara, optimizado Meta + segmentación |
+| [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
+| [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop $11, OTOs, diagnóstico · carga `swipe-paginas-venta` |
+| [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · carga `swipe-ads` |
+| [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (sin swipe) |
+| [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad (sin swipe) |
 
 ---
 
