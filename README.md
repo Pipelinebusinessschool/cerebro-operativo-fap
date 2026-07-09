@@ -86,10 +86,10 @@ fuente de verdad `fap` les obliga a **preguntar si el dato no está** en vez de 
    prohibido + frases signature). Pendiente opcional: cadencia hablada desde transcripciones.
 2. **Swipe de ganadores** — ✅ **cerrado.** Correos, ads (con métricas), landings y páginas en
    [`swipe/`](swipe/).
-3. **Mapa de objeciones** — 🟡 material ya disponible (`contexto/jorge_philosophy.md`: framework de
-   4 pasos + "concede primero"); pendiente ensamblarlo como pieza.
-4. **Banco de prueba claim→evidencia** — 🟡 material ya disponible (`contexto/pbs_metrics.md`);
-   pendiente estructurarlo por afirmación.
+3. **Mapa de objeciones** — ✅ **ensamblado** en `contexto/objeciones.md` (método 4 pasos + "concede
+   antes de contraatacar" + objeciones frecuentes → respuesta sourced).
+4. **Banco de prueba claim→evidencia** — ✅ **ensamblado** en `contexto/prueba.md` (prueba por tipo
+   + emparejamiento claim→evidencia). Falta solo el caso ancla con nombre (pedir a Jorge).
 5. **Discrepancia del ICP** — ✅ **resuelto:** ≥$1M/año + ≥2 vendedores (ver `contexto/README.md`).
 
 Fuente de verdad completa en [`contexto/`](contexto/), craft en [`swipe/`](swipe/), continuidad en

@@ -19,6 +19,8 @@ Esta carpeta es la **mitad "qué es cierto"** del cerebro (la otra mitad, "cómo
 | [`jorge_decisions.md`](jorge_decisions.md) | Lo que PBS NO hace, los 6 pilares, spec de FAP/PAF, posicionamiento competitivo |
 | [`pbs_metrics.md`](pbs_metrics.md) | Métricas reales de clientes (el "Set B") + regla de uso |
 | [`pbs_indice.md`](pbs_indice.md) | Índice original de Jorge + 6 reglas universales |
+| [`prueba.md`](prueba.md) | Banco de prueba **claim→evidencia** (derivado de `pbs_metrics`) · hueco #4 |
+| [`objeciones.md`](objeciones.md) | Mapa de objeciones **"concede antes de contraatacar"** (derivado de `jorge_philosophy`) · hueco #3 |
 
 ---
 

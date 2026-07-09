@@ -5,7 +5,8 @@
 ## Fuente de verdad (cargar SIEMPRE antes de escribir)
 
 La verdad canónica de FAP/PBS vive en [`../contexto/`](../contexto/) — archivos reales de Jorge:
-ICP, métricas, voz, filosofía, proceso de venta, decisiones y los 6 pilares. **Regla 0:** ninguna
+ICP, métricas, voz, filosofía, proceso de venta, decisiones, los 6 pilares, el **mapa de
+objeciones** (`objeciones.md`) y el **banco de prueba claim→evidencia** (`prueba.md`). **Regla 0:** ninguna
 pieza escribe sin cargar `contexto/` primero; **cifras, ICP y precio salen solo de ahí** (si falta
 el dato, se pregunta — no se inventa). Índice y decisiones fijadas en
 [`../contexto/README.md`](../contexto/README.md).
