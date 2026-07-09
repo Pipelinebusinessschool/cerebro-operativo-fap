@@ -1,0 +1,253 @@
+<title>El Cerebro FAP — Recuento ejecutivo</title>
+<style>
+  :root{
+    --paper:#F6F7FB; --panel:#FFFFFF;
+    --ink:#0E1526; --muted:#5B6577; --line:#E1E6F0;
+    --ctx:#4338CA; --ctx-soft:#EEF0FD; --ctx-line:#CBD1F7;
+    --swp:#C2570C; --swp-soft:#FBF1E7; --swp-line:#F0D2B4;
+    --lock:#DC2626; --lock-soft:#FCECEC; --lock-line:#F3C9C9;
+    --ok:#0F766E; --ok-soft:#E5F3F0;
+    --navy:#0B1B3A;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    --shadow:0 1px 2px rgba(14,21,38,.05),0 8px 26px rgba(14,21,38,.05);
+  }
+  @media (prefers-color-scheme:dark){:root{
+    --paper:#0A0F1E; --panel:#121A2E; --ink:#EAEEF6; --muted:#98A4BB; --line:#243049;
+    --ctx:#A9B6FF; --ctx-soft:#191E3C; --ctx-line:#333B66;
+    --swp:#FDBA74; --swp-soft:#271A0F; --swp-line:#49341C;
+    --lock:#F98A8A; --lock-soft:#2A1616; --lock-line:#4A2626;
+    --ok:#5EEAD4; --ok-soft:#122A27; --navy:#0B1B3A;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
+  }}
+  :root[data-theme="dark"]{
+    --paper:#0A0F1E; --panel:#121A2E; --ink:#EAEEF6; --muted:#98A4BB; --line:#243049;
+    --ctx:#A9B6FF; --ctx-soft:#191E3C; --ctx-line:#333B66;
+    --swp:#FDBA74; --swp-soft:#271A0F; --swp-line:#49341C;
+    --lock:#F98A8A; --lock-soft:#2A1616; --lock-line:#4A2626;
+    --ok:#5EEAD4; --ok-soft:#122A27;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.3);
+  }
+  :root[data-theme="light"]{
+    --paper:#F6F7FB; --panel:#FFFFFF; --ink:#0E1526; --muted:#5B6577; --line:#E1E6F0;
+    --ctx:#4338CA; --ctx-soft:#EEF0FD; --ctx-line:#CBD1F7;
+    --swp:#C2570C; --swp-soft:#FBF1E7; --swp-line:#F0D2B4;
+    --lock:#DC2626; --lock-soft:#FCECEC; --lock-line:#F3C9C9;
+    --ok:#0F766E; --ok-soft:#E5F3F0;
+    --shadow:0 1px 2px rgba(14,21,38,.05),0 8px 26px rgba(14,21,38,.05);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:44px 22px 60px}
+  .mono{font-family:var(--mono)}
+  .tnum{font-variant-numeric:tabular-nums}
+  .eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  h1{font-size:clamp(30px,4.8vw,46px);line-height:1.04;letter-spacing:-.03em;margin:.3em 0 .25em;font-weight:800;text-wrap:balance}
+  h1 .accent{color:var(--ctx)}
+  .lede{font-size:17px;color:var(--muted);max-width:60ch;margin:0}
+  .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+  section{margin-top:40px}
+
+  /* stat row */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+  @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 16px;box-shadow:var(--shadow)}
+  .stat .n{font-size:34px;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .stat .l{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.35}
+  .stat.c1 .n{color:var(--ctx)} .stat.c2 .n{color:var(--swp)} .stat.c3 .n{color:var(--ok)} .stat.c4 .n{color:var(--lock)}
+
+  /* flow */
+  .flow{display:flex;gap:0;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:var(--shadow)}
+  .fstep{flex:1 1 0;min-width:150px;padding:8px 14px;position:relative}
+  .fstep + .fstep::before{content:"→";position:absolute;left:-8px;top:12px;color:var(--muted);font-weight:800}
+  .fstep .n{font-family:var(--mono);font-size:11px;color:var(--muted)}
+  .fstep .t{font-weight:800;font-size:15px;letter-spacing:-.01em;margin-top:2px}
+  .fstep .d{font-size:12.5px;color:var(--muted);margin-top:2px}
+  .fstep.lock .t{color:var(--lock)}
+
+  /* halves */
+  .halves{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  @media(max-width:820px){.halves{grid-template-columns:1fr}}
+  .half{border-radius:16px;border:1px solid;padding:18px;box-shadow:var(--shadow)}
+  .half.ctx{background:var(--ctx-soft);border-color:var(--ctx-line)}
+  .half.swp{background:var(--swp-soft);border-color:var(--swp-line)}
+  .half.opt{background:var(--ok-soft);border-color:var(--ok)}
+  .half h3{margin:0 0 3px;font-size:16px;letter-spacing:-.01em}
+  .half.ctx h3{color:var(--ctx)} .half.swp h3{color:var(--swp)} .half.opt h3{color:var(--ok)}
+  .half .tagline{font-size:12px;color:var(--muted);margin:0 0 12px;font-weight:600}
+  .half ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+  .half li{font-size:12.5px;color:var(--ink);display:flex;gap:8px;align-items:flex-start;line-height:1.4}
+  .half li::before{content:"";width:6px;height:6px;border-radius:2px;flex:none;margin-top:6px}
+  .half.ctx li::before{background:var(--ctx)} .half.swp li::before{background:var(--swp)} .half.opt li::before{background:var(--ok)}
+
+  /* skills */
+  .skgroup{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:18px 0 10px}
+  .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  @media(max-width:720px){.skills{grid-template-columns:1fr}}
+  .sk{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:flex-start}
+  .sk .ico{flex:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font-size:15px;background:var(--ctx-soft)}
+  .sk.base .ico{background:var(--lock-soft)}
+  .sk .name{font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:-.01em}
+  .sk .role{font-size:12px;color:var(--muted);margin-top:2px}
+
+  /* lock callout */
+  .lockbox{background:var(--lock-soft);border:1px solid var(--lock-line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+  .lockbox h3{margin:0 0 6px;color:var(--lock);font-size:19px;letter-spacing:-.01em;display:flex;gap:9px;align-items:center}
+  .lockbox p{margin:0;font-size:14.5px}
+  .lockbox .proof{margin-top:12px;border-top:1px dashed var(--lock-line);padding-top:12px;font-size:13px;color:var(--muted)}
+  .lockbox .proof b{color:var(--ink)}
+
+  /* built list */
+  .built{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:720px){.built{grid-template-columns:1fr}}
+  .bcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow)}
+  .bcard h4{margin:0 0 9px;font-size:14px;display:flex;align-items:center;gap:8px}
+  .bcard ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+  .bcard li{font-size:12.5px;color:var(--ink);display:flex;gap:8px;align-items:flex-start}
+  .bcard li .ck{color:var(--ok);flex:none;font-weight:800}
+  .bcard li .m{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+
+  .foot{margin-top:34px;border-top:1px solid var(--line);padding-top:16px;font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">PIPELINE Business School · Recuento ejecutivo</div>
+    <h1>El Cerebro FAP:<br>una máquina que escribe tus lanzamientos <span class="accent">en tu voz, sin inventar datos</span></h1>
+    <p class="lede">Un sistema de 10 skills que produce todo el copy de un lanzamiento de FAP —
+    ads, VSL, landing, correos, páginas, WhatsApp— con la calidad de un copywriter experto, la
+    precisión de tus cifras reales, y un candado que le impide inventar.</p>
+    <div class="stats">
+      <div class="stat c1"><div class="n tnum">10</div><div class="l">skills de producción, una por tipo de copy</div></div>
+      <div class="stat c2"><div class="n tnum">4</div><div class="l">canales con tus <b>ganadores reales</b> cargados (swipe)</div></div>
+      <div class="stat c3"><div class="n tnum">6</div><div class="l">pilares de FAP en la fuente de verdad</div></div>
+      <div class="stat c4"><div class="n tnum">0</div><div class="l">cifras inventadas — el candado no lo permite</div></div>
+    </div>
+  </header>
+
+  <section>
+    <p class="kicker">Cómo funciona — el mismo flujo en toda skill</p>
+    <div class="flow">
+      <div class="fstep"><div class="n">01</div><div class="t">El encargo</div><div class="d">"Escríbeme la VSL de FAP"</div></div>
+      <div class="fstep"><div class="n">02</div><div class="t">Carga verdad + craft</div><div class="d">tu contexto + tus ganadores</div></div>
+      <div class="fstep"><div class="n">03</div><div class="t">Escribe</div><div class="d">en tu voz, con tus cifras</div></div>
+      <div class="fstep"><div class="n">04</div><div class="t">Optimiza</div><div class="d">más allá de lo ya hecho</div></div>
+      <div class="fstep lock"><div class="n">05</div><div class="t">Candado</div><div class="d">0 inventos → la pieza</div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">De qué está hecho — dos mitades + una capa de optimización</p>
+    <div class="halves">
+      <div class="half ctx">
+        <h3>Contexto · la verdad</h3>
+        <p class="tagline">Qué es cierto de FAP. Manda siempre.</p>
+        <ul>
+          <li>ICP: ≥$1M/año · ≥2 vendedores</li>
+          <li>Voz de Jorge (obligatorio/prohibido)</li>
+          <li>Métricas reales (SROI &gt;5X, +$150M…)</li>
+          <li>Filosofía, proceso y 6 pilares</li>
+          <li>Mapa de objeciones + banco de prueba</li>
+        </ul>
+      </div>
+      <div class="half swp">
+        <h3>Swipe · el craft</h3>
+        <p class="tagline">Cómo se escribe — tus ganadores reales.</p>
+        <ul>
+          <li>Funnel de correo completo</li>
+          <li>11 ads con métricas (+ VSL de FAP)</li>
+          <li>Landing de registro ganadora</li>
+          <li>Páginas de pago: workshop + OTOs</li>
+        </ul>
+      </div>
+      <div class="half opt">
+        <h3>Principios · optimización</h3>
+        <p class="tagline">Para no solo copiar lo que ya funcionó.</p>
+        <ul>
+          <li>Buenas prácticas de copywriting</li>
+          <li>Específico &gt; ingenioso</li>
+          <li>Un mensaje, una acción por pieza</li>
+          <li><b>El swipe es el piso, no el techo</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Las 10 skills — una por cada tipo de pieza</p>
+    <div class="skgroup">Base del sistema</div>
+    <div class="skills">
+      <div class="sk base"><div class="ico">🔒</div><div><div class="name">fap</div><div class="role">Fuente de verdad + candados. La puerta que todas respetan.</div></div></div>
+      <div class="sk base"><div class="ico">🎬</div><div><div class="name">fap-lanzamientos</div><div class="role">Orquestador. Decide qué piezas y en qué orden (Ruta A / B).</div></div></div>
+    </div>
+    <div class="skgroup">Producción de copy</div>
+    <div class="skills">
+      <div class="sk"><div class="ico">💡</div><div><div class="name">fap-narrativa</div><div class="role">Big Idea + brief que alimenta a las demás.</div></div></div>
+      <div class="sk"><div class="ico">✉️</div><div><div class="name">fap-correos</div><div class="role">Funnel de correo: invitación, recordatorio, venta, postventa.</div></div></div>
+      <div class="sk"><div class="ico">🎯</div><div><div class="name">fap-landings</div><div class="role">Landing de registro (opt-in) al evento.</div></div></div>
+      <div class="sk"><div class="ico">🧾</div><div><div class="name">fap-paginas-venta</div><div class="role">Páginas que venden: workshop, OTOs y diagnóstico.</div></div></div>
+      <div class="sk"><div class="ico">📽️</div><div><div class="name">fap-vsl</div><div class="role">Guion de la VSL que agenda el diagnóstico.</div></div></div>
+      <div class="sk"><div class="ico">📣</div><div><div class="name">fap-video-ads-meta</div><div class="role">Guiones de video ad para Meta (Jorge a cámara).</div></div></div>
+      <div class="sk"><div class="ico">💬</div><div><div class="name">fap-whatsapp-api</div><div class="role">Mensajes 1:1 + cumplimiento de la API.</div></div></div>
+      <div class="sk"><div class="ico">👥</div><div><div class="name">fap-whatsapp-grupos</div><div class="role">Mensajes de comunidad (grupos).</div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Lo que lo hace confiable frente a un CEO que decide con cifras</p>
+    <div class="lockbox">
+      <h3>🔴 El candado anti-invención</h3>
+      <p>Las cifras, el ICP y el precio salen <b>solo de tu fuente de verdad</b>. Si un dato no está,
+      la skill lo marca <span class="mono">[FALTA]</span> y <b>pregunta</b> — nunca lo inventa. Es la
+      diferencia entre una herramienta usable y una peligrosa.</p>
+      <p class="proof">Lo comprobamos: una cifra —<b>"75% de equipos / 1 de cada 4 vendedores funciona"</b>—
+      se creyó inventada por un agente genérico… hasta que apareció, textual, en tus propios archivos.
+      No era invención: se usó sin tenerla cargada. Con tu contexto completo enchufado, ese dato pasa
+      de "peligroso" a <b>citable</b>.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="kicker">Lo que ya está construido</p>
+    <div class="built">
+      <div class="bcard">
+        <h4>🧠 El cerebro (verdad + craft)</h4>
+        <ul>
+          <li><span class="ck">✓</span> Fuente de verdad con tus archivos reales <span class="m">contexto/ · 10</span></li>
+          <li><span class="ck">✓</span> Mapa de objeciones + banco de prueba</li>
+          <li><span class="ck">✓</span> Swipe de ganadores por canal <span class="m">swipe/ · con métricas en ads</span></li>
+          <li><span class="ck">✓</span> Principios de optimización (copywriting)</li>
+        </ul>
+      </div>
+      <div class="bcard">
+        <h4>⚙️ Las skills</h4>
+        <ul>
+          <li><span class="ck">✓</span> 10 skills cableadas (verdad + craft + optimización)</li>
+          <li><span class="ck">✓</span> Orquestador con las 2 rutas de lanzamiento</li>
+          <li><span class="ck">✓</span> Candado + auto-crítica en cada una</li>
+        </ul>
+      </div>
+      <div class="bcard">
+        <h4>📄 Piezas ya producidas</h4>
+        <ul>
+          <li><span class="ck">✓</span> Prototipo de landing de contratación <span class="m">HTML, en tu marca</span></li>
+          <li><span class="ck">✓</span> Confirmación de compra por WhatsApp</li>
+        </ul>
+      </div>
+      <div class="bcard">
+        <h4>📊 Para presentar</h4>
+        <ul>
+          <li><span class="ck">✓</span> Documento de casos de éxito <span class="m">correos + ads + páginas</span></li>
+          <li><span class="ck">✓</span> Diagrama de arquitectura del cerebro</li>
+          <li><span class="ck">✓</span> Este recuento ejecutivo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="foot">
+    <span>Estado: los 5 huecos del cerebro, <b>cerrados</b> (ICP resuelto · voz · swipe · objeciones · prueba).</span>
+    <span>Siguiente: producir el lanzamiento del <b>10 de agosto</b> con el cerebro completo.</span>
+  </div>
+</div>
