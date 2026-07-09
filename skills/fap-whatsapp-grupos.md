@@ -12,6 +12,8 @@ sesión, recordatorios de grupo. No es 1:1 (eso es `fap-whatsapp-api`).
 1. **Verdad + candados →** [`../contexto/`](../contexto/). ICP, voz, métricas, candados.
 2. **Craft →** guía propia (abajo). **Sin swipe** (decisión: sin data no se fabrica — ver
    `../swipe/README.md`).
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar** (específico > genérico, un solo foco por mensaje, CTA que nombra acción o valor).
 
 > Cifras, ICP y precio salen **solo de `contexto/`**. Si falta el dato, PREGUNTA.
 

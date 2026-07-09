@@ -30,8 +30,9 @@ cerebro-operativo-fap/
 │   ├── fap-narrativa.md · fap-correos.md · fap-landings.md
 │   ├── fap-paginas-venta.md · fap-video-ads-meta.md
 │   └── fap-whatsapp-api.md · fap-whatsapp-grupos.md
-├── swipe/                     ← banco de ejemplos ganadores reales (inyección de contexto)
+├── swipe/                     ← craft: ejemplos ganadores + principios de optimización
 │   ├── README.md
+│   ├── principios-craft.md    ← buenas prácticas (squad Pen): optimizar, no solo replicar
 │   ├── swipe-correos.md       ← funnel de correo completo (invitación, recordatorio, venta, postventa) con análisis
 │   ├── swipe-ads.md           ← 11 ads reales CON métricas (píldoras, video largo, VSL de FAP) + lecciones
 │   ├── swipe-landings.md      ← opt-in de registro: landing GANADORA de PGE (anatomía + promesa + ICP)

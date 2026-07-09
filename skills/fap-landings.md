@@ -13,6 +13,8 @@ workshop de pago, OTOs, diagnóstico — las hace `fap-paginas-venta`.)
 1. **Verdad + candados →** [`../contexto/`](../contexto/). ICP, voz, métricas, candados.
 2. **Craft →** [`../swipe/swipe-landings.md`](../swipe/swipe-landings.md) — anatomía de la landing
    ganadora, ángulos de promesa y la **lectura del ICP** (las 3 narrativas del prospecto).
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar, no solo replicar** (el swipe es el piso, no el techo).
 
 > Cifras, ICP y precio salen **solo de `contexto/`**. Si falta el dato, PREGUNTA.
 
@@ -36,6 +38,16 @@ depender de más vendedores).
 **Modelos:** corto/directo (default de opt-in) o largo (Brunson) si el tráfico es más frío.
 
 ---
+
+## Optimización (ir más allá del swipe)
+
+- **Un solo trabajo**; corta cualquier otra acción de la página.
+- **Continuidad de entrada es sagrada:** el hero refleja la promesa del ad que trajo al lector (no
+  un headline genérico).
+- **El hero se gana el scroll** — trátalo como un entregable en sí.
+- **Frío ≠ tibio ≠ caliente:** el frío necesita problema + mecanismo; el caliente, oferta + prueba.
+  La **longitud = peso de la decisión**, no preferencia.
+- **Prueba pegada a su afirmación;** testimonios en los que el lector se reconozca.
 
 ## Candados FAP (de `contexto/`)
 

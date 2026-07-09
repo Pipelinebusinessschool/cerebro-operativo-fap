@@ -12,6 +12,8 @@ transaccional) + **cumplimiento de la API** (plantilla HSM vs. mensaje de sesió
 1. **Verdad + candados →** [`../contexto/`](../contexto/). ICP, voz, métricas, candados.
 2. **Craft →** esta skill trae su propia guía (abajo). **No hay swipe de WhatsApp** — por decisión:
    sin data de desempeño no se fabrica un swipe (ver `../swipe/README.md`).
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar** (específico > genérico, un solo trabajo, CTA que nombra acción o valor).
 
 > Cifras, ICP y precio salen **solo de `contexto/`**. Si falta el dato, PREGUNTA.
 

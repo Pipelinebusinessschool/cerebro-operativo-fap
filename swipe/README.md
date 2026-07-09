@@ -6,6 +6,8 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
 
 ## Reglas del banco
 
+0. **`principios-craft.md`** — buenas prácticas de copywriting (portadas del squad Pen) que **todas**
+   las skills cargan para **optimizar, no solo replicar**. *El swipe es el piso, no el techo.*
 1. **Un archivo por canal**, no uno gigante. Cada skill carga el suyo y se mantiene afilada.
    - `swipe-landings.md` → `fap-landings` *(opt-in de registro: landing ganadora de PGE + ICP ✅)*
    - `swipe-paginas-venta.md` → `fap-landings` / diagnóstico *(páginas de pago: workshop $11 + OTOs $197/$47 ✅)*

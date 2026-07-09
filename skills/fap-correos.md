@@ -15,6 +15,8 @@ invitación al webinar", "la secuencia de recordatorio", "los correos de venta d
    inventes.**
 2. **Craft →** [`../swipe/swipe-correos.md`](../swipe/swipe-correos.md) (ángulos, esqueleto PBS,
    patrones por fase). Es referencia de *cómo se escribe*, no de qué es verdad.
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar, no solo replicar** (el swipe es el piso, no el techo).
 
 > **La verdad manda sobre el craft, siempre.** El swipe es de otros lanzamientos (PGE, SPG…): se
 > copia la mecánica, **nunca sus cifras, promesas, precios ni nombres de producto**.
@@ -47,6 +49,16 @@ febrero de 2026"), marco macro que externaliza la urgencia, PD que revive la esc
 - **Postventa** — onboarding del comprador + downsell (grabaciones) + upsell.
 
 ---
+
+## Optimización (ir más allá del swipe)
+
+- **Asunto + preheader reciben tanto craft como el cuerpo** — el inbox es el campo de batalla.
+- **Genera 15–20 asuntos, corta a los mejores con una razón** (no entregues la primera idea).
+  **Específico > ingenioso;** curiosidad **sin** payoff es pasivo.
+- **Un solo trabajo por correo.** La **cadencia es parte del copy**: especifícala y arguméntala.
+- **La objeción se responde donde surge**, no en un FAQ (concede antes de contraatacar).
+- **CTA:** nombra la acción o el valor, nunca "haz clic"; la frase justo antes del CTA reduce la
+  duda residual.
 
 ## Candados FAP (de `contexto/`, no se rompen)
 

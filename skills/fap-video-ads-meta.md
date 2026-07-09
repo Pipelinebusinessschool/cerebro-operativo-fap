@@ -11,6 +11,8 @@
 1. **Verdad + candados →** [`../contexto/`](../contexto/). ICP, voz, métricas, candados.
 2. **Craft →** [`../swipe/swipe-ads.md`](../swipe/swipe-ads.md) — 11 ads reales **con métricas** +
    las lecciones basadas en datos.
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar, no solo replicar** (el swipe es el piso, no el techo).
 
 > Cifras, ICP y precio salen **solo de `contexto/`**. Si falta el dato, PREGUNTA.
 
@@ -36,6 +38,15 @@ en píldora y perder en video largo) · el **tráfico tibio convierte 2–3× me
 **canal cambia el desempeño** (feed ≠ WhatsApp).
 
 ---
+
+## Optimización (ir más allá del swipe)
+
+- **Cada palabra tiene precio;** la longitud es decisión económica, no estilística.
+- **Los primeros 3 segundos son el ad entero** — invierte desproporcionadamente en el hook.
+- **El contexto de plataforma es parte del brief:** un hook de un feed muere en otro.
+- **El volumen de variantes NO sustituye craft:** genera las que el algoritmo necesita **sin bajar
+  la calidad de cada una**.
+- **Específico > ingenioso;** promesa = cumplimiento (curiosidad con payoff).
 
 ## Candados FAP (de `contexto/`)
 

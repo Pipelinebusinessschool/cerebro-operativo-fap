@@ -15,6 +15,8 @@ pago, o la página que vende la llamada de diagnóstico de FAP.
    `jorge_process.md` (estructura de la Reunión 1) y los **6 pilares** de `jorge_decisions.md`.
 2. **Craft →** [`../swipe/swipe-paginas-venta.md`](../swipe/swipe-paginas-venta.md) — anatomía de
    la página de venta, del OTO, y el **molde del diagnóstico** (OTO1 $197).
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar, no solo replicar** (el swipe es el piso, no el techo).
 
 > Cifras y precio salen **solo de `contexto/`**. El **precio de FAP NUNCA** aparece; el del
 > **workshop/OTO sí**. Si falta un dato, PREGUNTA.
@@ -44,6 +46,16 @@ contadores falsos ni cupos inventados") · garantía sin riesgo · prueba cuanti
 $) por encima de adjetivos · escasez **real**, nunca fabricada.
 
 ---
+
+## Optimización (ir más allá del swipe)
+
+- **Largo no es corto estirado:** cada sección se gana su longitud. **"El medio es donde mueren las
+  páginas"** — edítalo con más dureza que el hook o el cierre.
+- **Precio y garantía son set pieces** con arquitectura propia — nunca un precio soltado al final.
+- **Nombra las alternativas** contra las que compite el prospecto (CRM, agencia, consultor, no hacer
+  nada) y demuestra con la matemática millonaria que la parcial cuesta más.
+- **Los bonos no parchan una oferta débil** — primero afila el núcleo.
+- **CTA que nombra acción o valor** + la frase previa que baja la duda residual.
 
 ## Candados FAP (de `contexto/`)
 

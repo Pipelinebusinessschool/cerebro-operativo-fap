@@ -16,6 +16,9 @@ alimenta a todas las demás skills (correos, landings, ads, páginas).
 2. **Craft (opcional) →** el [`../swipe/`](../swipe/) del canal, para calibrar ángulos que ya
    funcionaron.
 
+3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+   **optimizar, no solo replicar** (el swipe es el piso, no el techo).
+
 Esta skill es **upstream**: su salida (el brief) es lo que las skills de canal consumen.
 
 ---
@@ -37,6 +40,16 @@ Esta skill es **upstream**: su salida (el brief) es lo que las skills de canal c
    **CTA por pieza** (registro o diagnóstico) · **ruta** (A o B, ver `fap-lanzamientos`).
 
 ---
+
+## Optimización (ir más allá del swipe)
+
+- **Un solo mensaje líder** por pieza; los demás bajan a prueba de apoyo, no a posición líder.
+- **El orden de los mensajes es estratégico:** un reclamo secundario revelado primero puede matar
+  al principal.
+- **Empareja el mensaje al nivel de conciencia**, no al feature list.
+- **Nombra las alternativas reales** contra las que compite el prospecto (CRM, agencia, consultor,
+  "vendedor estrella", no hacer nada) y posiciona contra cada una.
+- **Story = estructura, no adorno:** conflicto antes de resolución; específico o córtalo.
 
 ## Candados FAP (de `contexto/`)
 
