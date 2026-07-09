@@ -29,14 +29,15 @@ ruta. **Cifras/ICP/precio son responsabilidad de cada skill, siempre desde `cont
 | Big Idea + brief | `fap-narrativa` |
 | Correos (invitación, recordatorio, venta, postventa) | `fap-correos` |
 | Landing de registro (opt-in) | `fap-landings` |
-| Página de VSL, workshop de pago, OTOs, **diagnóstico** | `fap-paginas-venta` |
+| **Guion de la VSL** (Ruta A) | `fap-vsl` |
+| Página que aloja la VSL, workshop de pago, OTOs, **diagnóstico** | `fap-paginas-venta` |
 | Guiones de video ad (Meta) | `fap-video-ads-meta` |
 | WhatsApp 1:1 / comunidad | `fap-whatsapp-api` / `fap-whatsapp-grupos` |
 
 ## Secuencia por ruta
 
-- **Ruta A:** `fap-video-ads-meta` (ads) → `fap-paginas-venta` (VSL) → `fap-paginas-venta`
-  (diagnóstico) · nurture con `fap-correos` + `fap-whatsapp-api`.
+- **Ruta A:** `fap-video-ads-meta` (ads) → `fap-vsl` (guion) + `fap-paginas-venta` (página de la
+  VSL) → `fap-paginas-venta` (diagnóstico) · nurture con `fap-correos` + `fap-whatsapp-api`.
 - **Ruta B:** `fap-video-ads-meta` (ads) → `fap-landings` (opt-in) → `fap-correos`
   (invitación + recordatorio) → [webinar] → `fap-correos` (venta) + `fap-paginas-venta` (oferta) →
   `fap-paginas-venta` (diagnóstico) → `fap-correos` (postventa) · WhatsApp en paralelo.

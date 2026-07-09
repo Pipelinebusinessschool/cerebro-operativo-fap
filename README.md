@@ -24,11 +24,11 @@ cerebro-operativo-fap/
 │   ├── jorge_decisions.md · pbs_metrics.md · pbs_indice.md
 ├── seguimiento/
 │   └── seguimiento.md         ← fases 1–3, hallazgo skills-vs-squad, 5 huecos y reglas
-├── skills/                    ← las 9 skills del cerebro (cada una carga contexto + su swipe)
+├── skills/                    ← las 10 skills del cerebro (cada una carga contexto + su swipe)
 │   ├── fap.md                 ← candados + puerta a contexto/
 │   ├── fap-lanzamientos.md    ← orquestador (2 rutas, delega)
 │   ├── fap-narrativa.md · fap-correos.md · fap-landings.md
-│   ├── fap-paginas-venta.md · fap-video-ads-meta.md
+│   ├── fap-paginas-venta.md · fap-vsl.md · fap-video-ads-meta.md
 │   └── fap-whatsapp-api.md · fap-whatsapp-grupos.md
 ├── swipe/                     ← craft: ejemplos ganadores + principios de optimización
 │   ├── README.md
@@ -43,7 +43,7 @@ cerebro-operativo-fap/
 
 ---
 
-## Las 9 skills del cerebro
+## Las 10 skills del cerebro
 
 | Skill | Rol |
 |---|---|
@@ -53,6 +53,7 @@ cerebro-operativo-fap/
 | [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · carga `swipe-correos` |
 | [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
 | [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop $11, OTOs, diagnóstico · carga `swipe-paginas-venta` |
+| [`fap-vsl`](skills/fap-vsl.md) | Guion de VSL (Ruta A → diagnóstico) · carga `swipe-ads` (VSL de FAP) |
 | [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · carga `swipe-ads` |
 | [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (sin swipe) |
 | [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad (sin swipe) |
