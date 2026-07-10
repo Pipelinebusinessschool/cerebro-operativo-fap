@@ -40,29 +40,44 @@ en píldora y perder en video largo) · el **tráfico tibio convierte 2–3× me
 
 ---
 
-## Formatos de ad — el catálogo (no solo "retargeting")
+## Formatos de ad — un repertorio ABIERTO (arranque, no techo)
 
-La homogeneidad viene de escribir siempre el mismo tipo de ad. Un lanzamiento sano corre **varios
-formatos en paralelo**; el algoritmo decide cuál rinde. Elige el formato **a propósito** y decláralo
-en la etiqueta. Cada formato dobla la estructura base a su ritmo:
+La homogeneidad viene de escribir siempre el mismo tipo de ad. Un lanzamiento sano corre **muchos
+formatos en paralelo**; el algoritmo decide cuál rinde. **El listado de abajo es un banco de chispa,
+NO una lista cerrada:** la skill debe **explorar, mezclar, adaptar formatos del panorama actual de
+ads (UGC, nativos de plataforma, tendencias) e inventar formatos nuevos** para el ángulo — mientras
+respete el swipe (mecanismo del hook, autoridad estandarizada) y los candados de `contexto/`.
+El swipe es el piso, no el techo — también en formato.
+
+**Banco de arranque (no exhaustivo):**
 
 | Formato | Cómo abre / estructura | Cuándo brilla |
 |---|---|---|
-| **Píldora hook-first** | Un solo reencuadre potente, 15–30 s, sin agitación larga (molde A1 "el policía"). | Frío, stop ratio, bajo costo |
-| **Video largo / PAS** | Hook → agita el dolor → autoridad → invitación (molde B). | Tibio, venta, más contexto |
-| **Listicle "N cosas"** | *"5 señales de que tu equipo es tomapedidos"* / *"3 errores que…"*. Enumera rápido, un punto por escena. | Curiosidad, share, guardar |
-| **"Lo que no sabía / los N errores"** | Confesión-revelación: *"durante años creí que era la gente… hasta que…"*. | Consciente del problema, storytelling |
-| **Time-boxed / densidad** | *"Voy a comprimir 15 años en 60 segundos"* / *"en 30 seg te muestro…"* (molde A2). | CTR alto, autoridad |
-| **Mito-buster** | Toma una **falsa creencia** de la concepción y la parte: *"lo que te dijeron y no es cierto"*. | Consciente de la solución |
-| **Caso / backstage** | *"Estuve en +100 operaciones B2B; en el 87% el problema era idéntico…"* (VSL de FAP). | Prueba, autoridad |
-| **Demostración de mecanismo** | Muestra **cómo funciona** el sistema (los 6 pilares, el squad de IA) paso a paso. | Consciente del producto |
-| **Analogía / metáfora** | Una imagen lo explica: *"prospectar en frío hoy = enviar un telégrafo"*. | Frío, memorable |
+| **Píldora hook-first** | Un reencuadre potente, 15–30 s, sin agitación larga (molde A1 "el policía"). | Frío, stop ratio, bajo costo |
+| **Video largo / PAS** | Hook → agita el dolor → autoridad → invitación (molde B). | Tibio, venta, contexto |
+| **Listicle "N cosas"** | *"5 señales de que tu equipo es tomapedidos"* / *"3 errores…"*. Un punto por escena. | Curiosidad, share |
+| **"Lo que no sabía / los N errores"** | Confesión-revelación: *"durante años creí que era la gente… hasta que…"*. | Problema, storytelling |
+| **Time-boxed / densidad** | *"Comprimo 15 años en 60 seg"* / *"en 30 seg te muestro…"* (molde A2). | CTR alto, autoridad |
+| **Mito-buster** | Parte una **falsa creencia** de la concepción: *"lo que te dijeron y no es cierto"*. | Consciente de la solución |
+| **Caso / backstage** | *"Estuve en +100 operaciones B2B; el patrón era idéntico…"* (VSL de FAP). | Prueba, autoridad |
+| **Demostración de mecanismo** | Muestra **cómo funciona** el sistema (6 pilares, squad de IA) paso a paso. | Consciente del producto |
+| **Analogía / metáfora** | Una imagen lo explica: *"prospectar en frío = enviar un telégrafo"*. | Frío, memorable |
 | **Contrarian / PSA** | *"Deja de contratar vendedores para arreglar un problema de sistema"*. | Rompe patrón, polariza |
 | **Dos caminos / comparación** | ❌ seguir igual vs ✅ con el sistema, a cámara. | Decisión, tibio |
+| **Pregunta a cámara / call-out** | Abre con UNA pregunta que obliga a responder mentalmente. | Frío, autoselección |
+| **POV / situación** | *"POV: es viernes y el CEO te pregunta el forecast…"*. Escena en 1ª/2ª persona. | Identificación |
+| **El número / data-drop** | Un dato duro de `contexto/` sostiene todo (*"1 de cada 4 vendedores…"*). | Autoridad, credibilidad |
+| **Manifiesto / declaración de categoría** | *"Las ventas B2B son sistemas, no heroísmos"*. Tono de tesis. | Marca, tribu |
+| **Objeción de frente** | *"Me dirás: 'ya probé un CRM'. Justo por eso…"*. Toma la objeción y la gira. | Consciente de la solución |
+| **Demostración de pantalla / whiteboard** | Jorge explica en pizarra o comparte pantalla el sistema. | Educativo, producto |
+| **Micro-serie / cliffhanger** | *"Parte 1 de 3: por qué tu equipo espera…"*. Engancha a la siguiente. | Retención, secuencia |
+| **Testimonio / caso con nombre** | Historia de un cliente real. **Requiere caso sourced;** si no hay → `[FALTA]`. | Prueba, tibio |
+| **Trend-jack / nativo de plataforma** | Toma un formato viral del momento y lo dobla al mensaje (sin romper la voz). | Frío, alcance |
 
-> Regla: **una tanda de ads corre ≥3 formatos distintos** y ≥3 elementos distintos de la concepción.
-> Si los ads solo se diferencian en el hook pero son el mismo formato y el mismo ángulo, **falta
-> variedad** — vuelve al catálogo y a la concepción.
+> **Regla de exploración:** una tanda de ads corre **≥3 formatos distintos** y **≥3 elementos de
+> concepción distintos**, y **al menos uno debe salir del banco de arranque** — un formato adaptado o
+> nuevo. Si los ads solo cambian en el hook pero comparten formato y ángulo, **falta variedad**: no
+> te quedes en los 2–3 formatos cómodos, explora el repertorio y crea.
 
 ---
 
@@ -157,7 +172,8 @@ COSTO). Los `[FALTA: …]` visibles donde falte un dato.
 
 ## Checklist de presión (pre-entrega)
 - [ ] **3 hooks alternativos** por ad, de familias distintas, todos intercambiables sobre el cuerpo.
-- [ ] **Formato declarado** en la etiqueta; si es tanda, ≥3 formatos y ≥3 elementos de concepción.
+- [ ] **Formato declarado** en la etiqueta; si es tanda, ≥3 formatos y ≥3 elementos de concepción,
+      con **al menos uno explorado/adaptado/nuevo** (no solo los 2–3 formatos cómodos).
 - [ ] Hook de identidad/dolor en la 1ª frase (no el producto). · [ ] Un solo CTA con filtro.
 - [ ] Cifras/autoridad sourced. · [ ] Sin precio de FAP. · [ ] Un ángulo por creativo.
 - [ ] Voz de Jorge + formato de texto PBS. · [ ] Nada prometido sin "para quien implementa".
