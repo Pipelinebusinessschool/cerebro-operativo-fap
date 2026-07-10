@@ -252,6 +252,12 @@ largo**:
    nombrando al directivo y su dolor, no el producto.
 6. **Autoridad estandarizada:** Forbes + "40.000 entrenados" + muro de logos (Google, Microsoft,
    Oracle, SAP…) + "$150M en nueva facturación". Aparece en casi todos los ganadores de venta.
+7. **Los ganadores traen decisores, no curiosos (calidad de lead).** En las ganadoras de PGE, el
+   tráfico **tibio** llegó con **51–59% de altos mandos** y ~48–52% de salario alto (ADS25 tibio:
+   51.6% salario alto / 59.1% altos mandos; ADS32 tibio: 47.2% / 59.2%); el **frío** rondó **51–55%
+   de altos mandos**. En las de supervisión, ~**20% fundadores** (ADS13 20.16%, ADS10 19.27%). Es la
+   prueba de que el ángulo + el filtro del CTA ("regístrate únicamente si…") **auto-seleccionan al
+   ICP** en vez de inflar volumen con curiosos.
 
 ---
 
