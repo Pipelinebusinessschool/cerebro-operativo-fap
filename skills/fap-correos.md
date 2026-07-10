@@ -152,6 +152,63 @@ repetición antes de que llegue al inbox.
 - **CTA:** nombra la acción o el valor, nunca "haz clic"; la frase justo antes del CTA reduce la
   duda residual.
 
+## Formato de entrega (paste-ready) — OBLIGATORIO
+
+Los correos se entregan **listos para pegar** en el editor, ya formateados. Nada de texto plano ni
+comentarios de craft dentro del cuerpo (esos van en la matriz, aparte).
+
+### Bloques y marcadores (en este orden)
+```
+ASUNTO: (con 0–1 emoji, al inicio o al final)
+PREHEADER: (una línea, complementa el asunto — no lo repite)
+
+Cuerpo del correo…
+
+[BOTÓN: LABEL EN MAYÚSCULAS →]     ← el label es la acción/valor, en 1ª persona
+… (2º CTA si la fase lo pide, con label distinto)
+
+— Jorge Conde · CEO · PIPELINE Business School
+PD: (opcional — revive la escena o el costo de inacción)
+```
+
+### Reglas de formato
+- **Emojis — con propósito, no decoración.** Semánticos: ✅ beneficio · ❌ dolor/síntoma · 🚨 alerta ·
+  ⏳ urgencia · 📊/📈 dato · 💣 riesgo · 🔐 escasez. Máx **1 en el asunto** y ~1 por sección del cuerpo.
+  **Nunca** sustituyen palabra en frases de autoridad/cifra. Si dudas, quítalo.
+- **Negritas — resaltar lo que decide, no todo.** Van en negrita: el **reencuadre** ("no necesitas
+  trabajar más, necesitas un **sistema**"), las **cifras/plazos** clave, la **identidad** ("**directivo
+  comercial**"). Regla: **máx 3–4 resaltados por correo** — si todo está en negrita, nada lo está.
+  (`PIPELINE`/`FORECAST` ya van en MAYÚSCULA por marca; no hace falta negrita encima.)
+- **Viñetas — semánticas y cortas** (verbo + resultado): `✅` transformación · `❌` síntoma/dolor ·
+  `◻️` checklist de falsas soluciones. Nunca párrafos disfrazados de viñeta.
+
+### Gráficos = tablas comparativas (los 3 moldes que rinden)
+Se entregan como **tabla real** (2–3 columnas). Cifras **solo de `contexto/`**; falta → `[FALTA: …]`.
+
+**1 · Los dos caminos** (cierre / decisión — molde C12 del swipe):
+| ❌ Seguir igual | ✅ Con el sistema |
+|---|---|
+| Forecast que cambia cada semana | FORECAST predecible |
+| Cuota que depende de "ese gran negocio" | PIPELINE que no depende de personas |
+
+**2 · Antes / Después** (cuadro de métricas — solo cifras sourced):
+| Métrica | Hoy | Con FAP* |
+|---|---|---|
+| Reuniones/semana por vendedor | 1–2 | 3–5 |
+| Ciclo de venta | — | −25% |
+
+*"promedio de clientes que implementaron", nunca promesa garantizada.
+
+**3 · Checklist de falsas soluciones** (panorama de alternativas — molde A9):
+> ◻️ Un CRM más caro ◻️ Dashboards en Power BI ◻️ Otra reunión de forecast ◻️ Microgestionar al equipo
+> → y sigues operando a ciegas.
+
+### Regla de entrega
+Primero la **matriz de diversidad** (planeación), luego **cada correo formateado y separado** por un
+divisor claro. Los `[FALTA: …]` quedan **visibles** en el lugar exacto donde iría el dato.
+
+---
+
 ## Candados FAP (de `contexto/`, no se rompen)
 
 - **Cero precio de FAP en captación.** (El precio del workshop de entrada / tripwire sí puede ir;
@@ -178,7 +235,8 @@ repetición antes de que llegue al inbox.
    de concepción distinto y un lead/molde/emoción/conciencia que no choque con el correo vecino.
    *Si es un solo correo, elige igual su punto en los dos ejes de forma consciente.*
 4. **Escribe** cada correo con **su** molde (no siempre el esqueleto PBS), en voz de Jorge, con cifras
-   sourced. Varía el gesto de apertura y el largo.
+   sourced. Varía el gesto de apertura y el largo. **Entrega en formato paste-ready** (ASUNTO/
+   PREHEADER/[BOTÓN]/firma/PD, con emojis, negritas, viñetas y tablas comparativas — ver arriba).
 5. **Auto-crítica** antes de entregar (abajo) → corrige. Relee la secuencia entera de corrido: ¿se
    siente como 7 correos distintos o como el mismo correo 7 veces?
 6. **Entrega** la matriz + los correos. Si faltó un dato de la fuente, **no lo inventes**: entrégalo
@@ -194,6 +252,8 @@ repetición antes de que llegue al inbox.
 - [ ] **Conciencia repartida:** la secuencia no vive entera en "consciente del problema".
 
 **Por correo:**
+- [ ] **Formato paste-ready:** ASUNTO/PREHEADER/[BOTÓN]/firma; emojis semánticos, ≤3–4 negritas,
+      viñetas ✅/❌/◻️, tablas comparativas donde aporten. Sin comentarios de craft en el cuerpo.
 - [ ] **Acción clara:** un solo CTA, coherente con la fase (registro o diagnóstico).
 - [ ] **Un ángulo:** no amontona varios ganchos.
 - [ ] **Voz:** vocabulario obligatorio presente, ninguno prohibido.
