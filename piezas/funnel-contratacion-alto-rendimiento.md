@@ -31,7 +31,7 @@ delegar el cierre.
 - Grueso del tráfico: **consciente del problema** ("mis contrataciones fallan / mi equipo no vende")
   pero **inconsciente de la causa** (cree que es mala suerte o mala gente, no un sistema de
   contratación).
-- **Orden de venta:** Resultado (un equipo que escala facturación) → Causa (no es suerte, es sistema)
+- **Orden de venta:** Resultado (un equipo que escala facturación) → Causa (cómo eliges, no a quién eliges)
   → Método (perfil de alto rendimiento + sistema de contratación). Nunca abrir por el método.
 
 ## D · Enemigo común (sistémico, con nombre)
@@ -136,7 +136,7 @@ registro). Nombre del workshop: **Contratación de Alto Rendimiento**. Fecha/hus
 
 ## 🎬 AD 1 · Data-drop / "el número" · dato ancla · frío
 **[HOOK]** *"1 de cada 4. Ese es el número de vendedores que realmente te funcionan cuando contratas por feeling. Los otros 3 son sueldo hundido."*
-**[Cuerpo]** *"El 75% de los equipos B2B en Latinoamérica opera con 25% de efectividad de contratación. No es mala suerte — es que contratas sin un perfil de alto rendimiento definido y sin un proceso que lo elija por evidencia."*
+**[Cuerpo]** *"El 75% de los equipos B2B en Latinoamérica opera con 25% de efectividad de contratación. Y la causa no es el talento disponible: contratas sin un perfil de alto rendimiento definido y sin un proceso que lo elija por evidencia."*
 **[Autoridad+invitación]** *"Soy Jorge Conde, PIPELINE Business School; hemos rediseñado +120 operaciones B2B. El miércoles 15 de julio hago un workshop EN VIVO y SIN COSTO donde te muestro el sistema para contratar al 1… y convertirlo en 4."*
 **[CTA]** *"Da clic y regístrate únicamente si estás cansado de que contratar sea una lotería."*
 **🔁 Hooks alt:**
@@ -150,7 +150,7 @@ registro). Nombre del workshop: **Contratación de Alto Rendimiento**. Fecha/hus
 **[Autoridad+invitación]** *"Te muestro cómo se instala en un workshop EN VIVO y SIN COSTO, el miércoles 15 de julio."*
 **[CTA]** *"Regístrate únicamente si quieres dejar de depender de un irremplazable."*
 **🔁 Hooks alt:**
-- B · *identidad/reencuadre:* "No tienes un problema de talento. Tienes un problema de sistema de contratación."
+- B · *identidad/reencuadre:* "No tienes un problema de talento. Tienes un problema de cómo eliges el talento."
 - C · *declaración 1ª persona:* "'Mi mejor vendedor es irremplazable.' Si eso te da orgullo, te va a dar pánico el día que renuncie."
 - D · *resultado:* "El mismo mercado de talento, otro sistema para elegir: de 1 de cada 4 a 3 de cada 4."
 
@@ -195,13 +195,13 @@ registro). Nombre del workshop: **Contratación de Alto Rendimiento**. Fecha/hus
 
 ### ✉️ Correo — invitación (falsa creencia "es lotería")
 **ASUNTO:** 🎯 1 de cada 4. Esa es tu tasa de aciertos al contratar vendedores.
-**PREHEADER:** Y no es mala suerte — es un sistema que nunca instalaste.
+**PREHEADER:** Y la razón está antes de la entrevista, no en el candidato.
 
 Estratega comercial:
 
 Déjame darte el dato más incómodo de tu operación: el **75% de los equipos B2B en Latinoamérica** opera con **25% de efectividad de contratación**. Traducido: de cada **4 vendedores** que contratas, **funciona 1**.
 
-No es mala suerte. Es que contratas **por feeling**, contra un perfil que **no existe en papel**.
+La causa no está en el mercado de talento: eliges **por feeling**, contra un perfil que **no existe en papel**.
 
 | Lo que crees que falla | Lo que de verdad falla |
 |---|---|
@@ -223,7 +223,7 @@ El **miércoles 15 de julio** hago un workshop **EN VIVO** y **SIN COSTO**: *Con
 ```
 Hola {{1}} 👋
 
-Dato incómodo: de cada *4 vendedores* que contratas, te funciona *1*. No es mala suerte — es que eliges por feeling, sin un _perfil de alto rendimiento_ definido.
+Dato incómodo: de cada *4 vendedores* que contratas, te funciona *1*. Y la causa está en cómo eliges: por feeling, sin un _perfil de alto rendimiento_ definido.
 
 El *miércoles 15 de julio* hago un workshop EN VIVO y SIN COSTO: *Contratación de Alto Rendimiento*.
 

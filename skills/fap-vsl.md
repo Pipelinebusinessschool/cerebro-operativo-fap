@@ -31,8 +31,9 @@ la Ruta A de FAP.
 2. **Callout del prospecto** — para quién es (directivo/fundador B2B que dirige a ciegas).
 3. **Problema + agitación** — el **diagnóstico sistémico** con el dolor del ICP en **verbatim**
    (`jorge_icp.md`): tomapedidos, dependencia del fundador, "un mes bien, tres mal".
-4. **Reencuadre** — no es el vendedor, no eres tú: **es el sistema**. *"'Así son las ventas B2B' es
-   una gran mentira. Las ventas son sistemas, no heroísmos; procesos, no personalidades."*
+4. **Reencuadre** — el problema es de diseño, no de la persona (**rota el fraseo, no repitas "es el
+   sistema"** — ver `jorge_voice.md` §muletilla). *"'Así son las ventas B2B' es una gran mentira. Las
+   ventas son sistemas, no heroísmos; procesos, no personalidades."*
 5. **Autoridad / historia** — Jorge en el backstage de +100 operaciones; *"en el 87% de los casos el
    problema era idéntico"*.
 6. **El mecanismo** — el sistema (los **6 pilares**, SM+EH+SS, AI-first) que elimina la dependencia

@@ -127,8 +127,8 @@ CTA con filtro. Candado: sin precio, CTA único a registro, cifras sourced.*
 > Directivo comercial: haz la cuenta.
 > Le pagas a tu equipo para que genere PIPELINE. Pero si dependen de que el cliente los llame, no
 > estás pagando por cazadores — estás pagando por recepcionistas de pedidos con sueldo de vendedor.
-> El problema no es lo que pagas. Es que **nunca instalaste el sistema** que hace que ese sueldo
-> genere pipeline predecible.
+> El problema no es lo que pagas. Es que detrás de ese sueldo **falta un proceso de prospección** que
+> lo convierta en pipeline predecible.
 > En el workshop en vivo (sin costo) te muestro cómo se instala, paso a paso.
 > **[BOTÓN: REGISTRARME SIN COSTO]**
 > — Jorge Conde

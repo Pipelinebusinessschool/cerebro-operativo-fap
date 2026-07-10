@@ -80,3 +80,33 @@
 - **Cifras siempre:** Nunca hablar de resultados sin números. Nunca.
 - **Idioma primario:** Español latinoamericano, tuteo, tono profesional pero directo.
 - **Nunca en modo queja:** Jorge no critica sin proponer. El diagnóstico siempre viene con la solución.
+
+---
+
+## Rotar el reencuadre sistémico (muletilla a evitar)
+
+El problema es **sistémico, no personal** — eso es verdad de fondo (`jorge_philosophy.md`) y es un
+candado que no cambia. Pero la **frase** "No es X, es el sistema" (y sus primas *"no es mala suerte,
+es sistema"*, *"el problema no es la gente, es el sistema"*) está **sobreusada**. En copy:
+
+- **Máximo UNA vez por pieza** una construcción "no es X, es Y"; **nunca** repetirla en piezas
+  consecutivas. La frase de `jorge_philosophy` es la **tesis interna**, no una plantilla para pegar en
+  cada correo, ad o landing.
+- **Muestra el mecanismo, no lo etiquetes.** En vez de rematar con "es el sistema", **nombra la pieza
+  que falta** (el perfil, el proceso de prospección, el onboarding) o **dramatiza la consecuencia**.
+- **Rota el vocabulario** al nombrar la causa: proceso · método · diseño · estructura · engranaje ·
+  "cómo está armada la operación" · "las reglas del juego" — no siempre "sistema".
+
+**Banco de formas de decir lo sistémico sin la muletilla:**
+
+| En vez de… | Di algo como… |
+|---|---|
+| "No es el vendedor, es el sistema." | "Le exiges prospectar, pero nunca le diste un proceso para hacerlo." |
+| "No es mala suerte, es sistema." | "Aciertas 1 de cada 4 porque eliges contra un perfil que no existe en papel." |
+| "El problema no es la gente." | "Hasta tu mejor fichaje termina esperando a que el cliente llame. Pregúntate por qué." |
+| "Es un problema de sistema." | "Un goleador sin mediocampo no mete goles." *(analogía)* |
+| "Es el sistema que no instalaste." | "La empresa nunca construyó lo que le exige a su gente." |
+| *(reencuadre en positivo)* | "Un método que hace rendir hasta a un vendedor promedio." |
+
+**Regla práctica:** si el borrador ya usó "sistema" como remate, la siguiente vez **nombra el hueco
+concreto** (perfil / prospección / onboarding / proceso de compra) o **usa una escena o una pregunta**.
