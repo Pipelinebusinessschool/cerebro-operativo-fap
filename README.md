@@ -55,7 +55,7 @@ cerebro-operativo-fap/
 | [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
 | [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop $11, OTOs, diagnóstico · carga `swipe-paginas-venta` |
 | [`fap-vsl`](skills/fap-vsl.md) | Guion de VSL (Ruta A → diagnóstico) · carga `swipe-ads` (VSL de FAP) |
-| [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · carga `swipe-ads` |
+| [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · **catálogo de formatos** (píldora, listicle "5 cosas", "lo que no sabía", time-boxed, mito-buster…) + **3 hooks alternativos swappables** por ad · ángulos de la concepción · carga `swipe-ads` |
 | [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (sin swipe) |
 | [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad (sin swipe) |
 
