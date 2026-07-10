@@ -8,6 +8,10 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
 
 0. **`principios-craft.md`** — buenas prácticas de copywriting (portadas del squad Pen) que **todas**
    las skills cargan para **optimizar, no solo replicar**. *El swipe es el piso, no el techo.*
+0-bis. **`modelo-concepcion.md`** — molde y estándar del **Documento de Concepción** (el documento
+   maestro upstream de todo el funnel). Lo carga `fap-narrativa`: define las secciones, la
+   profundidad exigida, los frameworks B2B que se sintetizan y el mapa **concepción→copy**. No es un
+   swipe de ejemplos: es el nivel de razonamiento a igualar y superar.
 1. **Un archivo por canal**, no uno gigante. Cada skill carga el suyo y se mantiene afilada.
    - `swipe-landings.md` → `fap-landings` *(opt-in de registro: landing ganadora de PGE + ICP ✅)*
    - `swipe-paginas-venta.md` → `fap-landings` / diagnóstico *(páginas de pago: workshop $11 + OTOs $197/$47 ✅)*

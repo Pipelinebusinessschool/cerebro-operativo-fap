@@ -32,6 +32,7 @@ cerebro-operativo-fap/
 │   └── fap-whatsapp-api.md · fap-whatsapp-grupos.md
 ├── swipe/                     ← craft: ejemplos ganadores + principios de optimización
 │   ├── README.md
+│   ├── modelo-concepcion.md   ← molde + estándar del Documento de Concepción (frameworks B2B + mapa concepción→copy)
 │   ├── principios-craft.md    ← buenas prácticas (squad Pen): optimizar, no solo replicar
 │   ├── swipe-correos.md       ← funnel de correo completo (invitación, recordatorio, venta, postventa) con análisis
 │   ├── swipe-ads.md           ← 11 ads reales CON métricas (píldoras, video largo, VSL de FAP) + lecciones
@@ -49,7 +50,7 @@ cerebro-operativo-fap/
 |---|---|
 | [`fap`](skills/fap.md) | Fuente de verdad + candados |
 | [`fap-lanzamientos`](skills/fap-lanzamientos.md) | Director (2 rutas, piezas, cadencia) |
-| [`fap-narrativa`](skills/fap-narrativa.md) | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
+| [`fap-narrativa`](skills/fap-narrativa.md) | Investiga→reflexiona→concibe: **Documento de Concepción** completo (avatar, enemigos, falsas creencias, vehículos rotos, Gran Idea, promesas) · carga `modelo-concepcion` |
 | [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · carga `swipe-correos` |
 | [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
 | [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop $11, OTOs, diagnóstico · carga `swipe-paginas-venta` |

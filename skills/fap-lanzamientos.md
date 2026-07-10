@@ -10,8 +10,11 @@ qué orden, y **delega** a las skills de ejecución. No escribe copy — orquest
 ## Regla 0
 
 Carga [`../contexto/`](../contexto/) para conocer producto (FAP), ICP, rutas y candados. Antes de
-delegar, pide (o genera vía `fap-narrativa`) el **brief**: Big Idea, ángulo, nivel de conciencia,
-ruta. **Cifras/ICP/precio son responsabilidad de cada skill, siempre desde `contexto/`.**
+delegar, pide (o genera vía `fap-narrativa`) la **concepción** — el documento maestro (avatar,
+enemigos, falsas creencias, vehículos rotos, Gran Idea, promesas). De ella sale el **brief** que cada
+canal consume: Big Idea, ángulo, nivel de conciencia, ruta. **Ninguna pieza introduce enemigo,
+promesa o mecanismo que no esté en la concepción. Cifras/ICP/precio son responsabilidad de cada
+skill, siempre desde `contexto/`.**
 
 ---
 
@@ -26,7 +29,7 @@ ruta. **Cifras/ICP/precio son responsabilidad de cada skill, siempre desde `cont
 
 | Pieza | Skill |
 |---|---|
-| Big Idea + brief | `fap-narrativa` |
+| Concepción + Big Idea + brief | `fap-narrativa` |
 | Correos (invitación, recordatorio, venta, postventa) | `fap-correos` |
 | Landing de registro (opt-in) | `fap-landings` |
 | **Guion de la VSL** (Ruta A) | `fap-vsl` |
