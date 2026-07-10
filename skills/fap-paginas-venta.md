@@ -1,12 +1,12 @@
 # Skill · `fap-paginas-venta`
 
 **Rol:** producir **páginas que venden** en el funnel de FAP — la página del **workshop de entrada
-(tripwire de pago)**, los **OTOs** (upsell/downsell) y las **páginas de diagnóstico**. A diferencia
-del opt-in (`fap-landings`), aquí **sí hay precio, oferta y checkout** (salvo la página del
-diagnóstico gratuito, que solo agenda).
+(tripwire de pago)**, los **OTOs** (upsell/downsell) y la **página del diagnóstico pago (OTU)**. Aquí
+**sí hay precio, oferta y checkout**. *El diagnóstico gratuito post-workshop **no** lleva página: se
+agenda directo por link (fuera del alcance de esta skill).*
 
 **Se activa cuando** el mensaje pide una página de ventas, un OTO/upsell, la página del workshop de
-pago, o la página que agenda un diagnóstico de FAP.
+pago, o la página del diagnóstico pago (OTU) de FAP.
 
 > **Siempre se entregan DOS versiones (corta + larga) y siempre se evalúa la UX.** Ver la sección
 > [Dos versiones + UX](#dos-versiones-siempre--evaluación-ux).
@@ -44,20 +44,17 @@ verbatim, con la foto oficial)** → demo del producto → stack "lo que recibes
 (pasos) → **ancla de precio** ("vale ~$X → hoy $Y") → **doble CTA sí/no** (el "no" reafirma lo que
 se pierde) → nota de honestidad.
 
-### Los dos diagnósticos — moldes distintos (ver `contexto/README.md`)
+### Los dos diagnósticos (ver `contexto/README.md`)
 
-**A · Página del diagnóstico GRATUITO (post-workshop) — la del funnel Ruta B.** Es una página
-**ligera que solo agenda** (sin precio, sin checkout). Molde:
-reencuadre "**no es una llamada de ventas, es un diagnóstico breve**" → **qué te llevas** (se
-identifica tu problema principal + **3 pasos inmediatos** para tu operación + evaluación de si FAP es
-para ti) → **formato** (llamada 1:1 · **45 minutos**) → para quién es / no es (filtro de ICP) →
-**bio de Jorge (de `contexto/autoridad.md`)** → **CTA único: agendar**.
-- **Candado del gratuito:** **NO** prometas scorecard, Mapa de Facturación Oculta ni auditoría de los
-  6 pilares — eso no es parte de esta llamada. Nada de precio.
+**A · Diagnóstico GRATUITO (post-workshop) — NO lleva página.** La llamada breve de 45 min se
+**agenda directo** (link de calendario al cierre del workshop y en el correo de confirmación). **Esta
+skill no produce una landing para el gratuito.** Lo único que puede hacer, si se pide, es el copy de
+una **pantalla de confirmación mínima** ("gracias, agenda aquí") — nunca una página de ventas, sin
+precio, sin scorecard ni Mapa de Facturación Oculta.
 
-**B · Diagnóstico PAGO (oferta de única vez / OTU).** Existe y es de pago; **en captación no se
-ahonda**. Si se pide su página, usa el **molde OTO** (arriba) con su ancla de precio, tratamiento
-mínimo, y **sin mezclarlo** con el gratuito.
+**B · Diagnóstico PAGO (oferta de única vez / OTU) — esta SÍ es una página.** Es el único diagnóstico
+que esta skill maquina como página: usa el **molde OTO** (arriba) con su ancla de precio. **En
+captación no se ahonda**; tratamiento mínimo y **sin mezclarlo** con el gratuito.
 
 **Recursos que dan confianza:** ancla de precio · **honestidad como diferenciador** ("sin
 contadores falsos ni cupos inventados") · garantía sin riesgo · prueba cuantificada (tablas con % y
@@ -116,8 +113,8 @@ $) por encima de adjetivos · escasez **real**, nunca fabricada.
 
 ## Proceso
 
-1. Recibe el brief + tipo de página (workshop / OTO / **diagnóstico gratuito** / **diagnóstico pago
-   OTU**).
+1. Recibe el brief + tipo de página (workshop / OTO / **diagnóstico pago OTU**). *El diagnóstico
+   gratuito no lleva página — si lo piden, aclara que se agenda por link.*
 2. Carga `contexto/` (+ `autoridad.md` + §Los dos diagnósticos) + `swipe-paginas-venta.md`.
 3. Escribe con el molde que corresponda, con cifras sourced, autoridad verbatim y (si aplica) ancla
    de precio.
@@ -129,7 +126,7 @@ $) por encima de adjetivos · escasez **real**, nunca fabricada.
 - [ ] **Dos versiones** entregadas (corta + larga), cada una con arquitectura propia.
 - [ ] **Nota de UX** entregada (jerarquía, un CTA, escaneabilidad, mobile, fricción, confianza).
 - [ ] **Autoridad + foto de `contexto/autoridad.md`**, verbatim; nada reescrito ni mezclado.
-- [ ] **Diagnóstico correcto:** si es el gratuito, sin scorecard/precio; si es OTU, tratamiento mínimo.
+- [ ] **Diagnóstico correcto:** el gratuito NO se maquina como página (va por link); si es OTU, molde OTO, tratamiento mínimo.
 - [ ] Un solo CTA por página. · [ ] Precio de FAP ausente. · [ ] Cifras sourced.
 - [ ] Garantía + honestidad presentes (en las de pago). · [ ] Prueba cuantificada, no adjetivos.
 - [ ] Sin escasez/contadores fabricados. · [ ] Voz de Jorge. · [ ] Nada prometido sin "para quien implementa".

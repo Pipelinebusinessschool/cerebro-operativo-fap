@@ -48,6 +48,8 @@ Estas prevalecen sobre cualquier ambigüedad en los archivos. Confirmadas por Jo
      una llamada de diagnóstico **breve**: se identifica el problema, se dan **3 pasos inmediatos** y
      se **evalúa si FAP es para el prospecto**. **NO** incluye scorecard, Mapa de Facturación Oculta
      ni auditoría de los 6 pilares. Es el **CTA del funnel Ruta B** (workshop). **Sin costo.**
+     **No lleva landing:** se agenda **directo por link de calendario** (al cierre del workshop y en
+     el correo de confirmación).
   2. **Diagnóstico pago (oferta de única vez / OTU).** Sesión de diagnóstico **de pago**, ofrecida
      como **oferta de única vez**. Es un producto aparte; en captación **no se ahonda** en ella.
   - El **scorecard / auditoría de los 6 pilares / Índice de Dependencia del Fundador NO pertenecen al
