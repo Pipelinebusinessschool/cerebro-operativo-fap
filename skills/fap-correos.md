@@ -175,10 +175,15 @@ PD: (opcional — revive la escena o el costo de inacción)
 - **Emojis — con propósito, no decoración.** Semánticos: ✅ beneficio · ❌ dolor/síntoma · 🚨 alerta ·
   ⏳ urgencia · 📊/📈 dato · 💣 riesgo · 🔐 escasez. Máx **1 en el asunto** y ~1 por sección del cuerpo.
   **Nunca** sustituyen palabra en frases de autoridad/cifra. Si dudas, quítalo.
-- **Negritas — resaltar lo que decide, no todo.** Van en negrita: el **reencuadre** ("no necesitas
-  trabajar más, necesitas un **sistema**"), las **cifras/plazos** clave, la **identidad** ("**directivo
-  comercial**"). Regla: **máx 3–4 resaltados por correo** — si todo está en negrita, nada lo está.
-  (`PIPELINE`/`FORECAST` ya van en MAYÚSCULA por marca; no hace falta negrita encima.)
+- **MAYÚSCULAS — dos usos.** (1) **Términos de marca siempre en mayúscula:** PIPELINE, FORECAST.
+  (2) **Palabras-golpe de énfasis** en su punto exacto: EN VIVO, SIN COSTO, GRATIS, HOY, MAÑANA, ES
+  HOY, y los labels de `[BOTÓN: …]`. No frases enteras en mayúscula (grita); solo la palabra que
+  carga el énfasis.
+- **Negritas — generosas pero con intención (estilo PBS).** Van en negrita: el **reencuadre**, las
+  **cifras/plazos**, la **identidad** ("**directivo comercial**"), la **frase-ancla** de cada bloque y
+  la línea justo antes del CTA. Densidad alta OK — su estilo lo pide — pero **nunca un párrafo entero
+  en negrita**: se resalta la frase, no el bloque. Guía: la negrita marca lo que el ojo debe cazar si
+  el lector solo escanea.
 - **Viñetas — semánticas y cortas** (verbo + resultado): `✅` transformación · `❌` síntoma/dolor ·
   `◻️` checklist de falsas soluciones. Nunca párrafos disfrazados de viñeta.
 
