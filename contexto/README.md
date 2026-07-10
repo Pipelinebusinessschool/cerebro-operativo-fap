@@ -21,6 +21,7 @@ Esta carpeta es la **mitad "qué es cierto"** del cerebro (la otra mitad, "cómo
 | [`pbs_indice.md`](pbs_indice.md) | Índice original de Jorge + 6 reglas universales |
 | [`prueba.md`](prueba.md) | Banco de prueba **claim→evidencia** (derivado de `pbs_metrics`) · hueco #4 |
 | [`objeciones.md`](objeciones.md) | Mapa de objeciones **"concede antes de contraatacar"** (derivado de `jorge_philosophy`) · hueco #3 |
+| [`autoridad.md`](autoridad.md) | Bloque canónico de autoridad de Jorge + foto oficial (single source; se pega verbatim en landings y páginas) |
 
 ---
 
@@ -41,6 +42,16 @@ Estas prevalecen sobre cualquier ambigüedad en los archivos. Confirmadas por Jo
 - **Los 6 Pilares** (de `jorge_decisions.md`): 1) Metodología de ventas · 2) Habilitación comercial
   · 3) Prospección a gran escala con IA · 4) Supervisión comercial · 5) Sistema de comisiones ·
   6) Sistema de contratación. *(Nadie más los ofrece completos con acompañamiento 1:1.)*
+
+- **Los dos diagnósticos del funnel (NO confundir):**
+  1. **Diagnóstico gratuito (post-workshop).** Se agenda al cierre del workshop. **45 min, 1:1.** Es
+     una llamada de diagnóstico **breve**: se identifica el problema, se dan **3 pasos inmediatos** y
+     se **evalúa si FAP es para el prospecto**. **NO** incluye scorecard, Mapa de Facturación Oculta
+     ni auditoría de los 6 pilares. Es el **CTA del funnel Ruta B** (workshop). **Sin costo.**
+  2. **Diagnóstico pago (oferta de única vez / OTU).** Sesión de diagnóstico **de pago**, ofrecida
+     como **oferta de única vez**. Es un producto aparte; en captación **no se ahonda** en ella.
+  - El **scorecard / auditoría de los 6 pilares / Índice de Dependencia del Fundador NO pertenecen al
+    diagnóstico gratuito** — no se prometen en la página que lo agenda.
 
 - **Métricas oficiales = las de `pbs_metrics.md`** (este es el "Set B" que pedía el handoff).
   Siempre como *"promedio de clientes que implementaron"*, **nunca como promesa garantizada**.

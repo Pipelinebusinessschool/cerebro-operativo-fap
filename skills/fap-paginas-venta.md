@@ -1,21 +1,29 @@
 # Skill · `fap-paginas-venta`
 
 **Rol:** producir **páginas que venden** en el funnel de FAP — la página del **workshop de entrada
-(tripwire de pago)**, los **OTOs** (upsell/downsell) y la **página de diagnóstico** (la que agenda
-la llamada). A diferencia del opt-in (`fap-landings`), aquí **sí hay precio, oferta y checkout**.
+(tripwire de pago)**, los **OTOs** (upsell/downsell) y las **páginas de diagnóstico**. A diferencia
+del opt-in (`fap-landings`), aquí **sí hay precio, oferta y checkout** (salvo la página del
+diagnóstico gratuito, que solo agenda).
 
 **Se activa cuando** el mensaje pide una página de ventas, un OTO/upsell, la página del workshop de
-pago, o la página que vende la llamada de diagnóstico de FAP.
+pago, o la página que agenda un diagnóstico de FAP.
+
+> **Siempre se entregan DOS versiones (corta + larga) y siempre se evalúa la UX.** Ver la sección
+> [Dos versiones + UX](#dos-versiones-siempre--evaluación-ux).
 
 ---
 
 ## Regla 0 — cargar SIEMPRE antes de escribir
 
-1. **Verdad + candados →** [`../contexto/`](../contexto/). Para la página de diagnóstico, además
-   `jorge_process.md` (estructura de la Reunión 1) y los **6 pilares** de `jorge_decisions.md`.
-2. **Craft →** [`../swipe/swipe-paginas-venta.md`](../swipe/swipe-paginas-venta.md) — anatomía de
-   la página de venta, del OTO, y el **molde del diagnóstico** (OTO1 $197).
-3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+1. **Verdad + candados →** [`../contexto/`](../contexto/). Incluye **`contexto/README.md` §Los dos
+   diagnósticos** (no confundir gratuito vs pago) y, para páginas de venta, los **6 pilares** de
+   `jorge_decisions.md`.
+2. **Autoridad (verbatim) →** [`../contexto/autoridad.md`](../contexto/autoridad.md). **La sección de
+   autoridad y la foto de Jorge se toman de aquí sin reescribir** — la misma que la landing de
+   Supervisión Comercial con IA. Si el bloque exacto está `[FALTA]`, se deja marcado, no se rellena.
+3. **Craft →** [`../swipe/swipe-paginas-venta.md`](../swipe/swipe-paginas-venta.md) — anatomía de
+   la página de venta, del OTO y de la página de diagnóstico.
+4. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
    **optimizar, no solo replicar** (el swipe es el piso, no el techo).
 
 > Cifras y precio salen **solo de `contexto/`**. El **precio de FAP NUNCA** aparece; el del
@@ -27,23 +35,59 @@ pago, o la página que vende la llamada de diagnóstico de FAP.
 
 **Página de venta (tripwire):** countdown → **H1 = mecanismo + resultado + plazo** → CTA con precio
 → prueba social (logos + Nº directivos) → modelo/diagrama → **dolores ("para ti si…")** → **tablas
-de resultados cuantificados** → testimonios con nombre → bio de Jorge → demo del producto → stack
-"lo que recibes" → **garantía** → **justificación del precio** → FAQ → cierre.
+de resultados cuantificados** → testimonios con nombre → **bio de Jorge (de `contexto/autoridad.md`,
+verbatim, con la foto oficial)** → demo del producto → stack "lo que recibes" → **garantía** →
+**justificación del precio** → FAQ → cierre.
 
 **OTO (upsell inmediato):** interrupción ("aún NO está completa") + barra de progreso → H1 de deseo
 → reencuadre ("no es venta, es X") → **demo del entregable antes de comprarlo** → cómo funciona
 (pasos) → **ancla de precio** ("vale ~$X → hoy $Y") → **doble CTA sí/no** (el "no" reafirma lo que
 se pierde) → nota de honestidad.
 
-**Página de diagnóstico (molde OTO1 → llamada FAP):** reencuadre "**no es una llamada de ventas,
-es un diagnóstico**" → demo del Scorecard (los **6 pilares** + Índice de Dependencia del Fundador) →
-cómo funciona (cuestionario → auditoría → scorecard → **sesión 1:1**) → **CTA a agendar
-diagnóstico**. Estructura de la sesión: `jorge_process.md` (apertura → calificación MEDIC →
-presentación demostrativa → matemática millonaria).
+### Los dos diagnósticos — moldes distintos (ver `contexto/README.md`)
+
+**A · Página del diagnóstico GRATUITO (post-workshop) — la del funnel Ruta B.** Es una página
+**ligera que solo agenda** (sin precio, sin checkout). Molde:
+reencuadre "**no es una llamada de ventas, es un diagnóstico breve**" → **qué te llevas** (se
+identifica tu problema principal + **3 pasos inmediatos** para tu operación + evaluación de si FAP es
+para ti) → **formato** (llamada 1:1 · **45 minutos**) → para quién es / no es (filtro de ICP) →
+**bio de Jorge (de `contexto/autoridad.md`)** → **CTA único: agendar**.
+- **Candado del gratuito:** **NO** prometas scorecard, Mapa de Facturación Oculta ni auditoría de los
+  6 pilares — eso no es parte de esta llamada. Nada de precio.
+
+**B · Diagnóstico PAGO (oferta de única vez / OTU).** Existe y es de pago; **en captación no se
+ahonda**. Si se pide su página, usa el **molde OTO** (arriba) con su ancla de precio, tratamiento
+mínimo, y **sin mezclarlo** con el gratuito.
 
 **Recursos que dan confianza:** ancla de precio · **honestidad como diferenciador** ("sin
 contadores falsos ni cupos inventados") · garantía sin riesgo · prueba cuantificada (tablas con % y
 $) por encima de adjetivos · escasez **real**, nunca fabricada.
+
+---
+
+## Dos versiones siempre + evaluación UX
+
+**Toda página se entrega en DOS versiones**, no una:
+
+- **Versión CORTA** — la mínima que convierte: promesa + prueba + oferta/CTA + autoridad + cierre.
+  Para tráfico caliente, mobile, o cuando la decisión es simple (agendar el diagnóstico gratuito
+  suele vivir bien en corta). Menos scroll, una sola idea por pantalla.
+- **Versión LARGA** — la que argumenta a fondo: agrega dolores en escena, tablas de resultados,
+  testimonios, demo, manejo de objeciones, FAQ, justificación de precio. Para tráfico frío/tibio o
+  decisiones de mayor fricción (workshop de pago, OTU).
+
+> La larga **no es la corta estirada**: cada sección extra se gana su lugar. La corta **no es la
+> larga recortada al azar**: es una pieza con su propia arquitectura completa.
+
+**Evaluación UX (obligatoria, se entrega junto a las páginas)** — revisa y deja constancia de:
+- **Jerarquía visual:** una sola idea dominante por pantalla; el H1 y el CTA se entienden en 3 seg.
+- **Un CTA, repetido:** misma acción arriba, medio y cierre; nada compite con él.
+- **Escaneabilidad:** bloques cortos, subtítulos que cuentan la historia solos, viñetas, negritas
+  con intención (estilo PBS: MAYÚSCULAS de marca/énfasis).
+- **Mobile-first:** el pliegue superior comunica promesa + CTA sin hacer scroll; botones tocables.
+- **Fricción del formulario/checkout:** pide lo mínimo; el botón nombra el valor, no la acción.
+- **Confianza:** autoridad + prueba visibles cerca de cada CTA; nada fabricado.
+- **Velocidad de comprensión:** si un directivo ocupado no capta la oferta en 10 seg, corrige.
 
 ---
 
@@ -59,8 +103,12 @@ $) por encima de adjetivos · escasez **real**, nunca fabricada.
 
 ## Candados FAP (de `contexto/`)
 
-- **Cero precio de FAP** en cualquier pieza. El del **workshop de entrada / OTO sí** puede ir.
-- **CTA único por página** — a checkout (workshop/OTO) **o** a agendar diagnóstico. Nunca ambos.
+- **Cero precio de FAP** en cualquier pieza. El del **workshop de entrada / OTO / OTU sí** puede ir.
+- **CTA único por página** — a checkout (workshop/OTO/OTU) **o** a agendar diagnóstico. Nunca ambos.
+- **Diagnóstico gratuito ≠ pago.** El gratuito (post-workshop, 45 min) **no** promete scorecard/6
+  pilares/Mapa de Facturación Oculta ni lleva precio. El pago (OTU) no se ahonda en captación.
+- **Autoridad y foto = `contexto/autoridad.md`**, verbatim, idéntica en todas las piezas. Si está
+  `[FALTA]`, se marca — no se rellena con una variante.
 - **Cifras solo de `contexto/`** (Set B), como "promedio de clientes que implementaron", **nunca
   como promesa garantizada**.
 - **Cero descuentos.** La negociación es de modalidad de pago, no de precio.
@@ -68,16 +116,23 @@ $) por encima de adjetivos · escasez **real**, nunca fabricada.
 
 ## Proceso
 
-1. Recibe el brief + tipo de página (workshop / OTO / diagnóstico).
-2. Carga `contexto/` + `swipe-paginas-venta.md` (+ `jorge_process.md` si es diagnóstico).
-3. Escribe con el esqueleto que corresponda, con cifras sourced y ancla de precio.
-4. **Auto-crítica** (checklist) → corrige.
-5. Entrega. Falta de dato → `[FALTA: …]` + pregunta.
+1. Recibe el brief + tipo de página (workshop / OTO / **diagnóstico gratuito** / **diagnóstico pago
+   OTU**).
+2. Carga `contexto/` (+ `autoridad.md` + §Los dos diagnósticos) + `swipe-paginas-venta.md`.
+3. Escribe con el molde que corresponda, con cifras sourced, autoridad verbatim y (si aplica) ancla
+   de precio.
+4. Genera **las dos versiones (corta + larga)** y **evalúa la UX** (secciones de arriba).
+5. **Auto-crítica** (checklist) → corrige.
+6. Entrega ambas versiones + la nota de UX. Falta de dato → `[FALTA: …]` + pregunta.
 
 ## Checklist de presión (pre-entrega)
-- [ ] Un solo CTA (checkout O diagnóstico). · [ ] Precio de FAP ausente. · [ ] Cifras sourced. ·
-- [ ] Garantía + honestidad presentes. · [ ] Prueba cuantificada, no adjetivos. · [ ] Sin
-  escasez/contadores fabricados. · [ ] Voz de Jorge. · [ ] Nada prometido sin "para quien implementa".
+- [ ] **Dos versiones** entregadas (corta + larga), cada una con arquitectura propia.
+- [ ] **Nota de UX** entregada (jerarquía, un CTA, escaneabilidad, mobile, fricción, confianza).
+- [ ] **Autoridad + foto de `contexto/autoridad.md`**, verbatim; nada reescrito ni mezclado.
+- [ ] **Diagnóstico correcto:** si es el gratuito, sin scorecard/precio; si es OTU, tratamiento mínimo.
+- [ ] Un solo CTA por página. · [ ] Precio de FAP ausente. · [ ] Cifras sourced.
+- [ ] Garantía + honestidad presentes (en las de pago). · [ ] Prueba cuantificada, no adjetivos.
+- [ ] Sin escasez/contadores fabricados. · [ ] Voz de Jorge. · [ ] Nada prometido sin "para quien implementa".
 
 ## Estado
 - [ ] Test de activación en chat nuevo.

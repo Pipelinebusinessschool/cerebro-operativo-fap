@@ -53,7 +53,7 @@ cerebro-operativo-fap/
 | [`fap-narrativa`](skills/fap-narrativa.md) | Investiga→reflexiona→concibe: **Documento de Concepción** completo (avatar, enemigos, falsas creencias, vehículos rotos, Gran Idea, promesas) · carga `modelo-concepcion` |
 | [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · **variedad por diseño** (banco de ángulos de la concepción + matriz de diversidad: rota lead/molde/emoción/conciencia) · carga `swipe-correos` |
 | [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
-| [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop $11, OTOs, diagnóstico · carga `swipe-paginas-venta` |
+| [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop, OTOs, diagnóstico gratuito (45 min) y pago (OTU) · **dos versiones (corta+larga) + evaluación UX** siempre · autoridad verbatim de `contexto/autoridad.md` · carga `swipe-paginas-venta` |
 | [`fap-vsl`](skills/fap-vsl.md) | Guion de VSL (Ruta A → diagnóstico) · carga `swipe-ads` (VSL de FAP) |
 | [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · **repertorio abierto de formatos** (20+ arquetipos: listicle, "lo que no sabía", time-boxed, mito-buster, POV, manifiesto…; explora/crea, no lista cerrada) + **3 hooks alternativos swappables** por ad · ángulos de la concepción · carga `swipe-ads` |
 | [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (sin swipe) |

@@ -145,20 +145,23 @@ CTA con filtro. Candado: sin precio, CTA único a registro, cifras sourced.*
 
 ---
 
-## FASE 4 · Oferta — `fap-paginas-venta` (página de diagnóstico · CTA a diagnóstico)
+## FASE 4 · Oferta — `fap-paginas-venta` (página del diagnóstico GRATUITO · CTA a agendar)
 
-*Al cierre del workshop, la oferta no es "compra FAP" — es **agenda tu diagnóstico**. Sin precio.*
+*Al cierre del workshop, la oferta no es "compra FAP" — es **agenda tu diagnóstico gratuito**. Sin
+precio. Es la llamada breve de 45 min, NO el diagnóstico pago (OTU).*
 
-- **H1:** ¿Quieres que diagnostiquemos **por qué tu equipo es tomapedidos** — y exactamente qué
-  sistema lo cambia?
-- **Reencuadre:** No es una llamada de ventas. Es un **diagnóstico** de tu operación comercial sobre
-  los **6 pilares** de un sistema de ventas que escala — el que ningún CRM ni dashboard te dio.
-- **Cómo funciona:** cuestionario corto → un Revenue Architect audita tus 6 pilares → recibes tu
-  Scorecard → **sesión 1:1** con tu Mapa de Facturación Oculta y el plan.
+- **H1:** ¿Quieres que diagnostiquemos **por qué tu equipo es tomapedidos** — y cuáles son tus 3
+  primeros pasos para cambiarlo?
+- **Reencuadre:** No es una llamada de ventas. Es un **diagnóstico breve, 1:1, de 45 minutos**, donde
+  identificamos tu problema principal, te damos **3 pasos inmediatos** para tu operación y evaluamos
+  **si FAP es para ti**.
+- **Qué te llevas (aunque no avancemos):** claridad sobre la causa raíz de tu cultura tomapedidos +
+  3 acciones que puedes ejecutar ya.
 - **Prueba:** clientes reportan en promedio SROI >5X, +35% en sales velocity y −25% en el ciclo de
   ventas *(de `contexto/`, "promedio de clientes que implementaron")*.
-- **CTA único:** AGENDAR MI DIAGNÓSTICO
-- *Candado: cero precio de FAP; CTA único a diagnóstico.*
+- **CTA único:** AGENDAR MI DIAGNÓSTICO GRATUITO
+- *Candado: cero precio de FAP; CTA único a agendar; **sin scorecard ni Mapa de Facturación Oculta**
+  (eso no es parte del diagnóstico gratuito).*
 
 **CORREOS DE VENTA — `fap-correos` (→ diagnóstico)**
 
