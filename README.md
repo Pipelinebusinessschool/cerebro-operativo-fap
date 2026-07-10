@@ -56,8 +56,8 @@ cerebro-operativo-fap/
 | [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop, OTOs, diagnóstico gratuito (45 min) y pago (OTU) · **dos versiones (corta+larga) + evaluación UX** siempre · autoridad verbatim de `contexto/autoridad.md` · carga `swipe-paginas-venta` |
 | [`fap-vsl`](skills/fap-vsl.md) | Guion de VSL (Ruta A → diagnóstico) · carga `swipe-ads` (VSL de FAP) |
 | [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · **repertorio abierto de formatos** (20+ arquetipos: listicle, "lo que no sabía", time-boxed, mito-buster, POV, manifiesto…; explora/crea, no lista cerrada) + **3 hooks alternativos swappables** por ad · ángulos de la concepción · carga `swipe-ads` |
-| [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (sin swipe) |
-| [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad (sin swipe) |
+| [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (HSM/sesión) · **formato WhatsApp paste-ready** (`*negrita*`, `_cursiva_`, emojis) · sin swipe |
+| [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad · **formato WhatsApp paste-ready** (`*negrita*`, `_cursiva_`, emojis) · sin swipe |
 
 ---
 

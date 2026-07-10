@@ -26,6 +26,26 @@ sesión, recordatorios de grupo. No es 1:1 (eso es `fap-whatsapp-api`).
 - Cadencia de anuncios (es hoy / en vivo / repetición) alineada con el evento.
 - Mensajes escaneables; un solo foco por mensaje.
 
+---
+
+## Formato de entrega WhatsApp (paste-ready) — OBLIGATORIO
+
+WhatsApp **no usa markdown**. Tiene su **propia sintaxis** (se escribe literal y la app la renderiza).
+El mensaje se entrega **tal cual se pega**:
+
+- `*negrita*` → **un solo asterisco** a cada lado (NO `**` de markdown).
+- `_cursiva_` → un guion bajo a cada lado.
+- `~tachado~` → una tilde. · ` ```monoespaciado``` ` → tres backticks.
+- Viñetas: `- ` o `* ` al inicio de línea. Numeradas: `1. `. Cita: `> `.
+- **Enlaces:** URL cruda (se vuelve clickable); **no** existe `[texto](url)`. Un solo enlace = CTA.
+
+**Estilo:**
+- `*Negrita*` para el foco del anuncio (qué, cuándo, el CTA). `_Cursiva_` para el guiño de comunidad.
+- **Emojis:** tono cercano y de pertenencia — con propósito (🔥 ✅ 📅 👏 👉 ⏳ 🎯), **1–2 por mensaje**.
+  Nunca infantil ni spam; sigue siendo la voz de Jorge.
+- **MAYÚSCULAS** de marca/énfasis: PIPELINE, FORECAST, EN VIVO, HOY.
+- Escaneable: primera línea gancha, cuerpo corto, CTA al final. Un solo foco.
+
 ## Candados FAP (de `contexto/`)
 
 - **Sin precio de FAP en captación** · **CTA único** por mensaje.
@@ -35,11 +55,14 @@ sesión, recordatorios de grupo. No es 1:1 (eso es `fap-whatsapp-api`).
 
 1. Recibe el brief + momento (bienvenida / dinamización / anuncio / recordatorio).
 2. Carga `contexto/`.
-3. Escribe con tono de comunidad, un foco por mensaje.
+3. Escribe con tono de comunidad, un foco por mensaje, **en formato WhatsApp paste-ready**
+   (`*negrita*`, `_cursiva_`, emojis, URL cruda).
 4. **Auto-crítica** (checklist) → corrige.
-5. Entrega. Falta de dato → `[FALTA: …]` + pregunta.
+5. Entrega el mensaje **listo para pegar**. Falta de dato → `[FALTA: …]` + pregunta.
 
 ## Checklist de presión (pre-entrega)
+- [ ] **Formato WhatsApp:** `*negrita*` (un asterisco), `_cursiva_`, emojis con propósito, URL cruda;
+      nada de markdown `**`/`[texto](url)`.
 - [ ] Tono de comunidad, un foco por mensaje. · [ ] Un solo CTA. · [ ] Cifras sourced · sin precio
   de FAP. · [ ] Voz de Jorge.
 
