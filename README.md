@@ -51,7 +51,7 @@ cerebro-operativo-fap/
 | [`fap`](skills/fap.md) | Fuente de verdad + candados |
 | [`fap-lanzamientos`](skills/fap-lanzamientos.md) | Director (2 rutas, piezas, cadencia) |
 | [`fap-narrativa`](skills/fap-narrativa.md) | Investiga→reflexiona→concibe: **Documento de Concepción** completo (avatar, enemigos, falsas creencias, vehículos rotos, Gran Idea, promesas) · carga `modelo-concepcion` |
-| [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · carga `swipe-correos` |
+| [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · **variedad por diseño** (banco de ángulos de la concepción + matriz de diversidad: rota lead/molde/emoción/conciencia) · carga `swipe-correos` |
 | [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
 | [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop $11, OTOs, diagnóstico · carga `swipe-paginas-venta` |
 | [`fap-vsl`](skills/fap-vsl.md) | Guion de VSL (Ruta A → diagnóstico) · carga `swipe-ads` (VSL de FAP) |

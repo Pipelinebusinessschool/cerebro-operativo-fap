@@ -13,9 +13,14 @@ invitación al webinar", "la secuencia de recordatorio", "los correos de venta d
 1. **Verdad + candados →** [`../contexto/`](../contexto/) (ICP, métricas, voz, precio, filosofía).
    **Cifras, ICP, precio y garantías salen SOLO de aquí. Si el dato no está, PREGUNTA — no lo
    inventes.**
-2. **Craft →** [`../swipe/swipe-correos.md`](../swipe/swipe-correos.md) (ángulos, esqueleto PBS,
-   patrones por fase). Es referencia de *cómo se escribe*, no de qué es verdad.
-3. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
+2. **Concepción (fuente de los ángulos) →** el **Documento de Concepción** del lanzamiento (de
+   `fap-narrativa` / [`../swipe/modelo-concepcion.md`](../swipe/modelo-concepcion.md)). **Aquí está
+   la munición que evita que todos los correos salgan iguales:** cada falsa creencia, cada dolor,
+   cada vehículo roto, cada enemigo y cada analogía es **un correo distinto**. Si no hay concepción,
+   pídela antes de escribir una secuencia.
+3. **Craft →** [`../swipe/swipe-correos.md`](../swipe/swipe-correos.md) (moldes, recursos, patrones
+   por fase). Es referencia de *cómo se escribe*, no de qué es verdad.
+4. **Buenas prácticas →** [`../swipe/principios-craft.md`](../swipe/principios-craft.md) — para
    **optimizar, no solo replicar** (el swipe es el piso, no el techo).
 
 > **La verdad manda sobre el craft, siempre.** El swipe es de otros lanzamientos (PGE, SPG…): se
@@ -23,22 +28,106 @@ invitación al webinar", "la secuencia de recordatorio", "los correos de venta d
 
 ---
 
-## Craft — el esqueleto PBS (del swipe)
+## Por qué los correos salían iguales (y cómo se arregla)
 
-Estructura base de un correo: **apelación identitaria** ("estratega/directivo comercial") →
-**síntomas en lista** ("Si… / Si… / Si…" o checklist) → **reencuadre** ("no necesitas X, necesitas
-Y") → **bullets de transformación** (verbo + resultado) → **doble CTA** (arriba + abajo, labels
-distintos) → firma con cargo → a veces **PD** que revive el dolor o el costo de inacción.
+La homogeneidad viene de repetir **un solo molde** (apelación identitaria → síntomas en lista →
+reencuadre → doble CTA), **un solo tipo de lead** (problema-solución), **un solo registro emocional**
+(miedo/urgencia) y **un solo nivel de conciencia** (consciente del problema). Todo eso es *un* punto
+del mapa. La variedad se produce moviéndose en **dos ejes independientes**:
 
-**Un solo ángulo por correo.** Familias de asunto disponibles (menú para elegir/testear, **no**
-fórmula fija — la mejor por etapa se valida con datos): pregunta-diagnóstico · alerta 🚨 ·
-exclusión/contrarian 🚫 · historia-escena · resultado cuantificado · escasez con cifra · intriga.
+- **Eje QUÉ dices** — el *tema*, que sale de la **concepción** (banco de ángulos, abajo).
+- **Eje CÓMO lo dices** — el *lead + molde + emoción + conciencia*, que se **rota** (matriz, abajo).
 
-**Recursos que rinden:** CTA en 1ª persona ("HAZME ESCALAR MI PIPELINE"), reencuadre esfuerzo→
-sistema (quita la culpa al lector), contraste binario ❌/✅, future pacing ("supongamos que ya es
-febrero de 2026"), marco macro que externaliza la urgencia, PD que revive la escena.
+Un correo memorable elige **un punto distinto en cada eje** respecto al correo anterior.
 
-### Qué cambia por fase
+---
+
+## Eje QUÉ · Banco de ángulos (de la concepción)
+
+Cada elemento de la concepción es **un correo con tema propio**. No hace falta inventar ángulos: hay
+decenas esperando en el documento maestro. Mapa (ver `modelo-concepcion.md` §3):
+
+| Elemento de la concepción | Se convierte en… | Rinde mejor como |
+|---|---|---|
+| Cada **falsa creencia** (10–12) | un correo mito-buster ("lo que te dijeron y no es cierto") | lead de proclamación / secreto |
+| Cada **dolor operativo** (10–12) | un correo-escena ("es viernes, revisas el forecast…") | lead de historia |
+| Cada **vehículo roto** (8–10) | un correo "ya probaste X y por eso falló" | lead problema-solución |
+| Cada **enemigo común** (5–6) | un correo que nombra al villano sistémico | lead de proclamación |
+| Cada **analogía / fact** | un correo anclado en una imagen ("el Ferrari sin motor") | lead de gran secreto |
+| Cada **declaración de problema** (10) | el hook / asunto (primera persona, literal) | cualquiera |
+| Las **3 capas emocionales** | 3 correos del mismo dolor en 3 registros (dice / piensa / 3AM) | historia / promesa |
+| **Gran Idea + promesa** | el correo-tesis y el correo-oferta | promesa / oferta |
+
+> Regla: **una secuencia de 7 correos debe tocar ≥5 elementos distintos de la concepción.** Si dos
+> correos nacen del mismo elemento, uno de los dos sobra o hay que cambiarle el elemento.
+
+---
+
+## Eje CÓMO · Los cuatro diales que se rotan
+
+**1 · Tipo de lead** (por dónde entra el correo — los 6 clásicos):
+- **Oferta** — abre con el trato/valor (más para fondo de funnel).
+- **Promesa** — abre con el resultado deseado ("proyectar Q1 desde noviembre").
+- **Problema-solución** — abre con el dolor y reencuadra (el molde PBS clásico).
+- **Gran secreto** — abre con un mecanismo/insight oculto ("hay una razón por la que…").
+- **Proclamación** — abre con una declaración audaz/contrarian ("el forecast por esperanza está muerto").
+- **Historia** — abre con una escena concreta, sin vender aún.
+
+**2 · Molde estructural** (la arquitectura — el esqueleto PBS es *uno*, no *el*):
+- **Síntomas→reencuadre** (el clásico PBS: identidad → "Si…/Si…" → "no necesitas X, necesitas Y").
+- **Historia pura** — una escena de principio a fin; la oferta aparece solo al final.
+- **Mito-buster** — creencia falsa ↔ verdad, con la munición de la concepción.
+- **Autopsia del vehículo roto** — "probaste A, B, C; fallaron por esto; nosotros lo hacemos así".
+- **El número** — un solo dato duro sostiene todo el correo (data-drop).
+- **Analogía** — una imagen lo explica todo ("prospectar en frío hoy = telégrafo").
+- **Carta / confesión** — 1ª persona, tono directo, poca estructura ("voy a ser honesto contigo").
+- **Un día en la vida / future pacing** — "supongamos que ya es febrero de 2026…".
+- **Q&A / objeción** — toma la objeción de frente y la resuelve (concede antes de contraatacar).
+- **Panorama de alternativas** — checklist de falsas soluciones (el molde A9 del swipe).
+- **Micro-correo** — 3–4 líneas + PS; rompe la cadencia de correos largos.
+
+**3 · Emoción dominante** (una por correo, no una mezcla): miedo/pérdida · orgullo/estatus ·
+esperanza/aspiración · pertenencia/tribu · culpa→alivio (quita culpa: es el sistema) · curiosidad ·
+indignación/injusticia · FOMO. *La voz de Jorge nunca es motivacional vacía: la emoción se ancla en
+un dato o una escena, no en un adjetivo.*
+
+**4 · Nivel de conciencia objetivo** (Schwartz): el swipe casi solo habla al **consciente del
+problema**. Una buena secuencia **también** incluye piezas para el inconsciente/frío (abrir por el
+mundo, no por el dolor) y para el consciente de la solución (por qué *este* mecanismo). Rota el nivel.
+
+**Recursos que rinden** (transversales a cualquier molde): CTA en 1ª persona ("HAZME ESCALAR MI
+PIPELINE"), reencuadre esfuerzo→sistema (quita culpa), contraste binario ❌/✅, marco macro que
+externaliza la urgencia, PD que revive la escena o el costo de inacción.
+
+---
+
+## Regla de diversidad (anti-repetición) — obligatoria en secuencias
+
+- **Dos correos consecutivos no comparten** tipo de lead **ni** molde **ni** emoción dominante. Si se
+  repite uno de los tres, cambia el correo.
+- **Aperturas distintas:** ningún correo abre con la misma primera línea/gesto que otro (nada de
+  "Estratega comercial:" siete veces). Varía el gesto de apertura.
+- **Largos distintos:** intercala al menos un **micro-correo** entre los largos.
+- **Cobertura de conciencia:** la secuencia no puede vivir entera en "consciente del problema".
+- **Cobertura de concepción:** ≥5 elementos distintos por cada 7 correos.
+
+### Matriz de diversidad — llénala ANTES de escribir la secuencia
+
+Antes de redactar, planifica la variedad en una tabla (y entrégala con la secuencia):
+
+| # | Elemento de concepción | Tipo de lead | Molde | Emoción | Conciencia | Gesto de apertura | CTA |
+|---|---|---|---|---|---|---|---|
+| E1 | falsa creencia #2 | proclamación | mito-buster | indignación | problema | dato que reta | registro |
+| E2 | dolor operativo #5 | historia | historia pura | miedo | problema | escena del viernes | registro |
+| E3 | vehículo roto #3 | problema-solución | autopsia | culpa→alivio | solución | "ya probaste…" | registro |
+| … | … | … | … | … | … | … | … |
+
+Si dos filas se parecen demasiado en columnas 3–5, **rehaz una**. La matriz hace visible la
+repetición antes de que llegue al inbox.
+
+---
+
+## Qué cambia por fase
 - **Invitación** — capta el registro; rota el gancho para hablarle al mismo directivo desde un
   dolor distinto en cada envío. CTA a **registro**.
 - **Recordatorio** — maximiza asistencia en vivo; cadencia por sesión (es hoy → 1 h antes → en
@@ -52,9 +141,12 @@ febrero de 2026"), marco macro que externaliza la urgencia, PD que revive la esc
 
 ## Optimización (ir más allá del swipe)
 
+- **Variedad por diseño, no por suerte:** planifica la matriz de diversidad antes de escribir. Si la
+  secuencia se siente repetitiva, casi siempre es porque colapsó a un solo molde/lead/emoción.
 - **Asunto + preheader reciben tanto craft como el cuerpo** — el inbox es el campo de batalla.
 - **Genera 15–20 asuntos, corta a los mejores con una razón** (no entregues la primera idea).
-  **Específico > ingenioso;** curiosidad **sin** payoff es pasivo.
+  **Específico > ingenioso;** curiosidad **sin** payoff es pasivo. Varía la *familia* de asunto entre
+  correos consecutivos (pregunta ≠ alerta ≠ intriga ≠ escasez).
 - **Un solo trabajo por correo.** La **cadencia es parte del copy**: especifícala y arguméntala.
 - **La objeción se responde donde surge**, no en un FAQ (concede antes de contraatacar).
 - **CTA:** nombra la acción o el valor, nunca "haz clic"; la frase justo antes del CTA reduce la
@@ -79,24 +171,35 @@ febrero de 2026"), marco macro que externaliza la urgencia, PD que revive la esc
 
 ## Proceso de escritura
 
-1. **Recibe el brief** (o pídelo): fase, objetivo, ángulo deseado, nivel de conciencia del tráfico.
-   Si no hay brief, apóyate en `fap-narrativa`.
-2. **Carga** `contexto/` + `swipe-correos.md` (Regla 0).
-3. **Elige** una familia de asunto + **un** ángulo.
-4. **Escribe** con el esqueleto PBS, en voz de Jorge, con cifras sourced.
-5. **Auto-crítica** antes de entregar (abajo) → corrige.
-6. **Entrega.** Si faltó un dato de la fuente, **no lo inventes**: entrégalo con `[FALTA: …]` y la
-   pregunta concreta para Jorge.
+1. **Recibe el brief** (o pídelo): fase, objetivo, nº de correos, nivel de conciencia del tráfico.
+   Si no hay concepción, apóyate en `fap-narrativa` para tenerla — es la fuente de los ángulos.
+2. **Carga** `contexto/` + concepción + `swipe-correos.md` (Regla 0).
+3. **Si es una secuencia → llena la matriz de diversidad primero.** Asigna a cada correo un elemento
+   de concepción distinto y un lead/molde/emoción/conciencia que no choque con el correo vecino.
+   *Si es un solo correo, elige igual su punto en los dos ejes de forma consciente.*
+4. **Escribe** cada correo con **su** molde (no siempre el esqueleto PBS), en voz de Jorge, con cifras
+   sourced. Varía el gesto de apertura y el largo.
+5. **Auto-crítica** antes de entregar (abajo) → corrige. Relee la secuencia entera de corrido: ¿se
+   siente como 7 correos distintos o como el mismo correo 7 veces?
+6. **Entrega** la matriz + los correos. Si faltó un dato de la fuente, **no lo inventes**: entrégalo
+   con `[FALTA: …]` y la pregunta concreta para Jorge.
 
-## Checklist de presión pre-entrega (8 puntos)
+## Checklist de presión pre-entrega
 
+**Diversidad (secuencias):**
+- [ ] **Matriz llena y entregada;** ningún par de correos consecutivos comparte lead + molde + emoción.
+- [ ] **≥5 elementos de concepción distintos** por cada 7 correos (no todo nace del mismo dolor).
+- [ ] **Moldes variados:** no todo es "esqueleto PBS"; hay al menos un micro-correo y una historia pura.
+- [ ] **Aperturas distintas:** ningún correo abre igual que otro.
+- [ ] **Conciencia repartida:** la secuencia no vive entera en "consciente del problema".
+
+**Por correo:**
 - [ ] **Acción clara:** un solo CTA, coherente con la fase (registro o diagnóstico).
-- [ ] **Ajuste a conciencia:** el mensaje líder calza con el nivel de conciencia del tráfico.
+- [ ] **Un ángulo:** no amontona varios ganchos.
 - [ ] **Voz:** vocabulario obligatorio presente, ninguno prohibido.
 - [ ] **Cifras sourced:** toda cifra sale de `contexto/`; nada inventado ni "Set A".
 - [ ] **Candado de precio:** sin precio de FAP en captación.
 - [ ] **Objeción cubierta / prueba alineada:** si afirma valor, hay razón para creer.
-- [ ] **Un ángulo:** no amontona varios ganchos.
 - [ ] **Promesa-cumplimiento:** nada que prometa resultados sin la cláusula de implementación.
 
 ---
