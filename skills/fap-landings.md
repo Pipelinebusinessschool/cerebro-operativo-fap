@@ -2,6 +2,8 @@
 
 **Rol:** producir landings de captación FAP en **dos modelos**.
 
+> ⚠️ **Antes de generar cualquier pieza, lee [`/CANON-CONTENIDO.md`](../CANON-CONTENIDO.md)** — candados de voz, objeciones a anticipar y léxico del cliente. Es fuente de verdad y manda sobre esta skill.
+
 ## Modelos
 - **Largo (Brunson)** — página larga, estructura completa.
 - **Corto (Brasil)** — página corta, directa.

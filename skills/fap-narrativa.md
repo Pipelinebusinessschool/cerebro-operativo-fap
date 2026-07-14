@@ -2,6 +2,8 @@
 
 **Rol:** generar las **3 Big Ideas** + el **brief** narrativo del lanzamiento.
 
+> ⚠️ **Antes de generar cualquier pieza, lee [`/CANON-CONTENIDO.md`](../CANON-CONTENIDO.md)** — candados de voz, objeciones a anticipar y léxico del cliente. Es fuente de verdad y manda sobre esta skill.
+
 ## Marcos de referencia
 - **Agora** (estructura de gran idea).
 - **McKee** (estructura de historia).

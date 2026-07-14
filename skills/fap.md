@@ -2,6 +2,10 @@
 
 **Rol:** fuente de verdad + candados. Es la base que todas las demás skills respetan.
 
+La fuente de verdad tiene dos piezas que **toda pieza consulta**: esta skill (contexto +
+candados) y **[`/CANON-CONTENIDO.md`](../CANON-CONTENIDO.md)** (voz del cliente + objeciones
++ candado de voz). Si algo contradice al canon, gana el canon.
+
 ## Contexto de FAP
 - Modelo **high-ticket B2B**.
 - **Sin precio en captación.**

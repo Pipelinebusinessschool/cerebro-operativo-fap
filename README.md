@@ -10,13 +10,18 @@ ya producidas y validadas.
 > **Principio de fondo:** construir, no comprar. Cuando el hueco es específico de FAP,
 > se construye una skill propia en vez de instalar una genérica del banco.
 
+> 🧭 **Fuente de verdad para TODA pieza:** [`CANON-CONTENIDO.md`](CANON-CONTENIDO.md).
+> Toda skill lo consulta antes de generar contenido (candados de voz + objeciones + léxico
+> del cliente). Manda sobre cualquier skill.
+
 ---
 
 ## Estructura
 
 ```
 cerebro-operativo-fap/
-├── README.md                  ← este índice
+├── README.md                   ← este índice
+├── CANON-CONTENIDO.md          ← FUENTE DE VERDAD: candados de voz + objeciones (toda skill lo lee)
 ├── seguimiento/
 │   └── seguimiento.md         ← fases 1–3, método probado y pendientes abiertos
 ├── skills/                    ← las 7 skills del cerebro (fuente de verdad de cada pieza)
@@ -27,9 +32,13 @@ cerebro-operativo-fap/
 │   ├── fap-whatsapp-api.md
 │   ├── fap-whatsapp-grupos.md
 │   └── fap-video-ads-meta.md
-├── swipe/                     ← banco de ejemplos ganadores reales (inyección de contexto)
+├── voz/                       ← lenguaje real del cliente (respaldo del canon)
 │   ├── README.md
-│   └── swipe-landings.md      ← PILOTO: plantilla por ficha (llenar con ganadoras reales)
+│   ├── voz-cliente.md         ← cómo habla el cliente (15 llamadas reales, anonimizado)
+│   └── mapa-objeciones.md     ← las 8 objeciones por frecuencia
+├── swipe/                     ← banco de ejemplos ganadores reales
+│   ├── README.md
+│   └── swipe-landings.md      ← PILOTO: plantilla por ficha
 └── piezas/                    ← piezas ya producidas y validadas
     └── whatsapp-confirmacion-compra.md
 ```
@@ -55,6 +64,7 @@ cerebro-operativo-fap/
 - **Fase 1 — Revisión del banco de skills genéricas:** cerrada. Ninguna instalada; se rescató craft.
 - **Fase 2 — Construcción del cerebro:** 7 skills propias construidas e instaladas.
 - **Fase 3 — Validación:** kit completo de prueba (workshop de Contratación) coherente y con candados intactos → el cerebro generaliza.
-- **En curso — Swipe de ganadoras:** piloto en `landings`. La brecha del testeo es la falta de ejemplos reales; el swipe la cierra.
+- **Voz del cliente:** 15 llamadas reales destiladas en `voz/` y elevadas al `CANON-CONTENIDO.md`.
+- **En curso — Swipe de ganadoras:** piloto en `landings`.
 
 Detalle y pendientes abiertos en [`seguimiento/seguimiento.md`](seguimiento/seguimiento.md).
