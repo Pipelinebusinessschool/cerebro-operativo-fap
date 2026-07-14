@@ -1,0 +1,229 @@
+<title>El mapa de fap · Cerebro Operativo FAP</title>
+<style>
+  :root{
+    --bg:#F1F0F7; --panel:#E7E7F1; --card:#FCFCFE; --card-miss:#F6F5FB;
+    --ink:#1A1930; --muted:#6C6B85; --hair:#DCDBEA;
+    --ctx:#3B45B5; --ctx-line:#6E78E0;
+    --skill:#C0324B; --skill-line:#DE6E82;
+    --navy1:#2A1F5C; --navy2:#3F2E86;
+    --built-bg:#D7EFE2; --built-fg:#1B7A52;
+    --miss-bg:#F6E4C4; --miss-fg:#9A5A05;
+    --accent:#3B45B5;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#0C0C17; --panel:#141426; --card:#1C1C31; --card-miss:#17172A;
+      --ink:#EAEAF6; --muted:#9998B6; --hair:#2A2A44;
+      --ctx:#8A93F2; --ctx-line:#5B64C4; --skill:#F0788C; --skill-line:#B54D63;
+      --navy1:#3A2E7A; --navy2:#5B48B0;
+      --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579;
+      --accent:#8A93F2;
+    }
+  }
+  :root[data-theme="light"]{
+    --bg:#F1F0F7; --panel:#E7E7F1; --card:#FCFCFE; --card-miss:#F6F5FB;
+    --ink:#1A1930; --muted:#6C6B85; --hair:#DCDBEA;
+    --ctx:#3B45B5; --ctx-line:#6E78E0; --skill:#C0324B; --skill-line:#DE6E82;
+    --navy1:#2A1F5C; --navy2:#3F2E86;
+    --built-bg:#D7EFE2; --built-fg:#1B7A52; --miss-bg:#F6E4C4; --miss-fg:#9A5A05; --accent:#3B45B5;
+  }
+  :root[data-theme="dark"]{
+    --bg:#0C0C17; --panel:#141426; --card:#1C1C31; --card-miss:#17172A;
+    --ink:#EAEAF6; --muted:#9998B6; --hair:#2A2A44;
+    --ctx:#8A93F2; --ctx-line:#5B64C4; --skill:#F0788C; --skill-line:#B54D63;
+    --navy1:#3A2E7A; --navy2:#5B48B0;
+    --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579; --accent:#8A93F2;
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;
+    -webkit-font-smoothing:antialiased}
+  .mono{font-family:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace}
+  .wrap{max-width:1180px;margin:0 auto;padding:clamp(26px,5vw,58px) clamp(16px,4vw,38px) 70px}
+
+  .eyebrow{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);
+    display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:24px;height:1px;background:var(--accent)}
+  h1{font-weight:650;letter-spacing:-.02em;text-wrap:balance;
+    font-size:clamp(32px,5.6vw,54px);line-height:1.02;margin:.3em 0 .12em}
+  h1 .m{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-weight:650}
+  .dek{max-width:64ch;color:var(--muted);font-size:clamp(15px,1.6vw,17px);margin:.2em 0 0}
+
+  /* stat row */
+  .stats{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 4px}
+  .stat{flex:1 1 150px;background:var(--card);border:1px solid var(--hair);border-radius:12px;
+    padding:13px 16px}
+  .stat .n{font-size:26px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+  .stat .l{font-size:12.5px;color:var(--muted);margin-top:1px}
+  .stat.built .n{color:var(--built-fg)} .stat.miss .n{color:var(--miss-fg)}
+  .stat.ready .n{color:var(--accent)}
+
+  /* diagram panel */
+  .panel{margin:22px 0 12px;background:
+      radial-gradient(120% 80% at 50% 42%, color-mix(in srgb,var(--panel) 60%, var(--bg)) 0%, var(--panel) 100%);
+    border:1px solid var(--hair);border-radius:20px;padding:6px}
+  .panel svg{display:block;width:100%;height:auto}
+
+  /* node cards (inside foreignObject) */
+  .node{width:100%;height:100%;border-radius:12px;padding:11px 13px 10px;background:var(--card);
+    display:flex;flex-direction:column;gap:5px;overflow:hidden;
+    box-shadow:0 8px 20px -14px rgba(24,18,70,.5)}
+  .node.ctx{border:1.7px solid var(--ctx)}
+  .node.skill{border:1.7px solid var(--skill)}
+  .node.missing{border-style:dashed;background:var(--card-miss);box-shadow:none}
+  .node .cat{display:flex;align-items:center;gap:6px;font-size:8.5px;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--muted);font-weight:700}
+  .node .cat .d{width:7px;height:7px;border-radius:50%;flex:none}
+  .node.ctx .cat .d{background:var(--ctx)} .node.skill .cat .d{background:var(--skill)}
+  .node .ttl{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;font-weight:650;
+    color:var(--ink);line-height:1.16;letter-spacing:-.01em}
+  .node .desc{font-size:10.5px;line-height:1.32;color:var(--muted);flex:1}
+  .node .pill{align-self:flex-start;font-size:8px;font-weight:800;letter-spacing:.1em;
+    text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-top:1px}
+  .pill.built{background:var(--built-bg);color:var(--built-fg)}
+  .pill.miss{background:var(--miss-bg);color:var(--miss-fg)}
+
+  /* links */
+  .link{fill:none;stroke-width:1.6}
+  .link.ctx{stroke:var(--ctx-line);opacity:.9}
+  .link.skill{stroke:var(--skill-line);opacity:.9}
+  .link.miss{stroke-dasharray:5 6;opacity:.7;animation:march 24s linear infinite}
+  @keyframes march{to{stroke-dashoffset:-264}}
+  .arc{font-size:12px;letter-spacing:.24em;text-transform:uppercase;fill:var(--muted);font-weight:600}
+  .cpulse{animation:breathe 4.5s ease-in-out infinite}
+  @keyframes breathe{0%,100%{opacity:.30}50%{opacity:.6}}
+  @media (prefers-reduced-motion:reduce){.link.miss{animation:none}.cpulse{animation:none;opacity:.42}}
+
+  /* legend */
+  .legend{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:22px;
+    background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px 20px}
+  .legend h4{margin:0 0 10px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .legend .row{display:flex;align-items:flex-start;gap:10px;margin:8px 0;font-size:13px}
+  .swatch{width:26px;height:18px;border-radius:5px;flex:none;margin-top:1px;background:var(--card)}
+  .swatch.ctx{border:1.7px solid var(--ctx)} .swatch.skill{border:1.7px solid var(--skill)}
+  .swatch.built{border:1.7px solid var(--muted)}
+  .swatch.miss{border:1.7px dashed var(--muted)}
+  .legend .row b{color:var(--ink);font-weight:600} .legend .row span{color:var(--muted)}
+  .lpill{font-size:8.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    padding:3px 8px;border-radius:999px;margin-top:1px;flex:none}
+
+  .note{margin-top:20px;padding:16px 18px;border-left:3px solid var(--accent);
+    background:var(--card);border-radius:0 12px 12px 0;font-size:14px;color:var(--muted)}
+  .note b{color:var(--ink)}
+  footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--hair);color:var(--muted);
+    font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  @media (max-width:560px){.legend{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">Cerebro Operativo · FAP</div>
+  <h1>El mapa de <span class="m">fap</span></h1>
+  <p class="dek">Todo gira alrededor de una sola fuente de verdad. A su alrededor, dos tipos de
+  nodo: lo que <b>fap sabe</b> (contexto) y lo que <b>produce</b> a partir de eso (skills). Y dos
+  estados: lo que ya está <b>construido y conectado</b>, y lo que todavía <b>falta</b>. Los nodos
+  punteados son el backlog — lo que hoy hace que una skill produzca algo correcto en vez de algo
+  que se parece a lo que ya te funcionó.</p>
+
+  <div class="stats">
+    <div class="stat ready"><div class="n">6</div><div class="l">skills de producción · listas</div></div>
+    <div class="stat built"><div class="n">2</div><div class="l">archivos de contexto · construidos</div></div>
+    <div class="stat miss"><div class="n">5</div><div class="l">nodos de contexto · por construir</div></div>
+  </div>
+
+  <div class="panel">
+    <div id="stage"></div>
+  </div>
+
+  <div class="legend">
+    <div>
+      <h4>Tipo de nodo · color de borde</h4>
+      <div class="row"><span class="swatch ctx"></span><div><b>Contexto</b> <span>— lo que fap sabe (archivo de referencia)</span></div></div>
+      <div class="row"><span class="swatch skill"></span><div><b>Skill</b> <span>— lo que produce (pieza de copy)</span></div></div>
+    </div>
+    <div>
+      <h4>Estado · etiqueta + borde</h4>
+      <div class="row"><span class="lpill" style="background:var(--built-bg);color:var(--built-fg)">Construido</span><div><span>borde sólido — ya existe y está conectado</span></div></div>
+      <div class="row"><span class="lpill" style="background:var(--miss-bg);color:var(--miss-fg)">Falta</span><div><span>borde punteado — pendiente de construir</span></div></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <b>Cómo leer el backlog:</b> las 6 skills ya producen, pero beben del mismo pozo. Mientras el
+    pozo tenga solo <span class="mono">contexto-fuente</span> y <span class="mono">lenguaje-verbatim</span>,
+    la salida es sólida pero genérica. Los 5 nodos punteados — tu voz real, el swipe de lo que ganó,
+    las objeciones mapeadas, la prueba empaquetada y el ICP reconciliado — son lo que convierte
+    “correcto” en “se parece a lo que funcionó”.
+  </div>
+
+  <footer>
+    <span>Cerebro Operativo FAP · 1 fuente de verdad · 13 nodos</span>
+    <span class="mono">Mapa de fap</span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var CX=650, CY=600, R=70;
+  var HW=107, HH=80; // half card size
+  var N=[
+    // ---- CONTEXTO (arriba) ----
+    {t:'ctx',b:false,x:650,y:160,ttl:'fap-swipe-ads.md&nbsp;/&nbsp;-correos.md',d:'Los ads y correos que YA te funcionaron — tu documento de Word.'},
+    {t:'ctx',b:false,x:405,y:230,ttl:'fap-voz-jorge.md',d:'Tu ritmo, tus muletillas, tu cadencia real — no una descripción aproximada.'},
+    {t:'ctx',b:false,x:895,y:230,ttl:'Mapa de objeciones+',d:'Patrón “conoce antes de contraatacar”, colocado en el punto de duda.'},
+    {t:'ctx',b:true, x:250,y:400,ttl:'fap-lenguaje-verbatim.md',d:'Frases exactas de prospectos y alumnos reales, agrupadas en 6 grupos.'},
+    {t:'ctx',b:false,x:1050,y:400,ttl:'Banco de prueba+',d:'Cada afirmación con su evidencia empaquetada al lado, no un bloque genérico.'},
+    {t:'ctx',b:true, x:235,y:590,ttl:'fap-contexto-fuente.md',d:'Verdad de negocio: ICP, 6 Pilares, garantías, métricas, objeciones, vocabulario.'},
+    {t:'ctx',b:false,x:1065,y:590,ttl:'Reconciliar ICP',d:'$500K/2 vendedores vs. $1M/3 — dos fuentes que hoy se contradicen.'},
+    // ---- SKILLS (abajo) ----
+    {t:'skill',b:true,x:235,y:780,ttl:'fap-narrativa',d:'Define la Big Idea y el ángulo una sola vez por lanzamiento; todo lo demás la hereda.'},
+    {t:'skill',b:true,x:1065,y:780,ttl:'fap-lanzamientos',d:'Orquesta qué pieza se produce, en qué orden, para cada ruta.'},
+    {t:'skill',b:true,x:350,y:950,ttl:'fap-landings',d:'Escribe la landing en dos modelos: Largo (Brunson) y Corto (Brasil).'},
+    {t:'skill',b:true,x:950,y:950,ttl:'fap-whatsapp-grupos',d:'Mensajes de comunidad — hype pre-evento, coordinación en vivo.'},
+    {t:'skill',b:true,x:495,y:1120,ttl:'fap-video-ads-meta',d:'Guion de video ad + hooks generados por familias, listo para Meta.'},
+    {t:'skill',b:true,x:805,y:1120,ttl:'fap-whatsapp-api',d:'Mensajes 1:1 — nurture, pre-call, recordatorios, reactivación.'}
+  ];
+
+  function border(x,y){
+    var dx=CX-x, dy=CY-y, s=Math.min(HW/Math.abs(dx||1e-6), HH/Math.abs(dy||1e-6));
+    return {x:x+dx*s, y:y+dy*s};
+  }
+
+  var links='', cards='', dots='';
+  N.forEach(function(n){
+    var bp=border(n.x,n.y);
+    var cls='link '+n.t+(n.b?'':' miss');
+    links+='<line class="'+cls+'" x1="'+CX+'" y1="'+CY+'" x2="'+bp.x.toFixed(1)+'" y2="'+bp.y.toFixed(1)+'"/>';
+    // connection dot on card border
+    var dc = n.t==='ctx' ? 'var(--ctx)' : 'var(--skill)';
+    dots+='<circle cx="'+bp.x.toFixed(1)+'" cy="'+bp.y.toFixed(1)+'" r="4" fill="'+dc+'"/>';
+    var cat = n.t==='ctx' ? 'Archivo de contexto' : 'Skill de producción';
+    var pill = n.b ? '<span class="pill built">Construido</span>' : '<span class="pill miss">Falta</span>';
+    var ncls='node '+n.t+(n.b?'':' missing');
+    cards+='<foreignObject x="'+(n.x-HW)+'" y="'+(n.y-HH)+'" width="'+(HW*2)+'" height="'+(HH*2)+'">'+
+      '<div xmlns="http://www.w3.org/1999/xhtml" class="'+ncls+'">'+
+        '<div class="cat"><span class="d"></span>'+cat+'</div>'+
+        '<div class="ttl">'+n.ttl+'</div>'+
+        '<div class="desc">'+n.d+'</div>'+pill+
+      '</div></foreignObject>';
+  });
+
+  var svg='<svg viewBox="0 0 1300 1250" role="img" aria-label="Mapa radial del cerebro operativo FAP: fap al centro, nodos de contexto y skills alrededor">'+
+    '<text class="arc" x="650" y="52" text-anchor="middle">Contexto — lo que fap sabe</text>'+
+    '<text class="arc" x="650" y="1232" text-anchor="middle">Skills — lo que produce a partir de fap</text>'+
+    '<defs>'+
+      '<radialGradient id="core" cx="42%" cy="38%" r="70%">'+
+        '<stop offset="0%" stop-color="var(--navy2)"/><stop offset="100%" stop-color="var(--navy1)"/>'+
+      '</radialGradient>'+
+    '</defs>'+
+    links+dots+
+    '<circle class="cpulse" cx="'+CX+'" cy="'+CY+'" r="'+(R+16)+'" fill="var(--accent)"/>'+
+    '<circle cx="'+CX+'" cy="'+CY+'" r="'+R+'" fill="url(#core)" stroke="rgba(255,255,255,.14)" stroke-width="1.5"/>'+
+    '<text x="'+CX+'" y="'+(CY-2)+'" text-anchor="middle" fill="#fff" font-size="30" font-weight="700" font-family="ui-monospace,Menlo,monospace" letter-spacing="-1">fap</text>'+
+    '<text x="'+CX+'" y="'+(CY+20)+'" text-anchor="middle" fill="rgba(255,255,255,.72)" font-size="9.5" letter-spacing="3" font-family="system-ui">FUENTE DE VERDAD</text>'+
+    cards+
+  '</svg>';
+
+  document.getElementById('stage').innerHTML=svg;
+})();
+</script>
