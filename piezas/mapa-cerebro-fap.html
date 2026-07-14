@@ -1,9 +1,9 @@
-<title>El mapa de fap</title>
+<title>El cerebro de fap</title>
 <style>
   :root{
     --bg:#F1F0F7; --panel:#E9E9F2; --card:#FCFCFE; --card-miss:#F6F5FB;
     --ink:#1A1930; --muted:#6C6B85; --hair:#DCDBEA;
-    --ctx:#3B45B5; --skill:#C0324B;
+    --ctx:#3B45B5; --sw:#0E8C7A; --skill:#C0324B;
     --navy1:#2A1F5C; --navy2:#3F2E86;
     --built-bg:#D7EFE2; --built-fg:#1B7A52;
     --miss-bg:#F6E4C4; --miss-fg:#9A5A05;
@@ -13,7 +13,7 @@
     :root{
       --bg:#0C0C17; --panel:#131324; --card:#1C1C31; --card-miss:#17172A;
       --ink:#EAEAF6; --muted:#9998B6; --hair:#2A2A44;
-      --ctx:#8A93F2; --skill:#F0788C;
+      --ctx:#8A93F2; --sw:#3FC7B4; --skill:#F0788C;
       --navy1:#3A2E7A; --navy2:#5B48B0;
       --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579;
       --accent:#8A93F2;
@@ -22,13 +22,13 @@
   :root[data-theme="light"]{
     --bg:#F1F0F7; --panel:#E9E9F2; --card:#FCFCFE; --card-miss:#F6F5FB;
     --ink:#1A1930; --muted:#6C6B85; --hair:#DCDBEA;
-    --ctx:#3B45B5; --skill:#C0324B; --navy1:#2A1F5C; --navy2:#3F2E86;
+    --ctx:#3B45B5; --sw:#0E8C7A; --skill:#C0324B; --navy1:#2A1F5C; --navy2:#3F2E86;
     --built-bg:#D7EFE2; --built-fg:#1B7A52; --miss-bg:#F6E4C4; --miss-fg:#9A5A05; --accent:#3B45B5;
   }
   :root[data-theme="dark"]{
     --bg:#0C0C17; --panel:#131324; --card:#1C1C31; --card-miss:#17172A;
     --ink:#EAEAF6; --muted:#9998B6; --hair:#2A2A44;
-    --ctx:#8A93F2; --skill:#F0788C; --navy1:#3A2E7A; --navy2:#5B48B0;
+    --ctx:#8A93F2; --sw:#3FC7B4; --skill:#F0788C; --navy1:#3A2E7A; --navy2:#5B48B0;
     --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579; --accent:#8A93F2;
   }
 
@@ -36,55 +36,62 @@
   body{margin:0;background:var(--bg);color:var(--ink);
     font-family:system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
   .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
-  .wrap{max-width:1000px;margin:0 auto;padding:clamp(14px,3vw,30px)}
+  .wrap{max-width:1080px;margin:0 auto;padding:clamp(14px,3vw,30px)}
 
   .diagram{background:
-      radial-gradient(58% 52% at 50% 50%, color-mix(in srgb,var(--panel) 42%, var(--bg)) 0%, var(--panel) 100%);
+      radial-gradient(56% 50% at 50% 48%, color-mix(in srgb,var(--panel) 40%, var(--bg)) 0%, var(--panel) 100%);
     border:1px solid var(--hair);border-radius:22px;padding:clamp(10px,1.8vw,20px)}
-  .ring-cap{text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:6px 0 2px}
+  .ring-cap{text-align:center;font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:4px 0 0}
   .ring-cap b{color:var(--accent)}
   .diagram svg{display:block;width:100%;height:auto}
 
-  /* node cards */
-  .node{border-radius:11px;padding:9px 11px 8px;background:var(--card);display:flex;flex-direction:column;gap:4px;height:100%}
-  .node.ctx{border:1.5px solid var(--ctx)}
-  .node.skill{border:1.7px solid var(--skill);box-shadow:0 8px 20px -14px rgba(24,18,70,.5)}
-  .node.missing{border-style:dashed;background:var(--card-miss)}
-  .node .cat{display:flex;align-items:center;gap:5px;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
-  .node .cat .d{width:6px;height:6px;border-radius:50%;flex:none}
-  .node.ctx .cat .d{background:var(--ctx)} .node.skill .cat .d{background:var(--skill)}
-  .node .ttl{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:650;color:var(--ink);line-height:1.1;letter-spacing:-.02em}
-  .node .desc{color:var(--muted);flex:1}
-  .node .pill{align-self:flex-start;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;margin-top:1px}
-  .pill.built{background:var(--built-bg);color:var(--built-fg)}
-  .pill.miss{background:var(--miss-bg);color:var(--miss-fg)}
-  .cbase .node .ttl{font-size:10.5px} .cbase .node .desc{font-size:8.5px;line-height:1.25}
-  .cbase .node .pill{font-size:6.5px;padding:2px 6px} .cbase .node .cat{font-size:7.5px}
-  .skl .ttl{font-size:12.5px} .skl .desc{font-size:10px;line-height:1.3} .skl .cat{font-size:8px} .skl .pill{font-size:7px;padding:2px 7px}
+  /* ring skill cards */
+  .node{border-radius:11px;padding:9px 11px 8px;background:var(--card);display:flex;flex-direction:column;gap:4px;height:100%;
+    border:1.7px solid var(--skill);box-shadow:0 8px 20px -14px rgba(24,18,70,.5)}
+  .node .cat{display:flex;align-items:center;gap:5px;font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .node .cat .d{width:6px;height:6px;border-radius:50%;flex:none;background:var(--skill)}
+  .node .ttl{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:650;color:var(--ink);line-height:1.1;letter-spacing:-.02em;font-size:12px}
+  .node .desc{color:var(--muted);flex:1;font-size:9.5px;line-height:1.28}
+  .node .pill{align-self:flex-start;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;
+    font-size:6.5px;padding:2px 6px;background:var(--built-bg);color:var(--built-fg)}
 
   /* central base */
   .cbase{width:100%;height:100%;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:11px;
-    display:flex;flex-direction:column;box-shadow:0 22px 50px -28px rgba(24,18,70,.55)}
-  .cbase .btitle{text-align:center;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:1px 0 8px}
-  .fapbar{display:flex;align-items:center;gap:12px;border-radius:11px;padding:10px 13px;margin-bottom:8px;
+    display:flex;flex-direction:column;box-shadow:0 22px 52px -28px rgba(24,18,70,.55)}
+  .cbase .btitle{text-align:center;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 8px}
+  .fapbar{display:flex;align-items:center;gap:11px;border-radius:11px;padding:9px 13px;margin-bottom:9px;
     background:radial-gradient(120% 170% at 12% 25%,var(--navy2),var(--navy1));color:#fff}
-  .fapbar .lock{width:31px;height:31px;border-radius:9px;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
-  .fapbar .lock svg{width:16px;height:16px}
-  .fapbar .t{font-family:ui-monospace,Menlo,monospace;font-size:18px;font-weight:700;letter-spacing:-.5px;line-height:1}
-  .fapbar .s{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:2px}
-  .grplbl{display:flex;align-items:center;gap:8px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:7px 2px 6px}
-  .grplbl::after{content:"";flex:1;height:1px;background:var(--hair)}
-  .grplbl.sw{color:var(--ctx)}
-  .bgrid2{display:grid;grid-template-columns:1fr 1fr;gap:7px}
-  .bgrid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
+  .fapbar .lock{width:29px;height:29px;border-radius:8px;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
+  .fapbar .lock svg{width:15px;height:15px}
+  .fapbar .t{font-family:ui-monospace,Menlo,monospace;font-size:17px;font-weight:700;letter-spacing:-.5px;line-height:1}
+  .fapbar .s{font-size:8px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:2px}
+  .btwo{display:grid;grid-template-columns:1fr 1fr;gap:11px;flex:1}
+  .bcol{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .glbl{display:flex;align-items:center;gap:6px;font-size:8px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;margin-bottom:2px}
+  .glbl.c{color:var(--ctx)} .glbl.s{color:var(--sw)}
+  .glbl .tag{font-weight:600;color:var(--muted);letter-spacing:.02em;text-transform:none}
+  .chip{display:flex;align-items:center;gap:6px;padding:3px 7px;border-radius:7px;background:var(--card);border:1px solid var(--hair);min-width:0}
+  .chip .dot{width:7px;height:7px;border-radius:50%;flex:none}
+  .chip .dot.ok{background:var(--built-fg)} .chip .dot.mid{background:var(--miss-fg)}
+  .chip .nm{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:9px;font-weight:650;color:var(--ink);white-space:nowrap;flex:none}
+  .chip .rl{font-size:7.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+  .chip.note{border-style:dashed;justify-content:center}
+  .chip.note .rl{font-style:italic;text-align:center;flex:none;color:var(--sw)}
 
-  /* mini legend */
-  .mini{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:10px 4px 2px;font-size:11.5px;color:var(--muted)}
+  /* mini legend + pendientes */
+  .mini{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 18px;margin:12px 4px 2px;font-size:11px;color:var(--muted)}
   .mini .i{display:flex;align-items:center;gap:6px}
-  .mini .sw{width:20px;height:14px;border-radius:4px;background:var(--card)}
-  .mini .sw.ctx{border:1.6px solid var(--ctx)} .mini .sw.skill{border:1.6px solid var(--skill)} .mini .sw.miss{border:1.6px dashed var(--muted)}
-  .mini .pl{font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px}
-  .mini svg{width:26px;height:12px;color:var(--accent)}
+  .mini .b{width:13px;height:13px;border-radius:4px;flex:none}
+  .mini .b.ctx{background:var(--ctx)} .mini .b.sw{background:var(--sw)} .mini .b.skill{border:2px solid var(--skill)}
+  .mini .b.ok{background:var(--built-fg)} .mini .b.mid{background:var(--miss-fg)}
+  .mini .b.dot{border-radius:50%}
+  .mini svg{width:24px;height:11px;color:var(--accent)}
+
+  .pend{margin-top:14px;border:1px solid var(--hair);border-radius:12px;background:var(--card);padding:12px 15px}
+  .pend h4{margin:0 0 8px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--miss-fg)}
+  .pend .list{display:flex;flex-wrap:wrap;gap:8px}
+  .pend .p{display:flex;align-items:center;gap:7px;font-size:12px;background:var(--miss-bg);color:var(--ink);border-radius:8px;padding:5px 10px}
+  .pend .p .n{font-weight:800;color:var(--miss-fg);font-variant-numeric:tabular-nums}
 
   .arrow-l{animation:apulse 2.6s ease-in-out infinite}
   @keyframes apulse{0%,100%{opacity:.55}50%{opacity:1}}
@@ -93,31 +100,47 @@
 
 <div class="wrap">
   <div class="diagram">
-    <div class="ring-cap">El mapa de <b>fap</b> · las 6 skills consultan la base</div>
+    <div class="ring-cap">El cerebro de <b>fap</b> · 9 skills consultan la base antes de escribir (Regla 0)</div>
     <div id="stage"></div>
     <div class="mini">
-      <span class="i"><span class="sw ctx"></span>Base / contexto / swipe</span>
-      <span class="i"><span class="sw skill"></span>Skill (produce)</span>
+      <span class="i"><span class="b ctx"></span>Contexto · qué es cierto</span>
+      <span class="i"><span class="b sw"></span>Swipe · cómo se escribe</span>
+      <span class="i"><span class="b skill"></span>Skill (produce)</span>
       <span class="i"><svg viewBox="0 0 44 20" aria-hidden="true"><line x1="2" y1="10" x2="34" y2="10" stroke="currentColor" stroke-width="2"/><path d="M32 4 L42 10 L32 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>consulta</span>
-      <span class="i"><span class="pl" style="background:var(--built-bg);color:var(--built-fg)">Construido</span></span>
-      <span class="i"><span class="pl" style="background:var(--miss-bg);color:var(--miss-fg)">Falta</span></span>
+      <span class="i"><span class="b ok dot"></span>Listo</span>
+      <span class="i"><span class="b mid dot"></span>Afinar</span>
+    </div>
+  </div>
+
+  <div class="pend">
+    <h4>Pendientes abiertos · 6</h4>
+    <div class="list">
+      <span class="p"><span class="n">1</span>Test de activación de las skills en chat nuevo</span>
+      <span class="p"><span class="n">2</span>Perfil de voz hablada de Jorge (cadencia)</span>
+      <span class="p"><span class="n">3</span>Afinar mapa de objeciones</span>
+      <span class="p"><span class="n">4</span>Estructurar banco de prueba (claim→evidencia)</span>
+      <span class="p"><span class="n">5</span>Decidir secuencias de momento (skill propia o no)</span>
+      <span class="p"><span class="n">6</span>Confirmar duración de la llamada de diagnóstico</span>
     </div>
   </div>
 </div>
 
 <script>
 (function(){
-  var CX=620, CY=624, R=506;
-  var BW=502, BH=566, bhw=BW/2, bhh=BH/2;
-  var SW=236, SH=134, shw=SW/2, shh=SH/2;
+  var CX=620, CY=628, R=452;
+  var BW=474, BH=392, bhw=BW/2, bhh=BH/2;
+  var SW=212, SH=118, shw=SW/2, shh=SH/2;
 
   var SK=[
-    {a:-90, ttl:'fap-lanzamientos', d:'Orquesta qué pieza se produce, en qué orden, para cada ruta.'},
-    {a:-30, ttl:'fap-narrativa',    d:'Define la Big Idea y el ángulo una sola vez por lanzamiento; todo lo demás la hereda.'},
-    {a: 30, ttl:'fap-landings',     d:'Escribe la landing en dos modelos: Largo (Brunson) y Corto (Brasil).'},
-    {a: 90, ttl:'fap-video-ads-meta',d:'Guion de video ad + hooks generados por familias, listo para Meta.'},
-    {a:150, ttl:'fap-whatsapp-grupos',d:'Mensajes de comunidad — hype pre-evento, coordinación en vivo.'},
-    {a:210, ttl:'fap-whatsapp-api', d:'Mensajes 1:1 — nurture, pre-call, recordatorios, reactivación.'}
+    {a:-90, ttl:'fap-lanzamientos', d:'Director: orquesta las 2 rutas (A: VSL directo · B: workshop→diagnóstico), qué pieza y en qué orden.'},
+    {a:-50, ttl:'fap-narrativa', d:'Documento de Concepción: 3 Big Ideas + brief maestro que alimenta todo el funnel.'},
+    {a:-10, ttl:'fap-landings', d:'Landings de captación (opt-in de registro): modelo Largo (Brunson) y Corto (Brasil).'},
+    {a: 30, ttl:'fap-paginas-venta', d:'Páginas de venta y OTOs (workshop $11 + upsells), con UX.'},
+    {a: 70, ttl:'fap-correos', d:'Dueño del funnel de correo: invitación, recordatorio, venta y postventa.'},
+    {a:110, ttl:'fap-video-ads-meta', d:'Ads de video para Meta: repertorio de formatos + 3 hooks por ad.'},
+    {a:150, ttl:'fap-vsl', d:'Guion de Video Sales Letter (Ruta A: venta directa).'},
+    {a:190, ttl:'fap-whatsapp-api', d:'Mensajes 1:1 — nurture, pre-call, recordatorios, reactivación + cumplimiento API.'},
+    {a:230, ttl:'fap-whatsapp-grupos', d:'Comunidad / grupos — hype pre-evento, coordinación en vivo.'}
   ];
 
   function hit(hw,hh,ux,uy){ return Math.min(hw/(Math.abs(ux)||1e-6), hh/(Math.abs(uy)||1e-6)); }
@@ -128,47 +151,50 @@
     var sx=CX+R*ox, sy=CY+R*oy;
     var se=hit(shw,shh,ox,oy), sex=sx-ox*se, sey=sy-oy*se;
     var be=hit(bhw,bhh,ox,oy), bex=CX+ox*be, bey=CY+oy*be;
-    bex+=ox*12; bey+=oy*12;
-    var bcx=bex+ox*13, bcy=bey+oy*13, px=-oy, py=ox, w=6;
-    lines+='<line x1="'+sex.toFixed(1)+'" y1="'+sey.toFixed(1)+'" x2="'+bcx.toFixed(1)+'" y2="'+bcy.toFixed(1)+'" stroke="var(--accent)" stroke-width="2.2" class="arrow-l"/>';
+    bex+=ox*11; bey+=oy*11;
+    var bcx=bex+ox*12, bcy=bey+oy*12, px=-oy, py=ox, w=5.5;
+    lines+='<line x1="'+sex.toFixed(1)+'" y1="'+sey.toFixed(1)+'" x2="'+bcx.toFixed(1)+'" y2="'+bcy.toFixed(1)+'" stroke="var(--accent)" stroke-width="2" class="arrow-l"/>';
     arrows+='<polygon points="'+bex.toFixed(1)+','+bey.toFixed(1)+' '+(bcx+px*w).toFixed(1)+','+(bcy+py*w).toFixed(1)+' '+(bcx-px*w).toFixed(1)+','+(bcy-py*w).toFixed(1)+'" fill="var(--accent)" class="arrow-l"/>';
     skills+='<foreignObject x="'+(sx-shw)+'" y="'+(sy-shh)+'" width="'+SW+'" height="'+SH+'">'+
-      '<div xmlns="http://www.w3.org/1999/xhtml" class="node skill skl">'+
+      '<div xmlns="http://www.w3.org/1999/xhtml" class="node">'+
         '<div class="cat"><span class="d"></span>Skill de producción</div>'+
         '<div class="ttl">'+s.ttl+'</div><div class="desc">'+s.d+'</div>'+
-        '<span class="pill built">Construido</span></div></foreignObject>';
+        '<span class="pill">Listo</span></div></foreignObject>';
   });
 
-  function ctx(kind,ttl,desc,built){
-    return '<div class="node ctx'+(built?'':' missing')+'">'+
-      '<div class="cat"><span class="d"></span>'+kind+'</div>'+
-      '<div class="ttl">'+ttl+'</div><div class="desc">'+desc+'</div>'+
-      '<span class="pill '+(built?'built':'miss')+'">'+(built?'Construido':'Falta')+'</span></div>';
-  }
+  function chip(nm,rl,mid){ return '<div class="chip"><span class="dot '+(mid?'mid':'ok')+'"></span><span class="nm">'+nm+'</span><span class="rl">'+rl+'</span></div>'; }
+
+  var ctxCol='<div class="bcol"><div class="glbl c">Contexto <span class="tag">— qué es cierto</span></div>'+
+    chip('jorge_icp','ICP · descalificadores')+
+    chip('jorge_voice','voz · vocabulario')+
+    chip('jorge_philosophy','objeciones · 4 pasos')+
+    chip('jorge_process','proceso de venta')+
+    chip('jorge_decisions','6 Pilares · spec FAP')+
+    chip('pbs_metrics','métricas reales (Set B)')+
+    chip('pbs_indice','reglas universales')+
+    chip('autoridad','autoridad + foto')+
+    chip('objeciones','mapa concede→contraataca',true)+
+    chip('prueba','claim → evidencia',true)+
+    '</div>';
+  var swCol='<div class="bcol"><div class="glbl s">Swipe <span class="tag">— cómo se escribe</span></div>'+
+    chip('principios-craft','buenas prácticas (todas)')+
+    chip('modelo-concepcion','molde del Doc. Concepción')+
+    chip('swipe-landings','landings ganadoras')+
+    chip('swipe-paginas-venta','páginas de pago + OTOs')+
+    chip('swipe-correos','funnel de correo')+
+    chip('swipe-ads','11 ads con métricas')+
+    '<div class="chip note"><span class="rl">WhatsApp → sin swipe (por decisión)</span></div>'+
+    '</div>';
 
   var base='<foreignObject x="'+(CX-bhw)+'" y="'+(CY-bhh)+'" width="'+BW+'" height="'+BH+'">'+
     '<div xmlns="http://www.w3.org/1999/xhtml" class="cbase">'+
-      '<div class="btitle">La base — lo que toda skill consulta</div>'+
+      '<div class="btitle">La base — las dos mitades del cerebro</div>'+
       '<div class="fapbar"><div class="lock"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" fill="rgba(255,255,255,.14)"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.4" r="1.4" fill="#fff" stroke="none"/></svg></div>'+
-        '<div><div class="t">fap</div><div class="s">Fuente de verdad · candados</div></div></div>'+
-      '<div class="grplbl">Contexto — lo que fap sabe</div>'+
-      '<div class="bgrid2">'+
-        ctx('Contexto · fuente','fap-contexto-fuente.md','Verdad de negocio: ICP, 6 Pilares, garantías, métricas, objeciones, vocabulario.',true)+
-        ctx('Contexto · lenguaje','fap-lenguaje-verbatim.md','Frases exactas de prospectos y alumnos reales, en 6 grupos.',true)+
-        ctx('Contexto · voz','fap-voz-jorge.md','Tu ritmo, tus muletillas, tu cadencia real — no una descripción aproximada.',false)+
-        ctx('Contexto · objeciones','Mapa de objeciones+','Patrón “conoce antes de contraatacar”, en el punto de duda.',false)+
-        ctx('Contexto · prueba','Banco de prueba+','Cada afirmación con su evidencia empaquetada al lado.',false)+
-        ctx('Contexto · ICP','Reconciliar ICP','$500K/2 vend. vs. $1M/3 — dos fuentes que se contradicen.',false)+
-      '</div>'+
-      '<div class="grplbl sw">Swipes — lo que ya ganó</div>'+
-      '<div class="bgrid3">'+
-        ctx('Swipe · landings','fap-swipe-landings','Fichas de landings ganadoras (copy + métrica + por qué ganó).',true)+
-        ctx('Swipe · ads','fap-swipe-ads','Los ads que YA te funcionaron — con métrica y qué NO copiar.',true)+
-        ctx('Swipe · correos','fap-swipe-correos','Los correos que YA convirtieron — tu documento de Word.',true)+
-      '</div>'+
+        '<div><div class="t">fap</div><div class="s">Fuente de verdad · candados · Regla 0</div></div></div>'+
+      '<div class="btwo">'+ctxCol+swCol+'</div>'+
     '</div></foreignObject>';
 
-  var svg='<svg viewBox="0 0 1240 1250" role="img" aria-label="La base de fap en el centro y las 6 skills alrededor consultándola">'+
+  var svg='<svg viewBox="0 0 1240 1256" role="img" aria-label="El cerebro de fap: base de contexto y swipe al centro, 9 skills de producción alrededor consultándola">'+
     lines+arrows+base+skills+'</svg>';
   document.getElementById('stage').innerHTML=svg;
 })();
