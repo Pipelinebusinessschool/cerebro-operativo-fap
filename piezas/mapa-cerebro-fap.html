@@ -1,4 +1,4 @@
-<title>El mapa de fap · Cerebro Operativo FAP</title>
+<title>El mapa de fap</title>
 <style>
   :root{
     --bg:#F1F0F7; --panel:#E9E9F2; --card:#FCFCFE; --card-miss:#F6F5FB;
@@ -34,27 +34,14 @@
 
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--ink);
-    font-family:system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
-  .mono{font-family:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace}
-  .wrap{max-width:1180px;margin:0 auto;padding:clamp(26px,5vw,58px) clamp(16px,4vw,38px) 70px}
+    font-family:system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+  .wrap{max-width:1000px;margin:0 auto;padding:clamp(14px,3vw,30px)}
 
-  .eyebrow{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
-  .eyebrow::before{content:"";width:24px;height:1px;background:var(--accent)}
-  h1{font-weight:650;letter-spacing:-.02em;text-wrap:balance;font-size:clamp(30px,5.4vw,52px);line-height:1.02;margin:.3em 0 .12em}
-  h1 .m{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-weight:650}
-  .dek{max-width:66ch;color:var(--muted);font-size:clamp(15px,1.6vw,17px);margin:.2em 0 0}
-  .dek b{color:var(--ink);font-weight:600}
-
-  .stats{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 4px}
-  .stat{flex:1 1 150px;background:var(--card);border:1px solid var(--hair);border-radius:12px;padding:13px 16px}
-  .stat .n{font-size:26px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-  .stat .l{font-size:12.5px;color:var(--muted);margin-top:1px}
-  .stat.built .n{color:var(--built-fg)} .stat.miss .n{color:var(--miss-fg)} .stat.ready .n{color:var(--accent)}
-
-  .diagram{margin:22px 0 12px;background:
-      radial-gradient(60% 55% at 50% 50%, color-mix(in srgb,var(--panel) 45%, var(--bg)) 0%, var(--panel) 100%);
-    border:1px solid var(--hair);border-radius:22px;padding:clamp(10px,2vw,20px)}
-  .ring-cap{text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:6px 0 2px}
+  .diagram{background:
+      radial-gradient(58% 52% at 50% 50%, color-mix(in srgb,var(--panel) 42%, var(--bg)) 0%, var(--panel) 100%);
+    border:1px solid var(--hair);border-radius:22px;padding:clamp(10px,1.8vw,20px)}
+  .ring-cap{text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:6px 0 2px}
   .ring-cap b{color:var(--accent)}
   .diagram svg{display:block;width:100%;height:auto}
 
@@ -63,105 +50,66 @@
   .node.ctx{border:1.5px solid var(--ctx)}
   .node.skill{border:1.7px solid var(--skill);box-shadow:0 8px 20px -14px rgba(24,18,70,.5)}
   .node.missing{border-style:dashed;background:var(--card-miss)}
-  .node .cat{display:flex;align-items:center;gap:5px;font-size:8px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .node .cat{display:flex;align-items:center;gap:5px;font-size:8px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
   .node .cat .d{width:6px;height:6px;border-radius:50%;flex:none}
   .node.ctx .cat .d{background:var(--ctx)} .node.skill .cat .d{background:var(--skill)}
-  .node .ttl{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:650;color:var(--ink);line-height:1.12;letter-spacing:-.02em}
+  .node .ttl{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:650;color:var(--ink);line-height:1.1;letter-spacing:-.02em}
   .node .desc{color:var(--muted);flex:1}
-  .node .pill{align-self:flex-start;font-weight:800;letter-spacing:.07em;text-transform:uppercase;border-radius:999px;margin-top:1px}
+  .node .pill{align-self:flex-start;font-weight:800;letter-spacing:.06em;text-transform:uppercase;border-radius:999px;margin-top:1px}
   .pill.built{background:var(--built-bg);color:var(--built-fg)}
   .pill.miss{background:var(--miss-bg);color:var(--miss-fg)}
-  /* base ctx cards */
-  .cbase .node .ttl{font-size:11px} .cbase .node .desc{font-size:9px;line-height:1.28}
-  .cbase .node .pill{font-size:7px;padding:2px 6px}
-  /* ring skill cards */
+  .cbase .node .ttl{font-size:10.5px} .cbase .node .desc{font-size:8.5px;line-height:1.25}
+  .cbase .node .pill{font-size:6.5px;padding:2px 6px} .cbase .node .cat{font-size:7.5px}
   .skl .ttl{font-size:12.5px} .skl .desc{font-size:10px;line-height:1.3} .skl .cat{font-size:8px} .skl .pill{font-size:7px;padding:2px 7px}
 
   /* central base */
   .cbase{width:100%;height:100%;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:11px;
-    display:flex;flex-direction:column;box-shadow:0 20px 48px -28px rgba(24,18,70,.55)}
-  .cbase .btitle{text-align:center;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:1px 0 9px}
-  .fapbar{display:flex;align-items:center;gap:12px;border-radius:11px;padding:11px 14px;margin-bottom:10px;
+    display:flex;flex-direction:column;box-shadow:0 22px 50px -28px rgba(24,18,70,.55)}
+  .cbase .btitle{text-align:center;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:1px 0 8px}
+  .fapbar{display:flex;align-items:center;gap:12px;border-radius:11px;padding:10px 13px;margin-bottom:8px;
     background:radial-gradient(120% 170% at 12% 25%,var(--navy2),var(--navy1));color:#fff}
-  .fapbar .lock{width:32px;height:32px;border-radius:9px;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
+  .fapbar .lock{width:31px;height:31px;border-radius:9px;flex:none;display:grid;place-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
   .fapbar .lock svg{width:16px;height:16px}
-  .fapbar .t{font-family:ui-monospace,Menlo,monospace;font-size:19px;font-weight:700;letter-spacing:-.5px;line-height:1}
-  .fapbar .s{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:2px}
-  .bgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;flex:1}
-  .bgrid .span{grid-column:1/-1}
+  .fapbar .t{font-family:ui-monospace,Menlo,monospace;font-size:18px;font-weight:700;letter-spacing:-.5px;line-height:1}
+  .fapbar .s{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-top:2px}
+  .grplbl{display:flex;align-items:center;gap:8px;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:7px 2px 6px}
+  .grplbl::after{content:"";flex:1;height:1px;background:var(--hair)}
+  .grplbl.sw{color:var(--ctx)}
+  .bgrid2{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+  .bgrid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}
 
-  /* legend */
-  .legend{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:24px;background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:18px 20px}
-  .legend h4{margin:0 0 10px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-  .legend .row{display:flex;align-items:flex-start;gap:10px;margin:8px 0;font-size:13px}
-  .swatch{width:26px;height:18px;border-radius:5px;flex:none;margin-top:1px;background:var(--card)}
-  .swatch.ctx{border:1.7px solid var(--ctx)} .swatch.skill{border:1.7px solid var(--skill)}
-  .legend .row b{color:var(--ink);font-weight:600} .legend .row span{color:var(--muted)}
-  .lpill{font-size:8.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:999px;margin-top:1px;flex:none}
-  .larrow{width:34px;height:16px;flex:none;color:var(--accent);margin-top:2px}
-
-  .note{margin-top:20px;padding:16px 18px;border-left:3px solid var(--accent);background:var(--card);border-radius:0 12px 12px 0;font-size:14px;color:var(--muted)}
-  .note b{color:var(--ink)}
-  footer{margin-top:30px;padding-top:16px;border-top:1px solid var(--hair);color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  /* mini legend */
+  .mini{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin:10px 4px 2px;font-size:11.5px;color:var(--muted)}
+  .mini .i{display:flex;align-items:center;gap:6px}
+  .mini .sw{width:20px;height:14px;border-radius:4px;background:var(--card)}
+  .mini .sw.ctx{border:1.6px solid var(--ctx)} .mini .sw.skill{border:1.6px solid var(--skill)} .mini .sw.miss{border:1.6px dashed var(--muted)}
+  .mini .pl{font-size:8px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px}
+  .mini svg{width:26px;height:12px;color:var(--accent)}
 
   .arrow-l{animation:apulse 2.6s ease-in-out infinite}
   @keyframes apulse{0%,100%{opacity:.55}50%{opacity:1}}
   @media (prefers-reduced-motion:reduce){.arrow-l{animation:none;opacity:.9}}
-  @media (max-width:560px){.legend{grid-template-columns:1fr}}
 </style>
 
 <div class="wrap">
-  <div class="eyebrow">Cerebro Operativo · FAP</div>
-  <h1>El mapa de <span class="m">fap</span></h1>
-  <p class="dek">En el centro, <b>la base</b>: la fuente de verdad (<b>fap</b>), el contexto y los
-  swipes de lo que ya funcionó. Alrededor, las <b>6 skills</b> — y cada una <b>apunta hacia dentro</b>:
-  antes de producir, consulta esa base. Por eso el trabajo de fondo es llenarla. Los nodos punteados
-  son el backlog: mientras no estén, la salida es correcta pero genérica.</p>
-
-  <div class="stats">
-    <div class="stat ready"><div class="n">6</div><div class="l">skills del anillo · listas</div></div>
-    <div class="stat built"><div class="n">2</div><div class="l">fuentes de la base · construidas</div></div>
-    <div class="stat miss"><div class="n">5</div><div class="l">fuentes de la base · por construir</div></div>
-  </div>
-
   <div class="diagram">
-    <div class="ring-cap">Las 6 skills del anillo <b>consultan</b> la base del centro</div>
+    <div class="ring-cap">El mapa de <b>fap</b> · las 6 skills consultan la base</div>
     <div id="stage"></div>
-  </div>
-
-  <div class="legend">
-    <div>
-      <h4>Tipo de nodo · color de borde</h4>
-      <div class="row"><span class="swatch ctx"></span><div><b>Base / contexto</b> <span>— lo que la skill consulta (fap, contexto, swipes)</span></div></div>
-      <div class="row"><span class="swatch skill"></span><div><b>Skill</b> <span>— lo que produce (pieza de copy)</span></div></div>
-      <div class="row"><svg class="larrow" viewBox="0 0 44 20" aria-hidden="true"><line x1="2" y1="10" x2="34" y2="10" stroke="currentColor" stroke-width="2"/><path d="M32 4 L42 10 L32 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg><div><b>Flecha</b> <span>— la skill consulta la base antes de producir</span></div></div>
-    </div>
-    <div>
-      <h4>Estado · etiqueta + borde</h4>
-      <div class="row"><span class="lpill" style="background:var(--built-bg);color:var(--built-fg)">Construido</span><div><span>borde sólido — ya existe y está conectado</span></div></div>
-      <div class="row"><span class="lpill" style="background:var(--miss-bg);color:var(--miss-fg)">Falta</span><div><span>borde punteado — pendiente de construir</span></div></div>
+    <div class="mini">
+      <span class="i"><span class="sw ctx"></span>Base / contexto / swipe</span>
+      <span class="i"><span class="sw skill"></span>Skill (produce)</span>
+      <span class="i"><svg viewBox="0 0 44 20" aria-hidden="true"><line x1="2" y1="10" x2="34" y2="10" stroke="currentColor" stroke-width="2"/><path d="M32 4 L42 10 L32 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>consulta</span>
+      <span class="i"><span class="pl" style="background:var(--built-bg);color:var(--built-fg)">Construido</span></span>
+      <span class="i"><span class="pl" style="background:var(--miss-bg);color:var(--miss-fg)">Falta</span></span>
     </div>
   </div>
-
-  <div class="note">
-    <b>La palanca:</b> las 6 skills ya producen, pero todas beben del mismo pozo. Mientras el pozo
-    tenga solo <span class="mono">contexto-fuente</span> y <span class="mono">lenguaje-verbatim</span>,
-    la salida es sólida pero genérica. Cerrar los 5 punteados — tu voz real, el swipe de lo que ganó,
-    las objeciones mapeadas, la prueba empaquetada y el ICP reconciliado — es lo que hace que TODAS
-    las skills, de golpe, produzcan algo que se parece a lo que ya te funcionó.
-  </div>
-
-  <footer>
-    <span>Cerebro Operativo FAP · base al centro · 6 skills en anillo de 360°</span>
-    <span class="mono">El mapa de fap</span>
-  </footer>
 </div>
 
 <script>
 (function(){
-  var CX=600, CY=585, R=474;
-  var BW=478, BH=548, bhw=BW/2, bhh=BH/2;   // base box
-  var SW=236, SH=134, shw=SW/2, shh=SH/2;    // skill box
+  var CX=620, CY=624, R=506;
+  var BW=502, BH=566, bhw=BW/2, bhh=BH/2;
+  var SW=236, SH=134, shw=SW/2, shh=SH/2;
 
   var SK=[
     {a:-90, ttl:'fap-lanzamientos', d:'Orquesta qué pieza se produce, en qué orden, para cada ruta.'},
@@ -172,61 +120,55 @@
     {a:210, ttl:'fap-whatsapp-api', d:'Mensajes 1:1 — nurture, pre-call, recordatorios, reactivación.'}
   ];
 
-  function rectHit(hw,hh,ux,uy){ return Math.min(hw/(Math.abs(ux)||1e-6), hh/(Math.abs(uy)||1e-6)); }
+  function hit(hw,hh,ux,uy){ return Math.min(hw/(Math.abs(ux)||1e-6), hh/(Math.abs(uy)||1e-6)); }
 
   var lines='', arrows='', skills='';
   SK.forEach(function(s){
     var rad=s.a*Math.PI/180, ox=Math.cos(rad), oy=Math.sin(rad);
-    var sx=CX+R*ox, sy=CY+R*oy;                       // skill center
-    // skill inner edge (toward center = -o)
-    var se=rectHit(shw,shh,ox,oy);
-    var sex=sx-ox*se, sey=sy-oy*se;
-    // base outer edge (toward skill = +o)
-    var be=rectHit(bhw,bhh,ox,oy);
-    var bex=CX+ox*(be), bey=CY+oy*(be);
-    var gap=12; bex+=ox*gap; bey+=oy*gap;             // small gap before base
-    // arrowhead at base end, pointing inward (-o)
-    var back=13, wing=6;
-    var bcx=bex+ox*back, bcy=bey+oy*back;             // arrow base center (outward)
-    var px=-oy, py=ox;                                 // perpendicular
-    var l1x=bcx+px*wing, l1y=bcy+py*wing, l2x=bcx-px*wing, l2y=bcy-py*wing;
+    var sx=CX+R*ox, sy=CY+R*oy;
+    var se=hit(shw,shh,ox,oy), sex=sx-ox*se, sey=sy-oy*se;
+    var be=hit(bhw,bhh,ox,oy), bex=CX+ox*be, bey=CY+oy*be;
+    bex+=ox*12; bey+=oy*12;
+    var bcx=bex+ox*13, bcy=bey+oy*13, px=-oy, py=ox, w=6;
     lines+='<line x1="'+sex.toFixed(1)+'" y1="'+sey.toFixed(1)+'" x2="'+bcx.toFixed(1)+'" y2="'+bcy.toFixed(1)+'" stroke="var(--accent)" stroke-width="2.2" class="arrow-l"/>';
-    arrows+='<polygon points="'+bex.toFixed(1)+','+bey.toFixed(1)+' '+l1x.toFixed(1)+','+l1y.toFixed(1)+' '+l2x.toFixed(1)+','+l2y.toFixed(1)+'" fill="var(--accent)" class="arrow-l"/>';
+    arrows+='<polygon points="'+bex.toFixed(1)+','+bey.toFixed(1)+' '+(bcx+px*w).toFixed(1)+','+(bcy+py*w).toFixed(1)+' '+(bcx-px*w).toFixed(1)+','+(bcy-py*w).toFixed(1)+'" fill="var(--accent)" class="arrow-l"/>';
     skills+='<foreignObject x="'+(sx-shw)+'" y="'+(sy-shh)+'" width="'+SW+'" height="'+SH+'">'+
       '<div xmlns="http://www.w3.org/1999/xhtml" class="node skill skl">'+
         '<div class="cat"><span class="d"></span>Skill de producción</div>'+
-        '<div class="ttl">'+s.ttl+'</div>'+
-        '<div class="desc">'+s.d+'</div>'+
-        '<span class="pill built">Construido</span>'+
-      '</div></foreignObject>';
+        '<div class="ttl">'+s.ttl+'</div><div class="desc">'+s.d+'</div>'+
+        '<span class="pill built">Construido</span></div></foreignObject>';
   });
 
-  function ctx(kind,ttl,desc,built,span){
-    return '<div class="node ctx'+(built?'':' missing')+(span?' span':'')+'">'+
+  function ctx(kind,ttl,desc,built){
+    return '<div class="node ctx'+(built?'':' missing')+'">'+
       '<div class="cat"><span class="d"></span>'+kind+'</div>'+
-      '<div class="ttl">'+ttl+'</div>'+
-      '<div class="desc">'+desc+'</div>'+
+      '<div class="ttl">'+ttl+'</div><div class="desc">'+desc+'</div>'+
       '<span class="pill '+(built?'built':'miss')+'">'+(built?'Construido':'Falta')+'</span></div>';
   }
+
   var base='<foreignObject x="'+(CX-bhw)+'" y="'+(CY-bhh)+'" width="'+BW+'" height="'+BH+'">'+
     '<div xmlns="http://www.w3.org/1999/xhtml" class="cbase">'+
       '<div class="btitle">La base — lo que toda skill consulta</div>'+
-      '<div class="fapbar">'+
-        '<div class="lock"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" fill="rgba(255,255,255,.14)"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.4" r="1.4" fill="#fff" stroke="none"/></svg></div>'+
-        '<div><div class="t">fap</div><div class="s">Fuente de verdad · candados</div></div>'+
-      '</div>'+
-      '<div class="bgrid">'+
+      '<div class="fapbar"><div class="lock"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><rect x="4.5" y="10.5" width="15" height="10" rx="2.2" fill="rgba(255,255,255,.14)"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.4" r="1.4" fill="#fff" stroke="none"/></svg></div>'+
+        '<div><div class="t">fap</div><div class="s">Fuente de verdad · candados</div></div></div>'+
+      '<div class="grplbl">Contexto — lo que fap sabe</div>'+
+      '<div class="bgrid2">'+
         ctx('Contexto · fuente','fap-contexto-fuente.md','Verdad de negocio: ICP, 6 Pilares, garantías, métricas, objeciones, vocabulario.',true)+
         ctx('Contexto · lenguaje','fap-lenguaje-verbatim.md','Frases exactas de prospectos y alumnos reales, en 6 grupos.',true)+
         ctx('Contexto · voz','fap-voz-jorge.md','Tu ritmo, tus muletillas, tu cadencia real — no una descripción aproximada.',false)+
-        ctx('Swipe · ganadoras','fap-swipe-ads / -correos','Los ads y correos que YA te funcionaron — tu documento de Word.',false)+
         ctx('Contexto · objeciones','Mapa de objeciones+','Patrón “conoce antes de contraatacar”, en el punto de duda.',false)+
         ctx('Contexto · prueba','Banco de prueba+','Cada afirmación con su evidencia empaquetada al lado.',false)+
-        ctx('Contexto · ICP','Reconciliar ICP','$500K/2 vendedores vs. $1M/3 — dos fuentes que hoy se contradicen.',false,true)+
+        ctx('Contexto · ICP','Reconciliar ICP','$500K/2 vend. vs. $1M/3 — dos fuentes que se contradicen.',false)+
+      '</div>'+
+      '<div class="grplbl sw">Swipes — lo que ya ganó</div>'+
+      '<div class="bgrid3">'+
+        ctx('Swipe · landings','fap-swipe-landings','Piloto: fichas de landings ganadoras (copy + métrica + por qué ganó).',true)+
+        ctx('Swipe · ads','fap-swipe-ads','Los ads que YA te funcionaron — con métrica y qué NO copiar.',false)+
+        ctx('Swipe · correos','fap-swipe-correos','Los correos que YA convirtieron — tu documento de Word.',false)+
       '</div>'+
     '</div></foreignObject>';
 
-  var svg='<svg viewBox="0 0 1200 1175" role="img" aria-label="La base de fap en el centro y las 6 skills alrededor consultándola">'+
+  var svg='<svg viewBox="0 0 1240 1250" role="img" aria-label="La base de fap en el centro y las 6 skills alrededor consultándola">'+
     lines+arrows+base+skills+'</svg>';
   document.getElementById('stage').innerHTML=svg;
 })();
