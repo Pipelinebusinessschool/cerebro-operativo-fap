@@ -8,7 +8,7 @@
     --navy1:#2A1F5C; --navy2:#3F2E86;
     --built-bg:#D7EFE2; --built-fg:#1B7A52;
     --miss-bg:#F6E4C4; --miss-fg:#9A5A05;
-    --accent:#3B45B5;
+    --accent:#3B45B5; --halo:#EBEBF4;
   }
   @media (prefers-color-scheme:dark){
     :root{
@@ -17,7 +17,7 @@
       --ctx:#8A93F2; --ctx-line:#5B64C4; --skill:#F0788C; --skill-line:#B54D63;
       --navy1:#3A2E7A; --navy2:#5B48B0;
       --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579;
-      --accent:#8A93F2;
+      --accent:#8A93F2; --halo:#101022;
     }
   }
   :root[data-theme="light"]{
@@ -25,14 +25,14 @@
     --ink:#1A1930; --muted:#6C6B85; --hair:#DCDBEA;
     --ctx:#3B45B5; --ctx-line:#6E78E0; --skill:#C0324B; --skill-line:#DE6E82;
     --navy1:#2A1F5C; --navy2:#3F2E86;
-    --built-bg:#D7EFE2; --built-fg:#1B7A52; --miss-bg:#F6E4C4; --miss-fg:#9A5A05; --accent:#3B45B5;
+    --built-bg:#D7EFE2; --built-fg:#1B7A52; --miss-bg:#F6E4C4; --miss-fg:#9A5A05; --accent:#3B45B5; --halo:#EBEBF4;
   }
   :root[data-theme="dark"]{
     --bg:#0C0C17; --panel:#141426; --card:#1C1C31; --card-miss:#17172A;
     --ink:#EAEAF6; --muted:#9998B6; --hair:#2A2A44;
     --ctx:#8A93F2; --ctx-line:#5B64C4; --skill:#F0788C; --skill-line:#B54D63;
     --navy1:#3A2E7A; --navy2:#5B48B0;
-    --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579; --accent:#8A93F2;
+    --built-bg:#123A2A; --built-fg:#6FE0A6; --miss-bg:#3A2C10; --miss-fg:#F2C579; --accent:#8A93F2; --halo:#101022;
   }
 
   *{box-sizing:border-box}
@@ -85,7 +85,8 @@
   .pill.miss{background:var(--miss-bg);color:var(--miss-fg)}
 
   /* links */
-  .link{fill:none;stroke-width:1.6}
+  .halo{fill:none;stroke:var(--halo);stroke-width:6;stroke-linecap:round}
+  .link{fill:none;stroke-width:1.7}
   .link.ctx{stroke:var(--ctx-line);opacity:.9}
   .link.skill{stroke:var(--skill-line);opacity:.9}
   .link.miss{stroke-dasharray:5 6;opacity:.7;animation:march 24s linear infinite}
@@ -168,9 +169,9 @@
   var HW=107, HH=80; // half card size
   var N=[
     // ---- CONTEXTO (arriba) ----
-    {t:'ctx',b:false,x:650,y:160,ttl:'fap-swipe-ads.md&nbsp;/&nbsp;-correos.md',d:'Los ads y correos que YA te funcionaron — tu documento de Word.'},
-    {t:'ctx',b:false,x:405,y:230,ttl:'fap-voz-jorge.md',d:'Tu ritmo, tus muletillas, tu cadencia real — no una descripción aproximada.'},
-    {t:'ctx',b:false,x:895,y:230,ttl:'Mapa de objeciones+',d:'Patrón “conoce antes de contraatacar”, colocado en el punto de duda.'},
+    {t:'ctx',b:false,x:650,y:150,ttl:'fap-swipe-ads.md&nbsp;/&nbsp;-correos.md',d:'Los ads y correos que YA te funcionaron — tu documento de Word.'},
+    {t:'ctx',b:false,x:388,y:225,ttl:'fap-voz-jorge.md',d:'Tu ritmo, tus muletillas, tu cadencia real — no una descripción aproximada.'},
+    {t:'ctx',b:false,x:912,y:225,ttl:'Mapa de objeciones+',d:'Patrón “conoce antes de contraatacar”, colocado en el punto de duda.'},
     {t:'ctx',b:true, x:250,y:400,ttl:'fap-lenguaje-verbatim.md',d:'Frases exactas de prospectos y alumnos reales, agrupadas en 6 grupos.'},
     {t:'ctx',b:false,x:1050,y:400,ttl:'Banco de prueba+',d:'Cada afirmación con su evidencia empaquetada al lado, no un bloque genérico.'},
     {t:'ctx',b:true, x:235,y:590,ttl:'fap-contexto-fuente.md',d:'Verdad de negocio: ICP, 6 Pilares, garantías, métricas, objeciones, vocabulario.'},
@@ -191,9 +192,13 @@
 
   var links='', cards='', dots='';
   N.forEach(function(n){
-    var bp=border(n.x,n.y);
+    var dx=n.x-CX, dy=n.y-CY, L=Math.sqrt(dx*dx+dy*dy)||1, ux=dx/L, uy=dy/L;
+    var sx=CX+ux*(R+7), sy=CY+uy*(R+7);        // start at circle rim
+    var bp=border(n.x,n.y);                      // end at card border
     var cls='link '+n.t+(n.b?'':' miss');
-    links+='<line class="'+cls+'" x1="'+CX+'" y1="'+CY+'" x2="'+bp.x.toFixed(1)+'" y2="'+bp.y.toFixed(1)+'"/>';
+    // halo first, then colored line — interleaved so each new line "bridges" over earlier ones
+    links+='<line class="halo" x1="'+sx.toFixed(1)+'" y1="'+sy.toFixed(1)+'" x2="'+bp.x.toFixed(1)+'" y2="'+bp.y.toFixed(1)+'"/>'+
+           '<line class="'+cls+'" x1="'+sx.toFixed(1)+'" y1="'+sy.toFixed(1)+'" x2="'+bp.x.toFixed(1)+'" y2="'+bp.y.toFixed(1)+'"/>';
     // connection dot on card border
     var dc = n.t==='ctx' ? 'var(--ctx)' : 'var(--skill)';
     dots+='<circle cx="'+bp.x.toFixed(1)+'" cy="'+bp.y.toFixed(1)+'" r="4" fill="'+dc+'"/>';
