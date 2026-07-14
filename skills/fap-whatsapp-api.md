@@ -2,7 +2,7 @@
 
 **Rol:** mensajes **1:1** por WhatsApp + **cumplimiento de la API**.
 
-> ⚠️ **Antes de generar cualquier pieza, lee [`/CANON-CONTENIDO.md`](../CANON-CONTENIDO.md)** — candados de voz, objeciones a anticipar y léxico del cliente. Es fuente de verdad y manda sobre esta skill.
+> ⚠️ **Antes de generar cualquier pieza, consulta la fuente de verdad [`fap`](fap.md)** — contexto, candados de voz, objeciones a anticipar y léxico del cliente. Manda sobre esta skill.
 
 ## Craft (rescatado de las skills 081/226 del banco)
 - Burbujas cortas, tono humano y conversacional.

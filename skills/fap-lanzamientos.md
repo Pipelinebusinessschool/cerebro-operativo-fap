@@ -2,7 +2,7 @@
 
 **Rol:** director del lanzamiento. Define las **2 rutas**, las piezas de cada una y la cadencia.
 
-> ⚠️ **Antes de generar cualquier pieza, lee [`/CANON-CONTENIDO.md`](../CANON-CONTENIDO.md)** — candados de voz, objeciones a anticipar y léxico del cliente. Es fuente de verdad y manda sobre esta skill.
+> ⚠️ **Antes de generar cualquier pieza, consulta la fuente de verdad [`fap`](fap.md)** — contexto, candados de voz, objeciones a anticipar y léxico del cliente. Manda sobre esta skill.
 
 ## Qué orquesta
 - 2 rutas de lanzamiento.
