@@ -1,0 +1,410 @@
+<title>Funnel · Contratación de Alto Rendimiento — PIPELINE Business School</title>
+<style>
+  :root{
+    --navy:#0A1A3F; --navy-2:#0E2149; --navy-3:#132A57;
+    --red:#E11D2A; --red-2:#C2151F; --red-soft:#FDECED;
+    --paper:#FFFFFF; --soft:#F4F6FB;
+    --ink:#141C2E; --muted:#5A6580; --line:#E6EAF2;
+    --good:#0F7A4C; --good-soft:#E7F5EE;
+    --wa-bg:#E6DDD4; --wa-bubble:#FFFFFF; --wa-out:#D9FDD3;
+    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--soft);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .pl{color:var(--red);font-weight:800}
+  .layout{display:grid;grid-template-columns:250px 1fr;max-width:1240px;margin:0 auto;gap:0}
+  @media(max-width:900px){.layout{grid-template-columns:1fr}}
+
+  /* NAV */
+  nav.side{position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto;background:var(--navy);color:#fff;padding:24px 18px}
+  @media(max-width:900px){nav.side{position:static;height:auto}}
+  nav .brand{font-weight:800;font-size:15px;line-height:1.2}
+  nav .brand small{display:block;font-weight:600;font-size:9px;letter-spacing:.16em;color:#9FB0D0;text-transform:uppercase;margin-top:2px}
+  nav .navtitle{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8FA1C4;margin:22px 0 8px}
+  nav a{display:block;color:#C7D2E8;text-decoration:none;font-size:13.5px;padding:7px 10px;border-radius:8px;transition:background .15s,color .15s}
+  nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+  nav a.sub{padding-left:22px;font-size:12.5px;color:#9FB0D0}
+
+  main{padding:0 34px 80px;min-width:0}
+  @media(max-width:900px){main{padding:0 20px 60px}}
+  section{padding:38px 0;border-bottom:1px solid var(--line)}
+  .sec-k{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:0 0 6px}
+  h1{font-size:clamp(26px,3.6vw,40px);line-height:1.08;letter-spacing:-.025em;margin:0 0 10px;font-weight:800;color:var(--navy)}
+  h2{font-size:clamp(21px,2.6vw,29px);line-height:1.15;letter-spacing:-.02em;margin:0 0 14px;font-weight:800;color:var(--navy)}
+  h3{font-size:17px;margin:26px 0 10px;color:var(--navy);letter-spacing:-.01em}
+  p{margin:0 0 12px}
+  .lead{font-size:18px;color:var(--ink)}
+  .muted{color:var(--muted)}
+  ul{margin:0 0 12px;padding-left:20px} li{margin:4px 0}
+  table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px;background:#fff;border-radius:10px;overflow:hidden}
+  th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+  th{background:var(--navy);color:#fff;font-weight:700;font-size:12px;letter-spacing:.02em}
+  tr:nth-child(even) td{background:var(--soft)}
+
+  .cover{background:radial-gradient(900px 420px at 80% -10%,var(--navy-3),var(--navy) 62%);color:#fff;border-radius:0 0 20px 20px;padding:46px 34px;margin:0 -34px 0}
+  @media(max-width:900px){.cover{margin:0 -20px;padding:38px 22px}}
+  .cover h1{color:#fff} .cover .sub{font-size:17px;color:#C7D2E8;max-width:60ch}
+  .datechips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .datechips span{font-size:12px;font-weight:700;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:6px 12px;color:#EAF0FA}
+  .bigidea{background:rgba(225,29,42,.12);border:1px solid rgba(225,29,42,.4);border-radius:14px;padding:18px 20px;margin-top:22px}
+  .bigidea b{color:#FFD9A8}
+
+  .pill{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--red);border-radius:999px;padding:4px 11px;margin-bottom:8px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:720px){.grid2{grid-template-columns:1fr}}
+
+  /* AD CARD */
+  .ad{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:16px 0;box-shadow:0 6px 20px rgba(10,26,63,.05)}
+  .ad .tag{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:10px}
+  .ad .tag b{color:var(--navy)}
+  .ad .scene{margin:8px 0;font-size:14.5px}
+  .ad .scene .lbl{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--red);margin-right:6px}
+  .hooks{background:var(--soft);border-radius:12px;padding:14px 16px;margin-top:14px}
+  .hooks .h{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+  .hooks div.alt{font-size:13.5px;margin:6px 0;padding-left:14px;border-left:2px solid var(--red)}
+
+  /* EMAIL CARD */
+  .email{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:16px 0;box-shadow:0 6px 20px rgba(10,26,63,.05)}
+  .email .head{background:var(--navy);color:#fff;padding:14px 18px}
+  .email .subj{font-weight:800;font-size:15px}
+  .email .pre{font-size:12.5px;color:#AFC0E0;margin-top:3px}
+  .email .body{padding:18px 20px;font-size:14px}
+  .email .body p{margin:0 0 10px}
+  .btn-demo{display:inline-block;background:var(--red);color:#fff;border-radius:9px;padding:11px 18px;font-weight:800;font-size:13px;margin:8px 0}
+  .ba-mini{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:10px 0}
+  .ba-mini>div{padding:12px 14px;font-size:13px}
+  .ba-mini .a{background:var(--red-soft)} .ba-mini .b{background:var(--good-soft)}
+
+  /* WHATSAPP */
+  .wa{background:var(--wa-bg);border-radius:14px;padding:18px;margin:12px 0;background-image:radial-gradient(rgba(0,0,0,.03) 1px,transparent 1px);background-size:16px 16px}
+  .wa .bub{background:var(--wa-out);border-radius:10px 10px 2px 10px;padding:10px 13px;font-size:13.5px;max-width:78%;margin:8px 0 8px auto;box-shadow:0 1px 1px rgba(0,0,0,.1);white-space:pre-wrap}
+  .wa .bub .tick{display:block;text-align:right;font-size:10px;color:#5aa}
+  .wa .meta{font-size:11px;color:#5A6580;text-align:center;margin:2px 0 8px}
+  .vars{font-size:12px;color:var(--muted);margin-top:6px}
+
+  .callout{background:#fff;border-left:4px solid var(--red);border-radius:0 12px 12px 0;padding:14px 18px;margin:14px 0;font-size:14px}
+  .lock{background:var(--good-soft);border:1px solid #C9E9D8;border-radius:12px;padding:16px 18px;font-size:13.5px}
+  .lock b{color:var(--good)}
+  .falta{background:#FFF7E8;border:1px solid #F3DFB0;border-radius:12px;padding:16px 18px;font-size:13.5px}
+  .toplink{font-size:12px;color:var(--muted);text-decoration:none;float:right}
+  code{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12.5px}
+</style>
+
+<div class="layout">
+<nav class="side">
+  <div class="brand"><span class="pl">PIPELINE</span> Business School<small>The Sales Acceleration Company</small></div>
+  <div class="navtitle">Funnel</div>
+  <a href="#portada">Portada</a>
+  <a href="#concepcion">① Concepción</a>
+  <a href="#concepcion" class="sub">Gran Idea · avatar · enemigos</a>
+  <a href="#concepcion" class="sub">Falsas creencias · vehículos</a>
+  <a href="#landing">② Landing de registro</a>
+  <a href="#ads">③ Los 5 Ads</a>
+  <a href="#invitacion" class="sub">— así se ven las etapas —</a>
+  <div class="navtitle">Correos + WhatsApp</div>
+  <a href="#invitacion">④ Invitación</a>
+  <a href="#confirmacion">⑤ Confirmación</a>
+  <a href="#recordatorio">⑥ Faltan 2 / 1 día</a>
+  <a href="#eshoy">⑦ Es hoy</a>
+  <a href="#posevento">⑧ Pos-evento (llamada)</a>
+  <div class="navtitle">Cierre</div>
+  <a href="#candados">Candados & Faltantes</a>
+</nav>
+
+<main>
+
+<!-- PORTADA -->
+<section id="portada" style="border:0;padding-top:0">
+  <div class="cover">
+    <span class="pill">Funnel completo · Ruta B (Workshop → Diagnóstico)</span>
+    <h1>Contratación de Alto Rendimiento</h1>
+    <p class="sub">Cómo contratar un vendedor que escale de verdad tu facturación — y no otro tomapedidos. Workshop en vivo, sin costo.</p>
+    <div class="datechips">
+      <span>📅 Miércoles 15 de julio</span><span>🇨🇴🇵🇪🇪🇨 12:00 PM</span><span>🇲🇽 11:00 AM</span><span>🇻🇪🇨🇱🇺🇸(ET) 1:00 PM</span><span>🇦🇷 2:00 PM</span><span>🇪🇸 7:00 PM</span>
+    </div>
+    <div class="bigidea"><b>Gran Idea:</b> Contratar vendedores no es una lotería. Y hoy aciertas 1 de cada 4 porque eliges por feeling, contra un perfil de alto rendimiento que nunca definiste.</div>
+  </div>
+</section>
+
+<!-- CONCEPCIÓN -->
+<section id="concepcion">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">① Concepción · fap-narrativa</p>
+  <h2>La narrativa que alimenta todo el funnel</h2>
+  <p class="lead">Todo lo demás (landing, ads, correos, mensajes) se escribe desde aquí.</p>
+
+  <h3>Momento del mercado — por qué ahora</h3>
+  <ul>
+    <li><b>El error de contratación es carísimo hoy:</b> en economía contraída, cada fichaje que no pega es un trimestre de cuota y sueldo hundido.</li>
+    <li><b>El buen talento no está suelto:</b> las empresas se pelean por el mismo perfil.</li>
+    <li><b>La IA subió la vara:</b> ya no basta el vendedor "con labia"; se necesita quien opera un proceso.</li>
+  </ul>
+
+  <h3>Avatar</h3>
+  <p>Fundador / director comercial B2B, <b>≥$1M/año, ≥2 vendedores</b>. Ha contratado "por feeling" y se ha quemado. Cree que le falta "encontrar al vendedor estrella". Sigue siendo el mejor vendedor de su empresa y no puede delegar el cierre.</p>
+
+  <h3>Categorización por conciencia</h3>
+  <p>Consciente del <b>problema</b> ("mis contrataciones fallan") pero inconsciente de la <b>causa</b> (cree que es mala suerte o mala gente). <b>Orden de venta:</b> Resultado → cómo eliges (no a quién) → método (perfil + selección por evidencia).</p>
+
+  <h3>El enemigo común</h3>
+  <div class="grid2">
+    <ul><li>La lotería de contratación (elegir por feeling y rezar)</li><li>El mito del vendedor estrella</li><li>El CV que miente ("vendió en la competencia")</li></ul>
+    <ul><li>La entrevista de simpatía</li><li>El onboarding inexistente</li><li>La cultura tomapedidos</li></ul>
+  </div>
+
+  <h3>Las 3 capas emocionales</h3>
+  <div class="ba-mini" style="grid-template-columns:1fr 1fr 1fr">
+    <div class="a"><b>Dice:</b> "Necesito mejores vendedores."</div>
+    <div style="background:#FBF3E3"><b>Piensa:</b> "¿Y si el problema soy yo eligiendo?"</div>
+    <div class="b"><b>3 AM:</b> "Mi empresa no vende sin mí. Me construí un empleo carísimo."</div>
+  </div>
+
+  <h3>Falsas creencias → verdad → enemigo</h3>
+  <table>
+    <tr><th>Falsa creencia</th><th>La verdad</th><th>Enemigo</th></tr>
+    <tr><td>"Contratar es cuestión de suerte."</td><td>Se elige contra un <b>perfil de alto rendimiento</b> definido, no por feeling.</td><td>La lotería</td></tr>
+    <tr><td>"Necesito al vendedor estrella."</td><td>No necesitas un salvador; necesitas que un perfil correcto rinda con un proceso.</td><td>El mito del estrella</td></tr>
+    <tr><td>"Si vendió allá, venderá aquí."</td><td>Vender depende de compatibilidad con tu proceso de compra, no del logo anterior.</td><td>El CV que miente</td></tr>
+    <tr><td>"Un buen vendedor disponible es una ganga."</td><td><i>Un buen vendedor casi nunca está desempleado. Si lo encontraste disponible, pregúntate por qué.</i></td><td>El CV que miente</td></tr>
+    <tr><td>"Contrato y que aprenda en la cancha."</td><td>Sin onboarding, hasta el buen fichaje se vuelve tomapedidos.</td><td>El onboarding inexistente</td></tr>
+  </table>
+
+  <h3>Vehículos rotos</h3>
+  <table>
+    <tr><th>Lo que intentó</th><th>Por qué falló</th><th>Cómo lo hacemos distinto</th></tr>
+    <tr><td>Reclutadora / headhunter genérico</td><td>Filtra por CV y simpatía, no por compatibilidad con tu proceso de compra</td><td>Se contrata contra un perfil de alto rendimiento definido para TU operación</td></tr>
+    <tr><td>Robar al vendedor de la competencia</td><td>El rendimiento no es transferible sin tu proceso</td><td>Selección + onboarding que hace rendir al perfil correcto</td></tr>
+    <tr><td>Subir el salario</td><td>Sueldo alto sin proceso = tomapedidos más caro</td><td>El proceso hace que el sueldo genere PIPELINE</td></tr>
+    <tr><td>Contratar por instinto</td><td>El instinto acierta 1 de 4</td><td>Selección basada en evidencia, no en feeling</td></tr>
+  </table>
+
+  <h3>Promesa + sub-promesas</h3>
+  <div class="callout">
+    <b>Promesa:</b> el método para contratar vendedores de alto rendimiento que escalan tu facturación — y dejar de perder trimestres en fichajes que no pegan.<br><br>
+    <b>Sub-promesas:</b> definir tu perfil de alto rendimiento antes de entrevistar · elegir por evidencia · un onboarding que hace rendir al fichaje · un equipo que genera <b>3–5 oportunidades por semana, por vendedor</b> <span class="muted">(promedio de clientes que implementaron)</span>.
+  </div>
+</section>
+
+<!-- LANDING -->
+<section id="landing">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">② Landing de registro · fap-landings</p>
+  <h2>Workshop "Contratación de Alto Rendimiento"</h2>
+  <p class="muted">Versión larga en vivo/sin costo, con el bloque de autoridad y la foto reales. Archivo: <code>piezas/landing-workshop-contratacion.html</code>.</p>
+  <div class="email">
+    <div class="head"><div class="subj">H1 · Cómo contratar un vendedor de alto rendimiento que escale de verdad tu facturación — y no otro tomapedidos</div><div class="pre">De cada 4 vendedores que contratas, te funciona 1 — y la razón está en cómo los eliges, no en quiénes son.</div></div>
+    <div class="body">
+      <p><b>Estructura:</b> Hero + registro · El número <b>1/4</b> · 5 síntomas de que contratas a ciegas · Por qué nada ha funcionado (vehículos rotos) · Qué vas a construir (4 pasos) · Antes/Después · Testimonios reales (Ana Santos, Hugo Trejo, Victor Girón) · Bio de Jorge (autoridad + foto) · FAQ · CTA final.</p>
+      <span class="btn-demo">Sí, quiero fichar vendedores que escalen →</span>
+    </div>
+  </div>
+</section>
+
+<!-- ADS -->
+<section id="ads">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">③ Los 5 Ads · fap-video-ads-meta</p>
+  <h2>5 formatos distintos · cada uno con 3 hooks alternativos</h2>
+  <p class="muted">Los hooks alternativos cambian solo los primeros 3 segundos, sobre el mismo cuerpo.</p>
+
+  <div class="ad">
+    <div class="tag">🎬 AD 1 · <b>Data-drop "el número"</b> · dato ancla · frío</div>
+    <div class="scene"><span class="lbl">Hook</span>"1 de cada 4. Ese es el número de vendedores que realmente te funcionan cuando contratas por feeling. Los otros 3 son sueldo hundido."</div>
+    <div class="scene"><span class="lbl">Cuerpo</span>"El 75% de los equipos B2B en Latinoamérica opera con 25% de efectividad de contratación. Y la causa no es el talento disponible: contratas sin un perfil de alto rendimiento definido."</div>
+    <div class="scene"><span class="lbl">CTA</span>"Regístrate únicamente si estás cansado de que contratar sea una lotería."</div>
+    <div class="hooks"><div class="h">🔁 3 hooks alternativos</div>
+      <div class="alt">¿Sabes cuántos de tus últimos 4 vendedores realmente funcionaron? La estadística dice: uno.</div>
+      <div class="alt">Contratar por instinto tiene la misma efectividad que lanzar una moneda. 25%.</div>
+      <div class="alt">Cada vendedor que no pega es un trimestre de cuota y un sueldo hundido. Y contratas 3 así por cada 1 bueno.</div>
+    </div>
+  </div>
+
+  <div class="ad">
+    <div class="tag">🎬 AD 2 · <b>Contrarian / PSA</b> · enemigo "lotería" · frío/tibio</div>
+    <div class="scene"><span class="lbl">Hook</span>"Deja de buscar al vendedor estrella. No existe el que te va a salvar — existe el proceso que hace rendir al correcto."</div>
+    <div class="scene"><span class="lbl">CTA</span>"Regístrate únicamente si quieres dejar de depender de un irremplazable."</div>
+    <div class="hooks"><div class="h">🔁 3 hooks alternativos</div>
+      <div class="alt">No tienes un problema de talento. Tienes un problema de cómo eliges el talento.</div>
+      <div class="alt">"Mi mejor vendedor es irremplazable." Si eso te da orgullo, te va a dar pánico el día que renuncie.</div>
+      <div class="alt">El mismo mercado de talento, otra forma de elegir: de 1 de cada 4 a 3 de cada 4.</div>
+    </div>
+  </div>
+
+  <div class="ad">
+    <div class="tag">🎬 AD 3 · <b>Listicle "3 errores"</b> · falsas creencias · frío</div>
+    <div class="scene"><span class="lbl">Hook</span>"3 errores que te hacen contratar tomapedidos en vez de cazadores. Si cometes dos, tu próxima contratación ya viene fallada."</div>
+    <div class="scene"><span class="lbl">Cuerpo</span>"Uno: contratas por CV. Dos: contratas por simpatía. Tres: no defines el perfil de alto rendimiento antes de entrevistar."</div>
+    <div class="hooks"><div class="h">🔁 3 hooks alternativos</div>
+      <div class="alt">Hay 3 razones por las que tu último fichaje no pegó. Ninguna es "mala suerte".</div>
+      <div class="alt">El error #3 al contratar vendedores es el que nadie ve — y el que más caro sale.</div>
+      <div class="alt">Si entrevistas buscando "buena química", estás contratando tu próximo tomapedidos.</div>
+    </div>
+  </div>
+
+  <div class="ad">
+    <div class="tag">🎬 AD 4 · <b>Analogía</b> · munición · frío</div>
+    <div class="scene"><span class="lbl">Hook</span>"Contratar un vendedor por su CV es como fichar a un jugador por su álbum de figuritas: nunca lo viste jugar TU sistema."</div>
+    <div class="scene"><span class="lbl">CTA</span>"Regístrate únicamente si quieres dejar de fichar por figuritas."</div>
+    <div class="hooks"><div class="h">🔁 3 hooks alternativos</div>
+      <div class="alt">Un goleador en un equipo sin mediocampo no mete goles. Tu vendedor estrella sin proceso, tampoco.</div>
+      <div class="alt">¿Contratas por lo que el vendedor hizo en otra empresa… o por cómo rinde en la tuya?</div>
+      <div class="alt">He visto +120 operaciones fichar al mismo "crack" y quemarlo. En 40 segundos te digo por qué.</div>
+    </div>
+  </div>
+
+  <div class="ad">
+    <div class="tag">🎬 AD 5 · <b>"Lo que no sabía" / confesión</b> · Gran Verdad · tibio</div>
+    <div class="scene"><span class="lbl">Hook</span>"Durante años creí que mi problema era encontrar buenos vendedores. Estaba equivocado — y me costó caro."</div>
+    <div class="scene"><span class="lbl">Cuerpo</span>"El problema nunca fue el talento. Contrataba por feeling contra un perfil que no existía en papel. Acertaba 1 de cada 4."</div>
+    <div class="hooks"><div class="h">🔁 3 hooks alternativos</div>
+      <div class="alt">Tu empresa no vende sin ti. No construiste un equipo — te construiste un empleo carísimo.</div>
+      <div class="alt">¿Y si el problema no son los vendedores que contratas, sino cómo los eliges?</div>
+      <div class="alt">El día que mi mejor vendedor renunció, entendí que no tenía un equipo. Tenía un rehén.</div>
+    </div>
+  </div>
+</section>
+
+<!-- INVITACIÓN -->
+<section id="invitacion">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">④ Invitación · fap-correos + fap-whatsapp</p>
+  <h2>Invitación al workshop</h2>
+  <div class="email">
+    <div class="head"><div class="subj">🎯 1 de cada 4. Esa es tu tasa de aciertos al contratar vendedores.</div><div class="pre">Y la razón está antes de la entrevista, no en el candidato.</div></div>
+    <div class="body">
+      <p>Estratega comercial:</p>
+      <p>Dato incómodo: el <b>75% de los equipos B2B</b> en LATAM opera con <b>25% de efectividad de contratación</b>. De cada <b>4 vendedores</b>, funciona <b>1</b>.</p>
+      <div class="ba-mini"><div class="a"><b>Lo que crees que falla</b><br>"Me falta el vendedor estrella"</div><div class="b"><b>Lo que de verdad falla</b><br>No definiste el perfil de alto rendimiento</div></div>
+      <p>El <b>miércoles 15 de julio</b> hago un workshop EN VIVO y SIN COSTO: <i>Contratación de Alto Rendimiento</i>.</p>
+      <span class="btn-demo">QUIERO MI LUGAR EN EL WORKSHOP</span>
+      <p class="muted">— Jorge Conde · Chief Strategy Officer · PIPELINE Business School<br><b>PD:</b> Un buen vendedor casi nunca está desempleado. Si lo encontraste disponible, pregúntate por qué.</p>
+    </div>
+  </div>
+  <div class="wa">
+    <div class="meta">WhatsApp · plantilla HSM</div>
+    <div class="bub">Hola {{1}} 👋<br><br>Dato incómodo: de cada <b>4 vendedores</b> que contratas, te funciona <b>1</b>. Y la causa está en cómo eliges: por feeling, sin un <i>perfil de alto rendimiento</i> definido.<br><br>El <b>miércoles 15 de julio</b>, workshop EN VIVO y SIN COSTO.<br><br>🗓️ 12:00 PM 🇨🇴 · 11:00 AM 🇲🇽 · 1:00 PM 🇺🇸(ET)<br><br>Reserva tu lugar 👉 {{2}}<span class="tick">✓✓</span></div>
+    <div class="vars">Variables: {{1}} nombre · {{2}} link de registro <code>[FALTA]</code></div>
+  </div>
+</section>
+
+<!-- CONFIRMACIÓN -->
+<section id="confirmacion">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">⑤ Confirmación de inscripción</p>
+  <h2>Confirmación</h2>
+  <div class="email">
+    <div class="head"><div class="subj">✅ Tu lugar en Contratación de Alto Rendimiento está confirmado</div><div class="pre">Agéndalo ahora — esto no se repone.</div></div>
+    <div class="body">
+      <p>Quedó <b>confirmado</b> tu lugar en el workshop EN VIVO.</p>
+      <p><b>Lo que vas a construir:</b></p>
+      <p>✅ Tu <b>perfil de alto rendimiento</b><br>✅ Cómo <b>elegir por evidencia</b>, no por feeling<br>✅ El <b>onboarding</b> que hace rendir al fichaje<br>✅ Un equipo que genera <b>3–5 oportunidades por semana, por vendedor</b></p>
+      <span class="btn-demo">AGREGAR A MI CALENDARIO</span>
+      <p class="muted"><b>PD:</b> Ven con una contratación reciente en mente. La diagnosticamos en vivo.</p>
+    </div>
+  </div>
+  <div class="wa">
+    <div class="meta">WhatsApp</div>
+    <div class="bub">{{1}}, tu lugar quedó <b>CONFIRMADO</b> ✅<br><br>📅 Workshop <b>Contratación de Alto Rendimiento</b><br>Miércoles <b>15 de julio</b><br>🇨🇴🇵🇪🇪🇨 12:00 PM · 🇲🇽 11:00 AM · 🇺🇸(ET) 1:00 PM<br><br>Agrégalo a tu calendario 👉 {{2}}<br><br><i>Ven con una contratación reciente en mente. La diagnosticamos en vivo.</i><span class="tick">✓✓</span></div>
+    <div class="vars">Variables: {{1}} nombre · {{2}} link de calendario <code>[FALTA]</code></div>
+  </div>
+</section>
+
+<!-- RECORDATORIO -->
+<section id="recordatorio">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">⑥ Recordatorio · faltan 2 / 1 día</p>
+  <h2>Recordatorios</h2>
+  <div class="grid2">
+    <div class="email">
+      <div class="head"><div class="subj">⏳ En 2 días dejas de contratar a ciegas</div><div class="pre">El costo de cada fichaje fallido.</div></div>
+      <div class="body"><p>En <b>2 días</b> nos vemos. Antes, una cuenta: ¿cuánto te costó tu <b>último vendedor que no pegó</b>? Sueldo, rampa, cuota perdida, tu tiempo. Fácil, <b>un trimestre</b>.</p><span class="btn-demo">CONFIRMAR MI ASISTENCIA</span></div>
+    </div>
+    <div class="email">
+      <div class="head"><div class="subj">🚨 MAÑANA: el sistema para fichar al vendedor que sí escala</div><div class="pre">Bloquea el tiempo — no habrá repetición.</div></div>
+      <div class="body"><p><b>Mañana</b> entramos EN VIVO. Sales con el plano para dejar de acertar 1 de cada 4:</p><p>✅ Tu perfil de alto rendimiento<br>✅ Selección por evidencia<br>✅ El onboarding que hace rendir</p><span class="btn-demo">AGREGAR RECORDATORIO</span></div>
+    </div>
+  </div>
+  <div class="wa">
+    <div class="meta">WhatsApp · faltan 2 días</div>
+    <div class="bub">{{1}}, faltan <b>2 días</b> ⏳<br><br>¿Cuánto te costó tu último vendedor que <i>no pegó</i>? Sueldo + rampa + cuota = fácil un trimestre.<br><br>El <b>miércoles</b> te doy el método para que no vuelva a pasar.<br><br>👉 {{2}}<span class="tick">✓✓</span></div>
+    <div class="meta">WhatsApp · falta 1 día</div>
+    <div class="bub"><b>MAÑANA</b> es el workshop 🔥<span class="tick">✓✓</span></div>
+    <div class="bub">{{1}}, mañana sales con el método para contratar al vendedor que <b>sí escala</b>.<br><br>🗓️ 15 de julio · 12:00 PM 🇨🇴 · 11:00 AM 🇲🇽 · 1:00 PM 🇺🇸(ET)<br><br>Bloquea el tiempo 👉 {{2}}<br><i>No habrá repetición.</i><span class="tick">✓✓</span></div>
+  </div>
+</section>
+
+<!-- ES HOY -->
+<section id="eshoy">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">⑦ Es hoy</p>
+  <h2>Es hoy</h2>
+  <div class="email">
+    <div class="head"><div class="subj">[ES HOY] Contratación de Alto Rendimiento ⏰</div><div class="pre">En unas horas, en vivo. Tu acceso adentro.</div></div>
+    <div class="body">
+      <p>Estratega comercial: <b>hoy es el día.</b></p>
+      <p>En unas horas te muestro, EN VIVO, el método para dejar de contratar tomapedidos y fichar vendedores de <b>alto rendimiento</b>.</p>
+      <p>🗓️ <b>HOY, 15 de julio</b> · 🇨🇴🇵🇪🇪🇨 <b>12:00 PM</b> · 🇲🇽 11:00 AM · 🇺🇸(ET) 1:00 PM</p>
+      <span class="btn-demo">ENTRAR AL WORKSHOP</span>
+    </div>
+  </div>
+  <div class="wa">
+    <div class="meta">WhatsApp · 1 hora antes</div>
+    <div class="bub">{{1}}, <b>ES HOY</b> ⏰<span class="tick">✓✓</span></div>
+    <div class="bub">En 1 hora arrancamos EN VIVO. Trae tu última contratación en mente — la vamos a diagnosticar.<br><br>🗓️ HOY · 12:00 PM 🇨🇴 · 11:00 AM 🇲🇽 · 1:00 PM 🇺🇸(ET)<br><br>Entra aquí 👉 {{2}}<br><br><i>Seremos puntuales. Esto no se repone.</i><span class="tick">✓✓</span></div>
+  </div>
+</section>
+
+<!-- POS-EVENTO -->
+<section id="posevento">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">⑧ Pos-evento · agendar el diagnóstico gratuito</p>
+  <h2>Agendar la llamada (diagnóstico gratuito, 45 min)</h2>
+  <div class="callout">No es el diagnóstico pago. Es la llamada breve <b>1:1 de 45 min, sin costo</b>: causa raíz + <b>3 pasos inmediatos</b> + evaluar si FAP es para el prospecto. Se agenda por link.</div>
+  <div class="email">
+    <div class="head"><div class="subj">Tu diagnóstico de contratación (gratis, 45 min)</div><div class="pre">El siguiente paso concreto para tu operación.</div></div>
+    <div class="body">
+      <p>Gracias por estar en vivo. Ya tienes el mapa. Ahora el paso concreto:</p>
+      <p>Abrimos <b>diagnósticos 1:1 de 45 minutos, sin costo</b>, donde:</p>
+      <p>• Identificamos <b>por qué tus contrataciones fallan</b> (la causa raíz).<br>• Te damos <b>3 pasos inmediatos</b> para tu próxima contratación.<br>• Evaluamos <b>si el Forecast Accelerator Program es para ti</b>.</p>
+      <p class="muted">No es una llamada de ventas: es un diagnóstico. Te llevas claridad y 3 acciones, avancemos o no.</p>
+      <span class="btn-demo">AGENDAR MI DIAGNÓSTICO GRATUITO</span>
+    </div>
+  </div>
+  <div class="wa">
+    <div class="meta">WhatsApp</div>
+    <div class="bub">{{1}}, gracias por estar en el workshop 🙌<br><br>El siguiente paso: un <b>diagnóstico 1:1 de 45 min, SIN COSTO</b>.<br><br>✅ Vemos por qué fallan tus contrataciones<br>✅ Te damos <b>3 pasos inmediatos</b><br>✅ Evaluamos si FAP es para ti<br><br><i>No es una llamada de ventas. Es un diagnóstico — te llevas claridad avancemos o no.</i><br><br>Agenda aquí 👉 {{2}}<span class="tick">✓✓</span></div>
+    <div class="vars">Variables: {{1}} nombre · {{2}} link de calendario <code>[FALTA]</code></div>
+  </div>
+</section>
+
+<!-- CANDADOS -->
+<section id="candados" style="border:0">
+  <a href="#portada" class="toplink">↑ arriba</a>
+  <p class="sec-k">Cierre</p>
+  <h2>Candados aplicados & pendientes</h2>
+  <div class="grid2">
+    <div class="lock">
+      <b>✅ Candados del cerebro</b>
+      <ul>
+        <li>CTA único por pieza (registro / agendar diagnóstico)</li>
+        <li>Cero precio de FAP (workshop sin costo)</li>
+        <li>Cifras solo de contexto: 75% / 1 de 4, 3–5 oport/semana, +42.000, +$150M</li>
+        <li>Autoridad + foto de <code>contexto/autoridad.md</code></li>
+        <li>Voz de Jorge · reencuadre sistémico <b>rotado</b> (sin muletilla)</li>
+        <li>Diagnóstico pos-evento = el gratuito (45 min, sin scorecard)</li>
+      </ul>
+    </div>
+    <div class="falta">
+      <b>⚠️ [FALTA] — pedir a Jorge</b>
+      <ul>
+        <li>Links: registro, calendario del evento, sala en vivo, calendario del diagnóstico</li>
+        <li>Confirmar nombre oficial del workshop (usé "Contratación de Alto Rendimiento")</li>
+      </ul>
+    </div>
+  </div>
+  <p class="muted" style="margin-top:20px;font-size:12px">Generado por el cerebro operativo FAP · piezas fuente: <code>funnel-contratacion-alto-rendimiento.md</code> + <code>landing-workshop-contratacion.html</code>. Cifras: "promedio de clientes que implementaron", no promesa garantizada — "para quien implementa, ejecuta y sigue el paso a paso".</p>
+</section>
+
+</main>
+</div>

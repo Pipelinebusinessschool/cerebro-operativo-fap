@@ -1,7 +1,7 @@
-# Skill · `fap-video-ads-meta` — MOVIDA
+# Skill · `fap-video-ads-meta` — INSTALADA
 
-Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-video-ads-meta`).
+Instalada como skill del harness (invocable con `/fap-video-ads-meta`).
 
-➡️ Contenido y fuente de verdad: [`.claude/skills/fap-video-ads-meta/SKILL.md`](../.claude/skills/fap-video-ads-meta/SKILL.md)
+➡️ Contenido: [`.claude/skills/fap-video-ads-meta/SKILL.md`](../.claude/skills/fap-video-ads-meta/SKILL.md)
 
-Este archivo se conserva solo como puntero para no romper enlaces históricos.
+Puntero histórico para no romper enlaces.

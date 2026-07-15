@@ -10,67 +10,99 @@ ya producidas y validadas.
 > **Principio de fondo:** construir, no comprar. Cuando el hueco es específico de FAP,
 > se construye una skill propia en vez de instalar una genérica del banco.
 
-> 🧭 **Fuente de verdad para TODA pieza:** la skill [`fap`](.claude/skills/fap/SKILL.md). Lleva
-> dentro los candados, la voz del cliente, las objeciones a anticipar y el candado de voz. Toda
-> skill la consulta antes de generar contenido y manda sobre cualquier otra.
-
-> ⚙️ **Instaladas como skills del harness:** las 7 viven en `.claude/skills/<nombre>/SKILL.md` y
-> se invocan con `/` (p. ej. `/fap`, `/fap-landings`). Claude las descubre por su frontmatter
-> (`name` + `description`). Los archivos en `skills/` de la raíz son punteros históricos.
-
 ---
 
 ## Estructura
 
 ```
 cerebro-operativo-fap/
-├── README.md                   ← este índice
-├── .claude/skills/            ← las 8 skills INSTALADAS (invocables con /)
-│   ├── fap/SKILL.md           ← FUENTE DE VERDAD: candados + voz + objeciones (toda skill la lee)
-│   ├── fap-lanzamientos/SKILL.md
-│   ├── fap-narrativa/SKILL.md
-│   ├── fap-landings/SKILL.md
-│   ├── fap-correos/SKILL.md
-│   ├── fap-whatsapp-api/SKILL.md
-│   ├── fap-whatsapp-grupos/SKILL.md
-│   └── fap-video-ads-meta/SKILL.md
-├── skills/                    ← punteros históricos a las skills instaladas
+├── README.md                  ← este índice
+├── HANDOFF.md                 ← documento de continuidad (contexto completo de la sesión)
+├── contexto/                  ← FUENTE DE VERDAD: archivos reales de Jorge (ICP, voz, métricas…)
+│   ├── README.md              ← índice + decisiones FAP fijadas (ICP, nombre, 6 pilares, candados)
+│   ├── jorge_icp.md · jorge_voice.md · jorge_philosophy.md · jorge_process.md
+│   ├── jorge_decisions.md · pbs_metrics.md · pbs_indice.md
 ├── seguimiento/
-│   └── seguimiento.md         ← fases 1–3, método probado y pendientes abiertos
-├── voz/                       ← lenguaje real del cliente (respaldo de la fuente de verdad)
+│   └── seguimiento.md         ← fases 1–3, hallazgo skills-vs-squad, 5 huecos y reglas
+├── skills/                    ← las 10 skills del cerebro (cada una carga contexto + su swipe)
+│   ├── fap.md                 ← candados + puerta a contexto/
+│   ├── fap-lanzamientos.md    ← orquestador (2 rutas, delega)
+│   ├── fap-narrativa.md · fap-correos.md · fap-landings.md
+│   ├── fap-paginas-venta.md · fap-vsl.md · fap-video-ads-meta.md
+│   └── fap-whatsapp-api.md · fap-whatsapp-grupos.md
+├── swipe/                     ← craft: ejemplos ganadores + principios de optimización
 │   ├── README.md
-│   ├── voz-cliente.md         ← cómo habla el cliente (15 llamadas reales, anonimizado)
-│   └── mapa-objeciones.md     ← las 8 objeciones por frecuencia
-├── swipe/                     ← banco de ejemplos ganadores reales
-│   ├── README.md
-│   └── swipe-landings.md      ← PILOTO: plantilla por ficha
+│   ├── modelo-concepcion.md   ← molde + estándar del Documento de Concepción (frameworks B2B + mapa concepción→copy)
+│   ├── principios-craft.md    ← buenas prácticas (squad Pen): optimizar, no solo replicar
+│   ├── swipe-correos.md       ← funnel de correo completo (invitación, recordatorio, venta, postventa) con análisis
+│   ├── swipe-ads.md           ← 11 ads reales CON métricas (píldoras, video largo, VSL de FAP) + lecciones
+│   ├── swipe-landings.md      ← opt-in de registro: landing GANADORA de PGE (anatomía + promesa + ICP)
+│   └── swipe-paginas-venta.md ← páginas de pago: workshop $11 (V1/V2) + OTOs $197/$47 (dx FAP)
 └── piezas/                    ← piezas ya producidas y validadas
     └── whatsapp-confirmacion-compra.md
 ```
 
 ---
 
-## Las 8 skills del cerebro
+## Las 10 skills del cerebro
 
-| Skill | Invocación | Rol |
-|---|---|---|
-| [`fap`](.claude/skills/fap/SKILL.md) | `/fap` | **Fuente de verdad** — candados + voz + objeciones |
-| [`fap-lanzamientos`](.claude/skills/fap-lanzamientos/SKILL.md) | `/fap-lanzamientos` | Director (2 rutas, piezas, cadencia) |
-| [`fap-narrativa`](.claude/skills/fap-narrativa/SKILL.md) | `/fap-narrativa` | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
-| [`fap-landings`](.claude/skills/fap-landings/SKILL.md) | `/fap-landings` | Dos modelos (Largo Brunson / Corto Brasil) |
-| [`fap-correos`](.claude/skills/fap-correos/SKILL.md) | `/fap-correos` | Secuencias de email (invitación, recordatorios, post-evento, reactivación) |
-| [`fap-whatsapp-api`](.claude/skills/fap-whatsapp-api/SKILL.md) | `/fap-whatsapp-api` | 1:1 + cumplimiento API |
-| [`fap-whatsapp-grupos`](.claude/skills/fap-whatsapp-grupos/SKILL.md) | `/fap-whatsapp-grupos` | Comunidad |
-| [`fap-video-ads-meta`](.claude/skills/fap-video-ads-meta/SKILL.md) | `/fap-video-ads-meta` | Jorge a cámara, optimizado Meta + segmentación |
+| Skill | Rol |
+|---|---|
+| [`fap`](skills/fap.md) | Fuente de verdad + candados |
+| [`fap-lanzamientos`](skills/fap-lanzamientos.md) | Director (2 rutas, piezas, cadencia) |
+| [`fap-narrativa`](skills/fap-narrativa.md) | Investiga→reflexiona→concibe: **Documento de Concepción** completo (avatar, enemigos, falsas creencias, vehículos rotos, Gran Idea, promesas) · carga `modelo-concepcion` |
+| [`fap-correos`](skills/fap-correos.md) | Funnel de correo (invitación, recordatorio, venta, postventa) · **variedad por diseño** (banco de ángulos de la concepción + matriz de diversidad: rota lead/molde/emoción/conciencia) · carga `swipe-correos` |
+| [`fap-landings`](skills/fap-landings.md) | Opt-in de registro · carga `swipe-landings` |
+| [`fap-paginas-venta`](skills/fap-paginas-venta.md) | Páginas que venden: workshop, OTOs, diagnóstico gratuito (45 min) y pago (OTU) · **dos versiones (corta+larga) + evaluación UX** siempre · autoridad verbatim de `contexto/autoridad.md` · carga `swipe-paginas-venta` |
+| [`fap-vsl`](skills/fap-vsl.md) | Guion de VSL (Ruta A → diagnóstico) · carga `swipe-ads` (VSL de FAP) |
+| [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Guiones de video ad (Jorge a cámara) · **repertorio abierto de formatos** (20+ arquetipos: listicle, "lo que no sabía", time-boxed, mito-buster, POV, manifiesto…; explora/crea, no lista cerrada) + **3 hooks alternativos swappables** por ad · ángulos de la concepción · carga `swipe-ads` |
+| [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API (HSM/sesión) · **formato WhatsApp paste-ready** (`*negrita*`, `_cursiva_`, emojis) · sin swipe |
+| [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad · **formato WhatsApp paste-ready** (`*negrita*`, `_cursiva_`, emojis) · sin swipe |
 
 ---
 
 ## Estado del proyecto
 
 - **Fase 1 — Revisión del banco de skills genéricas:** cerrada. Ninguna instalada; se rescató craft.
-- **Fase 2 — Construcción del cerebro:** 8 skills propias construidas e instaladas.
+- **Fase 2 — Construcción del cerebro:** 7 skills propias construidas e instaladas.
 - **Fase 3 — Validación:** kit completo de prueba (workshop de Contratación) coherente y con candados intactos → el cerebro generaliza.
-- **Voz del cliente:** 15 llamadas reales destiladas en `voz/` e integradas en la fuente de verdad `fap`.
-- **En curso — Swipe de ganadoras:** `landings` (piloto) + `correos` ✅ + `ads` ✅ (6 ads con métricas reales; A05 = VSL de FAP).
+- **En curso — Swipe de ganadoras:** piloto en `landings`. La brecha del testeo es la falta de ejemplos reales; el swipe la cierra.
 
 Detalle y pendientes abiertos en [`seguimiento/seguimiento.md`](seguimiento/seguimiento.md).
+
+---
+
+## Por qué skills y no squad (hallazgo validado)
+
+Con el **mismo brief**, skills y squad escriben con calidad casi idéntica — pero el squad
+**inventó datos falsos** y hasta "verificó" que eran reales. Las skills no, porque la
+fuente de verdad `fap` les obliga a **preguntar si el dato no está** en vez de inventarlo.
+
+> La calidad del copy no depende de skill vs. squad, sino de que el **cerebro** (contexto +
+> candados + brief) esté completo. El squad vale como **revisión adversarial**, no como motor.
+
+---
+
+## Los 5 huecos — estado actualizado
+
+1. **Voz de Jorge** — ✅ voz escrita cargada (`contexto/jorge_voice.md`: vocabulario obligatorio/
+   prohibido + frases signature). Pendiente opcional: cadencia hablada desde transcripciones.
+2. **Swipe de ganadores** — ✅ **cerrado.** Correos, ads (con métricas), landings y páginas en
+   [`swipe/`](swipe/).
+3. **Mapa de objeciones** — ✅ **ensamblado** en `contexto/objeciones.md` (método 4 pasos + "concede
+   antes de contraatacar" + objeciones frecuentes → respuesta sourced).
+4. **Banco de prueba claim→evidencia** — ✅ **ensamblado** en `contexto/prueba.md` (prueba por tipo
+   + emparejamiento claim→evidencia). Falta solo el caso ancla con nombre (pedir a Jorge).
+5. **Discrepancia del ICP** — ✅ **resuelto:** ≥$1M/año + ≥2 vendedores (ver `contexto/README.md`).
+
+Fuente de verdad completa en [`contexto/`](contexto/), craft en [`swipe/`](swipe/), continuidad en
+[`HANDOFF.md`](HANDOFF.md).
+
+---
+
+## Arquitectura escalable (cuando haya más de un producto)
+
+Separar **CRAFT** (cómo se escribe: landing, ads, emails, narrativa — reutilizable) de
+**CONTEXTO** (qué es verdad de cada producto: verdad + voz + swipe + candados). Hoy las
+skills FAP fusionan ambos por diseño (un solo producto); con un segundo producto se extrae
+el craft a skills genéricas y lo FAP-específico a una cápsula propia — sin reescribir nada.

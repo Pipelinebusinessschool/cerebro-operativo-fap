@@ -1,7 +1,7 @@
-# Skill · `fap-lanzamientos` — MOVIDA
+# Skill · `fap-lanzamientos` — INSTALADA
 
-Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-lanzamientos`).
+Instalada como skill del harness (invocable con `/fap-lanzamientos`).
 
-➡️ Contenido y fuente de verdad: [`.claude/skills/fap-lanzamientos/SKILL.md`](../.claude/skills/fap-lanzamientos/SKILL.md)
+➡️ Contenido: [`.claude/skills/fap-lanzamientos/SKILL.md`](../.claude/skills/fap-lanzamientos/SKILL.md)
 
-Este archivo se conserva solo como puntero para no romper enlaces históricos.
+Puntero histórico para no romper enlaces.

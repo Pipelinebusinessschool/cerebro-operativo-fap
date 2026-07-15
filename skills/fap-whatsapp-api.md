@@ -1,7 +1,7 @@
-# Skill · `fap-whatsapp-api` — MOVIDA
+# Skill · `fap-whatsapp-api` — INSTALADA
 
-Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-whatsapp-api`).
+Instalada como skill del harness (invocable con `/fap-whatsapp-api`).
 
-➡️ Contenido y fuente de verdad: [`.claude/skills/fap-whatsapp-api/SKILL.md`](../.claude/skills/fap-whatsapp-api/SKILL.md)
+➡️ Contenido: [`.claude/skills/fap-whatsapp-api/SKILL.md`](../.claude/skills/fap-whatsapp-api/SKILL.md)
 
-Este archivo se conserva solo como puntero para no romper enlaces históricos.
+Puntero histórico para no romper enlaces.

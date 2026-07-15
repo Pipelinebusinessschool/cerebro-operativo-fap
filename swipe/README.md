@@ -6,24 +6,29 @@ correcto; con ejemplos reales produce algo que se **parece a lo que funcionó**.
 
 ## Reglas del banco
 
+0. **`principios-craft.md`** — buenas prácticas de copywriting (portadas del squad Pen) que **todas**
+   las skills cargan para **optimizar, no solo replicar**. *El swipe es el piso, no el techo.*
+0-bis. **`modelo-concepcion.md`** — molde y estándar del **Documento de Concepción** (el documento
+   maestro upstream de todo el funnel). Lo carga `fap-narrativa`: define las secciones, la
+   profundidad exigida, los frameworks B2B que se sintetizan y el mapa **concepción→copy**. No es un
+   swipe de ejemplos: es el nivel de razonamiento a igualar y superar.
 1. **Un archivo por canal**, no uno gigante. Cada skill carga el suyo y se mantiene afilada.
-   - `swipe-landings.md` → `fap-landings` *(piloto)*
-   - `swipe-correos.md` → `fap-correos` ✅ *(11 fichas: A1–A9 invitación, B1–B2 venta; métricas pendientes)*
-   - `swipe-ads.md` → `fap-video-ads-meta` ✅ *(6 ads con métricas reales de Meta; A05 = VSL de FAP)*
+   - `swipe-landings.md` → `fap-landings` *(opt-in de registro: landing ganadora de PGE + ICP ✅)*
+   - `swipe-paginas-venta.md` → `fap-landings` / diagnóstico *(páginas de pago: workshop $11 + OTOs $197/$47 ✅)*
+   - `swipe-correos.md` → `fap-correos` *(funnel de correo completo: invitación, recordatorio, venta y postventa ✅)*
+   - `swipe-ads.md` → `fap-video-ads-meta` *(11 ads reales CON métricas: píldoras, video largo y la VSL de FAP ✅)*
+   - **WhatsApp → sin swipe (decisión).** No hay data de desempeño de los mensajes, así que no se
+     construye un swipe (crearlo sería inventar cuál "ganó" y romper la regla de oro). El canal se
+     cubre con las skills existentes `fap-whatsapp-api` y `fap-whatsapp-grupos`, que ya cargan la
+     guía de mensajes que funcionan.
 2. **Cada ejemplo con su "por qué ganó"**, no solo el texto. Copy + métrica + el elemento
    que lo hizo funcionar (hook / oferta / ángulo). Sin anotar, el modelo copia la superficie.
+   Sin data (p. ej. WhatsApp), no se fabrica un swipe: se usa la skill del canal.
 3. **Marcar qué NO copiar.** Si una ganadora tenía precio visible o CTA a checkout (que en
    FAP no van), se anota — el swipe no debe romper un candado.
 
 ## Estado
 
-- **Piloto:** `landings`. Validado el formato → replicado a **correos** (`swipe-correos.md`, ✅).
-- **Correos:** cargado el banco de PBS (invitación + venta). *Nota: el PDF "Casos de éxito"
-  también trae correos de **recordatorio** y **postventa** (onboarding, downsell, upsell) que aún
-  NO están en `swipe-correos.md`.*
-- **Ads:** ✅ `swipe-ads.md` — 6 ads con métricas reales (A05 = VSL de FAP). Hallazgo clave:
-  el **callout de identidad** es el mecanismo #1.
-- **Pendiente:** un posible `swipe-paginas-venta.md` (el PDF trae opt-in, tripwire $11,
-  diagnóstico $197 —molde directo del diagnóstico de FAP— y downsell $47).
-- Con **3–5 ejemplos reales** por canal alcanza para extraer patrones. Importa que sean las
-  verdaderas ganadoras, no la cantidad.
+- **Piloto:** `landings`. Validar el formato con un canal antes de replicar a mails y ads.
+- Con **3–5 landings reales** alcanza para extraer patrones. Importa que sean las verdaderas
+  ganadoras, no la cantidad.

@@ -1,7 +1,7 @@
-# Skill · `fap-correos` — MOVIDA
+# Skill · `fap-correos` — INSTALADA
 
-Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-correos`).
+Instalada como skill del harness (invocable con `/fap-correos`).
 
-➡️ Contenido y fuente de verdad: [`.claude/skills/fap-correos/SKILL.md`](../.claude/skills/fap-correos/SKILL.md)
+➡️ Contenido: [`.claude/skills/fap-correos/SKILL.md`](../.claude/skills/fap-correos/SKILL.md)
 
-Este archivo se conserva solo como puntero para no romper enlaces históricos.
+Puntero histórico para no romper enlaces.

@@ -1,6 +1,11 @@
-# Mapa de objeciones — llamadas de ventas FAP
+# Objeciones del cliente — verbatim de llamadas (lado demanda)
 
-Fuente: 15 llamadas de venta reales del *Programa de Aceleración de FORECAST* (transcripciones verbatim, jun–jul 2026). **Anonimizado**: sin nombres, correos ni empresas. Las citas son textuales del cliente.
+Fuente: **15 llamadas de venta reales** del *Programa de Aceleración de FORECAST* (transcripciones verbatim, jun–jul 2026). **Anonimizado**: sin nombres, correos ni empresas. Las citas son textuales del cliente.
+
+> **Las dos caras de la objeción.** Este archivo es **lo que el cliente OBJETA**, con sus palabras
+> y por frecuencia (lado demanda). Cómo **RESPONDE Jorge** (método de 4 pasos + respuestas sourced)
+> vive en [`objeciones.md`](objeciones.md) (lado vendedor). Se usan juntos: aquí eliges qué mina
+> desactivar; allí, cómo desactivarla.
 
 > Uso: alimenta a las skills de captación (landings, ads, WhatsApp, narrativa) para **anticipar y desactivar** estas objeciones *antes* de que aparezcan, y para escribir en el idioma real del prospecto. Ordenado por frecuencia (nº de las 15 llamadas donde aparece).
 

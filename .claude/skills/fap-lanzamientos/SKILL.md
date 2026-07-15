@@ -1,62 +1,69 @@
 ---
 name: fap-lanzamientos
 description: >-
-  Director del lanzamiento de FAP. Define las 2 rutas de lanzamiento, las piezas
-  que se producen en cada una y la cadencia (secuencia y timing). Úsala cuando
-  pidan planificar, orquestar o secuenciar un lanzamiento/campaña de FAP, o
-  decidir qué piezas producir y en qué orden. Invoca las skills de ejecución
-  (fap-narrativa, fap-landings, fap-correos, fap-whatsapp-api,
-  fap-whatsapp-grupos, fap-video-ads-meta). Consulta antes la fuente de verdad `fap`.
+  Director del lanzamiento de FAP: define las 2 rutas (A: VSL directo · B: workshop→diagnóstico),
+   decide qué pieza se produce y en qué orden, y delega a las skills de ejecución. Úsala para pla
+  nificar, orquestar o secuenciar un lanzamiento o campaña completa de FAP.
 ---
 
 # Skill · `fap-lanzamientos`
 
-**Rol:** director del lanzamiento. Define las **2 rutas**, las piezas de cada una y la cadencia.
+**Rol:** **director del lanzamiento.** Define las **2 rutas**, decide qué piezas se necesitan y en
+qué orden, y **delega** a las skills de ejecución. No escribe copy — orquesta.
 
-> ⚠️ **Antes de generar cualquier pieza, consulta la fuente de verdad (skill `fap`)** —
-> contexto, candados de voz, objeciones a anticipar y léxico del cliente. Manda sobre esta skill.
-
-## Skills de ejecución que invoca
-- `fap-narrativa` — 3 Big Ideas + brief.
-- `fap-landings` — landing (modelo Largo Brunson / Corto Brasil).
-- `fap-correos` — secuencias de email (invitación, recordatorios, post-evento, reactivación).
-- `fap-whatsapp-api` — 1:1 + cumplimiento API.
-- `fap-whatsapp-grupos` — comunidad.
-- `fap-video-ads-meta` — video ads, Jorge a cámara, Meta.
+**Se activa cuando** el mensaje pide un lanzamiento completo o "todas las piezas" de FAP.
 
 ---
 
-## Ruta A · Contenido / evento gratuito
-**Validada en Fase 3** (workshop gratuito). Se capta con un evento de valor y se lleva del
-evento a la **llamada de diagnóstico**.
+## Regla 0
 
-| Paso | Qué produce | Skill de ejecución |
-|---|---|---|
-| **A1** | Narrativa + Big Idea del evento | `fap-narrativa` |
-| **A2** | Landing de registro | `fap-landings` |
-| **A3** | Video ads de tráfico al registro | `fap-video-ads-meta` |
-| **A4** | Secuencia de correos (invitación, recordatorios, post-evento → diagnóstico) | `fap-correos` |
-| **A5** | Recordatorios y dinámica del evento (comunidad) | `fap-whatsapp-grupos` |
-| **A6** | Seguimiento 1:1 y paso a diagnóstico | `fap-whatsapp-api` |
+Carga [`../../../contexto/`](../../../contexto/) para conocer producto (FAP), ICP, rutas y candados. Antes de
+delegar, pide (o genera vía `fap-narrativa`) la **concepción** — el documento maestro (avatar,
+enemigos, falsas creencias, vehículos rotos, Gran Idea, promesas). De ella sale el **brief** que cada
+canal consume: Big Idea, ángulo, nivel de conciencia, ruta. **Ninguna pieza introduce enemigo,
+promesa o mecanismo que no esté en la concepción. Cifras/ICP/precio son responsabilidad de cada
+skill, siempre desde `contexto/`.**
 
-**Cadencia:** narrativa → landing + ads (tráfico) → registros → correos + recordatorios
-(grupos) → evento → seguimiento 1:1 → diagnóstico.
+---
 
-## Ruta B · Directo a diagnóstico (paid)
-Del anuncio a la **llamada de diagnóstico**, sin evento intermedio.
+## Las 2 rutas
 
-| Paso | Qué produce | Skill de ejecución |
-|---|---|---|
-| **B1** | Video ads directos | `fap-video-ads-meta` |
-| **B2** | Landing de captación (CTA a diagnóstico) | `fap-landings` |
-| **B3** | Seguimiento 1:1 | `fap-whatsapp-api` |
+- **Ruta A — VSL:** Ads → **VSL** → **Diagnóstico**. Tráfico frío que se auto-califica con la VSL y
+  agenda la llamada.
+- **Ruta B — Workshop:** Ads → **Registro (opt-in)** → Webinar/Workshop → **Oferta** →
+  **Diagnóstico**. Tráfico que se calienta en vivo antes de la oferta.
 
-Ángulo base opcional con `fap-narrativa`; correos de nurture/reactivación con `fap-correos`
-cuando el lead no agenda.
+## Skills de ejecución (a quién delega cada pieza)
 
-**Cadencia:** ángulo → ads → landing → lead → seguimiento 1:1 (+ nurture por correo) → diagnóstico.
+| Pieza | Skill |
+|---|---|
+| Concepción + Big Idea + brief | `fap-narrativa` |
+| Correos (invitación, recordatorio, venta, postventa) | `fap-correos` |
+| Landing de registro (opt-in) | `fap-landings` |
+| **Guion de la VSL** (Ruta A) | `fap-vsl` |
+| Página que aloja la VSL, workshop de pago, OTOs, **diagnóstico** | `fap-paginas-venta` |
+| Guiones de video ad (Meta) | `fap-video-ads-meta` |
+| WhatsApp 1:1 / comunidad | `fap-whatsapp-api` / `fap-whatsapp-grupos` |
+
+## Secuencia por ruta
+
+- **Ruta A:** `fap-video-ads-meta` (ads) → `fap-vsl` (guion) + `fap-paginas-venta` (página de la
+  VSL) → `fap-paginas-venta` (diagnóstico) · nurture con `fap-correos` + `fap-whatsapp-api`.
+- **Ruta B:** `fap-video-ads-meta` (ads) → `fap-landings` (opt-in) → `fap-correos`
+  (invitación + recordatorio) → [webinar] → `fap-correos` (venta) + `fap-paginas-venta` (oferta) →
+  `fap-paginas-venta` (diagnóstico) → `fap-correos` (postventa) · WhatsApp en paralelo.
+
+---
+
+## Candados de orquestación
+
+- **CTA por superficie:** piezas de tope → **registro**; piezas de venta → **diagnóstico**. Un solo
+  CTA por pieza, nunca ambos.
+- **Cero precio de FAP en captación** (el del workshop/OTO sí, en `fap-paginas-venta`).
+- **Un solo mensaje líder por pieza**, según el nivel de conciencia del brief.
+- Cada skill respeta su **Regla 0** (contexto + su swipe). Si a alguna le falta un dato, **detiene y
+  pregunta** — no se inventa.
 
 ## Estado
-- [x] Instalada.
-- [x] A1/B1 (y toda la cadena) nombran las skills de ejecución de FAP — ya no `agora` / `million-dollar-ads`.
-- [ ] Test de activación en chat nuevo pendiente.
+- [x] Rutas y delegación actualizadas a las skills de ejecución de FAP.
+- [ ] Test de activación en chat nuevo.

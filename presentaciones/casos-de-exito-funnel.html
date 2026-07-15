@@ -1,0 +1,748 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+@page { size:A4; margin:16mm 15mm 18mm 15mm; }
+*{box-sizing:border-box} html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#0F172A;margin:0;font-size:10.5px;line-height:1.5}
+h1,h2,h3{margin:0}
+.cover{height:262mm;display:flex;flex-direction:column;justify-content:space-between;page-break-after:always;padding:6mm 2mm}
+.cover .brandbar{font-size:11px;letter-spacing:.28em;color:#64748B;font-weight:700;text-transform:uppercase}
+.cover .mid h1{font-size:40px;line-height:1.05;letter-spacing:-.02em;margin-bottom:14px}
+.cover .mid .accent{color:#059669}
+.cover .mid p.lead{font-size:14px;color:#334155;max-width:150mm;line-height:1.6}
+.cover .rule{height:4px;width:64px;background:#059669;margin:22px 0;border-radius:2px}
+.cover .meta{font-size:11px;color:#475569} .cover .meta b{color:#0F172A}
+.tag-row{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.tag{font-size:9.5px;font-weight:700;padding:5px 10px;border-radius:999px;color:#fff;letter-spacing:.04em}
+.intro{page-break-after:always}
+.intro h2{font-size:20px;letter-spacing:-.01em;margin-bottom:6px}
+.intro .sub{color:#64748B;font-size:11px;margin-bottom:18px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:6px}
+.box{border:1px solid #E2E8F0;border-radius:10px;padding:13px 15px;background:#F8FAFC}
+.box h3{font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;color:#0F172A;margin-bottom:6px}
+.box p,.box li{font-size:10px;color:#334155} .box ul{margin:0;padding-left:16px} .box li{margin-bottom:3px}
+.phase{page-break-before:always}
+.phase-head{border-left:5px solid var(--c);padding:2px 0 2px 12px;margin:0 0 12px}
+.phase-head h2{font-size:19px;letter-spacing:.02em;color:var(--c)}
+.phase-head p{font-size:10.5px;color:#475569;margin-top:3px;max-width:165mm}
+.card{border:1px solid #E5E9F0;border-radius:12px;padding:14px 16px 12px;margin-bottom:13px;page-break-inside:avoid;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.badge{color:#fff;font-size:8px;font-weight:800;letter-spacing:.09em;padding:3px 8px;border-radius:5px}
+.num{font-size:12px;font-weight:800;color:#94A3B8}
+.lens{font-size:10.5px;font-weight:700;color:#0F172A}
+.camp{margin-left:auto;font-size:8px;font-weight:700;color:#64748B;background:#F1F5F9;border:1px solid #E2E8F0;padding:3px 8px;border-radius:999px}
+.subject{font-size:13.5px;font-weight:800;letter-spacing:-.01em;margin:2px 0;color:#0F172A}
+.pre{font-size:10px;color:#64748B;font-style:italic;margin-bottom:8px}
+.nosub{font-size:9.5px;color:#94A3B8;font-style:italic;margin:2px 0 6px}
+.email{border-left:3px solid var(--c);background:#FBFCFE;border-radius:0 8px 8px 0;padding:9px 13px;margin:6px 0 10px}
+.email .line{margin:0 0 6px;font-size:10px;color:#1E293B;line-height:1.55} .email .line:last-child{margin-bottom:0}
+.why{border-top:1px dashed #DDE3EC;padding-top:8px}
+.why-row{display:flex;gap:10px;margin-bottom:5px} .why-row:last-child{margin-bottom:0}
+.why .k{flex:0 0 92px;font-size:8.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:#059669;padding-top:1px}
+.why .v{flex:1;font-size:9.7px;color:#334155;line-height:1.5}
+.tier{color:#fff;font-size:8px;font-weight:800;letter-spacing:.06em;padding:3px 8px;border-radius:5px}
+.fmt{font-size:9px;font-weight:700;color:#EA580C;text-transform:uppercase;letter-spacing:.05em;margin:1px 0 6px}
+.adcard.adhi{border:1.5px solid #B45309;background:#FFFBEB;box-shadow:0 2px 6px rgba(180,83,9,.10)}
+.metrics{display:flex;gap:7px;margin:2px 0 8px;flex-wrap:wrap}
+.metric{flex:1;min-width:70px;border:1px solid #E2E8F0;border-radius:8px;padding:6px 8px;text-align:center;background:#F8FAFC}
+.metric .mv{display:block;font-size:14px;font-weight:800;color:#0F172A;letter-spacing:-.02em}
+.metric .ml{display:block;font-size:7.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:#64748B;margin-top:1px}
+.databox{border:1px solid #FED7AA;border-left:4px solid #EA580C;background:#FFF7ED;border-radius:10px;padding:12px 16px;margin-top:4px;page-break-inside:avoid}
+.databox h3{font-size:12.5px;margin-bottom:6px;color:#9A3412}
+.databox ul{margin:0;padding-left:16px} .databox li{font-size:9.7px;color:#7C2D12;margin-bottom:4px;line-height:1.5}
+.anat{font-size:9.3px;color:#334155;background:#F8FAFC;border:1px solid #E2E8F0;border-radius:8px;padding:8px 12px;margin:6px 0 10px;line-height:1.75}
+.anat b{color:#4F46E5;text-transform:uppercase;font-size:8px;letter-spacing:.06em;display:block;margin-bottom:3px}
+.patrones{page-break-before:always}
+.patrones h2{font-size:20px;margin-bottom:4px} .patrones .sub{color:#64748B;font-size:11px;margin-bottom:16px}
+.pat{border:1px solid #E2E8F0;border-left:4px solid #059669;border-radius:9px;padding:11px 14px;margin-bottom:9px;page-break-inside:avoid}
+.pat h3{font-size:12px;margin-bottom:3px;color:#0F172A} .pat p{font-size:10px;color:#334155}
+.foot{margin-top:20px;font-size:9px;color:#94A3B8;border-top:1px solid #E2E8F0;padding-top:8px}
+</style></head><body>
+
+<div class="cover">
+  <div class="brandbar">PIPELINE Business School · Selección de casos de éxito</div>
+  <div class="mid">
+    <h1>Casos de éxito en copy<br><span class="accent">correos y anuncios</span></h1>
+    <div class="rule"></div>
+    <p class="lead">Una selección curada de las piezas con mejor desempeño de los lanzamientos de
+    PBS: el <b>funnel de correo</b> completo y los <b>anuncios de Meta con métricas reales</b>. De
+    cada pieza: el <b>copy real</b>, el <b>ángulo</b>, los <b>recursos</b> de persuasión y <b>por
+    qué funcionó</b>.</p>
+    <div class="tag-row">
+      <span class="tag" style="background:#2563EB">INVITACIÓN</span>
+      <span class="tag" style="background:#0891B2">RECORDATORIO</span>
+      <span class="tag" style="background:#059669">VENTA</span>
+      <span class="tag" style="background:#7C3AED">POSTVENTA</span>
+      <span class="tag" style="background:#EA580C">ADS</span>
+      <span class="tag" style="background:#4F46E5">PÁGINAS</span>
+    </div>
+  </div>
+  <div class="meta">
+    Preparado para <b>Jorge Conde</b> — CEO, PIPELINE Business School<br>
+    17 correos + 6 anuncios + 4 páginas · Fuentes: Prospección a Gran Escala con IA,
+    Pipeline Predecible con IA, Supervisión Comercial Predictiva con IA, AI Strategic Pipeline
+    Generation y la VSL del Forecast Accelerator Program (FAP)
+  </div>
+</div>
+
+<div class="intro">
+  <h2>Cómo leer este documento</h2>
+  <div class="sub">Qué contiene, cómo está organizado y con qué criterio se eligieron los correos.</div>
+  <div class="grid2">
+    <div class="box"><h3>Qué es</h3>
+      <p>Una muestra de los correos <b>ganadores seleccionados</b> del funnel de correo de PBS
+      (varios lanzamientos), presentados para revisión. No es un lanzamiento completo: es la
+      curaduría de las piezas que mejor enseñan un mecanismo de persuasión.</p></div>
+    <div class="box"><h3>Cómo se organiza</h3>
+      <p>Por las <b>4 fases del funnel de correo</b> + una sección de <b>anuncios</b>:</p>
+      <ul><li><b>Invitación</b> — registro al entrenamiento/masterclass.</li>
+      <li><b>Recordatorio</b> — asistencia en vivo + apertura de la oferta.</li>
+      <li><b>Venta</b> — retargeting al programa pago.</li>
+      <li><b>Postventa</b> — confirmación, downsell y upsell.</li>
+      <li><b>Ads</b> — anuncios de Meta con métricas reales de desempeño.</li>
+      <li><b>Landings y páginas</b> — del opt-in al funnel de pago (workshop + OTOs).</li></ul></div>
+    <div class="box"><h3>Qué trae cada ficha</h3>
+      <ul><li><b>Copy verbatim</b> — el texto real (enlaces y UTMs abreviados).</li>
+      <li><b>Ángulo</b> — el gancho psicológico dominante.</li>
+      <li><b>Recursos</b> — los dispositivos de copy concretos.</li>
+      <li><b>Por qué funciona</b> — la lectura de por qué convierte.</li></ul>
+      <p style="margin-top:5px">La etiqueta de la derecha indica la <b>campaña</b> de origen.</p></div>
+    <div class="box"><h3>Criterio de selección</h3>
+      <p>Se priorizó que <b>cada correo enseñe un mecanismo distinto</b> (interrupción de patrón,
+      miedo específico, storytelling, checklist, prueba social, ROI, cierre binario, upsell…) por
+      encima de repetir el mismo recurso. Así la muestra cubre todo el repertorio.</p></div>
+  </div>
+  <p style="font-size:9.5px;color:#94A3B8;margin-top:16px;">Nota: los <b>correos</b> no tienen
+  métricas de envío — su “por qué funciona” es análisis de craft sobre piezas ya validadas. Los
+  <b>anuncios</b> sí traen métricas reales de Meta (Stop Ratio, CTR, CPL, ROAS, costo por agenda),
+  y ahí el desempeño está medido, no inferido. En algunos correos provenientes de PDF no se
+  registró la línea de asunto en la fuente; se indica en la ficha.</p>
+</div>
+
+
+    <section class="phase">
+      <div class="phase-head" style="--c:#2563EB">
+        <h2>INVITACIÓN</h2><p>Captar el registro al entrenamiento gratuito. Cada correo rota el gancho para hablarle al mismo directivo desde un dolor distinto.</p>
+      </div>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#2563EB">INVITACIÓN</span>
+        <span class="num">#01</span>
+        <span class="lens">Interrupción de patrón (contrarian)</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">🚫 No abras este correo si ya estás prospectando con IA en 2025…</div><div class="pre">Solo para interesados</div>
+      <div class="email" style="--c:#2563EB"><p class="line">Querido/a estratega comercial…</p>
+<p class="line">Sé que hoy más que nunca necesitas resultados concretos, no más teoría ni estrategias obsoletas.</p>
+<p class="line">Por eso quiero hablarte de algo que sí puede marcar un punto de inflexión en tu operación comercial: PROSPECCIÓN A GRAN ESCALA CON IA. Y es que:</p>
+<p class="line">✅ Si te encuentras frustrado de ver a tu equipo invirtiendo tiempo en “curiosos” que no están calificados ni listos para comprar. 😩</p>
+<p class="line">✅ Si estás cansado de la falta de predictibilidad. Vender bien un mes, caer en el siguiente.</p>
+<p class="line">✅ Si aún dependes de referidos o del azar para cumplir tu cuota de ventas…</p>
+<p class="line">Entonces este entrenamiento es para ti.</p>
+<p class="line">[ BOTÓN: JUSTO ME DESCRIBISTE, DEBO ASISTIR ]</p>
+<p class="line">Está diseñado para quienes sienten que su sistema de ventas está estancado. Te ayudará a: instalar un sistema de prospección B2B con IA que genere un flujo constante de leads calificados; dejar atrás la dependencia de referidos; estructurar tu operación con IA para escalar tu PIPELINE en 2026; construir un ejército de prospección con IA que trabaje para tu cuota 24/7.</p>
+<p class="line">[ BOTÓN: ME UNO AL ENTRENAMIENTO, JORGE ]</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Exclusión / psicología inversa. El asunto prohíbe abrir, lo que dispara curiosidad por contradicción y filtra por identificación.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Asunto con 🚫 que rompe el patrón de bandeja · botón-espejo que verbaliza la reacción del lector (“Justo me describiste”) · 3 síntomas condicionales (PAS).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">El lector se autoselecciona: al reconocerse en los síntomas, hacer clic deja de sentirse como responder a una venta y pasa a sentirse como levantar la mano.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#2563EB">INVITACIÓN</span>
+        <span class="num">#02</span>
+        <span class="lens">Miedo específico y nombrado</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">🚫 Ignora este correo si el 80% de tus ingresos NO depende de 3 a 5 clientes... 💣</div><div class="pre">En pocos días aprenderás cómo dejar de hacerlo</div>
+      <div class="email" style="--c:#2563EB"><p class="line">Querido/a estratega comercial…</p>
+<p class="line">Si hoy el 80% de tus ingresos depende de 5 clientes... y eso te quita el sueño…</p>
+<p class="line">Te encuentras angustiado porque si tu cliente #1 te avisa mañana que no renueva, tu operación entera colapsa, viviendo al borde de una crisis permanente. 😰</p>
+<p class="line">Entonces nuestro próximo entrenamiento Prospección a Gran Escala con IA es fundamental para tu operación comercial.</p>
+<p class="line">[ BOTÓN: JORGE, ESTO ES URGENTE PARA MÍ ]</p>
+<p class="line">Está diseñado para directivos que sienten que su empresa está construida sobre una bomba de tiempo. Te ayudará a: instalar Agentes de IA que generan 100+ oportunidades calificadas por mes; construir un PORTFOLIO EXPONENCIAL donde ningún cliente representa más del 10% de tus ingresos; crear un ejército digital que trabaja 24/7 mientras duermes tranquilo.</p>
+<p class="line">Regístrate y obtén el plan de contingencia que convierte tu bomba de tiempo en un motor de crecimiento predecible. 🛡️📈</p>
+<p class="line">[ BOTÓN: NECESITO DIVERSIFICAR MI PIPELINE, JORGE ]</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Miedo de supervivencia: la concentración de cartera. No habla de “vender más”, sino de no colapsar.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Cifra concreta en el asunto (80% / 3–5 clientes) · escena del peor caso (“si tu cliente #1 no renueva mañana”) · metáfora “bomba de tiempo → motor de crecimiento” · botones emocionales.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Ataca un dolor real que el directivo reconoce en su propia empresa. Al ser un riesgo, no una aspiración, la urgencia es genuina sin inflar la promesa.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#2563EB">INVITACIÓN</span>
+        <span class="num">#03</span>
+        <span class="lens">Storytelling en segunda persona</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">📊 ¿Puedes predecir cuánto vas a vender en marzo 2026?</div>
+      <div class="email" style="--c:#2563EB"><p class="line">Estratega comercial. 👋 Déjame preguntarte algo...</p>
+<p class="line">¿Alguna vez te ha pasado que el CEO te llama el lunes por la mañana y te pregunta: “¿Cuánto vamos a cerrar este trimestre?”</p>
+<p class="line">Y tú empiezas a hacer cuentas mentales... revisas tu CRM... miras las oportunidades que “deberían” cerrarse... y terminas respondiendo con un “bueno... creemos que unos... más o menos...”</p>
+<p class="line">🤯 Ya sabes lo que viene después. Esa mirada. Esa incómoda pausa. Esa pérdida de credibilidad.</p>
+<p class="line">Y lo peor es que llevas meses operando así: ❌ Sin poder proyectar cuánto vas a facturar en 2026. ❌ Con un forecast que cambia cada semana. ❌ Rezando para que “algo grande se cierre” antes de fin de mes.</p>
+<p class="line">Mira, yo también viví exactamente eso. Hasta que entendí que no puede haber facturación predecible si no hay generación predecible de leads.</p>
+<p class="line">Es matemática simple. Si no controlas cuánto PIPELINE nuevo entra cada semana, no puedes proyectar cuánto vas a cerrar en 3, 6 o 12 meses.</p>
+<p class="line">Por eso creamos Prospección a Gran Escala con IA. No es teoría. Es un sistema que te permite: ✅ Saber EXACTAMENTE cuánto PIPELINE entra cada semana. ✅ Proyectar tus ingresos de Q1 2026 desde noviembre 2025. ✅ Responder con CONFIANZA la próxima vez que te pregunten “¿cuánto vamos a cerrar?”</p>
+<p class="line">Porque la predictibilidad no es mágica. Es sistema. Y el sistema empieza con la generación de leads.</p>
+<p class="line">[ BOTÓN: SÍ, QUIERO PREDICTIBILIDAD → ]</p>
+<p class="line">Nos vemos en el entrenamiento. Jorge Conde — CEO, PIPELINE Business School</p>
+<p class="line">PD: La próxima vez que el CEO te pregunte por el forecast, imagina poder responder con números concretos.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Historia-escena: dramatiza el dolor (la llamada del CEO) en vez de listarlo. El lector se ve dentro de la escena.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Narrativa en 2ª persona · diálogo interno · “yo también viví eso” (autoridad por experiencia) · tesis memorizable (“la predictibilidad no es magia, es sistema”) · PD que revive la escena.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">La emoción precede al argumento: primero siente la vergüenza de no saber responder, luego se le ofrece la salida. El molde de storytelling más reutilizable del lanzamiento.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#2563EB">INVITACIÓN</span>
+        <span class="num">#04</span>
+        <span class="lens">Checklist de soluciones fallidas</span>
+        <span class="camp">Supervisión Comercial Predictiva con IA</span>
+      </div>
+      <div class="nosub">Invitación a masterclass · asunto no registrado en la fuente (PDF)</div>
+      <div class="email" style="--c:#2563EB"><p class="line">Directivo Comercial, ¿cuántas de estas “soluciones” has intentado para recuperar el control de tus números?</p>
+<p class="line">◻️ Implementar un CRM más costoso esperando tener inteligencia comercial.</p>
+<p class="line">◻️ Construir dashboards hiper-detallados en Power-BI, que solo muestran lo que ya pasó.</p>
+<p class="line">◻️ Reuniones de forecast semanales y presión comercial diaria.</p>
+<p class="line">◻️ Microgestionar personalmente a cada vendedor para que cierren.</p>
+<p class="line">◻️ Acompañar a tus vendedores a cada reunión (y volverte el cuello de botella).</p>
+<p class="line">◻️ Pagar consultorías que terminan en un PDF que nadie usa.</p>
+<p class="line">Si has intentado al menos una, ya te diste cuenta de algo: sigues operando a ciegas.</p>
+<p class="line">Por eso diseñamos esta MASTERCLASS exclusiva para Directivos, Fundadores y CEOs: SUPERVISIÓN COMERCIAL PREDICTIVA CON IA. En 90 minutos te mostramos cómo instalar tu Modelo de Supervisión Comercial acelerado por IA que: predice tu cash flow · audita cada paso de tu operación comercial · detecta caídas de ventas 2 meses antes de que ocurran · agrega una capa de inteligencia comercial a tu liderazgo.</p>
+<p class="line">📅 Martes, 2 de junio · 🕐 7:00 p.m. 🇨🇴🇪🇨🇵🇪 | 6:00 p.m. 🇲🇽 | 8:00 p.m. 🇺🇸🇻🇪🇨🇱</p>
+<p class="line">[ BOTÓN: QUIERO MI LUGAR EN LA MASTERCLASS ]</p>
+<p class="line">Es momento de dejar de ser el “vendedor más caro” de tu nómina y empezar a dirigir con un sistema que trabaje para ti. Nos vemos en la sesión.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Checklist de soluciones fallidas: nombra todo lo que el directivo ya intentó y lo declara insuficiente (“sigues operando a ciegas”).</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Checkbox ◻️ que el lector marca mentalmente · panorama de alternativas (CRM, BI, consultorías…) · reencuadre de identidad (“vendedor más caro” → “dirigir con un sistema”) · promesa contraintuitiva (“detecta caídas 2 meses antes”).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Construye acuerdo antes de proponer nada: al reconocer sus intentos fallidos, el lector concluye por sí mismo que necesita algo distinto. Reposiciona toda alternativa como insuficiente.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#2563EB">INVITACIÓN</span>
+        <span class="num">#05</span>
+        <span class="lens">Presión macro / timing</span>
+        <span class="camp">Pipeline Predecible con IA</span>
+      </div>
+      <div class="nosub">Invitación (Bases de Datos, v1) · asunto no registrado en la fuente (PDF)</div>
+      <div class="email" style="--c:#2563EB"><p class="line">🚨 El año arrancó con las CUOTAS DE VENTAS más altas de la historia. 🚨</p>
+<p class="line">Y con el mismo mercado saturado, los mismos presupuestos congelados y la misma competencia peleando por precio. Esa combinación no se resuelve con más perseguimiento comercial ni con más presión al equipo.</p>
+<p class="line">✅ Se resuelve con un sistema diferente.</p>
+<p class="line">En este momento estás a tiempo de reaccionar, escalar tu PIPELINE y cerrar el año con un forecast que el board no esperaba ver. 🥇</p>
+<p class="line">Eso es lo que vamos a construir en nuestro próximo entrenamiento comercial avanzado PIPELINE PREDECIBLE CON IA. En tres noches consecutivas construiremos el sistema de prospección con IA que directivos comerciales en Latinoamérica están usando para llenar su PIPELINE en 2026, sin importar que la economía esté contraída o que vendas un producto commodity.</p>
+<p class="line">🗓️ Martes 21, Miércoles 22 y Jueves 23 de abril · Formato 100% en vivo — 3 noches consecutivas.</p>
+<p class="line">[ BOTÓN: REGÍSTRATE AHORA ]</p>
+<p class="line">Los cupos son limitados. Aparta tu lugar y gana el juego de las ventas con el sistema de prospección con IA que hace tu PIPELINE predecible y escalable.</p>
+<p class="line">Jorge Conde · CEO · PIPELINE Business School</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Presión macro / timing: abre por el contexto de mercado (cuotas más altas de la historia), no por el “yo”.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Apertura por contexto adverso (mercado saturado, presupuestos congelados, guerra de precios) · reencuadre “no con más presión, sino con un sistema diferente” · prueba social regional · escasez de cupos · firma institucional.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Le habla al calendario del directivo (arranque de año, cuotas) y externaliza el problema al mercado: lo vuelve urgente por contexto, no por presión de venta.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#2563EB">INVITACIÓN</span>
+        <span class="num">#06</span>
+        <span class="lens">PAS estándar (el caballo de batalla)</span>
+        <span class="camp">Pipeline Predecible con IA</span>
+      </div>
+      <div class="nosub">Invitación (Bases de Datos, v4) · asunto no registrado en la fuente (PDF)</div>
+      <div class="email" style="--c:#2563EB"><p class="line">Sé que hoy más que nunca necesitas resultados concretos. ❌ No más teoría ni estrategias obsoletas.</p>
+<p class="line">Por eso quiero hablarte de algo que SÍ puede marcar un punto de inflexión: PIPELINE PREDECIBLE CON IA. Y es que:</p>
+<p class="line">✅ Si te frustra ver a tu equipo invirtiendo tiempo en “curiosos” que no están calificados. 😩</p>
+<p class="line">✅ Si estás cansado de la falta de predictibilidad. Vender bien un mes, caer en el siguiente.</p>
+<p class="line">✅ Si aún dependes de referidos o del azar para cumplir tu cuota…</p>
+<p class="line">Entonces este ENTRENAMIENTO COMERCIAL es para ti.</p>
+<p class="line">[ BOTÓN: JUSTO ME DESCRIBISTE, DEBO ASISTIR ]</p>
+<p class="line">Diseñado para quienes sienten que su sistema de ventas está estancado. Te ayudará a: dejar atrás la dependencia de referidos y crear un PIPELINE escalable y predecible; estructurar tu operación con IA para escalar tu PIPELINE en 2026; construir un ejército de prospección con IA que trabaje para tu cuota 24/7.</p>
+<p class="line">🗓️ Martes 21, Miércoles 22 y Jueves 23 de abril · 🔴 Formato 100% en vivo — 3 noches consecutivas.</p>
+<p class="line">[ BOTÓN: ME UNO AL ENTRENAMIENTO, JORGE ]</p>
+<p class="line">Jorge Conde · CEO · PIPELINE Business School</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Problema-Agitación-Solución clásico: la versión más replicable del correo de invitación.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Reencuadre “no más teoría” · 3 síntomas condicionales · el mismo botón-espejo “Justo me describiste” que en otros lanzamientos (módulo reciclado y probado) · datos del evento · firma con cargo.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Su valor está en la fiabilidad, no en la sorpresa: síntomas + autoselección funcionan lanzamiento tras lanzamiento. Por eso este bloque se reutiliza casi idéntico.</span></div>
+      </div>
+    </article>
+    </section>
+    <section class="phase">
+      <div class="phase-head" style="--c:#0891B2">
+        <h2>RECORDATORIO</h2><p>Maximizar la asistencia en vivo —donde ocurre la conversión— y sembrar la oferta en el momento de máxima temperatura.</p>
+      </div>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#0891B2">RECORDATORIO</span>
+        <span class="num">#07</span>
+        <span class="lens">Cercanía + foco (una hora antes)</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">⚠️ 1 Hora para escalar tu PIPELINE con IA ⚠️</div><div class="pre">Comenzamos en 60 minutos… ¿Estás listo?</div>
+      <div class="email" style="--c:#0891B2"><p class="line">🤩 ¡Te confieso que estoy realmente emocionado y un poco nervioso por nuestro encuentro!</p>
+<p class="line">🫡 Ahora mismo estamos finalizando pruebas de sonido, video, etc. para que puedas recibir lo mejor de este entrenamiento.</p>
+<p class="line">👉 Aquí tienes los detalles del evento en directo:</p>
+<p class="line">🗓 Evento: Prospección a gran escala con Inteligencia Artificial · 🕖 6:00 pm 🇲🇽 · 7:00 pm 🇨🇴🇵🇪🇪🇨 · 8:00 pm 🇺🇸🇻🇪 · 9:00 pm 🇨🇱 · 💸 Costo: Gratis</p>
+<p class="line">📲 Apaga el móvil, pausa las notificaciones y avisa en casa que no estarás disponible un buen rato, porque necesitarás tener toda tu atención acá durante 90 minutos.</p>
+<p class="line">¡Te esperamos!</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Anticipación y compromiso: no vende, prepara. Busca asistencia en vivo maximizando el foco del registrado.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Vulnerabilidad cercana (“emocionado y un poco nervioso”) · detrás de cámaras · instrucción concreta de foco (“apaga el móvil… 90 minutos”) · recordatorio de gratuidad.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Al pedir un compromiso pequeño y concreto (bloquear 90 minutos, silenciar) sube la probabilidad de asistir en vivo, que es donde ocurre la conversión.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#0891B2">RECORDATORIO</span>
+        <span class="num">#08</span>
+        <span class="lens">Prueba social + escasez de replay</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">🔐 Día #1: Repetición desbloqueada 🔐</div><div class="pre">Disponible solo por 24 horas.</div>
+      <div class="email" style="--c:#0891B2"><p class="line">Estratega comercial… Lo que pasó en el día 1 de esta formación es increíble. ⬇️</p>
+<p class="line">+14.000 estrategas de ventas B2B se registraron al primer día de Prospección a gran escala con IA. 🤩</p>
+<p class="line">En esta sesión revelamos cómo construir un Sistema de Omnipresencia Comercial “AI FIRST” que evangelice el mercado con tu propuesta de valor y genere de 3 a 5 nuevas oportunidades por vendedor a la semana.</p>
+<p class="line">🗣️ Si te la perdiste, no te preocupes, hemos grabado la clase #1 para que puedas ponerte al día:</p>
+<p class="line">[ BOTÓN: QUIERO VER LA REPETICIÓN DEL DÍA 1 ]</p>
+<p class="line">(Esta grabación desaparecerá en 24 horas)</p>
+<p class="line">Y recuerda que esto continuará mañana en el día #2.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Prueba social masiva + escasez temporal: “muchos ya están aquí” y “la puerta se cierra en 24h”.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Cifra de prueba social (+14.000 registrados) · promesa de valor de la sesión · vencimiento explícito del replay (24h) · gancho al día siguiente.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">El replay con caducidad entrena al lead a actuar rápido cada día; ese reflejo de urgencia diaria es el que luego se activa en la fase de venta.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#0891B2">RECORDATORIO</span>
+        <span class="num">#09</span>
+        <span class="lens">El puente recordatorio → venta (apertura de oferta)</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">Inscripciones abiertas 💯💪🏻</div><div class="pre">STRATEGIC PIPELINE GENERATION</div>
+      <div class="email" style="--c:#0891B2"><p class="line">Estratega comercial…</p>
+<p class="line">¡Las inscripciones a la certificación STRATEGIC PIPELINE GENERATION con bonos exclusivos están oficialmente ABIERTAS! 😱⚠️</p>
+<p class="line">[ BOTÓN: QUIERO COMPLETAR MI INSCRIPCIÓN ]</p>
+<p class="line">Esto no es un curso de ventas. Es un programa intensivo de desarrollo de habilidades, basado en 5 pilares que garantizan superar tu cuota de 2026:</p>
+<p class="line">1️⃣ Un Bootcamp intensivo para desarrollar las 7 habilidades indispensables para escalar tu PIPELINE con IA.</p>
+<p class="line">2️⃣ Implementación acelerada en SPRINTS de 7 días, con mentoría semanal y el único Mastermind de escalamiento de PIPELINE con IA de LATAM.</p>
+<p class="line">3️⃣ Acceso a +100 herramientas de generación de PIPELINE listas para implementar.</p>
+<p class="line">4️⃣ Sistemas de prospección digital pre-construidos y completamente operativos.</p>
+<p class="line">5️⃣ Acceso a +25 Agentes de IA que multiplicarán tu productividad comercial.</p>
+<p class="line">Además, si te inscribes HOY aseguras el bono exclusivo: 🎁 Workshop “Escala tu Capital Visual”. ¡Pero debe ser RÁPIDO! Antes de que este bono desaparezca.</p>
+<p class="line">P.D.: Si tienes dudas, contacta a mi equipo de soporte directamente vía WhatsApp.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Revelación de la oferta en el momento de máxima temperatura (durante la clase más esperada), formalizada por correo.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Reencuadre “esto no es un curso, es un programa” · stack de 5 pilares numerado · bono con urgencia (“desaparece hoy”) · PD que abre canal humano.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">La oferta se siembra en vivo y el correo la ancla. El bono que caduca el mismo día crea la primera micro-decisión de compra sin fricción.</span></div>
+      </div>
+    </article>
+    </section>
+    <section class="phase">
+      <div class="phase-head" style="--c:#059669">
+        <h2>VENTA</h2><p>Retargeting hacia el programa pago: un ángulo por correo y una escalera de urgencia que culmina en el cierre.</p>
+      </div>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#059669">VENTA</span>
+        <span class="num">#10</span>
+        <span class="lens">Future pacing (proyección del estado deseado)</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">Hablemos de tu primer trimestre comercial en 2026. 📆🔮</div>
+      <div class="email" style="--c:#059669"><p class="line">Estratega Comercial 👋🏼 Quiero hacer un ejercicio contigo, pero para que funcione, vamos a suponer que ya es febrero de 2026…</p>
+<p class="line">✔️ Has dejado de perseguir (rogar) por primeras reuniones, y ahora son los clientes quienes te buscan a ti. Te perciben como la solución a sus problemas de negocio.</p>
+<p class="line">✔️ Cuentas con una estructura de ventas que influencia los procesos de compra en los que decides participar.</p>
+<p class="line">✔️ Tus clientes te perciben como una autoridad, como un verdadero consejero de confianza. No eres uno más entre la multitud, eres su estratega.</p>
+<p class="line">Este es el futuro que puedes construir junto a Strategic PIPELINE Generation.</p>
+<p class="line">[ BOTÓN: ESE ES EL FUTURO QUE DESEO EN MI EMPRESA ]</p>
+<p class="line">No se trata de sueños inalcanzables; se trata de aplicar un sistema probado que ya funciona en empresas como la tuya. En este programa no aprenderás teorías abstractas: saldrás con un PIPELINE real de +7 cifras y las habilidades para replicarlo una y otra vez.</p>
+<p class="line">PD: Cada día que pasa sin un sistema sólido de ventas es una oportunidad perdida. No dejes que este 2026 te sorprenda con los mismos desafíos del pasado. ❌🚨</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Future pacing: hace vivir el resultado antes de comprarlo (“supongamos que ya es febrero de 2026”).</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Salto temporal al estado deseado · inversión del rol (“ahora son los clientes quienes te buscan”) · identidad aspiracional (“consejero de confianza / su estratega”) · PD de costo de oportunidad.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Proyectar el futuro deseado en presente genera deseo emocional y hace del programa el puente lógico entre el hoy y ese febrero.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#059669">VENTA</span>
+        <span class="num">#11</span>
+        <span class="lens">Prueba social + escasez + desglose del “cómo”</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">🚨 No creerás lo que acaba de pasar 🚨</div><div class="pre">Y la verdad es que no quiero dejarte fuera.</div>
+      <div class="email" style="--c:#059669"><p class="line">Estratega comercial, tengo que contarte algo 👇</p>
+<p class="line">El 83% de los cupos de la Certificación Strategic Pipeline Generation ya están ocupados.</p>
+<p class="line">No te escribo para presionarte. Te escribo porque conozco lo que pasa cuando un estratega deja pasar una oportunidad como esta: otro trimestre más con el mismo PIPELINE estancado, el mismo desgaste.</p>
+<p class="line">[ BOTÓN: ASEGURAR MI LUGAR ANTES DE QUE SE AGOTEN ]</p>
+<p class="line">¿Por qué tanta demanda? Porque cada semana desbloqueas un Sprint Comercial de Alto Impacto:</p>
+<p class="line">✅ Semana 1: Un plan de Forecast a prueba de directivos. ✅ Semana 2: Un mapa de territorios con cuentas prósperas, gracias a IA. ✅ Semana 3: Técnicas de prospección que hoy funcionan en LATAM. ✅ Semana 4: Prospección tradicional sistematizada con IA. ✅ Semanas 5–7: Sistema de prospección digital generando primeras reuniones ultra-calificadas. ✅ Semana 8: Tu propio Agente de Prospección IA. ✅ Semana 9: Convertir PIPELINE a Forecast. ✅ Semana 10: Convertirte en partner clave de tus mejores cuentas.</p>
+<p class="line">🚨 Solo quedan los últimos cupos. Las inscripciones cierran mañana. Te veo dentro. — Jorge Conde, PIPELINE Business School</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Escasez con cifra (83% ocupado) respaldada por el desglose del programa que justifica la demanda.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Cifra de escasez concreta · “no te escribo para presionarte” (baja resistencia) · roadmap semana a semana que hace tangible el valor · cierre con fecha límite.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">La escasez sola sería vacía; al mostrar el “cómo” semana a semana, la demanda se vuelve creíble y el cupo restante, deseable.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#059669">VENTA</span>
+        <span class="num">#12</span>
+        <span class="lens">Precio sin precio (reencuadre de ROI)</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">¿Cuántas ventas necesitas para recuperar tu inversión? 💡</div><div class="pre">Haz la cuenta. Te va a sorprender.</div>
+      <div class="email" style="--c:#059669"><p class="line">Estratega Comercial 👋🏼 Hagamos un ejercicio rápido.</p>
+<p class="line">Si hoy cierras 1 de cada 10 oportunidades... ¿qué pasaría si con una sola técnica que aprendas en Strategic PIPELINE Generation pasas a cerrar 2 de cada 10?</p>
+<p class="line">Así de simple: habrás duplicado (2X) tus ventas.</p>
+<p class="line">Y esa es exactamente la promesa de esta certificación: construir un sistema de generación de PIPELINE “AI FIRST” que escale tu FORECAST en los próximos 90 días.</p>
+<p class="line">La fría realidad es esta: si pasas de cerrar 1 de cada 10 a cerrar 2 de cada 10, ¿cuántos negocios adicionales representará eso en tu forecast en 2026? Todo lo demás es ganancia.</p>
+<p class="line">[ BOTÓN: QUIERO INSCRIBIRME AHORA ]</p>
+<p class="line">PD: Estratega, la pregunta no es cuánto cuesta el programa. La pregunta es cuánto te cuesta seguir operando sin sistema.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Manejo de la objeción de precio sin mostrar el precio: lo convierte en un cálculo de retorno que hace el propio lector.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Ejercicio de matemática simple (1/10 → 2/10 = 2X) · pregunta que el lector responde solo · PD que reencuadra el costo como costo de inacción.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Al hacer que el lector calcule su propio retorno, el precio deja de compararse contra cero y pasa a compararse contra lo que gana. Neutraliza la objeción antes de que aparezca.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#059669">VENTA</span>
+        <span class="num">#13</span>
+        <span class="lens">Escasez horaria + recap de oferta (cierre −6 h)</span>
+        <span class="camp">AI Strategic Pipeline Generation</span>
+      </div>
+      <div class="nosub">Correo de venta · cierre (faltan 6 h) · asunto no registrado en la fuente (PDF)</div>
+      <div class="email" style="--c:#059669"><p class="line">En menos de 6 HORAS se cierran las inscripciones al programa de aceleración de ventas AI STRATEGIC PIPELINE GENERATION.</p>
+<p class="line">Ingresa desde aquí para tomar uno de los últimos cupos &gt;&gt;</p>
+<p class="line">Este programa te guiará paso a paso para construir un Sistema de Generación de PIPELINE “AI FIRST” que genere facturación rentable y predecible en los próximos 90 días.</p>
+<p class="line">Recuerda, esta oferta exclusiva incluye ⬇️</p>
+<p class="line">1️⃣ Entrenamiento comercial enfocado en escalamiento de PIPELINE con IA.</p>
+<p class="line">2️⃣ Programa de Harvard Business Education para desarrollar habilidades de negociación y cierre.</p>
+<p class="line">3️⃣ Sesiones semanales de implementación para quitar bloqueos y asegurar que avances.</p>
+<p class="line">4️⃣ Mastermind One Million PIPELINE.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Escasez horaria + recap del stack de oferta: en el cierre, recuerda el valor y pone reloj.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Cuenta regresiva (6 horas) · “uno de los últimos cupos” · stack numerado de la oferta (entrenamiento, Harvard, sesiones, Mastermind).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">En el cierre el correo no convence, recuerda: el stack numerado hace sentir el volumen de lo que se pierde si no se actúa en las próximas horas.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#059669">VENTA</span>
+        <span class="num">#14</span>
+        <span class="lens">Cierre binario + urgencia real (−2 h)</span>
+        <span class="camp">AI Strategic Pipeline Generation</span>
+      </div>
+      <div class="nosub">Correo de venta · cierre (faltan 2 h) · asunto no registrado en la fuente (PDF)</div>
+      <div class="email" style="--c:#059669"><p class="line">En 2 horas cierran las inscripciones a AI STRATEGIC PIPELINE GENERATION. Y tienes dos caminos:</p>
+<p class="line">❌ Seguir igual: ciclos de venta interminables. Leads de baja calidad. Tu cuota dependiendo de las mismas tres cuentas…</p>
+<p class="line">✅ Construir un sistema de escalamiento de PIPELINE con IA: PIPELINE predecible. Agentes IA prospectando por ti. Forecast que no depende de personas, sino de sistemas.</p>
+<p class="line">La fría realidad es esta: 2026 es un punto de quiebre. 🔴 Las economías están contraídas. Los mercados, más saturados. Los presupuestos congelados y los conflictos mundiales están acelerando el cambio.</p>
+<p class="line">La diferencia está entre quienes tienen un sistema y quienes siguen vendiendo como en 2010.</p>
+<p class="line">[ BOTÓN: 👉🏼 SÍ, QUIERO UN SISTEMA QUE ESCALE ]</p>
+<p class="line">¿Tienes preguntas? Mi equipo responde ahora: contáctalos aquí &gt;&gt;</p>
+<p class="line">Jorge Conde · Chief Executive Officer · PIPELINE Business School</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Cierre binario + urgencia real: dos caminos (❌/✅) y una cuenta regresiva de 2 horas.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Contraste en dos columnas ❌/✅ con consecuencias concretas · marco macro que externaliza la urgencia (“2026 es un punto de quiebre”) · canal humano de última hora · firma con cargo.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">La urgencia la impone el mercado, no Jorge; y el contraste binario elimina la opción de “lo pienso luego”, que en un cierre equivale a no comprar.</span></div>
+      </div>
+    </article>
+    </section>
+    <section class="phase">
+      <div class="phase-head" style="--c:#7C3AED">
+        <h2>POSTVENTA</h2><p>El lanzamiento no termina en la venta: onboarding del comprador, downsell al que no compró y upsell al que sí.</p>
+      </div>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#7C3AED">POSTVENTA</span>
+        <span class="num">#15</span>
+        <span class="lens">Onboarding del comprador</span>
+        <span class="camp">AI Strategic Pipeline Generation</span>
+      </div>
+      <div class="subject">Felicitaciones, tu acceso a la certificación ha sido confirmado 🍾</div>
+      <div class="email" style="--c:#7C3AED"><p class="line">Estimado(a) estratega comercial… 🤩</p>
+<p class="line">Quería aprovechar este momento para darte la bienvenida oficial a la Certificación “Strategic PIPELINE Generation”. 💯🏅 Estamos emocionados de tenerte a bordo.</p>
+<p class="line">Ya estamos preparando todo para que comiences a construir un PIPELINE real de más de 7 cifras en menos de 90 días. 💰✅</p>
+<p class="line">Pero antes de empezar, aquí los 2 pasos a seguir:</p>
+<p class="line">➡️ Paso #1: Agéndate desde ahora para no perderte las sesiones en vivo. Son fundamentales para tu éxito.</p>
+<p class="line">➡️ Paso #2: Únete a nuestra comunidad exclusiva de WhatsApp, donde conectarás con otros profesionales y recibirás contenido exclusivo.</p>
+<p class="line">[ BOTÓN: UNIRME A LA COMUNIDAD DE WHATSAPP ]</p>
+<p class="line">➡️ Línea de soporte para estudiantes: CLIC AQUÍ.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Reducir la fricción del arranque y confirmar la buena decisión (evita el remordimiento de compra).</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Felicitación + bienvenida · reafirmación de la promesa (+7 cifras / 90 días) · 2 pasos claros y accionables · canal de soporte visible.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Un onboarding claro convierte la compra en primer avance inmediato; la comunidad y las sesiones en vivo elevan la permanencia y reducen reembolsos.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#7C3AED">POSTVENTA</span>
+        <span class="num">#16</span>
+        <span class="lens">Downsell a quien no compró (recuperación)</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">🚨 Noticia de último momento…</div>
+      <div class="email" style="--c:#7C3AED"><p class="line">Mi querido estratega comercial… ¡Qué semana tan increíble fue Prospección A Gran Escala Con IA! 👏💥</p>
+<p class="line">En caso de que te hayas perdido alguna parte, quería compartir contigo este video resumen de menos de 15 minutos con los mejores momentos.</p>
+<p class="line">🤚 Pero aún hay más… 👀 He decidido lanzar a la venta la grabación 📽️ de estos 4 días potentes, para que tengas el mapa completo para construir tu sistema de prospección AI-First. Además de bonos:</p>
+<p class="line">➡️ Acceso a la repetición de los 4 días completos. ➡️ Acceso directo al KIT de ventas (plantillas y recursos): planeación estratégica de cuentas, plan de prospección, guía para liderar una primera reunión, estilos sociales, preguntas impactantes, TOP 10 preguntas para entrevistas de ventas.</p>
+<p class="line">[ BOTÓN: ACCEDE A LA REPETICIÓN POR SOLO $67 ]</p>
+<p class="line">⏲️ Esta oferta estará disponible hasta mañana viernes a las 11:59 por $67, luego subirá a $97.</p>
+<p class="line">Los directivos que más rápido escalan son los que no dependen de la memoria. Tener las grabaciones es como una “biblioteca comercial” a tu alcance.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Downsell: monetiza y recupera al que no compró el programa, con una oferta de bajo riesgo (grabaciones + KIT).</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Recap emocional del evento · ancla de precio con reloj ($67 hoy → $97 mañana) · KIT como stack de valor tangible · metáfora (“biblioteca comercial”).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Baja el escalón de compromiso: una micro-conversión de $67 mantiene viva la relación y crea un comprador para el próximo lanzamiento.</span></div>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card-top">
+        <span class="badge" style="background:#7C3AED">POSTVENTA</span>
+        <span class="num">#17</span>
+        <span class="lens">Upsell con pregunta incómoda</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">Ahora que vas a generar PIPELINE a escala... ¿tienes la estructura comercial para convertirlo?</div><div class="pre">Commercial Structure Builder</div>
+      <div class="email" style="--c:#7C3AED"><p class="line">“Buenos vendedores no reparan sistemas de ventas rotos. Sistemas de ventas rotos solo frenan y alejan a buenos vendedores.”</p>
+<p class="line">Acabas de adquirir un sistema para generar PIPELINE a escala con IA. Pero déjame hacerte una pregunta incómoda:</p>
+<p class="line">¿Tienes un sistema para convertir ese pipeline... o tienes 10 vendedores, cada uno con su propio método inventado?</p>
+<p class="line">❌ Juan aprendió a vender en seguros. Andrea en tecnología. Martín trae su método del sector financiero. 10 vendedores, 10 escuelas distintas, 10 métodos imposibles de escalar. Y cuando llega la hora de cerrar, el cliente pide descuento y tu vendedor no sabe justificar el valor.</p>
+<p class="line">Con Commercial Structure Builder aprenderás a diseñar un proceso comercial customer-centric, construir tu sistema de habilitación comercial, influir en cada etapa del proceso de compra y crear playbooks para que cada vendedor sepa qué hacer en cada momento.</p>
+<p class="line">Antes: $997 USD · HOY: $247 USD (solo hoy).</p>
+<p class="line">[ BOTÓN: SÍ, QUIERO SER ARQUITECTO DE ESTRUCTURAS COMERCIALES ESCALABLES ]</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Upsell al comprador: abre un problema adyacente que la compra recién hecha deja al descubierto.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Cita de apertura que enmarca el dolor · pregunta incómoda · escena del caos (10 métodos distintos) · consecuencia (descuento por no justificar valor) · ancla de precio con urgencia ($997 → $247).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Justo cuando el cliente resolvió “generar pipeline”, se le muestra el siguiente cuello de botella (“convertirlo”). El deseo de completar el sistema hace natural el segundo sí.</span></div>
+      </div>
+    </article>
+    </section>
+
+    <section class="phase">
+      <div class="phase-head" style="--c:#EA580C">
+        <h2>ADS · anuncios (con métricas)</h2>
+        <p>Anuncios reales en Meta, rankeados por desempeño. A diferencia de los correos, aquí hay
+        datos: Stop Ratio y Retención miden el video; CTR, CPL y ROAS miden captación y venta; y en
+        la VSL, el costo por agenda. Incluye la VSL de FAP (el mejor ad) y un caso de aprendizaje.</p>
+      </div>
+      
+    <article class="card adcard">
+      <div class="card-top">
+        <span class="badge" style="background:#EA580C">ADS</span>
+        <span class="num">A01</span>
+        <span class="tier" style="background:#059669">GANADOR</span>
+        <span class="lens">Callout de identidad — la gran ganadora</span>
+        <span class="camp">Supervisión Comercial Predictiva con IA</span>
+      </div>
+      <div class="fmt">Píldora · video corto</div>
+      <div class="metrics"><div class="metric"><span class="mv">63.53%</span><span class="ml">Stop Ratio</span></div><div class="metric"><span class="mv">47.47%</span><span class="ml">Retención</span></div><div class="metric"><span class="mv">3.08%</span><span class="ml">CTR</span></div><div class="metric"><span class="mv">$0.019</span><span class="ml">Costo 50%</span></div></div>
+      <div class="email" style="--c:#EA580C"><p class="line">Tu cargo dice director comercial, pero tu día a día dice que eres el policía de tu operación de ventas. Tú estás detrás de cada vendedor para que prospecte, para que haga seguimiento, para que reporte en el CRM. Y lo único que tienes para dirigir es lo que te cuentan en el comité de forecast, donde te cuentan lo que quieres escuchar, no la realidad.</p>
+<p class="line">Un directivo que dirige a ciegas su operación de ventas no sabe cuál es su punto de escala real: qué proceso mejorar, dónde entrenar a su equipo, qué problema resolver primero.</p>
+<p class="line">Y si quieres que eso cambie, necesitas instalar un modelo de supervisión comercial predictivo que use IA para detectar caídas de ventas dos meses antes de que impacten tu facturación.</p>
+<p class="line">En pocos días inicia la masterclass &#x27;Supervisión comercial con IA&#x27;, a la que ya te registraste… Da clic aquí abajo y agrega este entrenamiento a tu calendario corporativo. Da clic.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Callout de identidad: contrasta el rol formal con la realidad diaria del directivo (“tu cargo dice X, tu día a día dice Y”).</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Espejo incómodo en la 1ª frase · metáfora de identidad (“el policía”) · acusación al ritual (comité = “lo que quieres escuchar”) · promesa contraintuitiva (“caídas 2 meses antes”).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">El hook ataca la brecha entre el rol y la realidad en la primera frase: un espejo que obliga a quedarse. Stop del 63.53% y el costo más barato de todo el banco ($0.019) lo confirman.</span></div>
+      </div>
+    </article>
+    <article class="card adcard">
+      <div class="card-top">
+        <span class="badge" style="background:#EA580C">ADS</span>
+        <span class="num">A02</span>
+        <span class="tier" style="background:#059669">MEJOR CTR</span>
+        <span class="lens">Autoridad + densidad de valor</span>
+        <span class="camp">Supervisión Comercial Predictiva con IA</span>
+      </div>
+      <div class="fmt">Píldora · video corto</div>
+      <div class="metrics"><div class="metric"><span class="mv">57.63%</span><span class="ml">Stop Ratio</span></div><div class="metric"><span class="mv">38.95%</span><span class="ml">Retención</span></div><div class="metric"><span class="mv">3.75%</span><span class="ml">CTR</span></div><div class="metric"><span class="mv">$0.120</span><span class="ml">Costo 50%</span></div></div>
+      <div class="email" style="--c:#EA580C"><p class="line">Voy a comprimir 15 años de ingeniería comercial en 60 segundos. Pon atención: tu comité semanal de ventas no es supervisión, es un ritual donde cada vendedor te cuenta lo que quieres escuchar. Tu CRM no te dice lo que pasa en tu operación, te dice lo que cada vendedor decidió reportar.</p>
+<p class="line">Medir la cuota, número de propuestas y número de reuniones no es supervisión, es hacer arqueología comercial: revisar restos de lo que ya pasó. Perseguir a tu equipo los viernes no es liderazgo, es ser el policía más caro de tu operación.</p>
+<p class="line">Las operaciones que escalan tienen un sistema de supervisión comercial predictivo que usa agentes de IA para auditar cada paso del proceso. Por eso creamos la masterclass &#x27;Supervisión comercial predictiva con IA&#x27;… Da clic y agrega este entrenamiento a tu calendario. Da clic.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Autoridad + densidad de valor: promete comprimir 15 años en 60 segundos.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Promesa de densidad (“15 años en 60 seg”) · anáforas de reencuadre (“X no es supervisión, es…”) · frases-sentencia memorizables (“arqueología comercial”, “el policía más caro”).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">La promesa de valor comprimido dispara el CTR más alto del set (3.75%): quien se queda, quiere el clic. Las anáforas hacen el guion citable.</span></div>
+      </div>
+    </article>
+    <article class="card adcard">
+      <div class="card-top">
+        <span class="badge" style="background:#EA580C">ADS</span>
+        <span class="num">A03</span>
+        <span class="tier" style="background:#059669">MÁS VENTAS</span>
+        <span class="lens">Metáfora de obsolescencia</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="fmt">Video largo · CPL/ROAS</div>
+      <div class="metrics"><div class="metric"><span class="mv">33</span><span class="ml">Ventas</span></div><div class="metric"><span class="mv">$2.77</span><span class="ml">CPL</span></div><div class="metric"><span class="mv">2.29</span><span class="ml">ROAS</span></div><div class="metric"><span class="mv">4.03</span><span class="ml">ROAS tibio</span></div></div>
+      <div class="email" style="--c:#EA580C"><p class="line">Si eres un gerente comercial B2B y en pleno 2025 tienes un equipo de ventas prospectando con llamadas en frío, eso es como tratar de enviar un mensaje con un telégrafo en plena era de los smartphones.</p>
+<p class="line">Dame 4 noches y te voy a mostrar cómo integrar la IA en tu operación de ventas para conseguir un crecimiento exponencial de pipeline en los próximos 90 días.</p>
+<p class="line">Mi nombre es Jorge Conde y, según la revista Forbes, soy experto en llenar embudos de ventas B2B. He asesorado a más de 100 compañías y entrenado a más de 40.000 directores de ventas B2B en Latinoamérica; generamos más de 150 millones de dólares en nuevas ventas.</p>
+<p class="line">Y hoy quiero invitarte a un entrenamiento comercial avanzado de 4 noches… escala tu pipeline mínimo a 1 millón de dólares en los próximos 90 días. Da clic y regístrate únicamente si quieres crecer tu cartera de clientes rápidamente. Regístrate.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Metáfora de obsolescencia: prospectar en frío hoy = enviar un mensaje con telégrafo en la era del smartphone.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Metáfora visual que ridiculiza la práctica actual · “dame 4 noches” (compromiso acotado) · bloque de autoridad (Forbes + 40.000 + $150M) · CTA con filtro.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">La metáfora hace evidente y ridícula la práctica actual del prospecto en una frase. Fue el ad de más ventas (33). Nota el salto de ROAS frío→tibio (1.41 → 4.03).</span></div>
+      </div>
+    </article>
+    <article class="card adcard">
+      <div class="card-top">
+        <span class="badge" style="background:#EA580C">ADS</span>
+        <span class="num">A04</span>
+        <span class="tier" style="background:#059669">MEJOR CPL</span>
+        <span class="lens">Reducción del rol a una misión</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="fmt">Video largo · CPL/ROAS</div>
+      <div class="metrics"><div class="metric"><span class="mv">16</span><span class="ml">Ventas</span></div><div class="metric"><span class="mv">$2.07</span><span class="ml">CPL</span></div><div class="metric"><span class="mv">2.49</span><span class="ml">ROAS</span></div><div class="metric"><span class="mv">4.05</span><span class="ml">ROAS tibio</span></div></div>
+      <div class="email" style="--c:#EA580C"><p class="line">Como director de ventas tienes un solo trabajo: generar facturación predecible. Pero ¿cómo hacerlo cuando tu equipo no cuenta con un sistema de prospección predecible que los mantenga operando a máxima capacidad y conversando con tomadores de decisión?</p>
+<p class="line">Dame 4 noches y te voy a mostrar cómo usar la IA para prospectar a gran escala y conseguir que tu equipo deje de depender del mismo pipeline de siempre.</p>
+<p class="line">Mi nombre es Jorge Conde, fundador de Pipeline Business School… hemos entrenado a directores que hoy trabajan en Google, Microsoft, Oracle, Sophos, SAP, Fortinet, Cisco, Telmex, Bimbo, Movistar, HubSpot…</p>
+<p class="line">Regístrate sin costo únicamente si quieres un sistema de ventas que sí genere facturación predecible. Regístrate.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Reducción del rol a una sola misión (“tienes un solo trabajo: facturación predecible”).</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Reducción del rol · pregunta que expone el gap · muro de logos (prueba social de marcas) · CTA con filtro.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">El CPL más bajo del set ($2.07). El “un solo trabajo” enfoca al directivo en su responsabilidad #1 y el muro de logos da permiso para confiar.</span></div>
+      </div>
+    </article>
+    <article class="card adcard adhi">
+      <div class="card-top">
+        <span class="badge" style="background:#EA580C">ADS</span>
+        <span class="num">A05</span>
+        <span class="tier" style="background:#B45309">MEJOR AD · FAP</span>
+        <span class="lens">Callout de identidad + reencuadre de creencia</span>
+        <span class="camp">Forecast Accelerator Program (FAP)</span>
+      </div>
+      <div class="fmt">VSL de captación</div>
+      <div class="metrics"><div class="metric"><span class="mv">19</span><span class="ml">Agendas</span></div><div class="metric"><span class="mv">$64.77</span><span class="ml">Costo/agenda</span></div><div class="metric"><span class="mv">1.33%</span><span class="ml">CTR</span></div><div class="metric"><span class="mv">29.43%</span><span class="ml">Rompe scroll</span></div></div>
+      <div class="email" style="--c:#EA580C"><p class="line">No eres el CEO fundador de tu compañía. En realidad, eres el vendedor más caro que tiene tu empresa. ¿Por qué? Porque cierras los negocios más grandes, rescatas los trimestres de ventas, trabajas más de 70 horas semanales… Tu título dice director general, pero tu realidad grita: vendedor sénior exhausto.</p>
+<p class="line">Y lo peor es que lo has normalizado y dices: &#x27;así son las ventas B2B&#x27;, lo cual es una gran mentira. Las ventas B2B son sistemas y no heroísmos; procesos escalables, no personalidades. Un sistema bien diseñado convierte vendedores toma-pedidos en consultores que venden por valor sin depender de ti.</p>
+<p class="line">Mi nombre es Jorge Conde, fundador de Pipeline Business School, y hemos estado en el backstage de más de 100 operaciones comerciales B2B. En el 87% de los casos el problema era idéntico: directivos esclavos de su operación comercial por falta de una estructura de ventas escalable.</p>
+<p class="line">Por eso creamos el programa de aceleración de Forecast, donde trabajamos contigo para estructurar todo tu sistema de ventas B2B, de tal forma que genere facturación predecible y elimine la dependencia del directivo para que las ventas sucedan.</p>
+<p class="line">Si quieres saber cómo funciona, hemos preparado un video corto… Da clic aquí abajo para verlo únicamente si estás cansado de tener una operación de ventas desgastante e ineficiente. Da clic.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Callout de identidad que niega el autoconcepto (“no eres el CEO… eres el vendedor más caro”) + reencuadre de creencia.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Negación del autoconcepto · reencuadre (“&#x27;así son las ventas B2B&#x27; es una gran mentira”) · antítesis (“sistemas, no heroísmos; procesos, no personalidades”) · dato de autoridad (“87% de los casos”) · CTA a VSL con filtro.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Rompe scroll casi al 30% y agenda llamadas a $64.77 — muy eficiente para un high-ticket como FAP. Confirma el hallazgo del banco: el callout de identidad es el mecanismo que más rinde.</span></div>
+      </div>
+    </article>
+    <article class="card adcard">
+      <div class="card-top">
+        <span class="badge" style="background:#EA580C">ADS</span>
+        <span class="num">A06</span>
+        <span class="tier" style="background:#DC2626">APRENDIZAJE</span>
+        <span class="lens">El mismo ángulo, estirado a video largo, no vendió</span>
+        <span class="camp">Supervisión Comercial Predictiva con IA</span>
+      </div>
+      <div class="fmt">Video largo · CPL/ROAS</div>
+      <div class="metrics"><div class="metric"><span class="mv">0</span><span class="ml">Ventas</span></div><div class="metric"><span class="mv">0.00</span><span class="ml">ROAS</span></div><div class="metric"><span class="mv">$3.45</span><span class="ml">CPL</span></div></div>
+      <div class="email" style="--c:#EA580C"><p class="line">Ejemplo (ADS14): “Empresario, si hoy tienes una operación de ventas desgastante, ineficiente, desorganizada y no sabes cómo estructurarla para que venda por valor y no por precio, en los próximos días impartiremos una masterclass avanzada sin costo…”</p>
+<p class="line">Tres anuncios de video largo con el ángulo de “supervisión” (ADS13 / ADS10 / ADS14) rindieron 0–1 ventas y CPL alto ($3.4–4.0) — el mismo ángulo que fue la GRAN GANADORA en píldora corta.</p></div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Mismo ángulo de “supervisión” de la píldora ganadora, pero en formato de video largo.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Estructura larga hook → problema → autoridad, pero el gancho de identidad se diluye al estirarse.</span></div>
+        <div class="why-row"><span class="k">Por qué / qué aprende</span><span class="v">Lección: el hook de identidad funciona comprimido; estirado a 90 seg pierde fuerza. El formato manda sobre el ángulo. (Ojo: ADS13 tiene ROAS 10.98 pero sobre 1 sola venta — n=1 es ruido, no señal.)</span></div>
+      </div>
+    </article>
+      <div class="databox">
+        <h3>Lo que dicen los datos</h3>
+        <ul><li>El callout de identidad es el mecanismo #1: gana en la píldora más barata ($0.019) y en la VSL de FAP (el mejor ad). Es el gancho a replicar en FAP.</li>
+<li>El formato manda sobre el ángulo: “supervisión” ganó en píldora corta y perdió en video largo. No hay ángulo bueno en abstracto, sino bueno para un formato.</li>
+<li>Tibio &gt; frío en ROAS, siempre: el retargeting convirtió 2–3× mejor (ADS25: 4.03 vs 1.41). El frío trae volumen; el tibio, la venta.</li>
+<li>El canal cambia el desempeño: una píldora floja en feed fue la mejor en WhatsApp (CTR 4.64%). La misma pieza no rinde igual en todos lados.</li>
+<li>Autoridad estandarizada en los ganadores de venta: Forbes + “40.000 entrenados” + muro de logos (Google, Microsoft, Oracle, SAP…) + “$150M en nueva facturación”.</li></ul>
+      </div>
+    </section>
+
+    <section class="phase">
+      <div class="phase-head" style="--c:#4F46E5">
+        <h2>LANDINGS Y PÁGINAS</h2>
+        <p>Del opt-in gratuito al funnel de pago. PBS asciende al prospecto por precio: registro
+        gratis → workshop $11 (tripwire) → diagnóstico $197 → entrenamiento $47. Las páginas no
+        traen métricas por pieza; son las marcadas como ganadoras. El diagnóstico $197 es el molde
+        directo de la llamada de diagnóstico de FAP.</p>
+      </div>
+      
+    <article class="card pagecard">
+      <div class="card-top">
+        <span class="badge" style="background:#4F46E5">PÁGINA</span>
+        <span class="num">P01</span>
+        <span class="tier" style="background:#2563EB">OPT-IN · gratis</span>
+        <span class="lens">Registro a webinar — fricción mínima</span>
+        <span class="camp">Prospección a Gran Escala con IA · Nov 2025</span>
+      </div>
+      <div class="subject">Cómo estructurar tu sistema de Prospección B2B con IA para lograr un crecimiento exponencial de tu PIPELINE en 2026</div>
+      <div class="anat"><b>Anatomía de la página</b>Eyebrow: Entrenamiento EN VIVO › H1 = promesa › Formulario (solo email) + botón en 1ª persona › Prueba social (logos de medios) › Cronograma de 4 clases numeradas › CTA › Antes / Después (tabla) › Bio de Jorge › Footer</div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Promesa (sistema con IA + resultado + plazo + ventaja) resuelta con una sola decisión: el email.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Botón que nombra el deseo (“Quiero escalar mi PIPELINE”) · 4 clases numeradas que hacen tangible el valor gratis · tabla Antes/Después · doble autoridad (medios + Jorge).</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Todo el copy reduce la fricción del único paso (dar el email). No argumenta precio ni oferta: vende el clic de registro. Es la Landing #1, marcada como ganadora.</span></div>
+      </div>
+    </article>
+    <article class="card pagecard">
+      <div class="card-top">
+        <span class="badge" style="background:#4F46E5">PÁGINA</span>
+        <span class="num">P02</span>
+        <span class="tier" style="background:#059669">VENTA · $11</span>
+        <span class="lens">Tripwire de entrada (versiones V1 y V2)</span>
+        <span class="camp">Supervisión Comercial Predictiva con IA</span>
+      </div>
+      <div class="subject">Cómo instalar un Sistema de Supervisión Comercial con IA que detecte caídas de ventas 2 meses antes de que impacten la facturación</div>
+      <div class="anat"><b>Anatomía de la página</b>Countdown › H1 (mecanismo + resultado + plazo) › CTA $11 + garantía › Prueba social (12.000 directivos) › Modelo bow-tie con métricas › “Para ti si…” (5 dolores) › Tablas de resultados (11.7X · +$553K/año) › Testimonios con nombre › Bio de Jorge + Harvard › Demo del producto (dashboard) › Stack + garantía 7 días › Por qué cuesta solo $11 › FAQ</div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Tripwire: el $11 no busca ganancia, busca convertir un lead en comprador — el primer “sí” con tarjeta, que es el paso más difícil del funnel.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Prueba cuantificada (tablas antes/después con % y $) · justificación honesta del precio simbólico · garantía sin riesgo · demo del dashboard. V2 añade escasez (“87% ocupados”) y callout de audiencia.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Combina autoridad + prueba dura + garantía + precio bajo para bajar al mínimo la barrera del primer pago. Todo lo demás se monetiza en los OTO.</span></div>
+      </div>
+    </article>
+    <article class="card pagecard adhi">
+      <div class="card-top">
+        <span class="badge" style="background:#4F46E5">PÁGINA</span>
+        <span class="num">P03</span>
+        <span class="tier" style="background:#B45309">OTO · $197 · molde FAP</span>
+        <span class="lens">Upsell 1:1 — el molde del diagnóstico de FAP</span>
+        <span class="camp">Diagnóstico Fábrica de Ingresos</span>
+      </div>
+      <div class="subject">¡ESPERA! ¿Quieres que un Revenue Architect diagnostique TU operación comercial, 1:1?</div>
+      <div class="anat"><b>Anatomía de la página</b>Interrupción: “aún NO está completa” + barra 80% › H1 de deseo › Reencuadre: “no es una llamada de ventas, es el diagnóstico…” › Autoridad (+47.000, 120+ operaciones, Harvard) › Demo del Scorecard (6 pilares, Factor Fundador 78%) › Cómo funciona (4 pasos) › Entregables (Scorecard + 1:1 + Plan) › Ancla de precio ($2.000 → $197) › Doble CTA sí / no</div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Upsell inmediato con reencuadre anti-venta: “no es una llamada de ventas, es un diagnóstico que ningún CRM te dio”.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Interrupción + barra de progreso · demo del entregable antes de comprarlo · ancla de precio ($2.000→$197) · honestidad (“sin contadores falsos ni cupos inventados”) · doble CTA con el “no” que reafirma lo que se pierde.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Es la plantilla DIRECTA de la llamada de diagnóstico de FAP: 6 pilares, Revenue Architect, sesión 1:1, Scorecard, Índice de Dependencia del Fundador y Mapa de Facturación Oculta en USD. Referencia núcleo para la pieza de diagnóstico de FAP.</span></div>
+      </div>
+    </article>
+    <article class="card pagecard">
+      <div class="card-top">
+        <span class="badge" style="background:#4F46E5">PÁGINA</span>
+        <span class="num">P04</span>
+        <span class="tier" style="background:#7C3AED">OTO · $47</span>
+        <span class="lens">Downsell — entrenamiento grabado</span>
+        <span class="camp">Pipeline Predecible con IA (grabado)</span>
+      </div>
+      <div class="subject">El método para construir un pipeline de +$1M con IA en 60 días</div>
+      <div class="anat"><b>Anatomía de la página</b>Interrupción + barra 90% › H1 + “acceso inmediato” › Logos (Google, Microsoft, Oracle…) › El principio (facturación predecible = generación predecible) › “Lo que descubrirás” (8 piezas: 3×3×30, agentes IA, vender al C-Level…) › Stack + ancla ($477 → $47) › Honestidad / escasez real › Doble CTA sí / no</div>
+      <div class="why">
+        <div class="why-row"><span class="k">Ángulo</span><span class="v">Downsell más barato para quien no tomó el diagnóstico: captura al comprador en otro nivel de compromiso.</span></div>
+        <div class="why-row"><span class="k">Recursos</span><span class="v">Barra de progreso · “el principio” como tesis · 8 piezas numeradas · ancla de precio · misma honestidad que el OTO1.</span></div>
+        <div class="why-row"><span class="k">Por qué funciona</span><span class="v">Segundo upsell/downsell con el mismo patrón de ancla y honestidad. Es el entrenamiento cuya confirmación de compra ya vive en el cerebro (pieza de WhatsApp).</span></div>
+      </div>
+    </article>
+    </section>
+
+<div class="patrones">
+  <h2>El patrón detrás de todos</h2>
+  <div class="sub">Lo que se repite en los correos ganadores — el playbook de PBS en una página.</div>
+  <div class="pat"><h3>Un ángulo por correo</h3><p>Cada envío rota un solo gancho —recap, autoridad, futuro, prueba social, tiempo, ROI, escasez— en vez de amontonar varios. Evita fatiga y permite testear qué ángulo mueve más.</p></div>
+<div class="pat"><h3>Precio sin argumentar de frente</h3><p>El número casi nunca se defiende: se reencuadra como ROI (“de 1/10 a 2/10 = 2X”), como costo de inacción (los PD) o con ancla de precio ($997 → $247, $67 → $97).</p></div>
+<div class="pat"><h3>Escaleras de urgencia real</h3><p>La presión se concentra al final: cupos (83% → 94%) y reloj (6h → 2h → 30 min) en venta; replays que caducan a 24h en el webinar. La urgencia se ancla en las últimas horas, no en todo el lanzamiento.</p></div>
+<div class="pat"><h3>Esqueleto de correo PBS</h3><p>Apelación identitaria (“estratega/directivo comercial”) → síntomas en lista → reencuadre (“no necesitas X, necesitas Y”) → bullets de transformación → doble CTA → firma con cargo, a veces PD que revive el dolor.</p></div>
+<div class="pat"><h3>Módulos reciclados</h3><p>Bloques probados que se reutilizan entre lanzamientos: el botón-espejo “Justo me describiste, debo asistir”, el stack de la oferta, la estructura ❌/✅. Se ven aquí en cuatro campañas distintas.</p></div>
+<div class="pat"><h3>Voz de marca consistente</h3><p>PIPELINE y FORECAST en mayúsculas, “operar a ciegas”, “ejército de prospección”, “AI FIRST”, cierre siempre con Jorge Conde · CEO · PIPELINE Business School.</p></div>
+  <div class="foot">PIPELINE Business School · Selección de casos de éxito · Documento de referencia interna.</div>
+</div>
+</body></html>

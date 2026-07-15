@@ -1,6 +1,10 @@
 # Voz del cliente — FAP
 
-Extraído de 15 llamadas de venta reales (transcripciones verbatim, jun–jul 2026). **Anonimizado.** Esto NO es cómo *nosotros* describimos el problema: es cómo lo dicen **ellos**. Las skills deben escribir *desde adentro* de este lenguaje para que dejen de sonar "ajenas".
+Extraído de **15 llamadas de venta reales** (transcripciones verbatim, jun–jul 2026). **Anonimizado.** Esto NO es cómo *nosotros* describimos el problema: es cómo lo dicen **ellos**. Las skills deben escribir *desde adentro* de este lenguaje para que dejen de sonar "ajenas".
+
+> Complementa a [`jorge_voice.md`](jorge_voice.md) (vocabulario obligatorio/prohibido, lado emisor)
+> y a [`jorge_icp.md`](jorge_icp.md) (perfil + frases del avatar). Aquí está el **léxico crudo del
+> cliente**; las objeciones que expresa, en [`voz-objeciones.md`](voz-objeciones.md).
 
 ---
 

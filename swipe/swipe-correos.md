@@ -1,546 +1,466 @@
 # Swipe · Correos ganadores (repositorio de copy real)
 
-Banco de correos que **ya se enviaron en lanzamientos reales de Jorge Conde / PIPELINE
-Business School**. Sirve para que las skills de correo aprendan los **ángulos, la estructura
-y los recursos** que funcionan en la voz real de PBS — no para copiar frases sueltas.
+Banco de correos que **ya se enviaron y validaron en lanzamientos reales de Jorge Conde /
+PIPELINE Business School**. Sirve para que las skills de correo aprendan los **ángulos, el tipo
+de copy y los recursos** que funcionan en la voz real de PBS.
 
-> **De dónde sale este material.** Son lanzamientos de **otros programas** de PBS (Prospección
-> a Gran Escala con IA, Pipeline Predecible con IA, Supervisión Comercial Predictiva con IA, y
-> el programa pago AI Strategic Pipeline Generation / SPG). **No son de FAP.** Se usan como
-> referencia de craft, exactamente como pidió Jorge: entender por qué funcionaron.
+> **De dónde sale este material.** El grueso es el funnel completo del lanzamiento **PGE —
+> "Prospección a Gran Escala con IA" (Nov 2025)**: invitación → recordatorio → venta → postventa.
+> Se complementa con invitaciones de otros lanzamientos (Pipeline Predecible con IA, Supervisión
+> Comercial Predictiva con IA). El programa que se vende al final es la certificación paga
+> **Strategic Pipeline Generation (SPG)**. Nada de esto es FAP: se usa como **referencia de
+> craft**.
 
 ## Cómo leer este banco
 
-Cada ficha trae:
-- **Copy verbatim** — el texto real (las URLs de tracking largas se abrevian a `[ENLACE …]`; el
-  texto de los botones se conserva tal cual porque es parte del copy).
-- **Ángulo** — el gancho psicológico dominante.
-- **Conciencia (Schwartz)** — a qué nivel de consciencia del lector le habla.
-- **Estructura** — el esqueleto de la pieza.
-- **Recursos de copy** — los mecanismos concretos (dispositivos) que se repiten.
-- **Por qué funciona (hipótesis)** — lectura de craft. ⚠️ **No es una métrica.**
-- **Qué NO copiar** — el candado: qué de esta pieza NO se debe transplantar a FAP.
+Cada ficha trae, según aplique: **copy verbatim** (URLs largas abreviadas a `[ENLACE]`; el texto
+de los botones se conserva), **ángulo**, **conciencia (Schwartz)**, **estructura**, **recursos de
+copy** y **mecanismo** (lectura de craft de por qué funciona).
 
-> ⚠️ **Métricas pendientes.** Ninguna ficha tiene su número real (aperturas / registros /
-> ventas). Jorge los pasa y se cierran. Hasta entonces, "por qué funciona" es hipótesis de
-> craft, no dato verificado.
+> **Sobre métricas, "familias" de asunto y guardarraíles.** No hay métricas cuantitativas:
+> "validado" = piezas reales que Jorge dio por buenas. Los ángulos y familias de asunto se
+> catalogan **en crudo, como observación** — cuál conviene por etapa se valida después con skills
+> de escritura persuasiva. Los **guardarraíles de FAP** (qué transplantar, precio, CTA a
+> diagnóstico) se aplican **al generar cada pieza**, no se hornean aquí.
 
----
+## Mapa del funnel de correo (PGE)
 
-## 🔒 Candado global de uso (léelo antes de reutilizar cualquier cosa de aquí)
-
-1. **No transplantar cifras ni promesas.** Claims como *"$1M en 90 días"*, *"3–5 oportunidades
-   por vendedor a la semana"*, *"100+ oportunidades/mes"*, *"x10"*, *"ROI 5X"* son promesas
-   **de estos programas**. No se copian a FAP salvo que estén en `fap` (fuente de verdad). Esta
-   es la regla de oro anti-invención del cerebro.
-2. **Los correos de VENTA de aquí llevan a checkout con precio, escasez y cuenta regresiva.**
-   En **captación de FAP eso no va**: el CTA de FAP es a **llamada de diagnóstico**, sin precio.
-   Se copia la *mecánica de urgencia y contraste*, no el destino (checkout).
-3. **El producto y las fechas son de otro lanzamiento.** Nombres, fechas y links son de PGE /
-   SPG / etc. Sirven de molde, no de contenido.
-
----
-
-## Índice
-
-| # | Pieza | Campaña / Producto | Tipo | Ángulo dominante |
-|---|---|---|---|---|
-| A1 | Email 1 | PGE · Prospección a Gran Escala con IA | Invitación | Pregunta-diagnóstico + horizonte 2026 |
-| A2 | Email 2 | PGE | Invitación | Alerta + síntomas ("voy a ser directo") |
-| A3 | Email 3 | PGE | Invitación | Contrarian / exclusión ("no abras…") |
-| A4 | Email 5 | PGE | Invitación | Miedo específico (dependencia de pocos clientes) |
-| A5 | Email 6 | PGE | Invitación | Resultado / aceleración (x10) |
-| A6 | Email 7 (backup) | PGE | Invitación | Historia-escena (el CEO te llama) |
-| A7 | Invitación Bases de Datos (v1, `PP0425-1`) | Pipeline Predecible con IA | Invitación | Presión macro (cuotas más altas de la historia) |
-| A8 | Invitación Bases de Datos (v4, `PP0426-4`) | Pipeline Predecible con IA | Invitación | Síntomas (PAS clásico) |
-| A9 | W3 · Invitación al evento | Supervisión Comercial Predictiva con IA | Invitación (masterclass) | Checklist de soluciones fallidas |
-| B1 | Venta "faltan 6h" | SPG · AI Strategic Pipeline Generation | Venta / cierre | Escasez horaria + recap de oferta |
-| B2 | Venta "faltan 2h" | SPG | Venta / cierre | Cierre final + dos caminos |
-
-Secciones pendientes de material: **Confirmación de registro**, **Postventa**, **Recordatorios /
-no-show**. Aún no hay ganadores cargados de esos tipos.
+```
+INVITACIÓN            RECORDATORIO              VENTA (retargeting)        POSTVENTA
+(registro al webinar) (calienta el webinar)     (al programa pago SPG)     (compra + grabaciones)
+E1..E7          →     faltan 2/1 días     →     Día 5: SalesFlix+dudas →   Confirmación de compra
+                      por clase (1–4):           Día 6: programa+Harvard    Recap/grabaciones $67
+                      · es hoy                   Día 7: prueba social       (downsell) → $97
+                      · 1 hora antes             Día 8: cierre escalonado   Confirmación grabaciones
+                      · estamos en vivo            (6h → 2h → 30 min)        Upsell $247
+                      · replay 24h               [reveló oferta en Clase 3]  (Commercial Structure)
+```
 
 ---
 
 ## A · Correos de INVITACIÓN (registro a entrenamiento / masterclass gratis)
 
-### A1 — PGE · Email 1
+Ángulo transversal: **apelación identitaria** ("estratega/directivo comercial") + **síntomas en
+lista** + **reencuadre** + **doble CTA**. Cada correo rota el gancho para no fatigar la lista.
 
-- **Producto:** Prospección a Gran Escala con IA · **Fechas:** lun 24 – jue 27 nov
-- **Objetivo:** registro al entrenamiento gratuito · **Métrica:** _pendiente (Jorge)_
-- **Ángulo:** pregunta-diagnóstico que proyecta al futuro (2026).
-- **Conciencia:** consciente del problema → se le presenta la solución (IA/sistema).
-- **Estructura:** asunto-pregunta → apelación identitaria ("estratega comercial") → promesa del
-  evento → CTA temprano → bullets "esto es lo que te espera" (4 ✅) → 2º CTA → cierre lógico
-  ("para escalar necesitas PIPELINE, para PIPELINE necesitas sistema con IA").
-- **Recursos de copy:** doble CTA (botón arriba + botón abajo con label distinto), preheader que
-  promete la revelación ("del 24 al 27"), bullets con verbo de beneficio, cierre silogístico +
-  micro-urgencia ("posponer esta no es una de ellas").
+| # | Asunto (resumen) | Ángulo |
+|---|---|---|
+| A1 | ¿Ya tienes un sistema de prospección con IA…? | Pregunta-diagnóstico + horizonte 2026 |
+| A2 | 🚨 ¿Ya incluiste Agentes de IA…? | Alerta + síntomas ("voy a ser directo") |
+| A3 | 🚫 No abras este correo si ya estás prospectando con IA… | Contrarian / exclusión |
+| A4 | 🚫 Ignora esto si el 80% de tus ingresos NO depende de 3–5 clientes 💣 | Miedo específico (concentración de cartera) |
+| A5 | 💥 ¿Y si en 90 días generas más oportunidades que en 12 meses? | Resultado / aceleración (x10) |
+| A6 | 📊 ¿Puedes predecir cuánto vas a vender en marzo 2026? | Historia-escena (el CEO te llama) |
+| A7 | 🚨 El año arrancó con las cuotas más altas de la historia | Presión macro (otro lanzamiento) |
+| A8 | (Bases de Datos v4) No más teoría… | Síntomas / PAS estándar (otro lanzamiento) |
+| A9 | Checklist de soluciones fallidas (Masterclass) | "Sigues operando a ciegas" (otro lanzamiento) |
 
-**Copy verbatim**
+### A1 — PGE · Email 1 · pregunta-diagnóstico
+
+- **Estructura:** asunto-pregunta → apelación → promesa del evento → CTA temprano → 4 bullets
+  "esto es lo que te espera" → 2º CTA → cierre silogístico + micro-urgencia.
+- **Recursos:** doble CTA con labels distintos, preheader que promete la revelación, cierre
+  lógico ("para escalar necesitas PIPELINE, para PIPELINE necesitas IA").
+
 > **ASUNTO:** ¿Ya tienes un sistema de prospección con IA que escale tu PIPELINE en 2026?
 > **PREHEADER:** Te lo revelaré del 24 al 27 de Noviembre
 >
-> Mi querido/a estratega comercial…
-> Del lunes 24 al jueves 27 de noviembre, me conectaré en vivo para enseñarte nuestra nueva
-> arquitectura de agentes de IA de Prospección B2B. Que puede mantener a tu fuerza de ventas
-> operando a máxima capacidad y dejar de vivir del mismo PIPELINE de siempre…
-> Haz clic aquí para asegurar tu lugar en "PROSPECCIÓN a gran escala con IA" 👉
-> **[BOTÓN: CONFIRMAR MI PARTICIPACIÓN]** `[ENLACE registro · invitacion1/boton1]`
->
-> Esto es lo que te espera:
-> ✅ Descubre cómo usar IA para identificar oportunidades comerciales antes de que la
-> competencia siquiera las detecte.
-> ✅ Aprende a diseñar un sistema de prospección B2B que funcione en piloto automático y te
-> genere leads calificados semana tras semana.
-> ✅ Conoce el enfoque que usan los equipos de élite para agendar reuniones con decisores reales
-> y dejar de perder tiempo con quienes no tienen poder de decisión.
-> ✅ Y muchos otros recursos prácticos para que termines el 2025 con un PIPELINE sólido,
-> decisiones estratégicas y resultados medibles.
-> Sin teoría ni relleno. En 4 clases de contenido práctico y directo que podrás implementar
-> inmediatamente. 🕒🎯
-> **[BOTÓN: QUIERO PARTICIPAR EN EL ENTRENAMIENTO SIN COSTO]** `[ENLACE registro · invitacion1/boton2]`
->
+> Mi querido/a estratega comercial… Del lunes 24 al jueves 27 de noviembre, me conectaré en vivo
+> para enseñarte nuestra nueva arquitectura de agentes de IA de Prospección B2B. Que puede
+> mantener a tu fuerza de ventas operando a máxima capacidad y dejar de vivir del mismo PIPELINE
+> de siempre… **[BOTÓN: CONFIRMAR MI PARTICIPACIÓN]**
+> Esto es lo que te espera: ✅ Descubre cómo usar IA para identificar oportunidades antes que la
+> competencia. ✅ Aprende a diseñar un sistema de prospección B2B en piloto automático. ✅ Conoce
+> el enfoque que usan los equipos de élite para agendar con decisores reales. ✅ Y muchos otros
+> recursos para terminar el 2025 con un PIPELINE sólido.
+> Sin teoría ni relleno. En 4 clases prácticas. **[BOTÓN: QUIERO PARTICIPAR EN EL ENTRENAMIENTO
+> SIN COSTO]**
 > Para escalar tus ventas en 2026, necesitas un PIPELINE con oportunidades reales y para llenar
-> tu PIPELINE necesitas un sistema con IA que lo haga más rápido y mejor.
-> En pocas palabras, entre las cosas que puedes posponer, esta no es una de ellas. Nos vemos el
-> Lunes, 24 de noviembre.
+> tu PIPELINE necesitas un sistema con IA. Entre las cosas que puedes posponer, esta no es una de
+> ellas. Nos vemos el Lunes, 24 de noviembre.
 
-- **Por qué funciona (hipótesis):** abre con la pregunta que el propio prospecto se está haciendo
-  para 2026; el cierre silogístico deja el registro como conclusión lógica, no como favor.
-- **Qué NO copiar:** "escalar tu PIPELINE en 2026" y la promesa de leads "semana tras semana"
-  son de PGE; en FAP, solo lo que esté en la fuente de verdad. CTA de FAP va a diagnóstico.
+- **Mecanismo:** abre con la pregunta que el prospecto ya se hace para 2026; el cierre
+  silogístico deja el registro como conclusión lógica.
 
----
+### A2 — PGE · Email 2 · alerta + síntomas
 
-### A2 — PGE · Email 2
+- **Recursos:** condicionales apilados ("Si… / Si… / Si…"), reencuadre "no necesitas trabajar
+  más, necesitas un sistema", proyección del dolor futuro, botón en 1ª persona.
 
-- **Métrica:** _pendiente_ · **Ángulo:** alerta 🚨 + espejo de síntomas, tono directo.
-- **Conciencia:** problema (le nombra sus dolores antes de ofrecer nada).
-- **Estructura:** asunto-alerta → "Voy a ser directo" → 3 síntomas en formato "Si… / Si… / Si…"
-  → reencuadre ("no necesitas trabajar más, necesitas un nuevo sistema") → consecuencia de no
-  cambiar ("igual o peor… una directiva con menos paciencia") → oferta gratis → CTA.
-- **Recursos:** condicionales apilados (identificación), reencuadre "no necesitas X, necesitas
-  Y", proyección del dolor futuro, botón con verbo en primera persona ("HAZME ESCALAR…").
-
-**Copy verbatim**
 > **ASUNTO:** 🚨 ¿Ya incluiste Agentes de IA de Prospección en tu plan de ventas 2026?
 > **PREHEADER:** Porque te enseñaré cómo hacerlo sin costo alguno
 >
-> Hola, estratega comercial: Voy a ser directo.
-> ✅ Si tus vendedores dedican horas a prospectar y apenas agendan 1 o 2 reuniones a la semana.
-> ✅ Si tu Forecast no es predecible y te ves obligado a "salvar la cuota" al final del mes.
-> ✅ Si los decisores no responden, y tus propuestas terminan con alguien sin poder de decisión…
-> Entonces no necesitas trabajar más. Necesitas un nuevo sistema de prospección con agentes de
-> IA que atraen, califican y sientan a tus vendedores solo con cuentas prósperas y decisores.
-> **[ENLACE texto: Haz clic aquí y te muestro cómo aumentar tu PIPELINE con IA]**
+> Hola, estratega comercial: Voy a ser directo. ✅ Si tus vendedores apenas agendan 1 o 2
+> reuniones a la semana. ✅ Si tu Forecast no es predecible y "salvas la cuota" a fin de mes. ✅ Si
+> los decisores no responden y tus propuestas terminan con alguien sin poder de decisión…
+> Entonces no necesitas trabajar más. Necesitas un nuevo sistema de prospección con agentes de IA
+> que atraen, califican y sientan a tus vendedores solo con cuentas prósperas y decisores.
+> Seguir usando los métodos de hace 10 años hará que sigas igual o peor: poco PIPELINE calificado,
+> ventas impredecibles… y una directiva cada vez con menos paciencia. ⏳
+> Quiero darte acceso GRATIS al último entrenamiento avanzado de 2025… **[BOTÓN: HAZME ESCALAR MI
+> PIPELINE CON IA]**
+
+- **Mecanismo:** el bloque "Si…" hace que el lector se autodiagnostique; el reencuadre reasigna la
+  culpa del esfuerzo al sistema, no a la persona.
+
+### A3 — PGE · Email 3 · contrarian / exclusión
+
+- **Recursos:** psicología inversa en el asunto (🚫), botón-espejo que verbaliza la
+  identificación ("JUSTO ME DESCRIBISTE, DEBO ASISTIR").
+
+> **ASUNTO:** 🚫 No abras este correo si ya estás prospectando con IA en 2025… · **PREHEADER:**
+> Solo para interesados
 >
-> Porque seguir usando los mismos métodos de prospección que hace 10 años no va a generar el
-> cambio que necesitas… Más bien hará que sigas igual o peor: poco PIPELINE calificado, ventas
-> impredecibles… Y una directiva cada vez con menos paciencia. ⏳
-> Quiero darte acceso completamente GRATIS al último entrenamiento comercial avanzado que voy a
-> hacer este 2025. Donde aprenderás a estructurar tu sistema de prospección B2B con IA, detectar
-> oportunidades antes que la competencia, y escalar tu PIPELINE a más de 1 millón de dólares en
-> menos de 90 días. 📈🚀
-> Iniciamos el lunes 24 de noviembre.
-> **[BOTÓN: HAZME ESCALAR MI PIPELINE CON IA]** `[ENLACE registro · invitacion2/boton]`
+> Querido/a estratega comercial… Sé que necesitas resultados concretos, no más teoría. Por eso:
+> PROSPECCIÓN A GRAN ESCALA CON IA. ✅ Si te frustra que tu equipo pierda tiempo con "curiosos".
+> ✅ Si estás cansado de vender bien un mes y caer el siguiente. ✅ Si dependes de referidos o del
+> azar… Entonces este entrenamiento es para ti. **[BOTÓN: JUSTO ME DESCRIBISTE, DEBO ASISTIR]**
+> Está diseñado para quienes sienten su sistema de ventas estancado. Te ayudará a: instalar un
+> sistema de prospección B2B con IA; dejar atrás la dependencia de referidos; estructurar tu
+> operación con IA; construir un ejército de prospección 24/7. **[BOTÓN: ME UNO AL ENTRENAMIENTO,
+> JORGE]**
 
-- **Por qué funciona (hipótesis):** el bloque "Si… / Si… / Si…" hace que el lector se
-  autodiagnostique; el reencuadre reasigna la culpa del esfuerzo al sistema.
-- **Qué NO copiar:** "$1M en menos de 90 días" es promesa de PGE. No a FAP sin fuente.
+- **Mecanismo:** el 🚫 rompe el patrón de bandeja y genera curiosidad por contradicción; el botón
+  convierte la lectura en autoselección.
 
----
+### A4 — PGE · Email 5 · miedo específico (concentración de cartera)
 
-### A3 — PGE · Email 3
+- **Recursos:** cifra en el asunto (80% / 3–5 clientes), metáfora "bomba de tiempo" → "motor de
+  crecimiento", escena del peor caso, botones emocionales.
 
-- **Métrica:** _pendiente_ · **Ángulo:** contrarian / exclusión ("no abras esto…").
-- **Conciencia:** problema/solución. Filtra por identificación.
-- **Estructura:** asunto de prohibición inversa → apelación → "no más teoría" → 3 síntomas (PAS)
-  → botón de auto-selección ("JUSTO ME DESCRIBISTE, DEBO ASISTIR") → bullets de transformación →
-  2º CTA.
-- **Recursos:** psicología inversa en el asunto (🚫), botón que verbaliza la identificación del
-  lector, bullets con verbo de resultado.
-
-**Copy verbatim**
-> **ASUNTO:** 🚫 No abras este correo si ya estás prospectando con IA en 2025…
-> **PREHEADER:** Solo para interesados
->
-> Querido/a estratega comercial… Sé que hoy más que nunca necesitas resultados concretos, no más
-> teoría ni estrategias obsoletas. Por eso quiero hablarte de algo que sí puede marcar un punto
-> de inflexión: PROSPECCIÓN A GRAN ESCALA CON IA. Y es que:
-> ✅ Si te frustra ver a tu equipo invirtiendo tiempo en "curiosos" que no están calificados. 😩
-> ✅ Si estás cansado de la falta de predictibilidad. Vender bien un mes, caer en el siguiente.
-> ✅ Si aún dependes de referidos o del azar para cumplir tu cuota…
-> Entonces este entrenamiento es para ti.
-> **[BOTÓN: JUSTO ME DESCRIBISTE, DEBO ASISTIR]** `[ENLACE registro · invitacion3/boton1]`
->
-> 👉 Prospección a Gran Escala con IA está diseñado para quienes sienten que su sistema de ventas
-> está estancado. Este entrenamiento te ayudará a:
-> · Instalar un sistema de prospección B2B con IA que genere un flujo constante de leads
-> calificados por mes. · Dejar atrás la dependencia de referidos y crear un PIPELINE escalable y
-> predecible. · Estructurar tu operación con IA para escalar tu PIPELINE en 2026. · Construir un
-> ejército de prospección con IA que trabaje para tu cuota 24/7.
-> Regístrate aquí y obtén el plan para escalar tu PIPELINE a más de $1 millón de dólares en los
-> próximos 90 días. 💸🔥
-> **[BOTÓN: ME UNO AL ENTRENAMIENTO, JORGE]** `[ENLACE registro · invitacion3/boton2]`
-
-- **Por qué funciona (hipótesis):** el asunto 🚫 rompe el patrón de bandeja y genera curiosidad
-  por contradicción; el botón-espejo convierte la lectura en autoselección.
-- **Qué NO copiar:** claim de "$1M en 90 días"; el "ejército 24/7" es lenguaje de PGE.
-
----
-
-### A4 — PGE · Email 5
-
-- **Métrica:** _pendiente_ · **Ángulo:** miedo específico y nombrado — dependencia de pocos
-  clientes ("bomba de tiempo").
-- **Conciencia:** problema, muy agudo (dolor de riesgo/supervivencia).
-- **Estructura:** asunto de exclusión con dato ("el 80% de tus ingresos") → escena del peor caso
-  ("si tu cliente #1 no renueva mañana…") → nombre de la metáfora (bomba de tiempo) → CTA de
-  urgencia → bullets de blindaje (portfolio exponencial, <10% por cliente) → 2º CTA.
-- **Recursos:** cifra concreta en el asunto (80% / 3–5 clientes), metáfora recurrente ("bomba de
-  tiempo" → "motor de crecimiento"), reencuadre de riesgo a oportunidad, botones emocionales
-  ("ESTO ES URGENTE PARA MÍ", "NECESITO DIVERSIFICAR MI PIPELINE").
-
-**Copy verbatim**
 > **ASUNTO:** 🚫 Ignora este correo si el 80% de tus ingresos NO depende de 3 a 5 clientes... 💣
 > **PREHEADER:** En pocos días aprenderás cómo dejar de hacerlo
 >
-> Querido/a estratega comercial… Si hoy el 80% de tus ingresos depende de 5 clientes… y eso te
-> quita el sueño… Te encuentras angustiado porque si tu cliente #1 te avisa mañana que no
-> renueva, tu operación entera colapsa, viviendo al borde de una crisis permanente. 😰
-> Entonces nuestro próximo entrenamiento Prospección a Gran Escala con IA es fundamental.
-> **[BOTÓN: JORGE, ESTO ES URGENTE PARA MÍ]** `[ENLACE registro · invitacion5/boton1]`
->
-> 👉 Diseñado para directivos que sienten que su empresa está construida sobre una bomba de
-> tiempo. Te ayudará a:
-> ✔️ Instalar Agentes de IA que generan 100+ oportunidades calificadas por mes, diversificando
-> tu cartera. ✔️ Dejar atrás la dependencia peligrosa de pocos clientes y construir un PORTFOLIO
-> EXPONENCIAL donde ningún cliente representa más del 10% de tus ingresos. ✔️ Crear un ejército
-> digital de prospección que trabaja 24/7 mientras duermes tranquilo.
-> Regístrate aquí y obtén el plan de contingencia que convierte tu bomba de tiempo en un motor de
-> crecimiento predecible. 🛡️📈
-> **[BOTÓN: NECESITO DIVERSIFICAR MI PIPELINE, JORGE]** `[ENLACE registro · invitacion5/boton2]`
+> Si hoy el 80% de tus ingresos depende de 5 clientes… y eso te quita el sueño… si tu cliente #1
+> te avisa mañana que no renueva, tu operación entera colapsa. 😰 Entonces Prospección a Gran
+> Escala con IA es fundamental. **[BOTÓN: JORGE, ESTO ES URGENTE PARA MÍ]**
+> Diseñado para directivos cuya empresa está construida sobre una bomba de tiempo. Te ayudará a:
+> instalar Agentes de IA que generan 100+ oportunidades/mes; construir un PORTFOLIO EXPONENCIAL
+> donde ningún cliente pesa más del 10%; crear un ejército digital 24/7. Convierte tu bomba de
+> tiempo en un motor de crecimiento predecible. **[BOTÓN: NECESITO DIVERSIFICAR MI PIPELINE,
+> JORGE]**
 
-- **Por qué funciona (hipótesis):** es el ángulo más visceral del set — ataca un miedo real de
-  supervivencia (concentración de cartera) con una cifra que el lector reconoce en su propia
-  empresa.
-- **Qué NO copiar:** "100+ oportunidades/mes", "<10% por cliente" son promesas de PGE.
+- **Mecanismo:** ataca un miedo de supervivencia (concentración de cartera) con una cifra que el
+  lector reconoce en su propia empresa — el ángulo más visceral del set.
 
----
+### A5 — PGE · Email 6 · resultado / aceleración
 
-### A5 — PGE · Email 6
+- **Recursos:** "¿Y si…?" (proyección de resultado), bullets con número (x10, 5X, $1M/90d),
+  cierre de objeción de costo ("sin contratar un solo vendedor adicional").
 
-- **Métrica:** _pendiente_ · **Ángulo:** resultado / aceleración (multiplicar x10, no crecer
-  lineal).
-- **Conciencia:** solución (ya sabe que quiere más pipeline; le vende la magnitud y velocidad).
-- **Estructura:** asunto-pregunta hipotética con resultado → reencuadre (aceleración vs.
-  crecimiento lineal) → 3 bullets de resultado numérico → pregunta de compromiso ("¿te gustaría
-  tener estos resultados?") → CTA → bullets de operación → 2º CTA.
-- **Recursos:** "¿Y si…?" (proyección de resultado), contraste lineal vs. exponencial, cierre
-  con "sin contratar un solo vendedor adicional" (elimina la objeción de costo).
-
-**Copy verbatim**
 > **ASUNTO:** 💥 ¿Y si en 90 días generas más oportunidades que en los últimos 12 meses de 2025?
 >
-> Querido/a director comercial… Sé que hoy necesitas aceleración, no más crecimiento lineal que
-> te mantiene atrapado en el mismo techo de siempre. Por eso quiero hablarte de algo que puede
-> multiplicar x10 tu capacidad de generación de PIPELINE: un SISTEMA DE PROSPECCIÓN A GRAN ESCALA
-> CON AGENTES DE IA que te permite:
-> ✅ Generar de 3 a 5 oportunidades de negocio semanalmente por cada vendedor.
-> ✅ Escalar tu PIPELINE a más de 1 millón de dólares en menos de 90 días.
-> ✅ Elevar el ROI a más de 5X por vendedor.
-> ¿Te gustaría tener estos resultados?
-> **[BOTÓN: SÍ, JORGE ES LO QUE NECESITO]** `[ENLACE registro · invitacion6/boton1]`
->
-> 👉 Diseñado para líderes que sienten que su operación tiene un techo artificial de capacidad.
-> Te ayudará a: · Generar la misma cantidad y calidad de leads todos los meses. · Sentar al
-> equipo con tomadores de decisión en cuentas prósperas. · Integrar la IA a su operación B2B para
-> crecimiento exponencial en 2026. · Terminar Q1 2026 con más PIPELINE calificado que todo el año
-> anterior, sin contratar un solo vendedor adicional.
-> **[BOTÓN: ME REGISTRO PARA ACELERAR MI CRECIMIENTO, JORGE]** `[ENLACE registro · invitacion6/boton2]`
+> Necesitas aceleración, no crecimiento lineal. Algo que multiplique x10 tu generación de
+> PIPELINE: ✅ 3 a 5 oportunidades por vendedor a la semana. ✅ Escalar tu PIPELINE a +$1M en <90
+> días. ✅ ROI +5X por vendedor. ¿Te gustaría estos resultados? **[BOTÓN: SÍ, JORGE ES LO QUE
+> NECESITO]** … Terminar Q1 2026 con más PIPELINE calificado que todo el año anterior, sin
+> contratar un solo vendedor adicional. **[BOTÓN: ME REGISTRO PARA ACELERAR MI CRECIMIENTO]**
 
-- **Por qué funciona (hipótesis):** cuantifica la promesa (x10, 5X, $1M/90d) y remata cerrando la
-  objeción de costo ("sin contratar un vendedor").
-- **Qué NO copiar:** todas las cifras (x10, 3–5/semana, 5X, $1M/90d) son de PGE.
+- **Mecanismo:** cuantifica la promesa y remata cerrando la objeción de costo.
 
----
+### A6 — PGE · Email 7 (backup) · historia-escena
 
-### A6 — PGE · Email 7 (backup)
+- **Recursos:** narrativa en 2ª persona, diálogo interno, "yo también viví eso" (autoridad por
+  experiencia), tesis memorizable, **PD** que revive la escena.
 
-- **Métrica:** _pendiente_ · **Ángulo:** historia-escena en 2ª persona (el CEO te pone en
-  aprietos) → matemática de la predictibilidad.
-- **Conciencia:** problema, vía dramatización (se lo hace *sentir* antes de explicarlo).
-- **Estructura:** asunto-pregunta → escena ("el CEO te llama el lunes… empiezas a hacer cuentas…
-  esa mirada, esa pausa") → 3 síntomas ❌ → giro empático ("yo también viví eso") → tesis ("no
-  hay facturación predecible sin generación predecible de leads") → bullets → CTA → firma → **PD**.
-- **Recursos:** narrativa en 2ª persona (McKee/escena), diálogo interno, "yo también viví eso"
-  (autoridad por experiencia), tesis memorizable, cierre con **PD** que revive la escena.
-
-**Copy verbatim**
 > **ASUNTO:** 📊 ¿Puedes predecir cuánto vas a vender en marzo 2026?
 >
-> Estratega comercial. 👋 Déjame preguntarte algo… ¿Alguna vez te ha pasado que el CEO te llama
-> el lunes por la mañana y te pregunta: "¿Cuánto vamos a cerrar este trimestre?" Y tú empiezas a
-> hacer cuentas mentales… revisas tu CRM… miras las oportunidades que "deberían" cerrarse… y
-> terminas respondiendo con un "bueno… creemos que unos… más o menos…" 🤯 Ya sabes lo que viene
-> después. Esa mirada. Esa incómoda pausa. Esa pérdida de credibilidad.
-> Y lo peor es que llevas meses operando así: ❌ Sin poder proyectar cuánto vas a facturar en
-> 2026. ❌ Con un forecast que cambia cada semana. ❌ Rezando para que "algo grande se cierre"
-> antes de fin de mes.
-> Mira, yo también viví exactamente eso. Hasta que entendí que no puede haber facturación
-> predecible si no hay generación predecible de leads. Es matemática simple: si no controlas
-> cuánto PIPELINE nuevo entra cada semana, no puedes proyectar cuánto vas a cerrar en 3, 6 o 12
-> meses. Por eso creamos Prospección a Gran Escala con IA. No es teoría. Es un sistema que te
-> permite: ✅ Saber EXACTAMENTE cuánto PIPELINE entra cada semana. ✅ Proyectar tus ingresos de Q1
-> 2026 desde noviembre 2025. ✅ Responder con CONFIANZA "¿cuánto vamos a cerrar?"
-> Porque la predictibilidad no es mágica. Es sistema. Y el sistema empieza con la generación de
-> leads.
-> **[BOTÓN: SÍ, QUIERO PREDICTIBILIDAD →]**
-> Nos vemos en el entrenamiento. Jorge Conde, CEO, PIPELINE Business School
-> **PD:** La próxima vez que el CEO te pregunte por el forecast, imagina poder responder con
-> números concretos.
+> ¿Alguna vez el CEO te llama el lunes y pregunta "¿cuánto vamos a cerrar este trimestre?" Y
+> empiezas a hacer cuentas… revisas el CRM… y respondes "bueno… creemos que unos… más o menos…"
+> 🤯 Esa mirada. Esa pausa. Esa pérdida de credibilidad. Y llevas meses así: ❌ sin proyectar
+> 2026, ❌ forecast que cambia cada semana, ❌ rezando para que algo grande cierre. Yo también
+> viví eso. Hasta que entendí que no hay facturación predecible sin generación predecible de
+> leads. Es matemática simple. Por eso creamos Prospección a Gran Escala con IA. ✅ Saber
+> EXACTAMENTE cuánto PIPELINE entra cada semana. ✅ Proyectar Q1 2026 desde noviembre. ✅ Responder
+> con CONFIANZA. La predictibilidad no es magia. Es sistema. **[BOTÓN: SÍ, QUIERO PREDICTIBILIDAD
+> →]** — Jorge Conde, CEO. **PD:** La próxima vez que el CEO te pregunte por el forecast, imagina
+> poder responder con números concretos.
 
-- **Por qué funciona (hipótesis):** es el correo más narrativo del set; en vez de listar dolores
-  los *escenifica*, y la tesis ("predictibilidad = sistema, no magia") es portable a muchos
-  asuntos. Buen molde para un correo de invitación con storytelling.
-- **Qué NO copiar:** las fechas/producto; la tesis y la estructura de escena **sí** son molde
-  reutilizable (con contenido de FAP).
+- **Mecanismo:** el correo más narrativo del set; *escenifica* el dolor en vez de listarlo. Molde
+  de storytelling reutilizable.
 
----
+### A7–A9 — Invitaciones de otros lanzamientos (moldes adicionales)
 
-### A7 — Pipeline Predecible con IA · Invitación Bases de Datos (v1, `PP0425-1`)
-
-- **Producto:** Pipeline Predecible con IA · **Fechas:** mar 21, mié 22, jue 23 abr (3 noches en
-  vivo) · **Métrica:** _pendiente_
-- **Ángulo:** presión macro / timing ("el año arrancó con las cuotas más altas de la historia").
-- **Conciencia:** problema → solución, encuadrado en contexto de mercado.
-- **Estructura:** alerta 🚨 macro → nombrar el contexto adverso (mercado saturado, presupuestos
-  congelados, competencia por precio) → reencuadre ("no se resuelve con más presión, sino con un
-  sistema diferente") → promesa del entrenamiento → datos del evento → CTA → escasez ("cupos
-  limitados") → firma con cargo (CEO, PBS).
-- **Recursos:** apertura por contexto de mercado (no por el "yo"), tríada de adversidad,
-  reencuadre presión→sistema, firma con autoridad institucional.
-
-**Copy verbatim**
-> 🚨 El año arrancó con las CUOTAS DE VENTAS más altas de la historia. 🚨
-> Y con el mismo mercado saturado, los mismos presupuestos congelados y la misma competencia
-> peleando por precio. Esa combinación no se resuelve con más perseguimiento comercial ni con más
-> presión al equipo. ✅ Se resuelve con un sistema diferente.
-> En este momento estás a tiempo de reaccionar, escalar tu PIPELINE y cerrar el año con un
-> forecast que el board no esperaba ver. 🥇
-> Eso es lo que vamos a construir en nuestro próximo entrenamiento comercial avanzado PIPELINE
-> PREDECIBLE CON IA. En tres noches consecutivas construiremos el sistema de prospección con IA
-> que directivos comerciales en Latinoamérica están usando para llenar su PIPELINE en 2026, sin
-> importar que la economía esté contraída o que vendas un producto commodity.
-> 🗓️ Martes 21, Miércoles 22 y Jueves 23 de abril · Formato 100% en vivo — 3 noches consecutivas
-> **[BOTÓN: REGÍSTRATE AHORA]**
-> Los cupos son limitados. Aparta tu lugar y gana el juego de las ventas con el sistema de
-> prospección con IA que hace tu PIPELINE predecible y escalable.
-> Jorge Conde · Chief Executive Officer · PIPELINE Business School
-
-- **Por qué funciona (hipótesis):** habla al calendario del lector (arranque de año, cuotas) y
-  usa prueba social por región ("directivos en Latinoamérica están usando").
-- **Qué NO copiar:** "cupos limitados" (escasez) encaja en registro a evento, pero en piezas de
-  FAP la escasez debe ser real; no inventar cupos (candado de la fuente de verdad).
-
----
-
-### A8 — Pipeline Predecible con IA · Invitación Bases de Datos (v4, `PP0426-4`)
-
-- **Métrica:** _pendiente_ · **Ángulo:** síntomas clásicos (PAS) con reencuadro "no más teoría".
-- **Conciencia:** problema.
-- **Estructura:** "no más teoría" → nombrar el giro (Pipeline Predecible con IA) → 3 síntomas ✅
-  → botón-espejo ("JUSTO ME DESCRIBISTE, DEBO ASISTIR") → bullets de transformación → datos del
-  evento → CTA final con firma.
-- **Recursos:** mismo botón-espejo que A3 (patrón repetido entre lanzamientos), bullets con
-  "ejército de prospección con IA 24/7", horario multi-país con banderas.
-
-**Copy verbatim**
-> Sé que hoy más que nunca necesitas resultados concretos. ❌ No más teoría ni estrategias
-> obsoletas. Por eso quiero hablarte de algo que SÍ puede marcar un punto de inflexión: PIPELINE
-> PREDECIBLE CON IA. Y es que:
-> ✅ Si te frustra ver a tu equipo invirtiendo tiempo en "curiosos" que no están calificados. 😩
-> ✅ Si estás cansado de la falta de predictibilidad. Vender bien un mes, caer en el siguiente.
-> ✅ Si aún dependes de referidos o del azar para cumplir tu cuota…
-> Entonces este ENTRENAMIENTO COMERCIAL es para ti.
-> **[BOTÓN: JUSTO ME DESCRIBISTE, DEBO ASISTIR]**
-> 👉 Diseñado para quienes sienten que su sistema de ventas está estancado. Te ayudará a: · Dejar
-> atrás la dependencia de referidos y crear un PIPELINE escalable y predecible. · Estructurar tu
-> operación con IA para escalar tu PIPELINE en 2026 y lograr ventaja competitiva real. · Construir
-> un ejército de prospección con IA que trabaje para tu cuota 24/7.
-> Regístrate aquí y obtén el plan para escalar tu PIPELINE a más de $1 millón de dólares en los
-> próximos 90 días. 💸🔥
-> 🗓️ Martes 21, Miércoles 22 y Jueves 23 de abril · 🔴 Formato 100% en vivo — 3 noches consecutivas
-> **[BOTÓN: ME UNO AL ENTRENAMIENTO, JORGE]**
-> Jorge Conde · Chief Executive Officer · PIPELINE Business School
-
-- **Por qué funciona (hipótesis):** es la variante "PAS estándar" del lanzamiento — el caballo de
-  batalla. Nota que A3, A8 y otras reusan el **mismo botón-espejo y los mismos 3 síntomas**: es
-  un módulo probado que Jorge recicla entre productos.
-- **Qué NO copiar:** claim "$1M en 90 días"; "ejército 24/7".
-
----
-
-### A9 — Supervisión Comercial Predictiva con IA · W3 (Invitación al evento)
-
-- **Producto:** Supervisión Comercial Predictiva con IA (MASTERCLASS 90 min) · **Fecha:** mar 2
-  jun, 7:00 p.m. 🇨🇴🇪🇨🇵🇪 · **Métrica:** _pendiente_
-- **Ángulo:** checklist de "soluciones que ya intentaste y fallaron" → "sigues operando a ciegas".
-- **Conciencia:** consciente del problema, escéptico (ya probó cosas). Se le valida el hartazgo.
-- **Estructura:** apelación ("Directivo Comercial") → pregunta → **checklist de 6 falsas
+- **A7 · Pipeline Predecible con IA (`PP0425-1`)** — ángulo **presión macro**: "🚨 el año arrancó
+  con las cuotas más altas de la historia… no se resuelve con más presión, sino con un sistema
+  diferente". Recurso: apertura por contexto de mercado (no por el "yo") + prueba social regional
+  ("directivos en Latinoamérica están usando").
+- **A8 · Pipeline Predecible con IA (`PP0426-4`)** — **PAS estándar** con el **mismo botón-espejo
+  y los mismos 3 síntomas de A3** (módulo reciclado entre productos).
+- **A9 · Supervisión Comercial Predictiva con IA (Masterclass)** — **checklist de 6 falsas
   soluciones** (◻️ CRM caro, dashboards Power-BI, reuniones de forecast, microgestión, acompañar
-  a cada reunión, consultorías-PDF) → veredicto ("sigues operando a ciegas") → nombre de la
-  masterclass → 4 promesas del sistema (predice cash flow, audita, detecta caídas 2 meses antes,
-  capa de inteligencia) → fecha/hora multi-país → CTA → reencuadre de identidad ("deja de ser el
-  vendedor más caro de tu nómina").
-- **Recursos:** checklist de fracasos con checkbox (◻️) — el lector marca mentalmente los suyos;
-  antítesis de identidad ("vendedor más caro" → "dirigir con un sistema"); promesa contraintuitiva
-  ("detecta caídas 2 meses antes").
-
-**Copy verbatim**
-> Directivo Comercial, ¿Cuántas de estas "soluciones" has intentado para recuperar el control de
-> tus números?
-> ◻️ Implementar un CRM más costoso esperando tener inteligencia comercial.
-> ◻️ Construir dashboards hiper-detallados en Power-BI, que solo muestran lo que ya pasó.
-> ◻️ Reuniones de forecast semanales y presión comercial diaria.
-> ◻️ Microgestionar personalmente a cada vendedor para que cierren.
-> ◻️ Acompañar a tus vendedores a cada reunión (y volverte el cuello de botella).
-> ◻️ Pagar consultorías que terminan en un PDF que nadie usa.
-> Si has intentado al menos una, ya te diste cuenta de algo: sigues operando a ciegas.
-> Por eso diseñamos esta MASTERCLASS exclusiva para Directivos, Fundadores y CEOs: SUPERVISIÓN
-> COMERCIAL PREDICTIVA CON IA. En 90 minutos te vamos a mostrar cómo instalar tu Modelo de
-> Supervisión Comercial acelerado por IA que: Predice tu cash flow · Audita cada paso de tu
-> operación comercial · Detecta caídas de ventas 2 meses antes de que ocurran · Agrega una capa
-> de inteligencia comercial a tu liderazgo.
-> 📅 Martes, 2 de junio · 🕐 7:00 p.m. 🇨🇴🇪🇨🇵🇪 | 6:00 p.m. 🇲🇽 | 8:00 p.m. 🇺🇸🇻🇪🇨🇱
-> **[BOTÓN: QUIERO MI LUGAR EN LA MASTERCLASS]**
-> Es momento de dejar de ser el "vendedor más caro" de tu nómina y empezar a dirigir con un
-> sistema que trabaje para ti. Nos vemos en la sesión.
-
-- **Por qué funciona (hipótesis):** el checklist de fracasos es el mecanismo más fuerte de esta
-  pieza — construye acuerdo ("sí, probé eso") antes de proponer nada, y reposiciona todas las
-  alternativas como insuficientes. Es el patrón "panorama de alternativas" del Offer Writer.
-- **Qué NO copiar:** "detecta caídas 2 meses antes" es promesa de ese producto; la **mecánica del
-  checklist de falsas soluciones** sí es molde reutilizable para FAP.
+  a cada reunión, consultorías-PDF) → "sigues operando a ciegas" → reencuadre de identidad ("deja
+  de ser el vendedor más caro de tu nómina"). El mejor ejemplo del patrón "panorama de
+  alternativas".
 
 ---
 
-## B · Correos de VENTA (cierre de inscripción — programa pago SPG)
+## B · Correos de RECORDATORIO (calentamiento del webinar)
 
-> **Producto:** AI Strategic Pipeline Generation (SPG), programa de aceleración **pago**.
-> ⚠️ Estos correos llevan a **checkout con oferta y cuenta regresiva**. En FAP-captación el CTA es
-> a diagnóstico, no a checkout. Se estudia la **mecánica de cierre**, no el destino.
+Objetivo: **maximizar asistencia en vivo**, no vender. Dos bloques: (1) pre-evento (faltan 2 / 1
+días) y (2) una **cadencia por clase** que se repite los 4 días: *es hoy → falta 1 hora → estamos
+en vivo → replay 24h*. Ángulos dominantes: **anticipación, FOMO de directo y escasez de replay**.
 
-### B1 — SPG · Venta "faltan 6h" (`PP0426 · DIA 7 · REGISTRADOS · 6PM`)
+### B1 — Faltan 2 días
 
-- **Métrica:** _pendiente_ · **Ángulo:** escasez horaria (6h) + recap del stack de oferta.
-- **Estructura:** urgencia en la 1ª línea ("menos de 6 HORAS") → CTA inmediato → recordatorio de
-  la promesa (sistema "AI FIRST", $ rentable/predecible en 90 días) → **stack de la oferta
-  numerado** (1 entrenamiento, 2 Harvard, 3 sesiones semanales, 4 Mastermind).
-- **Recursos:** cuenta regresiva en horas, "uno de los últimos cupos", stack numerado que
-  re-justifica el precio sin mostrarlo aquí.
+- **Recursos:** recordatorio + **mecánica de referido** ("invita a tus colegas por WhatsApp") +
+  agenda multi-país.
 
-**Copy verbatim**
-> En menos de 6 HORAS se cierran las inscripciones al programa de aceleración de ventas AI
-> STRATEGIC PIPELINE GENERATION. Ingresa desde aquí para tomar uno de los últimos cupos >>
-> Este programa te guiará paso a paso para construir un Sistema de Generación de PIPELINE "AI
-> FIRST" que genere facturación rentable y predecible en los próximos 90 días.
-> Recuerda, esta oferta exclusiva incluye ⬇️
-> 1️⃣ Entrenamiento comercial enfocado en desarrollar tus habilidades de escalamiento de PIPELINE
-> con IA.
-> 2️⃣ Programa de Harvard Business Education para desarrollar habilidades de negociación y cierre.
-> 3️⃣ Sesiones semanales de implementación para quitar los bloqueos del camino y asegurar que
-> avances.
-> 4️⃣ Mastermind One Million PIPELINE.
+> **ASUNTO:** [Nos vemos en 2 días] "Prospección a Gran Escala con IA" 🤖
+>
+> Estimado(a) Estratega Comercial, estamos a solo 2 días del inicio. El objetivo: LOGRAR UN
+> CRECIMIENTO EXPONENCIAL DE TU PIPELINE EN 2026, construyendo tu primer sistema de generación de
+> PIPELINE basado en IA. 👥 **Invita a tus colegas** por WhatsApp con un clic: **→ QUIERO INVITAR
+> A MIS COLEGAS**. 📅 Nos vemos el lunes 24 · 6pm 🇲🇽 · 7pm 🇨🇴🇵🇪🇪🇨 · 8pm 🇺🇸🇻🇪 · 9pm 🇨🇱.
 
-- **Por qué funciona (hipótesis):** en el cierre, el trabajo del correo no es convencer sino
-  recordar valor + poner reloj; el stack numerado hace sentir el volumen de lo que se pierde.
-- **Qué NO copiar:** el destino a checkout, el nombre del stack (Harvard, Mastermind) y la promesa
-  "$ en 90 días" son de SPG.
+### B2 — Falta 1 día
 
----
+- **Recursos:** bullets de aprendizaje + **CTA a agendar en calendario** (compromiso de
+  asistencia).
 
-### B2 — SPG · Venta "faltan 2h" (`PP0426 · DIA 7 · REGISTRADOS · 10PM`)
+> **ASUNTO:** Menos de 24 horas para nuestra formación "Prospección a Gran Escala con IA" 🧭
+>
+> Mañana comienza. Durante la formación aprenderás a: ✅ implementar un sistema de generación de
+> PIPELINE "AI FIRST"; ✅ construir un ejército de prospección con agentes de IA; ✅ acceder
+> directamente a tomadores de decisión; ✅ enfocar a tu equipo en cuentas prósperas y multiplicar
+> tu ROE y SROI. **→ AGREGAR ENTRENAMIENTO A MI CALENDARIO** 📅
 
-- **Métrica:** _pendiente_ · **Ángulo:** cierre final (2h) + los dos caminos (contraste binario)
-  + realidad macro 2026.
-- **Estructura:** urgencia (2h) → **dos caminos** (❌ seguir igual / ✅ construir sistema, cada uno
-  con 3 consecuencias) → "la fría realidad" (contexto macro 2026) → tesis del contraste ("quienes
-  tienen sistema vs. quienes venden como en 2010") → CTA → soporte ("mi equipo responde ahora") →
-  firma con cargo.
-- **Recursos:** estructura de dos columnas ❌/✅ (el mecanismo estrella), "la fría realidad es
-  esta" (romper la fantasía), oferta de contacto humano para dudas de última hora, firma con
-  autoridad.
+### B3 — Cadencia por clase (plantilla, se repite en las 4 clases)
 
-**Copy verbatim**
-> En 2 horas cierran las inscripciones a AI STRATEGIC PIPELINE GENERATION. Y tienes dos caminos:
-> ❌ Seguir igual: ciclos de venta interminables. Leads de baja calidad. Tu cuota dependiendo de
-> las mismas tres cuentas…
-> ✅ Construir un sistema de escalamiento de PIPELINE con IA: PIPELINE predecible. Agentes IA
-> prospectando por ti. Forecast que no depende de personas, sino de sistemas.
-> La fría realidad es esta: 2026 es un punto de quiebre. 🔴 Las economías están contraídas. Los
-> mercados, más saturados. Los presupuestos congelados y los conflictos mundiales están
-> acelerando el cambio. La diferencia está entre quienes tienen un sistema y quienes siguen
-> vendiendo como en 2010.
-> **[BOTÓN: 👉🏼 SÍ, QUIERO UN SISTEMA QUE ESCALE]**
-> ¿Tienes preguntas? Mi equipo responde ahora: Contáctalos aquí >>
-> Jorge Conde · Chief Executive Officer · PIPELINE Business School
+Cada día del webinar dispara la misma secuencia; solo cambia el **tema de la clase**. Verbatim de
+la **Clase 1** como molde:
 
-- **Por qué funciona (hipótesis):** el contraste binario ❌/✅ obliga a elegir bando; el marco
-  macro ("2026 punto de quiebre") externaliza la urgencia (no es Jorge presionando, es el
-  mercado). El contacto humano baja la fricción de última hora.
-- **Qué NO copiar:** el destino a checkout; "las mismas tres cuentas" es el dolor de SPG (pero el
-  molde ❌/✅ es oro y es reutilizable en FAP).
+**· ES HOY** — ASUNTO: `[ES HOY] PROSPECCIÓN A GRAN ESCALA CON IA ⏰⚠️` · PREHEADER: "¡Hoy es el
+gran día! 🥂". Recurso: prueba social de resultado ("quienes ya lo implementaron generan de 3 a 5
+oportunidades por vendedor a la semana") + filtro de identidad ("si eres de los que entrega
+resultados y NO excusas, te veo") + "el tiempo es oro, seremos puntuales".
 
----
+**· FALTA 1 HORA** — ASUNTO: `⚠️1 Hora para escalar tu PIPELINE con IA ⚠️`. Recurso: cercanía y
+vulnerabilidad ("estoy emocionado y un poco nervioso", "estamos finalizando pruebas de sonido") +
+instrucción de foco ("apaga el móvil, pausa notificaciones, avisa en casa: 90 minutos de
+atención") + "💸 Costo: Gratis".
 
-## 🧠 Patrones extraídos (el playbook de correo de PBS)
+**· ESTAMOS EN VIVO** — ASUNTO: `🛑[DÍA 1]🛑 ¡Ya estamos en VIVO!` · PREHEADER: "Estos 3 pasos
+podrían cambiarlo todo". Cuerpo mínimo: un solo CTA ("LLÉVAME A LA CLASE 1 AHORA").
 
-Lo que se repite en los ganadores — esto es lo que las skills deben aprender:
+**· REPLAY 24h** — ASUNTO: `🔐Día #1: Repetición desbloqueada🔐` · PREHEADER: "Disponible solo por
+24 horas". Recurso: **prueba social con cifra** ("+14.000 estrategas se registraron al día 1") +
+**escasez de replay** ("esta grabación desaparecerá en 24 horas") + gancho al día siguiente.
 
-**Familias de asunto (todas presentes en el set):**
-1. **Pregunta-diagnóstico** — "¿Ya tienes…?", "¿Puedes predecir…?" (A1, A2, A6, B-macro).
-2. **Alerta** 🚨 — "El año arrancó con las cuotas más altas…" (A2, A7).
-3. **Exclusión / contrarian** 🚫 — "No abras si…", "Ignora esto si…" (A3, A4).
-4. **Historia-escena** — "el CEO te llama el lunes…" (A6).
-5. **Resultado cuantificado** — "¿Y si en 90 días…?", "x10" (A5).
+**Variaciones por clase (lo único que cambia):**
+- **Clase 2** — tema: "construye un ejército de prospección con Agentes de IA". Replay: "genera
+  más PIPELINE en Q1 2026 que en todo 2025".
+- **Clase 3** (la que revela la oferta) — tema: "3 Frameworks para convertir PIPELINE a FORECAST".
+  Añade un correo extra a las **9:30 PM: `Inscripciones abiertas 💯` → apertura de la certificación
+  STRATEGIC PIPELINE GENERATION** con los 5 pilares y bono de urgencia (workshop de imagen que
+  "desaparece hoy"). Es el **puente recordatorio → venta**.
+- **Clase 4** — tema: "el Plan de 90 días para escalar tu PIPELINE a +$3M". Cierra con emails de
+  **oferta + bono de 24h** (reto doble, stack completo con doble certificación PBS + Harvard BPE,
+  bono "Escala tu Capital Visual" que cierra a las 11:59 PM).
 
-**Estructura recurrente (el esqueleto PBS):**
-apelación identitaria ("estratega comercial" / "directivo comercial") → **síntomas en lista**
-(formato "Si… / Si… / Si…" o checklist ◻️) → **reencuadre** ("no necesitas X, necesitas Y" /
-"no se resuelve con presión, sino con sistema") → **bullets de transformación** (verbo +
-resultado) → **doble CTA** (botón arriba + botón abajo con label distinto) → firma con cargo.
-
-**Botón-espejo reciclado:** el mismo botón *"JUSTO ME DESCRIBISTE, DEBO ASISTIR"* y los mismos 3
-síntomas aparecen en A3 y A8 (distintos productos). Es un **módulo probado** que Jorge reutiliza.
-
-**Recursos de copy transversales:**
-- CTAs en 1ª persona y emocionales ("HAZME ESCALAR MI PIPELINE", "ESTO ES URGENTE PARA MÍ").
-- Reencuadre presión/esfuerzo → sistema (quita la culpa al lector, se la da al método viejo).
-- Cierre de objeción de costo ("sin contratar un solo vendedor adicional").
-- Marco macro para externalizar la urgencia ("2026 es un punto de quiebre").
-- **PD** que revive la escena (A6).
-- Contraste binario ❌/✅ en el cierre (B2) — el mecanismo más fuerte de venta.
-
-**Vocabulario / identidad de marca (candado de voz):**
-PIPELINE (mayúsculas), "estratega comercial" / "directivo comercial", forecast, cuota, decisores,
-board, cash flow, "operar a ciegas". Firma: **Jorge Conde · Chief Executive Officer · PIPELINE
-Business School**.
-
-**Nivel de conciencia dominante:** casi todo el set le habla al **consciente del problema** (le
-nombra el dolor antes de ofrecer). Poca pieza para tráfico frío/inconsciente — hueco a notar.
+- **Mecanismo (fase completa):** la cadencia sube la temperatura hora a hora; el **replay con
+  vencimiento a 24h** crea urgencia diaria y "entrena" al lead a actuar rápido, lo que prepara el
+  reflejo de compra para la fase de venta. La oferta se **siembra en vivo (Clase 3)** y el correo
+  9:30 PM solo la formaliza.
 
 ---
 
-## ❓ Para cerrar las fichas (lo que necesito de Jorge)
+## C · Correos de VENTA (retargeting al programa pago SPG · Días 5–8)
 
-1. **Métricas por correo** — aperturas / CTR / registros / ventas. Sin esto, "por qué ganó" es
-   hipótesis, no dato. Aunque sea "este fue el que más registró", ayuda a rankear.
-2. **¿Qué familia de asunto rinde mejor** en tu lista? (pregunta vs. alerta vs. exclusión vs.
-   historia).
-3. **El `.docx` sin `_1`** (solo notas: "actualizar / narrativa fin de año / agregar objeciones")
-   — ¿lo ignoro?
-4. **¿Falta el Email 4** de la secuencia PGE, o se saltó a propósito?
-5. Cuando tengas: **confirmaciones de registro, recordatorios y postventa** — esas secciones están
-   vacías y son las que completan el funnel de correo.
+Tras el webinar, secuencia de cierre hacia la certificación **Strategic Pipeline Generation**.
+Escalera clásica: **valor/recap → detalle de oferta → autoridad → future pacing → prueba social →
+objeciones → cuenta regresiva escalonada**. Múltiples envíos por día.
+
+### Día 5 — reabrir y resolver
+
+- **C1 · 8 AM · "Maratón que cambiará tu juego" (SalesFlix)** — ángulo: **replay gratis con
+  vencimiento**. "Mañana es Sábado de SalesFlix": todas las grabaciones de los 4 días, disponibles
+  **hasta el domingo 11:59 PM**, luego desaparecen. Recurso: analogía Netflix + advertencia de
+  borrado. (Reengancha a los que no asistieron en vivo.)
+- **C2 · 5 PM · "¡Habla conmigo por WhatsApp!"** — ángulo: **abrir conversación / resolver
+  objeciones 1:1**. "Suponer es caro. Preguntar cambia el juego." Lista lo que el equipo resuelve
+  (cómo funciona, cuánto tarda, qué resultados, si es para ti) + **garantía** ("si no duplicas tu
+  PIPELINE en 4 meses, te devolvemos el 100%").
+
+### Día 6 — construir el valor de la oferta
+
+- **C3 · 8 AM · "Olvidé decirte algo importante 🤦‍♂️"** — ángulo: **detalle completo del
+  programa**. "Esto NO es un curso: 13 semanas, sprints de 7 días". Enumera los 7 componentes +
+  5 bonos + fecha de cierre. Recurso: asunto de intriga ("olvidé decirte algo").
+- **C4 · 2 PM · "Formación con respaldo de Harvard BPE 🎓"** — ángulo: **autoridad / prestigio
+  prestado**. Alianza con Harvard, certificado, método #1 de negociación. **PD** de estatus ("no
+  todos los días puedes decir que te formaste con herramientas de Harvard").
+- **C5 · 8 PM · "Hablemos de tu Q1 2026 📆"** — ángulo: **future pacing**. "Supongamos que ya es
+  febrero 2026…": pinta el estado deseado (clientes te buscan, eres consejero de confianza) →
+  "este es el futuro que construyes con SPG". **PD** de costo de oportunidad.
+
+### Día 7 — prueba social y objeción de tiempo
+
+- **C6 · 10 AM · "No creerás lo que acaba de pasar 🚨"** — ángulo: **prueba social + escasez**.
+  "El **83% de los cupos** ya están ocupados." Detalla los **sprints semana a semana** (1 a 10).
+  Recurso: escasez con cifra + desglose del "cómo" para justificar la demanda.
+- **C7 · 6 PM · "Sé que no tienes tiempo ⏱️"** — ángulo: **anular la objeción de tiempo**. "Un
+  sistema que trabaja mientras cierras negocios." Cuadro de mejoras (📈/−) + **desglose horario**
+  ("3–5 h/semana"). Cierre: "este programa no te roba tiempo, **te lo devuelve**".
+
+### Día 8 — cierre con cuenta regresiva escalonada
+
+Seis envíos el último día, subiendo la presión:
+
+- **C8 · 8 AM · Bono nuevo** — "Cómo venderle a un C-Level" (bono que se libera hoy y desaparece a
+  medianoche). Ángulo: **incentivo de última hora**.
+- **C9 · 10 AM · "94% de los cupos tomados"** — recap del stack completo + escasez. (Sube desde el
+  83% del día anterior: **escalera de escasez**.)
+- **C10 · 2 PM · "¿Cuántas ventas para recuperar tu inversión? 💡"** — ángulo: **reencuadre de ROI
+  / matemática**. "Si pasas de cerrar 1 de cada 10 a 2 de cada 10, duplicaste tus ventas." **PD:**
+  "la pregunta no es cuánto cuesta el programa, sino cuánto te cuesta seguir sin sistema".
+
+  > Este es el mejor molde de **manejo de la objeción de precio sin mostrar precio**: convierte el
+  > costo en un cálculo de retorno que hace el propio lector.
+
+- **C11 · 6 PM · "Ya solo quedan 6 horas 🔴"** — recap del stack + bonos + "el próximo correo puede
+  ser el de cierre". *(= PDF "Venta Día 6 / faltan 6h".)*
+- **C12 · 10 PM · "2 horas. Después, esta puerta se cierra ⏳"** — **los dos caminos** (❌ seguir
+  igual / ✅ construir el sistema) + marco macro ("2026 no será más fácil"). *(= PDF "Venta Día 7 /
+  faltan 2h".)*
+
+  > **ASUNTO:** ⏳ 2 horas. Después, esta puerta se cierra. · **PRE-HEADER:** La decisión es simple:
+  > sistema o seguir igual.
+  >
+  > En 2 horas cierran las inscripciones a Strategic Pipeline Generation. Y tienes dos caminos:
+  > **❌ Seguir igual:** ciclos de venta interminables, leads de baja calidad, tu cuota dependiendo
+  > de "ese gran negocio". Repetir 2025 en 2026. **✅ Construir un sistema con IA:** PIPELINE
+  > predecible, Agentes IA prospectando por ti, Forecast que no depende de personas sino de
+  > sistemas. La fría realidad: 2026 no será más fácil. La diferencia estará entre quienes tienen
+  > un sistema y quienes siguen vendiendo como en 2010. **[BOTÓN: 👉🏼 SÍ, QUIERO UN SISTEMA QUE
+  > ESCALE]**
+
+- **C13 · 11:30 PM · "30 minutos y se acaba ⏳"** — último aviso, tono directo ("voy al grano"),
+  3 síntomas ❌ de por qué no posponer, **PD** de arrepentimiento ("si no actúas ahora, puede que
+  te arrepientas mañana").
+
+- **Mecanismo (fase completa):** un solo ángulo por correo (recap, autoridad, futuro, prueba
+  social, tiempo, ROI, escasez) para no saturar; la **escalera de escasez** (83% → 94% → 6h → 2h →
+  30 min) concentra la urgencia real en las últimas horas; el precio nunca se argumenta de frente
+  — se reencuadra como ROI (C10) o como costo de inacción (PDs).
+
+---
+
+## D · Correos de POSTVENTA
+
+Dos ramas: (1) **onboarding del que compró** y (2) **monetización del que no compró** vía
+grabaciones (downsell) y del que sí, vía upsell.
+
+### D1 — Confirmación de compra (onboarding)
+
+- **Ángulo:** bienvenida + reducir fricción de arranque. Estructura: felicitación → 2 pasos claros
+  (agéndate para las sesiones en vivo · únete a la comunidad de WhatsApp) → línea de soporte.
+
+> **ASUNTO:** Felicitaciones, tu acceso a la certificación ha sido confirmado 🍾
+>
+> Bienvenido oficial a Strategic Pipeline Generation. Ya preparamos todo para que construyas un
+> PIPELINE real de +7 cifras en <90 días. Antes de empezar, 2 pasos: **Paso #1:** agéndate para no
+> perderte las sesiones en vivo. **Paso #2:** únete a la comunidad exclusiva de WhatsApp. →
+> **UNIRME A LA COMUNIDAD DE WHATSAPP** · Línea de soporte para estudiantes: [CLIC AQUÍ].
+
+### D2 — Recap / grabaciones (downsell $67 → $97)
+
+Al que **no compró** el programa, se le ofrece la **grabación del webinar + KIT de ventas por
+$67** (sube a $97). Varias variaciones de asunto/ángulo sobre la misma oferta:
+
+- **"🚨 Noticia de último momento…"** — video resumen (<15 min) + "aún hay más": venta de la
+  grabación de los 4 días + KIT (6 plantillas/recursos). Escasez: "hasta mañana viernes 11:59 por
+  $67, luego $97".
+- **"Aquí está, lo que muchos pidieron 💪"** — ángulo **a-petición-del-público** ("a petición de
+  muchos participantes") + acceso **de por vida** + KIT.
+- **"Tu barco está por zarpar 🚢"** — **metáfora del barco / escalera de emergencia** ("no nos
+  queremos ir sin ti", "hoy se cierra el carrito").
+- **"[Porque ustedes lo pidieron]"** y **"🚨 Comunicado de última hora"** — variantes de escasez
+  ("solo hasta hoy 11:59 PM").
+- **Cierre de relación** — "¡Qué gusto haber compartido contigo!": agradecimiento + invitación a
+  seguir a Jorge en redes/podcast (nurture de largo plazo).
+
+- **Recursos:** ancla de precio ($67 hoy → $97), acceso de por vida, KIT como stack de valor,
+  metáfora recurrente (barco), prueba social ("a petición de muchos").
+
+### D3 — Confirmación de acceso a grabaciones
+
+- **Ángulo:** onboarding del downsell. "Bienvenido al Recap" + acceso de por vida + lista del KIT
+  + soporte por WhatsApp. (Espejo de D1 para el producto de $67.)
+
+### D4 — Upsell (Commercial Structure Builder · $997 → $247)
+
+Al que **sí compró**, se le ofrece un producto complementario con una **pregunta incómoda**.
+
+- **Ángulo:** problema adyacente que la compra recién hecha deja al descubierto. "Acabas de
+  adquirir un sistema para generar PIPELINE a escala… ¿pero tienes un sistema para **convertirlo**,
+  o 10 vendedores con 10 métodos inventados?" Estructura: pregunta incómoda → escena del caos (Juan
+  vende como en seguros, Andrea como en tecnología…) → consecuencia (descuento por no saber
+  justificar valor) → bullets de lo que aprende → **ancla de precio** ($997 → **$247 solo hoy**).
+- **Recursos:** barra de progreso (post-compra), pregunta incómoda, cita ("buenos vendedores no
+  reparan sistemas de ventas rotos"), ancla de precio con urgencia.
+
+> **Titular:** Ahora que vas a generar PIPELINE a escala... ¿tienes la estructura comercial para
+> convertirlo? — Antes: $997 USD · **HOY: $247 USD** (solo hoy). **[SÍ, quiero convertirme en
+> ARQUITECTO DE ESTRUCTURAS COMERCIALES ESCALABLES]**
+
+- **Mecanismo (fase completa):** la postventa no "descansa" tras la venta — monetiza a ambos
+  segmentos. Al no-comprador le baja el escalón (downsell $67 con acceso de por vida); al
+  comprador le sube uno (upsell $247 resolviendo el problema que su compra reveló). El nurture de
+  relación (redes/podcast) recupera al resto para el próximo lanzamiento.
+
+---
+
+## 🧠 Patrones observados (en crudo — a validar con skills de escritura persuasiva)
+
+Catálogo de lo que se repite. **No es un sistema cerrado**: qué conviene por etapa se valida
+después con skills, no se fija aquí.
+
+**Familias de asunto (a lo largo del funnel):**
+1. Pregunta-diagnóstico · 2. Alerta 🚨 · 3. Exclusión/contrarian 🚫 · 4. Historia-escena ·
+5. Resultado cuantificado · 6. Escasez con cifra ("83% / 94% / 6 horas / 30 minutos") ·
+7. Intriga ("olvidé decirte algo", "no creerás lo que pasó").
+
+**Esqueleto de correo PBS:** apelación identitaria ("estratega/directivo comercial") → **síntomas
+en lista** ("Si… / Si… / Si…" o checklist ◻️/❌) → **reencuadre** ("no necesitas X, necesitas Y") →
+**bullets de transformación** (verbo + resultado) → **doble CTA** (arriba + abajo, labels
+distintos) → firma con cargo · a veces **PD** que revive el dolor o el costo de inacción.
+
+**Un ángulo por correo:** cada envío rota UN gancho (recap, autoridad, futuro, prueba social,
+tiempo, ROI, escasez) en vez de amontonar varios — evita fatiga y permite testear ángulos.
+
+**Escaleras de urgencia (fase de venta):** escasez creciente por cupos (83%→94%) y por reloj (6h →
+2h → 30 min); replays con vencimiento a 24h en el webinar. La urgencia se ancla en las últimas
+horas, no en todo el lanzamiento.
+
+**Precio sin argumentar de frente:** se reencuadra como **ROI** ("de 1/10 a 2/10 = 2X"), como
+**costo de inacción** (PDs) o con **ancla de precio** ($997→$247, $67→$97). Rara vez se defiende el
+número.
+
+**Módulos reciclados:** el botón-espejo "JUSTO ME DESCRIBISTE, DEBO ASISTIR" + 3 síntomas aparece
+entre lanzamientos distintos; el stack de la certificación (7 componentes + 5 bonos) se repite casi
+idéntico en varios correos de venta.
+
+**Recursos transversales:** CTAs en 1ª persona ("HAZME ESCALAR MI PIPELINE"), reencuadre esfuerzo→
+sistema (quita culpa al lector), marco macro para externalizar urgencia ("2026 punto de quiebre"),
+contraste binario ❌/✅, future pacing ("supongamos que ya es febrero 2026"), metáforas recurrentes
+("bomba de tiempo", "barco/escalera").
+
+**Vocabulario / identidad de marca:** PIPELINE (mayúsculas), FORECAST, "estratega/directivo
+comercial", cuota, decisores/C-Level, board, cash flow, "operar a ciegas", "AI FIRST", "ejército de
+prospección". Firma: **Jorge Conde · CEO · PIPELINE Business School**.
+
+**Conciencia dominante:** casi todo el funnel le habla al **consciente del problema**; poca pieza
+para tráfico frío/inconsciente — observación a tener presente.
+
+---
+
+## Notas abiertas (housekeeping, no bloquean)
+
+- El `.docx` sin `_1` (solo notas) — confirmar si se ignora (su contenido son los "to-dos" que
+  aparecen como encabezado de las secciones EMAIL RECORDATORIO y EMAILS VENTA: *actualizar,
+  narrativa fin de año, agregar objeciones, caso de éxito*).
+- La secuencia de invitación salta del Email 3 al Email 5 (no hay Email 4) — confirmar si falta.
+- El doc fuente (`COPYs_de_LANZAMIENTO_PGE_NOV25.md`) trae además **landing, ads, VSL/teleprompter,
+  WhatsApp, carruseles, objeciones (30 ángulos) y guiones** — material para las próximas fichas de
+  swipe por canal (landings, ads, whatsapp).
