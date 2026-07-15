@@ -171,6 +171,12 @@ repetición antes de que llegue al inbox.
   correos consecutivos (pregunta ≠ alerta ≠ intriga ≠ escasez).
 - **Un solo trabajo por correo.** La **cadencia es parte del copy**: especifícala y arguméntala.
 - **La objeción se responde donde surge**, no en un FAQ (concede antes de contraatacar).
+- **CTA temprano (REGLA): todo correo lleva un botón/CTA ARRIBA**, en la primera pantalla (tras el
+  gancho, antes de los bullets) — **la mayoría no lee todo el correo**, y el que decide rápido no
+  debe tener que scrollear para actuar. Se repite un **2º CTA al final** (el swipe ganador de PBS usa
+  **doble CTA**: botón arriba + botón abajo). **Labels distintos** entre ambos, **mismo destino** y
+  **un solo tipo de acción** (respeta el candado de CTA único). *Excepción: el micro-correo, que es
+  tan corto que su único CTA ya está arriba.*
 - **CTA:** nombra la acción o el valor, nunca "haz clic"; la frase justo antes del CTA reduce la
   duda residual.
 
@@ -184,10 +190,13 @@ comentarios de craft dentro del cuerpo (esos van en la matriz, aparte).
 ASUNTO: (con 0–1 emoji, al inicio o al final)
 PREHEADER: (una línea, complementa el asunto — no lo repite)
 
-Cuerpo del correo…
+Gancho / apertura (1–2 párrafos, sin la muletilla "incómoda") …
 
-[BOTÓN: LABEL EN MAYÚSCULAS →]     ← el label es la acción/valor, en 1ª persona
-… (2º CTA si la fase lo pide, con label distinto)
+[BOTÓN: LABEL 1 EN MAYÚSCULAS →]   ← CTA TEMPRANO, en la 1ª pantalla (OBLIGATORIO)
+
+Cuerpo (bullets de valor, prueba, cierre) …
+
+[BOTÓN: LABEL 2 EN MAYÚSCULAS →]   ← 2º CTA al final, label DISTINTO, mismo destino
 
 — Jorge Conde · CEO · PIPELINE Business School
 PD: (opcional — revive la escena o el costo de inacción)
@@ -281,6 +290,8 @@ divisor claro. Los `[FALTA: …]` quedan **visibles** en el lugar exacto donde i
 **Por correo:**
 - [ ] **Formato paste-ready:** ASUNTO/PREHEADER/[BOTÓN]/firma; emojis semánticos, ≤3–4 negritas,
       viñetas ✅/❌/◻️, tablas comparativas donde aporten. Sin comentarios de craft en el cuerpo.
+- [ ] **CTA temprano:** un botón/CTA en la primera pantalla (tras el gancho) **+** 2º al final con
+      label distinto y mismo destino (excepto micro-correo).
 - [ ] **Acción clara:** un solo CTA, coherente con la fase (registro o diagnóstico).
 - [ ] **Un ángulo:** no amontona varios ganchos.
 - [ ] **Voz:** vocabulario obligatorio presente, ninguno prohibido.
