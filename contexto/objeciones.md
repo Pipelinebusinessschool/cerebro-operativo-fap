@@ -3,6 +3,11 @@
 > **Derivado de `jorge_philosophy.md` + `jorge_icp.md`** (método y scripts sourced; no inventar
 > respuestas nuevas). Cierra el hueco #3. Lo cargan las skills de venta, diagnóstico y correos.
 
+> **Este archivo es el lado vendedor (cómo se RESPONDE).** Lo que el cliente **OBJETA** con sus
+> propias palabras y por frecuencia (verbatim de 15 llamadas reales) vive en
+> [`voz-objeciones.md`](voz-objeciones.md). Para captación: elige la objeción en `voz-objeciones.md`
+> y desactívala con el método de aquí.
+
 ## El método (4 pasos) — nunca a la defensiva
 
 1. **Escuchar empáticamente** — ver la situación como el cliente la ve. No interrumpir, no defenderse.

@@ -20,7 +20,9 @@ Esta carpeta es la **mitad "qué es cierto"** del cerebro (la otra mitad, "cómo
 | [`pbs_metrics.md`](pbs_metrics.md) | Métricas reales de clientes (el "Set B") + regla de uso |
 | [`pbs_indice.md`](pbs_indice.md) | Índice original de Jorge + 6 reglas universales |
 | [`prueba.md`](prueba.md) | Banco de prueba **claim→evidencia** (derivado de `pbs_metrics`) · hueco #4 |
-| [`objeciones.md`](objeciones.md) | Mapa de objeciones **"concede antes de contraatacar"** (derivado de `jorge_philosophy`) · hueco #3 |
+| [`objeciones.md`](objeciones.md) | Mapa de objeciones **"concede antes de contraatacar"** — cómo **responde** Jorge (derivado de `jorge_philosophy`) · hueco #3 |
+| [`voz-objeciones.md`](voz-objeciones.md) | Objeciones del cliente **verbatim, por frecuencia** (15 llamadas reales) — lo que el cliente **objeta** (lado demanda) |
+| [`voz-cliente.md`](voz-cliente.md) | Léxico crudo del cliente: cómo nombra su dolor, en sus palabras (15 llamadas reales, anonimizado) |
 | [`autoridad.md`](autoridad.md) | Bloque canónico de autoridad de Jorge + foto oficial (single source; se pega verbatim en landings y páginas) |
 
 ---
