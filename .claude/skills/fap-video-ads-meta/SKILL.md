@@ -24,10 +24,25 @@ description: >-
 - Optimizado para el algoritmo/formato de **Meta**.
 - Incluye **segmentación** de audiencia.
 
-## Swipe (pendiente)
-Cuando se replique el piloto de swipe: crear `swipe/swipe-ads.md` con ads ganadores
-(copy/guion + métrica + por qué ganó + qué NO copiar).
+## Swipe (ads ganadores reales, CON métricas)
+**Carga [`swipe/swipe-ads.md`](../../../swipe/swipe-ads.md) antes de escribir un guion.** Son 6
+anuncios reales de Meta con **métricas medidas** (Stop Ratio, Retención, CTR, CPL, ROAS,
+costo/agenda), rankeados por desempeño.
+
+> 🔒 **Candado del swipe:**
+> - **A05 es de FAP** (la VSL ganadora — hook "no eres el CEO… eres el vendedor más caro"): es la
+>   **referencia nativa** de voz y estructura para guiones de FAP.
+> - **A01–A04 y A06 son de otros programas de PBS** → molde de craft, no contenido. No transplantar
+>   logros (`Forbes`, `40.000`, `$150M`, muro de logos, `1M/90 días`); en FAP solo lo que esté en `fap`.
+> - No inventar escasez; CTA de FAP a **VSL / diagnóstico**, no a checkout.
+
+**Hallazgos que gobiernan el guion (de los datos):**
+- **Callout de identidad = mecanismo #1** (gana en la píldora más barata y en la VSL de FAP). Es el hook a replicar.
+- **El formato manda sobre el ángulo:** el hook de identidad rinde **comprimido**; estirado a video largo pierde fuerza (A06 vendió 0).
+- **Tibio > frío** en ROAS: el retargeting convierte 2–3× mejor.
+- **El canal cambia el desempeño:** la misma pieza no rinde igual en feed que en WhatsApp.
 
 ## Estado
 - [x] Instalada.
+- [x] Swipe de ads conectado (`swipe/swipe-ads.md`, 6 ads con métricas reales; A05 = VSL de FAP).
 - [ ] Test de activación en chat nuevo pendiente.
