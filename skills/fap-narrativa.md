@@ -1,20 +1,7 @@
-# Skill · `fap-narrativa`
+# Skill · `fap-narrativa` — MOVIDA
 
-**Rol:** generar las **3 Big Ideas** + el **brief** narrativo del lanzamiento.
+Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-narrativa`).
 
-> ⚠️ **Antes de generar cualquier pieza, consulta la fuente de verdad [`fap`](fap.md)** — contexto, candados de voz, objeciones a anticipar y léxico del cliente. Manda sobre esta skill.
+➡️ Contenido y fuente de verdad: [`.claude/skills/fap-narrativa/SKILL.md`](../.claude/skills/fap-narrativa/SKILL.md)
 
-## Marcos de referencia
-- **Agora** (estructura de gran idea).
-- **McKee** (estructura de historia).
-- **Edwards** (copy).
-- **Schwartz** (niveles de conciencia del mercado).
-- **PAS / AIDA** (frameworks de persuasión).
-
-## Salida
-- 3 Big Ideas candidatas.
-- Brief narrativo que alimenta landings, correos, WhatsApp y ads.
-
-## Estado
-- [x] Instalada.
-- [ ] Test de activación en chat nuevo pendiente.
+Este archivo se conserva solo como puntero para no romper enlaces históricos.
