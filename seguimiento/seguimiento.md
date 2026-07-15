@@ -22,12 +22,13 @@ Sí rescatamos el **craft** de algunas y lo metimos en skills propias:
 
 ---
 
-## Fase 2 · Construcción del cerebro (7 skills propias, instaladas)
+## Fase 2 · Construcción del cerebro (8 skills propias, instaladas)
 
 - `fap` — fuente de verdad + candados
 - `fap-lanzamientos` — director (2 rutas, piezas, cadencia)
 - `fap-narrativa` — 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA)
 - `fap-landings` — dos modelos (Largo Brunson / Corto Brasil)
+- `fap-correos` — secuencias de email (invitación, recordatorios, post-evento, reactivación)
 - `fap-whatsapp-api` — 1:1 + cumplimiento API
 - `fap-whatsapp-grupos` — comunidad
 - `fap-video-ads-meta` — Jorge a cámara, optimizado Meta + segmentación
@@ -48,8 +49,9 @@ Kit completo de prueba (**workshop gratuito de Contratación**): narrativa + 2 l
       a `fap-narrativa` / `fap-landings` / `fap-video-ads-meta` / `fap-whatsapp-api` /
       `fap-whatsapp-grupos`. A1/B1 ya no dicen `agora` / `million-dollar-ads`.
 - [ ] **Test de activación** de cada skill en chat nuevo (que disparen sin nombrarlas).
-- [ ] **Decidir consolidación de secuencias de momento** (pre-call, recordatorios,
-      reactivación) en skill propia — o dejarlas dentro de las de canal.
+- [x] **Consolidación de secuencias en skill propia.** Cerrado: se creó `fap-correos`
+      (invitación, recordatorios, post-evento, reactivación de no-shows, nurture) y se cableó
+      como paso A4 en `fap-lanzamientos`.
 - [ ] **Confirmar duración real de la llamada de diagnóstico** (hoy placeholder).
 
 ---

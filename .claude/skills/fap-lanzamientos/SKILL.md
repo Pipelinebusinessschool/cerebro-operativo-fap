@@ -5,8 +5,8 @@ description: >-
   que se producen en cada una y la cadencia (secuencia y timing). Úsala cuando
   pidan planificar, orquestar o secuenciar un lanzamiento/campaña de FAP, o
   decidir qué piezas producir y en qué orden. Invoca las skills de ejecución
-  (fap-narrativa, fap-landings, fap-whatsapp-api, fap-whatsapp-grupos,
-  fap-video-ads-meta). Consulta antes la fuente de verdad `fap`.
+  (fap-narrativa, fap-landings, fap-correos, fap-whatsapp-api,
+  fap-whatsapp-grupos, fap-video-ads-meta). Consulta antes la fuente de verdad `fap`.
 ---
 
 # Skill · `fap-lanzamientos`
@@ -19,6 +19,7 @@ description: >-
 ## Skills de ejecución que invoca
 - `fap-narrativa` — 3 Big Ideas + brief.
 - `fap-landings` — landing (modelo Largo Brunson / Corto Brasil).
+- `fap-correos` — secuencias de email (invitación, recordatorios, post-evento, reactivación).
 - `fap-whatsapp-api` — 1:1 + cumplimiento API.
 - `fap-whatsapp-grupos` — comunidad.
 - `fap-video-ads-meta` — video ads, Jorge a cámara, Meta.
@@ -34,11 +35,12 @@ evento a la **llamada de diagnóstico**.
 | **A1** | Narrativa + Big Idea del evento | `fap-narrativa` |
 | **A2** | Landing de registro | `fap-landings` |
 | **A3** | Video ads de tráfico al registro | `fap-video-ads-meta` |
-| **A4** | Recordatorios y dinámica del evento (comunidad) | `fap-whatsapp-grupos` |
-| **A5** | Seguimiento 1:1 y paso a diagnóstico | `fap-whatsapp-api` |
+| **A4** | Secuencia de correos (invitación, recordatorios, post-evento → diagnóstico) | `fap-correos` |
+| **A5** | Recordatorios y dinámica del evento (comunidad) | `fap-whatsapp-grupos` |
+| **A6** | Seguimiento 1:1 y paso a diagnóstico | `fap-whatsapp-api` |
 
-**Cadencia:** narrativa → landing + ads (tráfico) → registros → recordatorios (grupos) →
-evento → seguimiento 1:1 → diagnóstico.
+**Cadencia:** narrativa → landing + ads (tráfico) → registros → correos + recordatorios
+(grupos) → evento → seguimiento 1:1 → diagnóstico.
 
 ## Ruta B · Directo a diagnóstico (paid)
 Del anuncio a la **llamada de diagnóstico**, sin evento intermedio.
@@ -49,12 +51,10 @@ Del anuncio a la **llamada de diagnóstico**, sin evento intermedio.
 | **B2** | Landing de captación (CTA a diagnóstico) | `fap-landings` |
 | **B3** | Seguimiento 1:1 | `fap-whatsapp-api` |
 
-Ángulo base opcional con `fap-narrativa` cuando haga falta reforzar el mensaje del ad.
+Ángulo base opcional con `fap-narrativa`; correos de nurture/reactivación con `fap-correos`
+cuando el lead no agenda.
 
-**Cadencia:** ángulo → ads → landing → lead → seguimiento 1:1 → diagnóstico.
-
-> Los correos (secuencia pre/durante/post del evento) todavía no tienen skill propia. Se
-> resuelve en el pendiente abierto "consolidación de secuencias" del seguimiento.
+**Cadencia:** ángulo → ads → landing → lead → seguimiento 1:1 (+ nurture por correo) → diagnóstico.
 
 ## Estado
 - [x] Instalada.
