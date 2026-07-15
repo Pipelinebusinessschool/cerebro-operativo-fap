@@ -1,13 +1,7 @@
-# Skill · `fap-whatsapp-grupos`
+# Skill · `fap-whatsapp-grupos` — MOVIDA
 
-**Rol:** mensajes de **comunidad** por WhatsApp (grupos), no 1:1.
+Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-whatsapp-grupos`).
 
-> ⚠️ **Antes de generar cualquier pieza, consulta la fuente de verdad [`fap`](fap.md)** — contexto, candados de voz, objeciones a anticipar y léxico del cliente. Manda sobre esta skill.
+➡️ Contenido y fuente de verdad: [`.claude/skills/fap-whatsapp-grupos/SKILL.md`](../.claude/skills/fap-whatsapp-grupos/SKILL.md)
 
-## Enfoque
-- Dinámica de comunidad / grupo.
-- Tono y cadencia distintos al 1:1 de `fap-whatsapp-api`.
-
-## Estado
-- [x] Instalada.
-- [ ] Test de activación en chat nuevo pendiente.
+Este archivo se conserva solo como puntero para no romper enlaces históricos.

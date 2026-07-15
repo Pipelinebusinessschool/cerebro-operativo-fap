@@ -10,9 +10,13 @@ ya producidas y validadas.
 > **Principio de fondo:** construir, no comprar. Cuando el hueco es específico de FAP,
 > se construye una skill propia en vez de instalar una genérica del banco.
 
-> 🧭 **Fuente de verdad para TODA pieza:** la skill [`fap`](skills/fap.md). Lleva dentro los
-> candados, la voz del cliente, las objeciones a anticipar y el candado de voz. Toda skill la
-> consulta antes de generar contenido y manda sobre cualquier otra.
+> 🧭 **Fuente de verdad para TODA pieza:** la skill [`fap`](.claude/skills/fap/SKILL.md). Lleva
+> dentro los candados, la voz del cliente, las objeciones a anticipar y el candado de voz. Toda
+> skill la consulta antes de generar contenido y manda sobre cualquier otra.
+
+> ⚙️ **Instaladas como skills del harness:** las 7 viven en `.claude/skills/<nombre>/SKILL.md` y
+> se invocan con `/` (p. ej. `/fap`, `/fap-landings`). Claude las descubre por su frontmatter
+> (`name` + `description`). Los archivos en `skills/` de la raíz son punteros históricos.
 
 ---
 
@@ -21,16 +25,17 @@ ya producidas y validadas.
 ```
 cerebro-operativo-fap/
 ├── README.md                   ← este índice
+├── .claude/skills/            ← las 7 skills INSTALADAS (invocables con /)
+│   ├── fap/SKILL.md           ← FUENTE DE VERDAD: candados + voz + objeciones (toda skill la lee)
+│   ├── fap-lanzamientos/SKILL.md
+│   ├── fap-narrativa/SKILL.md
+│   ├── fap-landings/SKILL.md
+│   ├── fap-whatsapp-api/SKILL.md
+│   ├── fap-whatsapp-grupos/SKILL.md
+│   └── fap-video-ads-meta/SKILL.md
+├── skills/                    ← punteros históricos a las skills instaladas
 ├── seguimiento/
 │   └── seguimiento.md         ← fases 1–3, método probado y pendientes abiertos
-├── skills/                    ← las 7 skills del cerebro
-│   ├── fap.md                 ← FUENTE DE VERDAD: candados + voz + objeciones (toda skill la lee)
-│   ├── fap-lanzamientos.md
-│   ├── fap-narrativa.md
-│   ├── fap-landings.md
-│   ├── fap-whatsapp-api.md
-│   ├── fap-whatsapp-grupos.md
-│   └── fap-video-ads-meta.md
 ├── voz/                       ← lenguaje real del cliente (respaldo de la fuente de verdad)
 │   ├── README.md
 │   ├── voz-cliente.md         ← cómo habla el cliente (15 llamadas reales, anonimizado)
@@ -46,15 +51,15 @@ cerebro-operativo-fap/
 
 ## Las 7 skills del cerebro
 
-| Skill | Rol |
-|---|---|
-| [`fap`](skills/fap.md) | **Fuente de verdad** — candados + voz + objeciones |
-| [`fap-lanzamientos`](skills/fap-lanzamientos.md) | Director (2 rutas, piezas, cadencia) |
-| [`fap-narrativa`](skills/fap-narrativa.md) | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
-| [`fap-landings`](skills/fap-landings.md) | Dos modelos (Largo Brunson / Corto Brasil) |
-| [`fap-whatsapp-api`](skills/fap-whatsapp-api.md) | 1:1 + cumplimiento API |
-| [`fap-whatsapp-grupos`](skills/fap-whatsapp-grupos.md) | Comunidad |
-| [`fap-video-ads-meta`](skills/fap-video-ads-meta.md) | Jorge a cámara, optimizado Meta + segmentación |
+| Skill | Invocación | Rol |
+|---|---|---|
+| [`fap`](.claude/skills/fap/SKILL.md) | `/fap` | **Fuente de verdad** — candados + voz + objeciones |
+| [`fap-lanzamientos`](.claude/skills/fap-lanzamientos/SKILL.md) | `/fap-lanzamientos` | Director (2 rutas, piezas, cadencia) |
+| [`fap-narrativa`](.claude/skills/fap-narrativa/SKILL.md) | `/fap-narrativa` | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
+| [`fap-landings`](.claude/skills/fap-landings/SKILL.md) | `/fap-landings` | Dos modelos (Largo Brunson / Corto Brasil) |
+| [`fap-whatsapp-api`](.claude/skills/fap-whatsapp-api/SKILL.md) | `/fap-whatsapp-api` | 1:1 + cumplimiento API |
+| [`fap-whatsapp-grupos`](.claude/skills/fap-whatsapp-grupos/SKILL.md) | `/fap-whatsapp-grupos` | Comunidad |
+| [`fap-video-ads-meta`](.claude/skills/fap-video-ads-meta/SKILL.md) | `/fap-video-ads-meta` | Jorge a cámara, optimizado Meta + segmentación |
 
 ---
 

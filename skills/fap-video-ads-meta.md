@@ -1,22 +1,7 @@
-# Skill · `fap-video-ads-meta`
+# Skill · `fap-video-ads-meta` — MOVIDA
 
-**Rol:** guiones de **video ads con Jorge a cámara**, optimizados para Meta + segmentación.
+Esta skill ahora está **instalada como skill del harness** (invocable con `/fap-video-ads-meta`).
 
-> ⚠️ **Antes de generar cualquier pieza, consulta la fuente de verdad [`fap`](fap.md)** — contexto, candados de voz, objeciones a anticipar y léxico del cliente. Manda sobre esta skill.
+➡️ Contenido y fuente de verdad: [`.claude/skills/fap-video-ads-meta/SKILL.md`](../.claude/skills/fap-video-ads-meta/SKILL.md)
 
-## Craft
-- Formato **escena por escena** (rescatado de la skill de video del banco).
-- Estructura de ad pago (rescatada de la skill de YouTube del banco).
-- Jorge a cámara.
-
-## Optimización
-- Optimizado para el algoritmo/formato de **Meta**.
-- Incluye **segmentación** de audiencia.
-
-## Swipe (pendiente)
-Cuando se replique el piloto de swipe: crear `../swipe/swipe-ads.md` con ads ganadores
-(copy/guion + métrica + por qué ganó + qué NO copiar).
-
-## Estado
-- [x] Instalada.
-- [ ] Test de activación en chat nuevo pendiente.
+Este archivo se conserva solo como puntero para no romper enlaces históricos.

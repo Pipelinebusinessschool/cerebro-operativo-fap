@@ -43,8 +43,10 @@ Kit completo de prueba (**workshop gratuito de Contratación**): narrativa + 2 l
 
 ## Pendientes abiertos
 
-- [ ] **Actualizar `fap-lanzamientos`** para nombrar las 4 skills de ejecución nuevas
-      (A1/B1 aún dicen `agora` / `million-dollar-ads`).
+- [x] **Actualizar `fap-lanzamientos`** para nombrar las skills de ejecución nuevas.
+      Cerrado: se desplegaron las 2 rutas con sus pasos (A1–A5 / B1–B3), cada uno apuntando
+      a `fap-narrativa` / `fap-landings` / `fap-video-ads-meta` / `fap-whatsapp-api` /
+      `fap-whatsapp-grupos`. A1/B1 ya no dicen `agora` / `million-dollar-ads`.
 - [ ] **Test de activación** de cada skill en chat nuevo (que disparen sin nombrarlas).
 - [ ] **Decidir consolidación de secuencias de momento** (pre-call, recordatorios,
       reactivación) en skill propia — o dejarlas dentro de las de canal.
@@ -72,5 +74,5 @@ Con 3–5 landings reales alcanza para extraer patrones. Plantilla en
 [`../swipe/swipe-landings.md`](../swipe/swipe-landings.md).
 
 ### Siguiente paso
-> **¿Cierro el primer pendiente?** (actualizar `fap-lanzamientos` para nombrar las
-> 4 skills de ejecución nuevas).
+> Primer pendiente **cerrado** (rutas de `fap-lanzamientos` reescritas). Siguiente:
+> **test de activación** de las 7 skills en un chat nuevo — que disparen solas, sin nombrarlas.
