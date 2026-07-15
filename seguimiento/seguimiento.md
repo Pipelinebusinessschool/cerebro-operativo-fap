@@ -64,17 +64,24 @@ reales produce algo que se parece a lo que funcionó. Esa es la brecha del teste
 
 Decisiones tomadas:
 - **Formato:** primero se reúne el material crudo en un doc; después se decide cómo
-  conectarlo a las skills (incrustado vs. doc de referencia citado).
-- **Piloto:** arrancar por **landings**; validar el formato antes de replicar a mails y ads.
+  conectarlo a las skills (incrustado vs. doc de referencia citado). Elegido: **doc citado**
+  (la skill carga el archivo del canal).
+- **Piloto:** arrancó por **landings**; validado → replicado a **correos**.
 
 Cada ficha del swipe debe traer, además del copy:
 1. **Métrica** que logró (CTR, conversión, registros).
 2. **Por qué ganó** (el hook, la oferta, el ángulo) — lo más importante.
 3. **Qué NO copiar** (red de seguridad contra romper un candado de FAP, p. ej. precio visible).
 
-Con 3–5 landings reales alcanza para extraer patrones. Plantilla en
-[`../swipe/swipe-landings.md`](../swipe/swipe-landings.md).
+Estado por canal:
+- **Landings** — [`../swipe/swipe-landings.md`](../swipe/swipe-landings.md) *(piloto)*.
+- **Correos** — [`../swipe/swipe-correos.md`](../swipe/swipe-correos.md) ✅, cableado a
+  `fap-correos`. 11 fichas (A1–A9 invitación + B1–B2 venta) de lanzamientos reales de PBS
+  (no-FAP; molde de craft con candado anti-cifras). **Falta:** métricas por correo (Jorge) y los
+  tipos confirmación / recordatorio-no-show / postventa.
+- **Ads** — `../swipe/swipe-ads.md` pendiente (para `fap-video-ads-meta`).
 
 ### Siguiente paso
-> Primer pendiente **cerrado** (rutas de `fap-lanzamientos` reescritas). Siguiente:
-> **test de activación** de las 7 skills en un chat nuevo — que disparen solas, sin nombrarlas.
+> Cerrados: rutas de `fap-lanzamientos`, skill `fap-correos` y su swipe de correos. Siguiente:
+> **test de activación** de las 8 skills en un chat nuevo — que disparen solas, sin nombrarlas.
+> Y pedir a Jorge las **métricas por correo** para rankear el swipe.
