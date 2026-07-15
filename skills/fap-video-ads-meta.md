@@ -90,6 +90,14 @@ poder **modelar y cambiar solo los primeros segundos** sin tocar el cuerpo. Los 
 - **Intercambiables sobre el mismo cuerpo:** el guion sigue teniendo sentido con cualquiera de los 4.
 - Etiquetados por **familia + nivel de conciencia + segmento**, para que el equipo sepa qué testear.
 
+> **Segmentación del avatar (regla): al menos UNO de los hooks debe filtrar al avatar del ICP en los
+> primeros 3 segundos** — *rol* (dueño / director comercial de una empresa B2B) + *calificador* (ya
+> factura ≥$1M/año · con equipo de vendedores · sigue cerrando él). Patrón del swipe: *"Si eres un
+> gerente comercial B2B y…"* (A03/B1). **No es un must para todos los hooks** — la variedad de
+> ganchos importa y muchos ganan abriendo por provocación/dato/identidad sin nombrar al rol — **pero
+> siempre debe existir uno que segmente**, para no pagar por atención no calificada. Etiquétalo
+> `[SEGMENTA]`.
+
 **Familias de hook** (genera 12–15 para tener de dónde cortar): resultado · problema · curiosidad ·
 especificidad · prueba · autoridad · contrarian · identidad/reencuadre · analogía · pregunta ·
 declaración (primera persona, de la concepción). El **mecanismo #1** (identidad + reencuadre) suele
@@ -172,6 +180,7 @@ COSTO). Los `[FALTA: …]` visibles donde falte un dato.
 
 ## Checklist de presión (pre-entrega)
 - [ ] **3 hooks alternativos** por ad, de familias distintas, todos intercambiables sobre el cuerpo.
+- [ ] **Al menos un hook `[SEGMENTA]`** al avatar (rol + calificador del ICP) en los primeros 3 seg.
 - [ ] **Formato declarado** en la etiqueta; si es tanda, ≥3 formatos y ≥3 elementos de concepción,
       con **al menos uno explorado/adaptado/nuevo** (no solo los 2–3 formatos cómodos).
 - [ ] Hook de identidad/dolor en la 1ª frase (no el producto). · [ ] Un solo CTA con filtro.
