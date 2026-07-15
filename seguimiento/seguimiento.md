@@ -79,7 +79,12 @@ Estado por canal:
   `fap-correos`. 11 fichas (A1–A9 invitación + B1–B2 venta) de lanzamientos reales de PBS
   (no-FAP; molde de craft con candado anti-cifras). **Falta:** métricas por correo (Jorge) y los
   tipos confirmación / recordatorio-no-show / postventa.
-- **Ads** — `../swipe/swipe-ads.md` pendiente (para `fap-video-ads-meta`).
+- **Ads** — [`../swipe/swipe-ads.md`](../swipe/swipe-ads.md) ✅, cableado a `fap-video-ads-meta`.
+  6 ads con **métricas reales de Meta** (A01–A06); **A05 es la VSL de FAP** (el mejor ad).
+  Hallazgo: el *callout de identidad* es el mecanismo #1. Fuente: PDF "Casos de éxito Copy Funnel PBS".
+- **Material del PDF aún sin cargar:** correos de **recordatorio** y **postventa** (extienden
+  `swipe-correos`) y **páginas** (opt-in, tripwire $11, diagnóstico $197 = molde del diagnóstico
+  de FAP, downsell $47) → posible `swipe-paginas-venta.md`.
 
 ### Siguiente paso
 > Cerrados: rutas de `fap-lanzamientos`, skill `fap-correos` y su swipe de correos. Siguiente:
