@@ -61,8 +61,8 @@ peguen una por una. La primera línea gancha; el CTA/enlace va al final.
 ## Candados FAP (de `contexto/`)
 
 - **Sin precio de FAP en captación.** *(Excepción: una pieza transaccional —p. ej. confirmación de
-  compra del workshop de $47— sí puede llevar precio; no es captación de FAP. Ver
-  [`../piezas/whatsapp-confirmacion-compra.md`](../piezas/whatsapp-confirmacion-compra.md).)*
+  compra del workshop de $47— sí puede llevar precio; no es captación de FAP. Ver, **solo como
+  ejemplo (no fuente)**, [`../piezas/whatsapp-confirmacion-compra.md`](../piezas/whatsapp-confirmacion-compra.md).)*
 - **CTA único** por mensaje (registro o diagnóstico).
 - **Cifras solo de `contexto/`** · **voz de Jorge** · **problema sistémico, nunca personal**.
 

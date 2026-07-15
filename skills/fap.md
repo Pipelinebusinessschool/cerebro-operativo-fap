@@ -28,7 +28,7 @@ el dato, se pregunta — no se inventa). Índice y decisiones fijadas en
 
 > **Excepción documentada:** los candados de FAP aplican a **captación**. Una pieza
 > transaccional (p. ej. confirmación de una compra ya hecha del entrenamiento de $47)
-> **sí** puede llevar precio — no es captación de FAP. Ver
+> **sí** puede llevar precio — no es captación de FAP. Ver, **solo como ejemplo (no fuente)**,
 > [`../piezas/whatsapp-confirmacion-compra.md`](../piezas/whatsapp-confirmacion-compra.md).
 
 ## Estado
