@@ -50,6 +50,23 @@ post-evento, reactivación y nurture. Es la hermana por email de `fap-whatsapp-a
 - **Reactivación de no-shows** — quien se registró y no asistió.
 - **Nurture** — leads que no agendan aún; mantener el hilo sin quemar.
 
+## Swipe (ejemplos ganadores reales)
+**Carga [`swipe/swipe-correos.md`](../../../swipe/swipe-correos.md) antes de redactar.** Es el
+banco de correos que de verdad se enviaron en lanzamientos de PBS (PGE, Pipeline Predecible,
+Supervisión Comercial, SPG). Aprende de ahí los **ángulos, la estructura y los recursos** que
+funcionan en la voz real de Jorge — no frases sueltas.
+
+> 🔒 **Candado del swipe (obligatorio):** ese material es de **otros programas, no de FAP**. Sirve
+> de **molde de craft**, nunca de contenido. En concreto:
+> - **No transplantar cifras ni promesas** (`$1M en 90 días`, `x10`, `5X`, `100+ oport./mes`…).
+>   En FAP solo va lo que esté en la fuente de verdad `fap`. Es la regla anti-invención.
+> - Los correos de **venta** del swipe llevan a **checkout con precio/escasez**; en captación de
+>   FAP el CTA es a **diagnóstico**. Se copia la *mecánica* (urgencia, contraste ❌/✅), no el destino.
+> - **No inventar escasez** (cupos, cuenta regresiva) si no es real.
+>
+> Moldes reutilizables ya identificados: checklist de falsas soluciones (A9), escena en 2ª persona
+> + PD (A6), dos caminos ❌/✅ (B2), reencuadre "no necesitas X, necesitas Y" (A2).
+
 ## Relación con las demás skills
 - El **ángulo y las Big Ideas** vienen del brief de `fap-narrativa`.
 - La **cadencia y en qué paso entra cada correo** la fija `fap-lanzamientos` (Ruta A).
@@ -57,5 +74,7 @@ post-evento, reactivación y nurture. Es la hermana por email de `fap-whatsapp-a
 
 ## Estado
 - [x] Instalada.
-- [ ] Conectar swipe de correos ganadores (`swipe/swipe-emails.md`, hoy pendiente).
+- [x] Swipe de correos ganadores conectado (`swipe/swipe-correos.md`, 11 fichas: A1–A9 invitación, B1–B2 venta).
+- [ ] Métricas por correo pendientes (Jorge) — hoy "por qué ganó" es hipótesis de craft, no dato.
+- [ ] Faltan tipos: confirmación de registro, recordatorios/no-show, postventa.
 - [ ] Test de activación en chat nuevo pendiente.

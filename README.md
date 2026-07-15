@@ -71,6 +71,6 @@ cerebro-operativo-fap/
 - **Fase 2 — Construcción del cerebro:** 8 skills propias construidas e instaladas.
 - **Fase 3 — Validación:** kit completo de prueba (workshop de Contratación) coherente y con candados intactos → el cerebro generaliza.
 - **Voz del cliente:** 15 llamadas reales destiladas en `voz/` e integradas en la fuente de verdad `fap`.
-- **En curso — Swipe de ganadoras:** piloto en `landings`.
+- **En curso — Swipe de ganadoras:** `landings` (piloto) + `correos` ✅ (cableado a `fap-correos`); `ads` pendiente.
 
 Detalle y pendientes abiertos en [`seguimiento/seguimiento.md`](seguimiento/seguimiento.md).
