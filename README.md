@@ -25,11 +25,12 @@ ya producidas y validadas.
 ```
 cerebro-operativo-fap/
 ├── README.md                   ← este índice
-├── .claude/skills/            ← las 7 skills INSTALADAS (invocables con /)
+├── .claude/skills/            ← las 8 skills INSTALADAS (invocables con /)
 │   ├── fap/SKILL.md           ← FUENTE DE VERDAD: candados + voz + objeciones (toda skill la lee)
 │   ├── fap-lanzamientos/SKILL.md
 │   ├── fap-narrativa/SKILL.md
 │   ├── fap-landings/SKILL.md
+│   ├── fap-correos/SKILL.md
 │   ├── fap-whatsapp-api/SKILL.md
 │   ├── fap-whatsapp-grupos/SKILL.md
 │   └── fap-video-ads-meta/SKILL.md
@@ -49,7 +50,7 @@ cerebro-operativo-fap/
 
 ---
 
-## Las 7 skills del cerebro
+## Las 8 skills del cerebro
 
 | Skill | Invocación | Rol |
 |---|---|---|
@@ -57,6 +58,7 @@ cerebro-operativo-fap/
 | [`fap-lanzamientos`](.claude/skills/fap-lanzamientos/SKILL.md) | `/fap-lanzamientos` | Director (2 rutas, piezas, cadencia) |
 | [`fap-narrativa`](.claude/skills/fap-narrativa/SKILL.md) | `/fap-narrativa` | 3 Big Ideas + brief (Agora, McKee, Edwards, Schwartz, PAS/AIDA) |
 | [`fap-landings`](.claude/skills/fap-landings/SKILL.md) | `/fap-landings` | Dos modelos (Largo Brunson / Corto Brasil) |
+| [`fap-correos`](.claude/skills/fap-correos/SKILL.md) | `/fap-correos` | Secuencias de email (invitación, recordatorios, post-evento, reactivación) |
 | [`fap-whatsapp-api`](.claude/skills/fap-whatsapp-api/SKILL.md) | `/fap-whatsapp-api` | 1:1 + cumplimiento API |
 | [`fap-whatsapp-grupos`](.claude/skills/fap-whatsapp-grupos/SKILL.md) | `/fap-whatsapp-grupos` | Comunidad |
 | [`fap-video-ads-meta`](.claude/skills/fap-video-ads-meta/SKILL.md) | `/fap-video-ads-meta` | Jorge a cámara, optimizado Meta + segmentación |
@@ -66,7 +68,7 @@ cerebro-operativo-fap/
 ## Estado del proyecto
 
 - **Fase 1 — Revisión del banco de skills genéricas:** cerrada. Ninguna instalada; se rescató craft.
-- **Fase 2 — Construcción del cerebro:** 7 skills propias construidas e instaladas.
+- **Fase 2 — Construcción del cerebro:** 8 skills propias construidas e instaladas.
 - **Fase 3 — Validación:** kit completo de prueba (workshop de Contratación) coherente y con candados intactos → el cerebro generaliza.
 - **Voz del cliente:** 15 llamadas reales destiladas en `voz/` e integradas en la fuente de verdad `fap`.
 - **En curso — Swipe de ganadoras:** piloto en `landings`.
