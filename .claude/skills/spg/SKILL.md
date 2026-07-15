@@ -47,10 +47,15 @@ cosa, la pieza debe poder trazarse a:
 ## Contexto fijado
 - **Producto:** SPG — AI Strategic Pipeline Generation. Programa de **8 semanas**; certificado **AI
   Pipeline Architect**. *(Detalle en `oferta-spg.md`.)*
-- **Webinar de captación (gratuito):** **«Prospección a Gran Escala con IA»** — nombre **canónico**. El
-  webinar es el vehículo de captación; **SPG es la oferta que se presenta dentro** (modelo webinar
+- **Webinar de captación (gratuito):** **«Prospección a Gran Escala con IA»** — nombre **canónico**.
+  **Formato: UNA masterclass / entrenamiento en vivo de 90 minutos (sesión única, sin costo).** Esto
+  **reemplaza** el formato multi-noche (3–4 noches) de lanzamientos anteriores; al adaptar copys viejos,
+  todo "dame 3/4 noches", "las tres noches", "4 clases" → **"90 minutos" / "una sola sesión en vivo"**.
+  El webinar es el vehículo de captación; **SPG es la oferta que se presenta dentro** (modelo webinar
   gratuito → oferta, igual que FAP). *Nota: el artefacto original a veces lo llama «Construcción a Gran
-  Escala con IA»; usar el canónico salvo que Jorge unifique.*
+  Escala con IA»; usar siempre el canónico.*
+- **Autoridad (bloque canónico):** las cifras y credenciales de Jorge salen de
+  [`autoridad.md`](autoridad.md). No se meten todas en cada pieza; se eligen según formato.
 - **Dos avatares:** el Directivo Comercial B2B (teme por su puesto) y el CEO Fundador (teme por su
   negocio/libertad). El copy no les habla igual.
 - **Voz:** Jorge Conde.
