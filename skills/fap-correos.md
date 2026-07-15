@@ -111,6 +111,28 @@ externaliza la urgencia, PD que revive la escena o el costo de inacción.
 - **Cobertura de conciencia:** la secuencia no puede vivir entera en "consciente del problema".
 - **Cobertura de concepción:** ≥5 elementos distintos por cada 7 correos.
 
+### Gestos de apertura GASTADOS (no abrir con ellos por defecto)
+
+Ganchos sobreusados que ya suenan a plantilla. **Evítalos como apertura** (y nunca dos veces en una secuencia):
+- ❌ *"Te hago una pregunta incómoda…"* / *"Déjame darte el dato / la cifra más incómoda…"* ← el más quemado.
+- ❌ *"¿Alguna vez te ha pasado que…?"*
+- ❌ *"Voy a ser directo / honesto contigo."*
+- ❌ *"Sé que hoy más que nunca necesitas resultados…"*
+- ❌ Saludo genérico repetido como gesto (*"Estratega comercial:"* siete veces).
+
+**Banco de aperturas frescas (rota entre ellas):**
+- **Escena / POV:** *"Es lunes, 9 a.m. Abres el CRM y está igual que el viernes…"*
+- **Dato desnudo** (sin adjetivarlo de "incómodo" — deja que el número pegue solo): *"1 de cada 4. Ese es el número que…"*
+- **Proclamación / tesis:** *"Una cultura de ventas no se levanta con discursos."*
+- **Confesión en 1ª persona:** *"Durante años yo también fui el policía de mi equipo."*
+- **Analogía suya:** *"Tu área de ventas es una fábrica de ingresos. Hoy le falta la materia prima."*
+- **Objeción de frente:** *"Me vas a decir: 'ya cambié de equipo mil veces'. Justo por eso te escribo."*
+- **Micro-regla:** *"Un equipo que espera no es un equipo de ventas."*
+- **Contexto / mercado:** abrir por el mundo, no por el "yo" ni por una pregunta retórica.
+
+> El **gesto de apertura** es una columna de la matriz de diversidad — planifícalo, no lo dejes caer
+> en el molde cómodo. Si dudas, elige el que menos se parezca al correo anterior.
+
 ### Matriz de diversidad — llénala ANTES de escribir la secuencia
 
 Antes de redactar, planifica la variedad en una tabla (y entrégala con la secuencia):
