@@ -72,12 +72,16 @@ Este lanzamiento es **Evergreen**: todo debe quedar **atemporal y reutilizable**
 `[FALTA: …]` (dato que no está en la fuente y hay que preguntar) · `[POR CONFIRMAR]` (dato de la fuente
 que quedó cortado/ambiguo en el PDF y Jorge debe cerrar).
 
-## Pendientes marcados en la fuente de verdad (para cerrar con Jorge)
-- `[POR CONFIRMAR]` Nombre del webinar: canónico «Prospección a Gran Escala con IA» vs. «Construcción…»
-  en el texto interno del artefacto.
-- `[POR CONFIRMAR]` La 4.ª columna «Cómo lo hace PIPELINE» (Sección 7) llegó cortada en el PDF.
-- `[POR CONFIRMAR]` Agrupamiento exacto de las 3 ideas de nombre de evento (venían en barra lateral).
-- `[FALTA]` Soap Opera correos 4 y 5; Emails Seinfeld (Sección 8). No incluidos en el PDF.
+## Estado de la fuente de verdad
+Cerrados con lo que entregó Jorge:
+- [x] **Nombre del webinar** unificado → «Prospección a Gran Escala con IA».
+- [x] **4.ª columna «Cómo lo hace PIPELINE»** (Sección 7) completada desde la imagen de Jorge.
+- [x] **Soap Opera correos 4 y 5** y **Emails Seinfeld (8.3)** añadidos.
+- [x] **Oferta ampliada:** order bump ($67), OTOs ($197/$97/$47), bonos de acción rápida y de último día.
+
+Pendiente menor (no bloquea):
+- [ ] `[POR CONFIRMAR]` Agrupamiento exacto de las **3 ideas de nombre de evento** (venían en barra lateral
+  del PDF, interleaveadas con los 6 ángulos). Transcritas tal cual; confirmar orden si importa.
 
 ## Alcance actual
 - [x] Fuente de verdad instalada (esta skill + `concepcion-maestra.md` + `oferta-spg.md`).

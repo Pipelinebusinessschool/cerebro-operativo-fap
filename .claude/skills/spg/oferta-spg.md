@@ -33,10 +33,40 @@
 - **Entrenamiento comercial en directo** — Martes [HORA] *(referencia interna: 6 PM)*
 - **Sesión de Implementación** — Miércoles [HORA] *(referencia interna: 6 PM)*
 
-## Bonos
+## Bonos (incluidos en la CORE)
 - Acceso por **6 meses a EMILY AI**
 - Acceso al **CRM GHL por 6 meses sin costo** — luego $97 USD/mes
 - **Planeación Estratégica de cuentas**
+
+---
+
+## Escalera de valor del checkout *(order bump + OTOs + bonos de acción)*
+> Estos elementos son de la **página de venta / checkout** (post-webinar), no de captación. Precios =
+> referencia interna; en pieza pública → `XXX` salvo que Jorge autorice mostrarlos.
+
+### 🟦 Order Bump — $67 USD
+**Workshop: Cómo crear Modelos de Comisiones que motiven a tu equipo de ventas.** Workshop pregrabado.
+Construye un Modelo de Comisiones que motive al equipo y cree una **cultura de ventas de muy alto
+rendimiento**.
+- *Copy de la casilla:* "☐ ¡SÍ! Quiero agregar el Workshop: Modelos de Comisiones de Alto Rendimiento por
+  solo $67 USD." Ahora que la IA va a escalar tu PIPELINE, tus vendedores van a cerrar más que nunca; con
+  este framework construyes un modelo de incentivos que los mantiene motivados **sin perder rentabilidad**.
+
+### 🟩 OTOs (One-Time Offers / upsells)
+- **OTO 1 · $197** — **Sesión de Diagnóstico comercial 1 a 1.**
+- **OTO 2 · $97** — **Workshop: Cómo convertir PIPELINE en FORECAST con altas probabilidades de cierre.**
+- **OTO 3 · $47** — **Curso online: Planeación estratégica de cuentas** — cómo expandir la facturación de
+  cuentas actuales y aumentar tu facturación y CLV.
+
+### 🟨 Bonos de acción rápida (escasez real)
+- **Compradores en la 1.ª hora:** Certificación en Negociación en Harvard Business Education.
+- **Compradores del DÍA 1:** *Implementation Day* en oficinas de PIPELINE Business School — Bogotá,
+  Colombia.
+
+### 🟧 Bono de último día
+- **Cómo vender a un Directivo C-Level.**
+
+> *Nomenclatura tal como la entregó Jorge: "OTTO 1/2/3" = OTOs. Se mantiene su texto.*
 
 ---
 

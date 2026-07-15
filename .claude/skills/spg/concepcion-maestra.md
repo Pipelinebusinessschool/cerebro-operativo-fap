@@ -13,10 +13,9 @@
 - Lo demás reproduce el documento de Jorge; las secciones marcadas *"Del brief · sin cambios"* son suyas
   palabra por palabra.
 
-**⚠️ Conflicto de nombre (fijado):** el nombre canónico del webinar de captación es
-**«Prospección a Gran Escala con IA»** (confirmado por Jorge y es el título del artefacto). En algunos
-puntos internos el PDF lo llama *«Construcción a Gran Escala con IA»* — se usa el canónico salvo
-indicación en contrario. `[POR CONFIRMAR con Jorge si quiere unificar el texto interno]`
+**✅ Nombre del webinar (fijado por Jorge):** el nombre canónico y **único** del webinar de captación es
+**«Prospección a Gran Escala con IA»**. Donde el artefacto original decía *«Construcción a Gran Escala
+con IA»*, **se unifica a «Prospección»**. Usar siempre el canónico.
 
 ---
 
@@ -319,10 +318,9 @@ la procrastinación con evidencia externa.
 Cada intento fallido es **evidencia contra el villano, no culpa del avatar**. El patrón lo delata:
 **compró volumen, no estrategia.**
 
-> ⚠️ `[POR CONFIRMAR]` En el PDF, la 4.ª columna del cuadro —**«Cómo lo hace PIPELINE»**— quedó **cortada**
-> (layout a columnas estrechas). Abajo se transcriben completas las columnas *"Lo que intentó"* y *"Por
-> qué no funcionó"*; la respuesta *"Cómo lo hace PIPELINE"* debe completarse desde el artefacto original.
-> Los fragmentos parciales rescatables están al pie de la sección.
+> La respuesta de PIPELINE a cada intento fallido está en el bloque **«Cómo lo hace PIPELINE»** al pie de
+> la sección (transcrito de la imagen que entregó Jorge). Cada respuesta es un **ángulo de venta**: el
+> contraste "esto ya lo intentaste y falló → así lo resuelve el sistema".
 
 | # | Lo que intentó | Por qué no funcionó |
 |---|---|---|
@@ -337,32 +335,49 @@ Cada intento fallido es **evidencia contra el villano, no culpa del avatar**. El
 | 9 | **Consultor externo, diagnóstico de 3 meses.** Entregó un documento de 80 páginas: matrices, cuadrantes, recomendaciones. | Un diagnóstico **sin instalación** es un PDF bonito que nadie ejecuta. El consultor se fue; el equipo nunca lo leyó; el CRM sigue igual; las reuniones de pipeline siguen igual. Tiene un diagnóstico de $20,000 que confirma lo que ya sabía, pero sigue sin saber **cómo arreglarlo**. |
 | 10 | **Presionar al equipo con más actividad, seguimiento y reportes.** "Cada vendedor: 50 llamadas/día y reporta cada una." | Más llamadas, más reportes, más registro en CRM. Pero **la velocidad de generación de pipeline no cambió**: mismos leads, mismas reuniones, mismo forecast. Más presión sin mejor sistema = más estrés, rotación y frustración. El directivo terminaba de niñero de vendedores adultos que prospectaban sin estrategia. |
 
-> **Fragmentos rescatados de la 4.ª columna «Cómo lo hace PIPELINE»** (cortados en el PDF, `[POR CONFIRMAR]`
-> — transcritos verbatim, sin completar):
-> 1. "Primero se def… próspero con IA… criterios reales… a los agentes d…, valor, el idioma…, problemas
->    de n… empresa. El sist… cualquiera. El s… donde hay alta… exista un probl… resolver."
-> 2. "No escalamos … Escalamos la ca[pacidad de] prospección. U… omnipresencia … IA puede conta… prospectos
->    cali[ficados]… nómina, sin du… depender de q… de llamar un m… construyen los … prospección. Lu…
->    capacidad del s…"
-> 3. "LinkedIn es un … sistema, no el s[istema]. Enseñamos a u… dentro de la es[trategia]… de entrada por…
->    diferentes, mul[ticanal]… de cuentas pró[speras]… automatización … agentes de IA q… antes de hacer…"
-> 4. "El CRM se conf[igura]… proceso de com[pra]… tareas del vend[edor]… dónde está el c[liente]… lo que
->    el vende[dor]… visibilidad real, … basados en dat[os]… calificación rigu[rosa]… Pipeline real so[lo con]…
->    compromiso ta[ngible]… demás es una l[ista de deseos]."
-> 5. "No es un curso … 13 semanas co[n]… semanal, métri[cas por]… módulo, mento[ría]… de accountabil[idad]…
->    semana el estu[diante]… y ajusta. No sa[le motivado]… un sistema fun[cionando]."
-> 6. "No delegamos … tercero que no … consultiva. Con[struimos]… prospección co[mo]… operación, entr[enada]…
->    de valor, tu ICP … próspero. Los l[eads]… sistema llegan … ventas automa[tizada]… problema urge[nte]…
->    prospecto que … conciencia de q[ue]… resuelves y por[qué]… No es un lead d[escargado]… prospecto prep[arado]."
-> 7. "Alineamos mar[keting]… concreto: resol[ver]… del mercado a … presentación d[e valor]… No hablamos de…
->    misión ni de la … problema que … resolver. Eso at[rae]… decisión que ag… tienen un dolo[r]… bonito el conte[nido]."
-> 8. "Los referidos si[guen]… pero no son el … es un sistema d[e]… comercial que … todos los días s[in]…
->    alguien le caiga… acuerde de me[ncionarte]… se nutre duran[te]… por diferentes … líneas de nego[cio]."
-> 9. "PIPELINE no … un reporte. Tra[baja]… instalando las p[iezas]… escribe los play[books]… activa los
->    agen[tes]… primeras métri[cas]… un documento… funcionando d[esde el inicio]."
-> 10. "No pedimos m[ás actividad]… mejor sistema. … los fundamento[s]… se reduce y los… agente de IA co[ntacta]…
->     por semana. El … sienta solo con… El directivo dej[a]… empieza a dirig[ir]… deja de ser '¿c[uántas
->     llamadas]'… se convierte en… decisores que t[u sistema]… negocio generó."
+### Cómo lo hace PIPELINE *(la 4.ª columna — transcrita de la imagen entregada por Jorge)*
+Cada respuesta pega contra el intento fallido de la misma fila:
+
+1. **vs. comprar bases:** Primero se define el **territorio de ventas próspero con IA**: los criterios
+   reales de un buen cliente (industria, tamaño, señales de compra) y con eso se entrena a los agentes de
+   IA. Antes de contactar, el sistema conoce el idioma del cliente, sus problemas de negocio y por qué tu
+   empresa es relevante. El sistema **no le habla a cualquiera**: solo prospecta donde hay alta
+   probabilidad de que exista un problema que podemos resolver.
+2. **vs. más vendedores/SDRs:** No escalamos personas, escalamos la **capacidad del sistema**. Un motor de
+   omnipresencia con IA puede contactar miles de prospectos calificados sin sumar nómina, sin duplicar
+   costos y sin depender de que alguien tenga ganas de llamar un martes. Primero se construyen los
+   fundamentos de la prospección; luego se escala la capacidad del sistema.
+3. **vs. LinkedIn Sales Navigator:** LinkedIn es un **canal dentro del sistema, no el sistema**. Enseñamos
+   a usarlo dentro de la estrategia **3x3x30**: múltiples puntos de entrada por cuenta, mensajes
+   diferentes, multicanal, sobre cuentas prósperas, con automatización y agentes de IA que investigan
+   antes de hacer contacto.
+4. **vs. CRM:** El CRM se **configura según el proceso de compra del cliente, no según las tareas del
+   vendedor**. Refleja dónde está el cliente en su decisión, no lo que el vendedor hizo. Da visibilidad
+   real y forecast basados en datos, con calificación rigurosa. Pipeline real solo con **compromiso
+   tangible** del cliente; lo demás es una lista de deseos.
+5. **vs. curso de una semana:** No es un curso de una semana: son **13 semanas** con implementación
+   semanal, métricas por módulo, mentoría y un sistema de accountability donde cada semana el estudiante
+   implementa y ajusta. No sale motivado: sale con un **sistema funcionando**.
+6. **vs. agencia de marketing:** No delegamos a un tercero que no entiende tu venta consultiva.
+   Construimos tu prospección como una **operación**, entrenada en tu propuesta de valor, tu ICP y tu
+   territorio próspero. Los leads que genera el sistema llegan con **conciencia del problema** que
+   resuelves — no es un lead descargado, es un prospecto preparado.
+7. **vs. marketing interno:** Alineamos marketing a un objetivo concreto: **resolver el problema del
+   mercado** a través de la presentación de valor. No hablamos de la misión ni de la visión; hablamos del
+   problema que el cliente quiere resolver. Eso atrae al tomador de decisión que tiene un dolor, no al que
+   le pareció bonito el contenido.
+8. **vs. referidos/boca a boca:** Los referidos siguen llegando, pero **no son el motor**. El motor es un
+   sistema de generación comercial que prospecta todos los días, sin esperar a que alguien le caiga bien o
+   se acuerde de mencionarte. El pipeline se nutre durante todo el mes, por diferentes canales y líneas de
+   negocio.
+9. **vs. consultor/diagnóstico:** PIPELINE no entrega un reporte. Trabaja **instalando las piezas**:
+   escribe los playbooks, activa los agentes, salen las primeras métricas. No es un documento, es un
+   **sistema funcionando desde el inicio**.
+10. **vs. presionar al equipo:** No pedimos más actividad, sino un **mejor sistema**. Cuando están los
+    fundamentos, la actividad se reduce y los resultados suben: el agente de IA contacta cientos por
+    semana y el vendedor se sienta solo con decisores. El directivo deja de ser niñero y empieza a
+    dirigir; la pregunta deja de ser "¿cuántas llamadas hiciste?" y se convierte en reuniones con
+    decisores que el sistema generó.
 
 ---
 
@@ -453,17 +468,51 @@ ocultos · **5** Urgencia + CTA.
    - *Plantilla:* Asunto: [la revelación / "no era lo que yo creía"]. Cuerpo: cuenta el descubrimiento
      (el reframe: no era X, era Y) → presenta la nueva oportunidad sin tecnicismos → conéctala con su
      deseo → lazo ("y lo que vino después ni lo imaginaba…").
-   - *Ejemplo:* Asunto: "No era falta de vendedores. Era falta de sistema."
-4. **Beneficios ocultos** — `[FALTA]` no incluido en el PDF entregado. *(Función Brunson estándar: revela
-   los beneficios de 2.º y 3.er orden del vehículo — lo que gana más allá del resultado obvio. Completar
-   con el artefacto original o con Jorge — no inventar.)*
-5. **Urgencia + CTA** — `[FALTA]` no incluido en el PDF entregado. *(Función estándar: escasez/plazo real
-   + llamado a la acción hacia el webinar. Completar con Jorge.)*
+   - *Ejemplo:* Asunto: "No era falta de vendedores. Era falta de sistema." "El problema nunca fue el
+     volumen de gente. La prospección de fuerza bruta no escala; la agenda del vendedor tiene un límite.
+     La única forma de tener facturación predecible es la generación predecible de leads — y eso hoy lo
+     hace un sistema de IA que prospecta a gran escala con mensajes hiper-personalizados. Ese día dejé de
+     contratar y empecé a construir."
+4. **Beneficios ocultos** — revela beneficios de segundo orden que no se esperaban y rompe la objeción
+   interna ("¿yo podré?").
+   - *Plantilla:* Asunto: [beneficio inesperado / "lo que no te dije"]. Cuerpo: 2–3 beneficios secundarios
+     (lo que pasó además del resultado obvio) → maneja la duda interna → una mini-prueba si la hay → lazo
+     hacia la invitación.
+   - *Ejemplo:* Asunto: "El beneficio que no esperaba de automatizar la prospección". "Pensé que solo
+     ganaría más reuniones. Pero pasó algo más: dejé de ser el cuello de botella. El equipo se sentó con
+     decisores en cuentas prósperas, y yo recuperé mi tiempo para dirigir, no para empujar. Y no, no
+     necesité ser técnico: el sistema se instala y se delega en días."
+5. **Urgencia + CTA** — invita a la acción con una razón real para actuar ya. **Un solo CTA.**
+   - *Plantilla:* Asunto: [invitación + urgencia real]. Cuerpo: nombra la oportunidad concreta
+     (el evento/registro) → el beneficio → la razón de actuar ahora (fecha/cupo real, no se graba) → CTA
+     claro y único.
+   - *Ejemplo:* Asunto: "Te enseño a construir tu sistema (empieza el [FECHA])". "El [FECHA] doy una
+     masterclass de 90 minutos donde te muestro, paso a paso, cómo construir tu sistema de prospección con
+     IA. Los cupos son limitados y no se graba. Regístrate aquí 👉 [link]."
 
 ### 8.3 · Los Emails Seinfeld
-`[FALTA]` — mencionados en la Sección 8 pero **no incluidos** en el PDF entregado. *(Formato Brunson:
-correo diario que cuenta una historia cotidiana y aterriza en una venta/CTA. Completar con el artefacto
-original o con Jorge.)*
+Correos frecuentes (idealmente diarios) que **entretienen y venden a la vez**. Cada uno cuenta una
+micro-historia "sobre nada" y la conecta con la oferta, rompiendo una creencia sin que se sienta un
+pitch. Mantienen la lista caliente entre lanzamientos.
+
+**Qué es:** una estructura repetible de **4 partes**. No es una secuencia fija como la SOAP; es un molde
+que se usa una y otra vez, cambiando el ángulo. Los pasos: **1** Gancho · **2** Historia · **3** Puente
+(segue) · **4** Oferta / CTA.
+
+**La plantilla Seinfeld** — entretener para ganar la atención y, sin fricción, llevar a la oferta.
+- *Plantilla:* **1 · Gancho** (asunto + 1.ª línea): una observación o historia cotidiana que detiene el
+  scroll. **2 · Historia:** cuéntala completa, entretenida, humana. **3 · Puente:** conéctala con una
+  lección de prospección/negocio. **4 · Oferta:** enlaza con el evento/sistema y pide la acción — un solo CTA.
+- *Ejemplo:* Asunto: "Lo que mi mecánico me enseñó sobre prospección". *Historia:* "Llevé el carro por un
+  ruido. El mecánico no cambió medio motor: puso un sensor, leyó el dato y ajustó una pieza. Diez minutos,
+  listo." *Puente:* "Así es la prospección hoy: la mayoría mete más 'brazos' —más vendedores, más
+  llamadas— cuando el problema no es fuerza, es diagnóstico y sistema. Un sistema con IA encuentra la
+  cuenta correcta y toca la tecla correcta." *CTA:* "El [FECHA] te enseño a construir ese sistema.
+  Regístrate 👉 [link]."
+
+**Ángulos para variar los Seinfeld** (rota el gancho para no cansar la lista; cada ángulo rompe una
+creencia distinta): historia personal · error común (un mito que todos creen) · noticia/tendencia de IA ·
+caso de cliente · analogía (algo cotidiano ↔ prospección) · contrarian ("todos dicen X; la verdad es Y").
 
 ---
 
