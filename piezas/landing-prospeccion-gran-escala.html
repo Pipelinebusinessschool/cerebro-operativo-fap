@@ -133,6 +133,17 @@
   .lede{font-size:17px;color:var(--muted);max-width:56ch}
   .center .lede{margin-inline:auto}
 
+  /* ===== thesis / One Thing ===== */
+  .thesis{position:relative;background:linear-gradient(160deg,var(--indigo-2),var(--indigo) 48%,var(--indigo-3));color:#fff;text-align:center;overflow:hidden}
+  .thesis::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(620px 340px at 50% 0,#000,transparent 72%)}
+  .thesis::after{content:"";position:absolute;bottom:-40%;left:50%;transform:translateX(-50%);width:640px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(22,252,154,.16),transparent 62%)}
+  .thesis .inner{position:relative}
+  .thesis .kick{justify-content:center;color:var(--mint)} .thesis .kick::before{background:var(--mint)}
+  .tquote{font-family:var(--serif);font-weight:700;font-size:clamp(25px,3.9vw,42px);line-height:1.2;letter-spacing:-.016em;max-width:19ch;margin:0 auto;text-wrap:balance}
+  .tquote em{font-style:italic;color:var(--mint)}
+  .tsub{margin:24px auto 0;max-width:54ch;font-size:16.5px;color:#CFCEEA}
+  .tsub b{color:#fff;font-weight:700}
+
   /* ===== sesión en vivo ===== */
   .agenda{background:var(--soft)}
   .session{display:grid;grid-template-columns:.8fr 1.2fr;margin-top:34px;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 26px 60px rgba(23,21,91,.14);background:#fff}
@@ -238,7 +249,7 @@
   <div>
     <span class="eyebrow"><span class="live"></span> Entrenamiento en vivo · 1 sola fecha</span>
     <h1>Escala tu <span class="pl">PIPELINE</span> a <span class="em">un millón de dólares</span> — sin <span class="u">rogar por reuniones</span> ni prospectar como en 2010</h1>
-    <p class="sub">A través de un <b>Sistema de Prospección con Inteligencia Artificial</b> que llena tu pipeline de reuniones con decisores en piloto automático — mientras tu competencia sigue haciendo llamadas en frío.</p>
+    <p class="sub">A través de un <b>Sistema de Prospección con Inteligencia Artificial</b> que genera leads de forma predecible y agenda reuniones con decisores en piloto automático — la única vía a una <b>facturación predecible</b> en un mercado saturado.</p>
 
     <div class="meta">
       <span class="datepill">
@@ -278,6 +289,13 @@
     <div class="node n2"><span class="ic">🤖</span><span><b>Agente IA</b><small>prospección 24/7</small></span></div>
   </div>
 </div></div></header>
+
+<!-- THE ONE THING -->
+<section class="thesis"><div class="wrap"><div class="inner">
+  <p class="kick">La convicción que lo cambia todo</p>
+  <p class="tquote">En 2026, la facturación predecible no se consigue prospectando <em>más fuerte.</em> Se consigue generando leads de forma <em>predecible</em> — y en un mercado saturado, eso solo lo logra un sistema de prospección <em>AI-First.</em></p>
+  <p class="tsub">Cuando lo aceptas, el precio, la tecnología o la economía dejan de ser la excusa. <b>El único paso que queda es instalar el sistema.</b></p>
+</div></div></section>
 
 <!-- SESIÓN EN VIVO -->
 <section class="agenda"><div class="wrap">
