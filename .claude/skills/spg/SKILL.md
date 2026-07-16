@@ -24,6 +24,8 @@ La verdad canónica de este lanzamiento vive en esta misma carpeta:
    narrativas (Puente de la Epifanía, Soap Opera).
 2. **Datos duros →** [`oferta-spg.md`](oferta-spg.md) — nombre del programa, certificado, módulos, bonos,
    horarios y **precio** (referencia interna).
+3. **Ancla rápida →** [`verdades-esenciales.md`](verdades-esenciales.md) — el One Thing, la Big Idea/promesa
+   y las 10 verdades esenciales destiladas. Lee esto primero para no perder el centro.
 
 **Regla 0:** ninguna pieza escribe sin cargar ambos primero. **La narrativa sale solo de la concepción;
 el precio, los módulos y los bonos salen solo de la oferta.** Si falta el dato → **se pregunta, no se
