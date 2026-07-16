@@ -181,9 +181,8 @@ Estructura: *resultado deseado (>$1M de pipeline)* + *sin los dos dolores (rogar
 viejos)* + *mediante el vehículo nuevo (Sistema de Prospección con IA)*.
 
 ### 3 ideas de nombre para el evento
-*(rompe-patrón; para anuncios, páginas de captura y asuntos de correo. En el PDF venían en una barra
-lateral numerada 1-2-3 junto a los 6 ángulos; se transcriben tal cual — `[POR CONFIRMAR el agrupamiento
-exacto con Jorge]`.)*
+*(rompe-patrón; para anuncios, páginas de captura y asuntos de correo. Orden 1-2-3 **confirmado por
+Jorge**.)*
 1. "Cómo construir un sistema de prospección a **GRAN ESCALA** con inteligencia artificial, que escale
    tu **PIPELINE** de **+1 Millón de dólares** en los próximos **90 días**."
 2. "Dame **90 minutos** para enseñarte paso a paso cómo construir una máquina de prospección B2B con

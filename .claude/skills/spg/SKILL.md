@@ -44,6 +44,13 @@ cosa, la pieza debe poder trazarse a:
   vehículo, nunca a la persona ("no es tu culpa").
 - **Los 6 ángulos** son la fuente anti-repetición: cada pieza toma un lente distinto del One Thing.
 
+> **Regla de oro para CADA ad (y toda pieza de captación):** debe (1) **reforzar el One Thing**
+> —facturación predecible ← generación predecible de leads ← sistema AI-First—; (2) **nombrar el
+> enemigo** —la prospección de fuerza bruta humana / métodos de los años 2000-2010—; (3) **llevar la
+> promesa** —escalar el PIPELINE a +$1M en 90 días, sin rogar por primeras reuniones—; y (4) estar
+> **asignada a un avatar** (Directivo *o* Fundador). En una tanda se **balancean los dos avatares**, no
+> todo al Directivo.
+
 ## Contexto fijado
 - **Producto:** SPG — AI Strategic Pipeline Generation. Programa de **8 semanas**; certificado **AI
   Pipeline Architect**. *(Detalle en `oferta-spg.md`.)*
@@ -84,9 +91,7 @@ Cerrados con lo que entregó Jorge:
 - [x] **Soap Opera correos 4 y 5** y **Emails Seinfeld (8.3)** añadidos.
 - [x] **Oferta ampliada:** order bump ($67), OTOs ($197/$97/$47), bonos de acción rápida y de último día.
 
-Pendiente menor (no bloquea):
-- [ ] `[POR CONFIRMAR]` Agrupamiento exacto de las **3 ideas de nombre de evento** (venían en barra lateral
-  del PDF, interleaveadas con los 6 ángulos). Transcritas tal cual; confirmar orden si importa.
+- [x] **3 ideas de nombre de evento** confirmadas por Jorge (orden 1-2-3 tal como está en la concepción).
 
 ## Alcance actual
 - [x] Fuente de verdad instalada (esta skill + `concepcion-maestra.md` + `oferta-spg.md`).
