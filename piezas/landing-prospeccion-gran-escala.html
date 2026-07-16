@@ -1,205 +1,314 @@
-<title>Prospección a Gran Escala con IA — PIPELINE Business School</title>
+<title>Prospección a Gran Escala con IA — Entrenamiento en vivo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Entrenamiento en vivo: cómo escalar tu PIPELINE a más de un millón de dólares con un Sistema de Prospección con Inteligencia Artificial.">
+<meta name="description" content="Entrenamiento en vivo: escala tu PIPELINE a más de un millón de dólares con un Sistema de Prospección con Inteligencia Artificial. Viernes 17 de julio, 7PM Colombia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --navy:#0A1A3F; --navy-2:#0E2149; --navy-3:#132A57; --navy-4:#0B234E;
-    --red:#E11D2A; --red-2:#C2151F; --red-soft:#FDECED;
-    --paper:#FFFFFF; --soft:#F4F6FB;
-    --ink:#141C2E; --muted:#5A6580; --line:#E2E7F0;
-    --good:#0F7A4C; --good-2:#15A362; --good-soft:#E7F5EE;
-    --gold:#FFB040;
-    --sans:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    --serif:ui-serif,Georgia,"Times New Roman",serif;
+    --indigo:#17155B; --indigo-2:#211E7C; --indigo-3:#0E0C38; --indigo-4:#2A277F;
+    --wine:#A51C30; --pink:#DB124B; --pink-2:#B60E3E;
+    --mint:#16FC9A; --mint-2:#0FD583; --mint-soft:rgba(22,252,154,.14);
+    --charcoal:#3F3F3F; --e3:#E3E3E5; --paper:#FFFFFF; --soft:#F5F5F8;
+    --ink:#211F33; --muted:#6B6B7B; --line:#E4E4EC;
+    --sans:"Montserrat",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    --serif:"Playfair Display",ui-serif,Georgia,"Times New Roman",serif;
+    --shadow:0 24px 64px rgba(10,8,45,.45);
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
-  .pl{color:var(--red);font-weight:800;letter-spacing:.01em}
-  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.62;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+  .pl{color:var(--pink);font-weight:800}
+  .mint{color:var(--mint)}
   .tnum{font-variant-numeric:tabular-nums}
-  a{color:inherit}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
 
-  /* announcement bar */
-  .ann{background:var(--red);color:#fff;text-align:center;font-size:12px;font-weight:700;letter-spacing:.06em;padding:9px 16px;text-transform:uppercase}
-  .ann b{font-weight:800}
+  /* ===== Logo (recreado del manual) ===== */
+  .logo{display:inline-flex;align-items:center;gap:11px;line-height:1}
+  .logo .txt{display:flex;flex-direction:column;gap:3px}
+  .logo .l1{font-weight:800;font-size:16px;letter-spacing:.02em}
+  .logo .l2{font-weight:600;font-size:9px;letter-spacing:.34em;color:var(--charcoal)}
+  .logo .yr{font-size:8px;letter-spacing:.3em;opacity:.75}
+  .logo.on-dark .l1{color:var(--mint)} .logo.on-dark .l2{color:#C7C6E6}
+  .logo.on-light .l1{color:var(--indigo)} .logo.on-light .l2{color:var(--charcoal)}
+  .wing{width:34px;height:26px;flex:none}
+  .wing rect{fill:currentColor}
+  .logo.on-dark .wing{color:var(--mint)} .logo.on-light .wing{color:var(--pink)}
 
-  /* top */
-  .top{background:var(--navy);color:#fff}
-  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
-  .brand{font-weight:800;letter-spacing:-.01em;font-size:15px}
-  .brand small{display:block;font-weight:600;font-size:9.5px;letter-spacing:.18em;color:#9FB0D0;text-transform:uppercase;margin-top:-2px}
-  .top .live{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#9FB0D0;display:flex;align-items:center;gap:7px}
-  .live .pulse{width:8px;height:8px;border-radius:50%;background:var(--red);animation:p 2s infinite}
-  @keyframes p{0%{box-shadow:0 0 0 0 rgba(225,29,42,.55)}70%{box-shadow:0 0 0 7px rgba(225,29,42,0)}100%{box-shadow:0 0 0 0 rgba(225,29,42,0)}}
+  /* ===== Announcement bar ===== */
+  .ann{background:var(--indigo-3);color:#fff;text-align:center;font-size:11.5px;font-weight:700;letter-spacing:.07em;padding:9px 16px;text-transform:uppercase;display:flex;gap:9px;align-items:center;justify-content:center}
+  .ann .dot{width:7px;height:7px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(22,252,154,.6);animation:pulse 2.2s infinite}
+  .ann b{color:var(--mint)}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(22,252,154,.55)}70%{box-shadow:0 0 0 8px rgba(22,252,154,0)}100%{box-shadow:0 0 0 0 rgba(22,252,154,0)}}
 
-  /* hero */
-  .hero{background:radial-gradient(1100px 520px at 80% -12%,var(--navy-3),var(--navy) 62%);color:#fff;padding:50px 0 58px;position:relative;overflow:hidden}
-  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(700px 400px at 75% 0,#000,transparent 70%)}
-  .hero .grid{position:relative;display:grid;grid-template-columns:1.12fr .88fr;gap:44px;align-items:center}
-  @media(max-width:900px){.hero .grid{grid-template-columns:1fr;gap:28px}}
-  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11.5px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:#AFC0E0;border:1px solid rgba(175,192,224,.28);border-radius:999px;padding:6px 13px}
-  h1{font-size:clamp(30px,4.6vw,48px);line-height:1.05;letter-spacing:-.026em;margin:18px 0 16px;text-wrap:balance;font-weight:800}
-  h1 .hl{background:linear-gradient(180deg,transparent 62%,rgba(225,29,42,.35) 62%);padding:0 2px}
-  .sub{font-size:17px;color:#C7D2E8;max-width:44ch;margin:0}
+  /* ===== Top nav ===== */
+  .nav{background:var(--paper);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40;backdrop-filter:saturate(1.2) blur(8px);background:rgba(255,255,255,.86)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .navcta{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;background:var(--indigo);color:#fff;padding:10px 18px;border-radius:999px;transition:transform .12s,background .15s}
+  .navcta:hover{background:var(--indigo-2);transform:translateY(-1px)}
+  @media(max-width:640px){.navcta{display:none}}
+
+  /* ===== HERO ===== */
+  .hero{position:relative;background:
+      radial-gradient(1000px 560px at 82% -6%,rgba(22,252,154,.16),transparent 55%),
+      radial-gradient(760px 520px at 8% 108%,rgba(219,18,75,.28),transparent 60%),
+      linear-gradient(160deg,var(--indigo-2),var(--indigo) 42%,var(--indigo-3));
+      color:#fff;padding:56px 0 66px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;
+      background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+      background-size:46px 46px;mask-image:radial-gradient(760px 460px at 78% 8%,#000,transparent 72%)}
+  .hero .grid{position:relative;display:grid;grid-template-columns:1.06fr .94fr;gap:52px;align-items:center}
+  @media(max-width:940px){.hero .grid{grid-template-columns:1fr;gap:40px}}
+
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:var(--mint);
+      border:1px solid rgba(22,252,154,.4);background:var(--mint-soft);border-radius:999px;padding:7px 15px}
+  .eyebrow .live{width:7px;height:7px;border-radius:50%;background:var(--mint);animation:pulse 2.2s infinite}
+  h1{font-size:clamp(33px,5vw,55px);line-height:1.02;letter-spacing:-.028em;margin:20px 0 18px;text-wrap:balance;font-weight:800}
+  h1 .em{font-family:var(--serif);font-weight:800;font-style:italic;font-size:1.02em;background:linear-gradient(100deg,var(--mint),#9BFFD3);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:.05em}
+  h1 .u{position:relative;white-space:nowrap}
+  h1 .u::after{content:"";position:absolute;left:-2px;right:-2px;bottom:.06em;height:.30em;background:rgba(219,18,75,.55);z-index:-1;border-radius:3px}
+  .sub{font-size:17.5px;color:#CFCEEA;max-width:47ch;margin:0}
   .sub b{color:#fff;font-weight:700}
-  .dates{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;align-items:center}
-  .dchip{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;color:#FFE0B4;background:rgba(255,176,64,.1);border:1px solid rgba(255,176,64,.4);border-radius:8px;padding:7px 11px}
-  .dwhen{font-size:12.5px;font-weight:700;color:#AFC0E0}
 
-  /* form card */
-  .card{background:#fff;color:var(--ink);border-radius:16px;padding:24px;box-shadow:0 24px 60px rgba(4,10,26,.4)}
-  .card .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--good);background:var(--good-soft);border-radius:6px;padding:4px 9px;margin-bottom:12px}
-  .card h3{margin:0 0 3px;font-size:19px;letter-spacing:-.01em}
-  .card p.k{margin:0 0 16px;font-size:13px;color:var(--muted)}
-  .field label{display:block;font-size:12px;font-weight:700;color:var(--muted);margin-bottom:6px}
-  .field input{width:100%;font-size:15px;padding:14px 14px;border:1.5px solid var(--line);border-radius:10px;font-family:inherit;background:var(--soft)}
-  .field input:focus{outline:none;border-color:var(--navy);background:#fff;box-shadow:0 0 0 3px rgba(10,26,63,.12)}
-  .cta{display:block;width:100%;margin-top:12px;background:var(--red);color:#fff;border:0;border-radius:10px;padding:16px 18px;font-family:inherit;font-size:15.5px;font-weight:800;letter-spacing:-.01em;cursor:pointer;transition:background .15s,transform .1s;box-shadow:0 10px 24px rgba(225,29,42,.32)}
-  .cta:hover{background:var(--red-2)} .cta:active{transform:translateY(1px)}
-  .cta:focus-visible{outline:3px solid #FFB0B6;outline-offset:2px}
-  .reassure{margin:12px 0 0;font-size:11.5px;color:var(--muted);text-align:center}
+  .meta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:22px}
+  .datepill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:10px 15px}
+  .datepill .cal{width:34px;height:34px;border-radius:9px;background:var(--pink);display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;line-height:1}
+  .datepill .d1{font-weight:800;font-size:14px;color:#fff;letter-spacing:-.01em}
+  .datepill .d2{font-size:11.5px;color:#B9B8DE;font-weight:600}
+
+  /* hero form */
+  .capture{margin-top:26px;max-width:500px}
+  .capture .row{display:flex;gap:10px}
+  @media(max-width:520px){.capture .row{flex-direction:column}}
+  .capture input{flex:1;min-width:0;font-family:inherit;font-size:15px;padding:15px 16px;border-radius:12px;border:1.5px solid rgba(255,255,255,.2);background:rgba(255,255,255,.96);color:var(--ink)}
+  .capture input::placeholder{color:#8A8AA0}
+  .capture input:focus{outline:none;border-color:var(--mint);box-shadow:0 0 0 3px rgba(22,252,154,.35)}
+  .cta{font-family:inherit;font-weight:800;font-size:15px;letter-spacing:-.01em;border:0;cursor:pointer;color:#fff;white-space:nowrap;
+      background:linear-gradient(180deg,var(--pink),var(--pink-2));border-radius:12px;padding:15px 24px;
+      box-shadow:0 12px 30px rgba(219,18,75,.42);transition:transform .12s,box-shadow .15s,filter .15s}
+  .cta:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(219,18,75,.55),0 0 0 3px rgba(22,252,154,.25)}
+  .cta:active{transform:translateY(0)}
+  .cta:focus-visible{outline:3px solid var(--mint);outline-offset:2px}
+  .reassure{margin:12px 2px 0;font-size:12px;color:#AEADD4;display:flex;gap:8px;align-items:center}
+  .reassure .ck{color:var(--mint);font-weight:800}
 
   /* press */
-  .press{margin-top:30px;position:relative;border-top:1px solid rgba(255,255,255,.14);padding-top:16px}
-  .press span{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:#8fa1c4}
-  .press .logos{display:flex;flex-wrap:wrap;gap:26px;margin-top:11px;font-weight:800;font-size:15px;color:#DCE5F5;align-items:center}
-  .press .logos i{font-style:normal;opacity:.9}
+  .press{position:relative;margin-top:34px;border-top:1px solid rgba(255,255,255,.14);padding-top:18px}
+  .press span{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#9594bf}
+  .press .logos{display:flex;flex-wrap:wrap;gap:28px;margin-top:11px;font-weight:800;font-size:16px;color:#E4E3F5;align-items:center}
+  .press .logos i{font-style:normal;opacity:.92}
+  .press .logos .forbes{font-family:var(--serif);font-weight:700;letter-spacing:.02em}
 
-  section{padding:56px 0}
-  .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin:0 0 10px}
-  h2{font-size:clamp(24px,3.3vw,35px);line-height:1.12;letter-spacing:-.022em;margin:0 0 14px;text-wrap:balance;font-weight:800;color:var(--navy)}
+  /* ===== hero AI stage ===== */
+  .stage{position:relative;aspect-ratio:1/1;max-width:460px;margin-inline:auto;width:100%}
+  .halo{position:absolute;inset:8% 8% 8% 8%;border-radius:50%;background:radial-gradient(circle,rgba(22,252,154,.32),rgba(22,252,154,0) 62%);filter:blur(6px)}
+  .portrait{position:absolute;inset:16% 20% 12% 20%;border-radius:22px;overflow:hidden;border:2px solid rgba(22,252,154,.4);box-shadow:var(--shadow),0 0 0 6px rgba(22,252,154,.06);z-index:2}
+  .portrait img{width:100%;height:100%;object-fit:cover;object-position:center top}
+  .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(15,12,56,.65))}
+  .wires{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:1}
+  .wires path{fill:none;stroke:var(--mint);stroke-width:1.6;stroke-linecap:round;stroke-dasharray:1 7;opacity:.85;animation:flow 1.4s linear infinite}
+  .wires circle{fill:var(--mint)}
+  @keyframes flow{to{stroke-dashoffset:-26}}
+  .node{position:absolute;z-index:3;display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.97);color:var(--indigo);border-radius:13px;padding:10px 13px;box-shadow:0 14px 30px rgba(10,8,45,.4);border:1px solid rgba(22,252,154,.35)}
+  .node .ic{width:32px;height:32px;flex:none;border-radius:9px;display:grid;place-items:center;font-size:16px;background:var(--indigo);color:#fff}
+  .node b{display:block;font-size:12.5px;font-weight:800;letter-spacing:-.01em;line-height:1.15}
+  .node small{font-size:10.5px;color:var(--muted);font-weight:600}
+  .node.n1{top:6%;left:-4%} .node.n2{bottom:20%;right:-6%} .node.n3{top:2%;right:2%}
+  .node.n3{background:var(--mint);border-color:transparent}
+  .node.n3 .ic{background:var(--indigo-3)}
+  .node.n3 small{color:rgba(15,12,56,.7)}
+  @media(max-width:940px){.node small{display:none}.node.n1{left:0}.node.n2{right:0}}
+  @media(max-width:420px){.stage{max-width:340px}}
 
-  /* diagnóstico / dos caminos */
-  .diag{background:var(--navy);color:#fff;position:relative;overflow:hidden}
-  .diag .kicker{color:#FFB040}
-  .diag h2{color:#fff;max-width:20ch}
-  .diag .quote{font-size:clamp(19px,2.5vw,25px);font-weight:700;line-height:1.28;letter-spacing:-.015em;max-width:24ch;text-wrap:balance}
-  .diag .quote em{color:var(--red);font-style:normal}
-  .paths{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
-  @media(max-width:720px){.paths{grid-template-columns:1fr}}
-  .path{border-radius:14px;padding:22px 22px;border:1px solid rgba(255,255,255,.14)}
-  .path.old{background:rgba(225,29,42,.08);border-color:rgba(225,29,42,.3)}
-  .path.new{background:rgba(21,163,98,.1);border-color:rgba(21,163,98,.36)}
-  .path .h{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
-  .path.old .h{color:#FF9AA2} .path.new .h{color:#6FE3AB}
-  .path .t{font-size:18px;font-weight:800;letter-spacing:-.01em;margin:0 0 6px;color:#fff}
-  .path p{margin:0;font-size:13.5px;color:#C1CDE4}
-  .diaggrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-  @media(max-width:860px){.diaggrid{grid-template-columns:1fr;gap:26px}}
+  /* ===== sections ===== */
+  section{padding:66px 0}
+  .kick{display:inline-flex;align-items:center;gap:9px;font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin:0 0 14px}
+  .kick::before{content:"";width:26px;height:2px;background:var(--pink);border-radius:2px}
+  h2{font-size:clamp(26px,3.6vw,40px);line-height:1.1;letter-spacing:-.022em;margin:0 0 16px;text-wrap:balance;font-weight:800;color:var(--indigo)}
+  .center{text-align:center}
+  .center .kick{justify-content:center}
+  .center h2{margin-inline:auto;max-width:22ch}
+  .lede{font-size:17px;color:var(--muted);max-width:56ch}
+  .center .lede{margin-inline:auto}
 
-  /* cronograma */
+  /* ===== diagnóstico / dos caminos ===== */
+  .diag{position:relative;background:linear-gradient(150deg,var(--indigo),var(--indigo-3));color:#fff;overflow:hidden}
+  .diag::before{content:"";position:absolute;top:-30%;right:-10%;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(219,18,75,.34),transparent 62%)}
+  .diag::after{content:"";position:absolute;bottom:-30%;left:-10%;width:460px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(22,252,154,.16),transparent 64%)}
+  .diaggrid{position:relative;display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:center}
+  @media(max-width:900px){.diaggrid{grid-template-columns:1fr;gap:34px}}
+  .diag .kick{color:var(--mint)} .diag .kick::before{background:var(--mint)}
+  .quote{font-family:var(--serif);font-weight:700;font-size:clamp(22px,3vw,31px);line-height:1.24;letter-spacing:-.01em;max-width:16ch;text-wrap:balance;margin:0}
+  .quote em{color:var(--mint);font-style:italic}
+  .diag h3{color:#fff;font-size:clamp(19px,2.4vw,24px);margin:0 0 16px;font-weight:800;letter-spacing:-.01em}
+  .paths{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:560px){.paths{grid-template-columns:1fr}}
+  .path{position:relative;border-radius:16px;padding:22px 20px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);transition:transform .15s}
+  .path:hover{transform:translateY(-3px)}
+  .path.new{background:linear-gradient(180deg,rgba(22,252,154,.14),rgba(22,252,154,.04));border-color:rgba(22,252,154,.44)}
+  .path .badge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 9px;border-radius:6px;margin-bottom:12px}
+  .path.old .badge{background:rgba(219,18,75,.2);color:#FF9FBB} .path.new .badge{background:var(--mint);color:var(--indigo-3)}
+  .path .t{font-size:18.5px;font-weight:800;letter-spacing:-.01em;margin:0 0 7px;color:#fff}
+  .path p{margin:0;font-size:13.5px;color:#C6C5E6}
+  .path.new .arrow{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--mint);color:var(--indigo-3);font-weight:800;font-size:11px;padding:3px 12px;border-radius:999px;letter-spacing:.04em}
+  @media(max-width:560px){.path.new .arrow{display:none}}
+
+  /* ===== cronograma ===== */
   .agenda{background:var(--soft)}
-  .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:22px}
-  @media(max-width:720px){.steps{grid-template-columns:1fr}}
-  .step{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff;display:flex;gap:16px;align-items:flex-start;transition:border-color .15s,box-shadow .15s,transform .15s}
-  .step:hover{border-color:var(--navy);box-shadow:0 10px 26px rgba(10,26,63,.08);transform:translateY(-2px)}
-  .step .num{flex:none;font-size:12px;font-weight:800;color:#fff;background:var(--navy);width:38px;height:38px;border-radius:10px;display:grid;place-items:center;letter-spacing:.02em}
-  .step h4{margin:3px 0 5px;font-size:16.5px;letter-spacing:-.01em;color:var(--navy)}
-  .step p{margin:0;font-size:13.5px;color:var(--muted)}
-  .midcta{text-align:center;margin-top:28px}
-  .btn{display:inline-block;background:var(--red);color:#fff;border-radius:11px;padding:15px 30px;font-weight:800;font-size:15px;text-decoration:none;box-shadow:0 10px 24px rgba(225,29,42,.28);transition:background .15s,transform .1s}
-  .btn:hover{background:var(--red-2)} .btn:active{transform:translateY(1px)}
+  .steps{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
+  @media(max-width:760px){.steps{grid-template-columns:1fr}}
+  .step{position:relative;border:1px solid var(--line);border-radius:18px;padding:26px 24px 24px;background:#fff;overflow:hidden;transition:transform .16s,box-shadow .16s,border-color .16s}
+  .step:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(23,21,91,.1);border-color:rgba(23,21,91,.3)}
+  .step .top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .step .num{flex:none;width:46px;height:46px;border-radius:12px;background:linear-gradient(155deg,var(--indigo-2),var(--indigo));color:#fff;display:grid;place-items:center;font-weight:800;font-size:16px;letter-spacing:-.02em;box-shadow:0 8px 18px rgba(23,21,91,.28)}
+  .step .cls{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--pink)}
+  .step h4{margin:2px 0 0;font-size:17.5px;letter-spacing:-.015em;color:var(--indigo);line-height:1.18}
+  .step p{margin:0;font-size:14px;color:var(--muted);line-height:1.5}
+  .step .bar{position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--mint),var(--mint-2))}
+  .midcta{text-align:center;margin-top:34px}
+  .btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(180deg,var(--pink),var(--pink-2));color:#fff;border-radius:12px;padding:16px 34px;font-weight:800;font-size:15.5px;box-shadow:0 12px 30px rgba(219,18,75,.4);transition:transform .12s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(219,18,75,.5),0 0 0 3px rgba(22,252,154,.25)}
+  .btn.ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);box-shadow:none}
+  .btn.ghost:hover{background:rgba(255,255,255,.08);box-shadow:none}
 
-  /* antes / después */
-  .ba{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:8px}
-  @media(max-width:720px){.ba{grid-template-columns:1fr}}
-  .col{border-radius:16px;padding:24px 24px;border:1px solid var(--line)}
-  .col.antes{background:var(--red-soft);border-color:#F5D2D4}
-  .col.despues{background:var(--good-soft);border-color:#C9E9D8}
-  .col .role{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin:0 0 2px}
-  .col.antes .role{color:#B62330} .col.despues .role{color:var(--good)}
-  .col h3{margin:0 0 16px;font-size:20px;letter-spacing:-.01em;color:var(--navy)}
-  .col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-  .col li{font-size:14.5px;display:flex;gap:11px;align-items:flex-start;line-height:1.42}
-  .col li .i{flex:none;margin-top:1px;width:19px;height:19px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:800;color:#fff}
-  .col.antes .i{background:#D64550} .col.despues .i{background:var(--good-2)}
+  /* ===== antes / después ===== */
+  .transform{background:#fff}
+  .ba{display:grid;grid-template-columns:1fr auto 1fr;gap:22px;align-items:stretch;margin-top:34px}
+  @media(max-width:820px){.ba{grid-template-columns:1fr;gap:16px}}
+  .col{position:relative;border-radius:20px;padding:30px 28px;border:1px solid var(--line)}
+  .col.antes{background:linear-gradient(180deg,#FCF0F2,#FBE9ec);border-color:#F3D3D8}
+  .col.despues{background:linear-gradient(180deg,var(--indigo),var(--indigo-3));border-color:transparent;color:#fff;box-shadow:0 24px 54px rgba(23,21,91,.28)}
+  .col .role{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin:0 0 4px}
+  .col.antes .role{color:var(--wine)} .col.despues .role{color:var(--mint)}
+  .col h3{margin:0 0 20px;font-size:23px;letter-spacing:-.015em;font-family:var(--serif);font-weight:800}
+  .col.antes h3{color:var(--indigo)} .col.despues h3{color:#fff}
+  .col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+  .col li{font-size:14.5px;display:flex;gap:12px;align-items:flex-start;line-height:1.4}
+  .col.despues li{color:#E7E6F6}
+  .col li .i{flex:none;margin-top:1px;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;font-size:11px;font-weight:800}
+  .col.antes .i{background:#EBC9CE;color:var(--wine)}
+  .col.despues .i{background:var(--mint);color:var(--indigo-3)}
+  .arrowmid{display:grid;place-items:center;color:var(--indigo);font-size:26px;font-weight:800}
+  @media(max-width:820px){.arrowmid{transform:rotate(90deg);padding:2px 0}}
 
-  /* bio */
-  .bio .grid{display:grid;grid-template-columns:.4fr .6fr;gap:38px;align-items:center}
-  @media(max-width:820px){.bio .grid{grid-template-columns:1fr;gap:24px}}
-  .photo{aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:linear-gradient(160deg,var(--navy-3),var(--navy));box-shadow:0 20px 46px rgba(4,10,26,.28)}
-  .photo img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
-  .bio .role{font-size:14px;font-weight:700;color:var(--red);margin:0 0 4px}
-  .bio h2{margin-bottom:12px;font-family:var(--serif)}
-  .bio p{font-size:15.5px;color:var(--ink);margin:0 0 18px}
+  /* ===== bio ===== */
+  .bio{background:linear-gradient(180deg,var(--soft),#fff)}
+  .bio .grid{display:grid;grid-template-columns:.4fr .6fr;gap:44px;align-items:center}
+  @media(max-width:840px){.bio .grid{grid-template-columns:1fr;gap:26px}}
+  .photo{position:relative;aspect-ratio:4/5;border-radius:22px;overflow:hidden;box-shadow:0 26px 54px rgba(23,21,91,.24)}
+  .photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
+  .photo .rib{position:absolute;left:16px;bottom:16px;background:var(--mint);color:var(--indigo-3);font-weight:800;font-size:11px;letter-spacing:.02em;padding:8px 13px;border-radius:10px}
+  .bio .role{font-size:14px;font-weight:700;color:var(--pink);margin:0 0 6px}
+  .bio h2{margin-bottom:14px;font-family:var(--serif);font-size:clamp(30px,4vw,44px)}
+  .bio p{font-size:15.5px;color:var(--charcoal);margin:0 0 22px;line-height:1.62}
   .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .stat{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:16px 12px;text-align:center}
-  .stat .n{font-size:23px;font-weight:800;color:var(--navy);letter-spacing:-.02em}
-  .stat .n b{color:var(--red)}
-  .stat .l{font-size:11px;color:var(--muted);margin-top:3px}
-  .bmedia{margin-top:18px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-  .bmedia b{color:var(--navy)}
+  .stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 12px;text-align:center;transition:transform .14s,border-color .14s}
+  .stat:hover{transform:translateY(-3px);border-color:rgba(23,21,91,.28)}
+  .stat .n{font-size:26px;font-weight:800;color:var(--indigo);letter-spacing:-.03em}
+  .stat .n b{color:var(--pink)}
+  .stat .l{font-size:11px;color:var(--muted);margin-top:4px;line-height:1.35}
+  .bmedia{margin-top:20px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .bmedia b{color:var(--indigo)}
 
-  /* final */
-  .final{background:radial-gradient(920px 420px at 50% -20%,var(--navy-3),var(--navy) 66%);color:#fff;text-align:center;padding:62px 0}
-  .final .kicker{color:#FFB040}
-  .final h2{color:#fff;max-width:24ch;margin:0 auto 10px}
-  .final .fp{color:#C7D2E8;max-width:48ch;margin:0 auto 26px;font-size:16px}
-  .final .card{max-width:460px;margin:0 auto;text-align:left}
+  /* ===== final ===== */
+  .final{position:relative;background:
+      radial-gradient(720px 420px at 50% -18%,rgba(22,252,154,.18),transparent 60%),
+      linear-gradient(160deg,var(--indigo-2),var(--indigo) 45%,var(--indigo-3));
+      color:#fff;text-align:center;padding:74px 0;overflow:hidden}
+  .final::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(600px 340px at 50% 0,#000,transparent 72%)}
+  .final .inner{position:relative}
+  .final .kick{justify-content:center;color:var(--mint)} .final .kick::before{background:var(--mint)}
+  .final h2{color:#fff;max-width:20ch;margin:0 auto 12px}
+  .final h2 .em{font-family:var(--serif);font-style:italic;color:var(--mint)}
+  .final .fp{color:#CFCEEA;max-width:50ch;margin:0 auto 30px;font-size:16.5px}
+  .final .capture{margin-inline:auto}
+  .final .reassure{justify-content:center}
 
-  footer{background:#06122B;color:#8698BC;font-size:12px;padding:28px 0}
-  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
-  footer .fbrand{font-weight:800;color:#C6D2EA;font-size:13px}
-  footer .note{font-size:11px;color:#6E80A6;max-width:56ch;line-height:1.5}
+  /* ===== footer ===== */
+  footer{background:var(--indigo-3);color:#9E9DC4;font-size:12px;padding:34px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+  footer .note{font-size:11px;color:#7E7DAB;max-width:58ch;line-height:1.55}
+
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
 </style>
 
-<div class="ann">+ de <b>40 mil directivos comerciales B2B</b> ya lo han tomado</div>
+<!-- Announcement -->
+<div class="ann"><span class="dot"></span> + de <b>40 mil directivos comerciales B2B</b> ya lo han tomado</div>
 
-<div class="top"><div class="wrap">
-  <div class="brand"><span class="pl">PIPELINE</span> Business School<small>The Sales Acceleration Company</small></div>
-  <div class="live"><span class="pulse"></span> Entrenamiento en vivo</div>
-</div></div>
+<!-- Nav -->
+<nav class="nav"><div class="wrap">
+  <span class="logo on-light" aria-label="Prospección a Gran Escala 2025">
+    <svg class="wing" viewBox="0 0 40 26" aria-hidden="true"><rect x="2" y="2" width="30" height="4.4" rx="2.2"/><rect x="34" y="2" width="4" height="4.4" rx="2"/><rect x="8" y="10.8" width="30" height="4.4" rx="2.2"/><rect x="16" y="19.6" width="22" height="4.4" rx="2.2"/></svg>
+    <span class="txt"><span class="l1">PROSPECCIÓN</span><span class="l2">A GRAN ESCALA</span></span>
+  </span>
+  <a class="navcta" href="#registro">Reservar mi lugar →</a>
+</div></nav>
 
+<!-- HERO -->
 <header class="hero"><div class="wrap"><div class="grid">
   <div>
-    <span class="eyebrow">🗓️ Entrenamiento en vivo · Directivos y Fundadores B2B</span>
-    <h1>Cómo escalar tu <span class="pl">PIPELINE</span> a más de <span class="hl">un millón de dólares</span> — sin rogar por primeras reuniones ni prospectar como en 2010</h1>
+    <span class="eyebrow"><span class="live"></span> Entrenamiento en vivo · 1 sola fecha</span>
+    <h1>Escala tu <span class="pl">PIPELINE</span> a <span class="em">un millón de dólares</span> — sin <span class="u">rogar por reuniones</span> ni prospectar como en 2010</h1>
     <p class="sub">A través de un <b>Sistema de Prospección con Inteligencia Artificial</b> que llena tu pipeline de reuniones con decisores en piloto automático — mientras tu competencia sigue haciendo llamadas en frío.</p>
-    <div class="dates">
-      <span class="dchip">🗓️ 24 – 27 de noviembre</span>
-      <span class="dwhen">7:00 PM Colombia · 6:00 PM CDMX</span>
+
+    <div class="meta">
+      <span class="datepill">
+        <span class="cal">17</span>
+        <span><span class="d1">Viernes 17 de julio</span><br><span class="d2">7:00 PM Colombia · 6:00 PM CDMX</span></span>
+      </span>
+    </div>
+
+    <form class="capture" id="registro" onsubmit="return false">
+      <div class="row">
+        <input type="email" placeholder="Ingresa tu correo corporativo" autocomplete="email" aria-label="Correo" required>
+        <button class="cta" type="submit">Sí, quiero escalar mi PIPELINE →</button>
+      </div>
+      <p class="reassure"><span class="ck">✔</span> Es gratis y en vivo · te enviamos el acceso a tu correo</p>
+    </form>
+
+    <div class="press">
+      <span>Nos has visto en</span>
+      <div class="logos"><i class="forbes">Forbes</i><i>Business Insider</i><i>CIO Times</i><i>Gerente</i></div>
     </div>
   </div>
 
-  <div class="card" id="registro">
-    <span class="tag">✔ En vivo · sin costo</span>
-    <h3>Reserva tu lugar</h3>
-    <p class="k">Recibirás el acceso a las 4 clases en tu correo.</p>
-    <form onsubmit="return false">
-      <div class="field">
-        <label for="email">Tu correo corporativo</label>
-        <input id="email" type="email" placeholder="nombre@tuempresa.com" autocomplete="email" required>
-      </div>
-      <button class="cta" type="submit">Sí, quiero escalar mi PIPELINE →</button>
-    </form>
-    <p class="reassure">Cupos limitados · te enviamos el acceso al correo</p>
+  <!-- AI stage -->
+  <div class="stage" aria-hidden="true">
+    <div class="halo"></div>
+    <svg class="wires" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M17,16 C24,20 28,24 33,29"/>
+      <path d="M85,13 C78,19 74,23 69,28"/>
+      <path d="M89,73 C80,68 75,64 71,59"/>
+      <circle cx="17" cy="16" r="1.7"/>
+      <circle cx="85" cy="13" r="1.7"/>
+      <circle cx="89" cy="73" r="1.7"/>
+    </svg>
+    <div class="portrait"><img src="../assets/jorge-conde.jpg" alt=""></div>
+    <div class="node n1"><span class="ic">🗄️</span><span><b>Base de datos</b><small>tu cartera actual</small></span></div>
+    <div class="node n3"><span class="ic">📈</span><span><b>Venta</b><small>pipeline nuevo</small></span></div>
+    <div class="node n2"><span class="ic">🤖</span><span><b>Agente IA</b><small>prospección 24/7</small></span></div>
   </div>
-</div>
+</div></div></header>
 
-<div class="press">
-  <span>Nos has visto en</span>
-  <div class="logos"><i>Forbes</i><i>Business Insider</i><i>CIO Times</i><i>Gerente</i></div>
-</div>
-</div></header>
-
-<!-- Diagnóstico + los dos caminos -->
+<!-- DIAGNÓSTICO + DOS CAMINOS -->
 <section class="diag"><div class="wrap"><div class="diaggrid">
   <div>
-    <p class="kicker">El diagnóstico</p>
-    <p class="quote">No tienes un problema de esfuerzo. Tienes un problema de <em>método</em>: estás peleando una guerra en la era de la IA con estrategias de los años 2000.</p>
+    <p class="kick">El diagnóstico</p>
+    <p class="quote">No tienes un problema de esfuerzo. Tienes un problema de <em>método.</em></p>
   </div>
   <div>
-    <h2 style="color:#fff;font-size:clamp(20px,2.6vw,26px);margin-bottom:6px">Ante un mercado saturado, solo hay dos caminos:</h2>
+    <h3>Estás peleando una guerra de la era de la IA con estrategias de los años 2000. Ante un mercado saturado, solo hay dos caminos:</h3>
     <div class="paths">
       <div class="path old">
-        <p class="h">Camino antiguo</p>
+        <span class="badge">Camino antiguo</span>
         <p class="t">Fuerza bruta humana</p>
         <p>Más SDRs, más llamadas, más listas compradas. Más costo, más gestión, más lentitud — y el mismo pipeline de siempre.</p>
       </div>
       <div class="path new">
-        <p class="h">Camino nuevo</p>
+        <span class="arrow">La nueva oportunidad</span>
+        <span class="badge">Camino nuevo</span>
         <p class="t">Un sistema que prospecta por ti</p>
         <p>La IA hace el esfuerzo extra a una fracción del costo: escala, precisión y reuniones con decisores en piloto automático.</p>
       </div>
@@ -207,35 +316,41 @@
   </div>
 </div></div></section>
 
-<!-- Cronograma -->
+<!-- CRONOGRAMA -->
 <section class="agenda"><div class="wrap">
-  <p class="kicker" style="text-align:center">El cronograma · 4 clases en vivo</p>
-  <h2 style="text-align:center;max-width:26ch;margin-left:auto;margin-right:auto">Esto es lo que vas a construir, paso a paso</h2>
-  <div class="steps">
-    <div class="step"><div class="num">01</div><div>
-      <h4>Instala tu Sistema de Ventas con IA</h4>
-      <p>Los 3 pasos para instalar un sistema de ventas basado en IA que genere PIPELINE a gran escala en 2026.</p>
-    </div></div>
-    <div class="step"><div class="num">02</div><div>
-      <h4>Tu ejército de prospección con IA</h4>
-      <p>Cómo crear un ejército de prospección basado en IA que multiplique tu PIPELINE en los próximos 3 meses.</p>
-    </div></div>
-    <div class="step"><div class="num">03</div><div>
-      <h4>De PIPELINE a FORECAST</h4>
-      <p>3 frameworks de estrategia comercial para convertir rápidamente tu PIPELINE en FORECAST con apoyo de IA.</p>
-    </div></div>
-    <div class="step"><div class="num">04</div><div>
-      <h4>Tu plan de 90 días</h4>
-      <p>El plan para escalar tu PIPELINE a +1 millón de dólares con inteligencia artificial.</p>
-    </div></div>
+  <div class="center">
+    <p class="kick">El cronograma · 4 clases en vivo</p>
+    <h2>Esto es lo que vas a construir, paso a paso</h2>
+    <p class="lede">Cuatro clases prácticas para instalar tu sistema de prospección con IA — de la teoría a un plan de 90 días.</p>
   </div>
-  <div class="midcta"><a class="btn" href="#registro">Completar mi registro →</a></div>
+  <div class="steps">
+    <div class="step"><div class="bar"></div>
+      <div class="top"><div class="num">01</div><div><div class="cls">Clase 01</div><h4>Instala tu Sistema de Ventas con IA</h4></div></div>
+      <p>Los 3 pasos para instalar un sistema de ventas basado en IA que genere PIPELINE a gran escala en 2026.</p>
+    </div>
+    <div class="step"><div class="bar"></div>
+      <div class="top"><div class="num">02</div><div><div class="cls">Clase 02</div><h4>Tu ejército de prospección con IA</h4></div></div>
+      <p>Cómo crear un ejército de prospección basado en IA que multiplique tu PIPELINE en los próximos 3 meses.</p>
+    </div>
+    <div class="step"><div class="bar"></div>
+      <div class="top"><div class="num">03</div><div><div class="cls">Clase 03</div><h4>De PIPELINE a FORECAST</h4></div></div>
+      <p>3 frameworks de estrategia comercial para convertir rápidamente tu PIPELINE en FORECAST con apoyo de IA.</p>
+    </div>
+    <div class="step"><div class="bar"></div>
+      <div class="top"><div class="num">04</div><div><div class="cls">Clase 04</div><h4>Tu plan de 90 días</h4></div></div>
+      <p>El plan para escalar tu PIPELINE a +1 millón de dólares con inteligencia artificial.</p>
+    </div>
+  </div>
+  <div class="midcta"><a class="btn" href="#final">Completar mi registro →</a></div>
 </div></section>
 
-<!-- Antes / Después (cambio de identidad) -->
-<section><div class="wrap">
-  <p class="kicker" style="text-align:center">La transformación</p>
-  <h2 style="text-align:center;max-width:24ch;margin-left:auto;margin-right:auto">De apagar incendios a diseñar el sistema</h2>
+<!-- ANTES / DESPUÉS -->
+<section class="transform"><div class="wrap">
+  <div class="center">
+    <p class="kick">La transformación</p>
+    <h2>De apagar incendios a diseñar el sistema</h2>
+    <p class="lede">No vendemos una herramienta. Es en quién te conviertes: dejas de reaccionar y empiezas a construir.</p>
+  </div>
   <div class="ba">
     <div class="col antes">
       <p class="role">Hoy</p>
@@ -248,6 +363,7 @@
         <li><span class="i">✕</span>Si tú paras, el negocio se enfría.</li>
       </ul>
     </div>
+    <div class="arrowmid">→</div>
     <div class="col despues">
       <p class="role">Mañana</p>
       <h3>El arquitecto del sistema</h3>
@@ -262,14 +378,17 @@
   </div>
 </div></section>
 
-<!-- Bio -->
-<section class="bio" style="background:var(--soft)"><div class="wrap"><div class="grid">
-  <div class="photo"><img src="../assets/jorge-conde.jpg" alt="Jorge Conde, Chief Strategy Officer de Pipeline Business School"></div>
+<!-- BIO -->
+<section class="bio"><div class="wrap"><div class="grid">
+  <div class="photo">
+    <img src="../assets/jorge-conde.jpg" alt="Jorge Conde, Chief Strategy Officer de Pipeline Business School">
+    <span class="rib">Chief Strategy Officer · PBS</span>
+  </div>
   <div>
-    <p class="kicker">Sobre tu entrenador</p>
+    <p class="kick">Sobre tu entrenador</p>
     <h2>Jorge Conde</h2>
-    <p class="role">Chief Strategy Officer · Pipeline Business School</p>
-    <p>Experto en creación y escalamiento de PIPELINE con más de 15 años en estrategia comercial. Ha sido consultor en la implementación de sistemas de ventas y estrategias para penetrar mercados saturados y escalar en economías contraídas para más de 100 compañías. Fundador de Pipeline Business School, la primera escuela de Latinoamérica especializada en escalamiento de PIPELINE.</p>
+    <p class="role">Fundador de Pipeline Business School</p>
+    <p>Experto en creación y escalamiento de PIPELINE con más de 15 años en estrategia comercial. Ha sido consultor en la implementación de sistemas de ventas para penetrar mercados saturados y escalar en economías contraídas para más de 100 compañías. Fundó la primera escuela de Latinoamérica especializada en escalamiento de PIPELINE.</p>
     <div class="stats">
       <div class="stat"><div class="n">+15</div><div class="l">años en estrategia comercial</div></div>
       <div class="stat"><div class="n">+100</div><div class="l">compañías asesoradas</div></div>
@@ -279,27 +398,24 @@
   </div>
 </div></div></section>
 
-<!-- Final CTA -->
-<section class="final"><div class="wrap">
-  <p class="kicker">Empieza el 24 de noviembre</p>
-  <h2>El mercado no va a esperar a que prospectes más fuerte</h2>
-  <p class="fp">Mientras decides, tu competencia ya está instalando su sistema con IA. Reserva tu lugar en el entrenamiento en vivo — es gratis.</p>
-  <div class="card">
-    <span class="tag">✔ En vivo · sin costo</span>
-    <h3>Reserva tu lugar</h3>
-    <p class="k">4 clases en vivo · 24 – 27 de noviembre · 7PM CO / 6PM CDMX</p>
-    <form onsubmit="return false">
-      <div class="field">
-        <label for="email2">Tu correo corporativo</label>
-        <input id="email2" type="email" placeholder="nombre@tuempresa.com" autocomplete="email" required>
-      </div>
+<!-- FINAL CTA -->
+<section class="final" id="final"><div class="wrap"><div class="inner">
+  <p class="kick">Es este viernes 17 de julio</p>
+  <h2>El mercado no va a esperar a que prospectes <span class="em">más fuerte</span></h2>
+  <p class="fp">Mientras lo piensas, tu competencia ya está instalando su sistema con IA. Reserva tu lugar en el entrenamiento en vivo — es gratis.</p>
+  <form class="capture" onsubmit="return false">
+    <div class="row">
+      <input type="email" placeholder="Ingresa tu correo corporativo" autocomplete="email" aria-label="Correo" required>
       <button class="cta" type="submit">Sí, quiero escalar mi PIPELINE →</button>
-    </form>
-    <p class="reassure">Cupos limitados · te enviamos el acceso al correo</p>
-  </div>
-</div></section>
+    </div>
+    <p class="reassure"><span class="ck">✔</span> Viernes 17 de julio · 7:00 PM Colombia · cupos limitados</p>
+  </form>
+</div></div></section>
 
 <footer><div class="wrap">
-  <div class="fbrand"><span class="pl">PROSPECCIÓN</span> A GRAN ESCALA · con Inteligencia Artificial</div>
+  <span class="logo on-dark" aria-label="Prospección a Gran Escala 2025">
+    <svg class="wing" viewBox="0 0 40 26" aria-hidden="true"><rect x="2" y="2" width="30" height="4.4" rx="2.2"/><rect x="34" y="2" width="4" height="4.4" rx="2"/><rect x="8" y="10.8" width="30" height="4.4" rx="2.2"/><rect x="16" y="19.6" width="22" height="4.4" rx="2.2"/></svg>
+    <span class="txt"><span class="l1">PROSPECCIÓN</span><span class="l2">A GRAN ESCALA · CON IA</span></span>
+  </span>
   <div class="note">© 2026 Global Influence LLC. Todos los derechos reservados. Este entrenamiento comparte estrategias de prospección con IA; los resultados dependen de la implementación y ejecución de cada participante.</div>
 </div></footer>
