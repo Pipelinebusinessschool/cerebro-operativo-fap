@@ -148,16 +148,35 @@
   .agenda{background:var(--soft)}
   .session{display:grid;grid-template-columns:.8fr 1.2fr;margin-top:34px;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 26px 60px rgba(23,21,91,.14);background:#fff}
   @media(max-width:760px){.session{grid-template-columns:1fr}}
-  .session .aside{position:relative;background:linear-gradient(160deg,var(--indigo-2),var(--indigo) 55%,var(--indigo-3));color:#fff;padding:38px 34px;overflow:hidden}
-  .session .aside::before{content:"";position:absolute;top:-22%;right:-22%;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(22,252,154,.26),transparent 62%)}
-  .session .live2{position:relative;display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--mint);border:1px solid rgba(22,252,154,.4);background:var(--mint-soft);border-radius:999px;padding:6px 13px}
+  .session .aside{position:relative;background:linear-gradient(160deg,var(--indigo-2),var(--indigo) 55%,var(--indigo-3));color:#fff;padding:34px 30px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:22px}
+  .session .aside::before{content:"";position:absolute;top:-22%;right:-22%;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(22,252,154,.26),transparent 62%)}
+  .session .live2{position:relative;display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--mint);border:1px solid rgba(22,252,154,.4);background:var(--mint-soft);border-radius:999px;padding:6px 13px}
   .session .live2 .d{width:7px;height:7px;border-radius:50%;background:var(--mint);animation:pulse 2.2s infinite}
-  .session .big{position:relative;font-family:var(--serif);font-weight:800;font-size:56px;line-height:1;margin:22px 0 6px;letter-spacing:-.02em}
-  .session .big small{font-size:19px;font-weight:700;letter-spacing:.1em}
-  .session .when{position:relative;font-size:15px;font-weight:700;color:#EDECFb}
-  .session .when2{position:relative;font-size:13px;color:#B9B8DE;margin-top:3px}
-  .session .tags{position:relative;display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
-  .session .tags span{font-size:11px;font-weight:700;color:#CFCEEA;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:6px 10px}
+  .sesinfo{position:relative;text-align:center}
+  .sesinfo .when{font-size:12.5px;color:#C6C5E6;margin:11px 0 0;font-weight:600}
+  /* laptop mockup */
+  .laptop{position:relative;width:100%;max-width:360px;margin:0 auto}
+  .laptop .screen{position:relative;z-index:2;border-radius:12px 12px 3px 3px;background:#0B0A2E;border:2px solid rgba(255,255,255,.16);padding:8px;aspect-ratio:16/10;box-shadow:0 22px 44px rgba(0,0,0,.45);overflow:hidden}
+  .laptop .deck{position:relative;z-index:1;width:128%;height:13px;margin:-1px auto 0;transform:translateX(-11%);background:linear-gradient(#cbced9,#9599a9);border-radius:0 0 11px 11px}
+  .laptop .deck::after{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:92px;height:5px;background:rgba(0,0,0,.18);border-radius:0 0 6px 6px}
+  .laptop .tbar{display:flex;align-items:center;gap:5px;padding:2px 4px 7px}
+  .laptop .tbar b{width:7px;height:7px;border-radius:50%;display:block}
+  .laptop .tbar .r{background:#FF5F57}.laptop .tbar .y{background:#FEBC2E}.laptop .tbar .g{background:#28C840}
+  .laptop .url{margin-left:6px;font-size:8px;color:#9A99C8;background:rgba(255,255,255,.06);border-radius:5px;padding:3px 8px;letter-spacing:.02em}
+  .laptop .ui{background:linear-gradient(160deg,#17155B,#0E0C38);border-radius:7px;padding:10px;height:calc(100% - 20px)}
+  .laptop .uihead{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}
+  .laptop .uihead .tt{font-size:9.5px;font-weight:800;color:#fff;letter-spacing:-.01em}
+  .laptop .uihead .pl2{font-size:7px;font-weight:800;color:var(--mint);letter-spacing:.08em}
+  .laptop .chips{display:flex;gap:6px;margin-bottom:9px}
+  .laptop .chips span{font-size:8px;font-weight:700;color:#CFCEEA;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:5px;padding:3px 7px}
+  .laptop .chips .m{color:var(--indigo-3);background:var(--mint);border-color:transparent}
+  .laptop .chart{display:flex;align-items:flex-end;gap:5px;height:36px;margin-bottom:9px}
+  .laptop .chart i{flex:1;background:linear-gradient(var(--mint),var(--mint-2));border-radius:3px 3px 0 0;opacity:.92}
+  .laptop .leads{display:flex;flex-direction:column;gap:5px}
+  .laptop .lead{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.05);border-radius:5px;padding:4px 6px}
+  .laptop .lead .av{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#5a57c0,#3f3f8f);flex:none}
+  .laptop .lead .ln{flex:1;height:5px;border-radius:3px;background:rgba(255,255,255,.14)}
+  .laptop .lead .ck{font-size:8px;font-weight:800;color:var(--indigo-3);background:var(--mint);width:13px;height:13px;border-radius:4px;display:grid;place-items:center;flex:none}
   .session .body{padding:38px 34px}
   .session .body h4{margin:0 0 20px;font-size:13px;font-weight:800;letter-spacing:.06em;color:var(--indigo);text-transform:uppercase}
   .alist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
@@ -165,6 +184,8 @@
   .alist .ck{flex:none;width:27px;height:27px;border-radius:8px;background:linear-gradient(155deg,var(--mint),var(--mint-2));color:var(--indigo-3);display:grid;place-items:center;font-weight:800;font-size:13px;margin-top:1px}
   .alist b{display:block;font-size:16.5px;color:var(--indigo);letter-spacing:-.015em;line-height:1.24;margin-bottom:3px}
   .alist p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .tags2{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}
+  .tags2 span{font-size:11px;font-weight:700;color:var(--indigo);background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 11px}
   .midcta{text-align:center;margin-top:34px}
   .btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(180deg,var(--pink),var(--pink-2));color:#fff;border-radius:12px;padding:16px 34px;font-weight:800;font-size:15.5px;box-shadow:0 12px 30px rgba(219,18,75,.4);transition:transform .12s,box-shadow .15s}
   .btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(219,18,75,.5),0 0 0 3px rgba(22,252,154,.25)}
@@ -249,7 +270,7 @@
   <div>
     <span class="eyebrow"><span class="live"></span> Entrenamiento en vivo · 1 sola fecha</span>
     <h1>Escala tu <span class="pl">PIPELINE</span> a <span class="em">un millón de dólares</span> — sin <span class="u">rogar por reuniones</span> ni prospectar como en 2010</h1>
-    <p class="sub">A través de un <b>Sistema de Prospección con Inteligencia Artificial</b> que genera leads de forma predecible y agenda reuniones con decisores en piloto automático — la única vía a una <b>facturación predecible</b> en un mercado saturado.</p>
+    <p class="sub">Con un <b>Sistema de Prospección con Inteligencia Artificial</b> que te agenda reuniones con decisores en piloto automático.</p>
 
     <div class="meta">
       <span class="datepill">
@@ -283,7 +304,7 @@
       <circle cx="85" cy="13" r="1.7"/>
       <circle cx="89" cy="73" r="1.7"/>
     </svg>
-    <div class="portrait"><img src="../assets/jorge-conde.jpg" alt=""></div>
+    <div class="portrait"><img src="../assets/jorge-hero.jpg" alt=""></div>
     <div class="node n1"><span class="ic">🗄️</span><span><b>Base de datos</b><small>tu cartera actual</small></span></div>
     <div class="node n3"><span class="ic">📈</span><span><b>Venta</b><small>pipeline nuevo</small></span></div>
     <div class="node n2"><span class="ic">🤖</span><span><b>Agente IA</b><small>prospección 24/7</small></span></div>
@@ -306,11 +327,26 @@
   </div>
   <div class="session">
     <div class="aside">
-      <span class="live2"><span class="d"></span> En vivo</span>
-      <div class="big">17<small> JUL</small></div>
-      <div class="when">Viernes 17 de julio</div>
-      <div class="when2">7:00 PM Colombia · 6:00 PM CDMX</div>
-      <div class="tags"><span>🎥 En directo</span><span>✔ Sin costo</span><span>⏱️ Cupos limitados</span></div>
+      <div class="laptop" aria-hidden="true">
+        <div class="screen">
+          <div class="tbar"><b class="r"></b><b class="y"></b><b class="g"></b><span class="url">sistema-prospeccion · IA</span></div>
+          <div class="ui">
+            <div class="uihead"><span class="tt">Agente IA · Prospección</span><span class="pl2">● EN VIVO</span></div>
+            <div class="chips"><span>1,240 leads</span><span class="m">38 reuniones agendadas</span></div>
+            <div class="chart"><i style="height:34%"></i><i style="height:50%"></i><i style="height:43%"></i><i style="height:66%"></i><i style="height:81%"></i><i style="height:100%"></i></div>
+            <div class="leads">
+              <div class="lead"><span class="av"></span><span class="ln"></span><span class="ck">✓</span></div>
+              <div class="lead"><span class="av"></span><span class="ln"></span><span class="ck">✓</span></div>
+              <div class="lead"><span class="av"></span><span class="ln"></span><span class="ck">✓</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="deck"></div>
+      </div>
+      <div class="sesinfo">
+        <span class="live2"><span class="d"></span> En vivo · 17 JUL</span>
+        <p class="when">Viernes 17 de julio · 7:00 PM Colombia · 6:00 PM CDMX</p>
+      </div>
     </div>
     <div class="body">
       <h4>En esta sesión vas a:</h4>
@@ -319,6 +355,7 @@
         <li><span class="ck">✓</span><div><b>Crear tu ejército de prospección con IA</b><p>Cómo montar un ejército de prospección basado en IA que multiplique tu PIPELINE en los próximos 3 meses.</p></div></li>
         <li><span class="ck">✓</span><div><b>Sentar a tu equipo con decisores</b><p>Cómo el sistema prospecta cuentas prósperas y agenda reuniones con tomadores de decisión en piloto automático.</p></div></li>
       </ul>
+      <div class="tags2"><span>🎥 En directo</span><span>✔ Sin costo</span><span>⏱️ Cupos limitados</span></div>
     </div>
   </div>
   <div class="midcta"><a class="btn" href="#final">Completar mi registro →</a></div>
@@ -361,7 +398,7 @@
 <!-- BIO -->
 <section class="bio"><div class="wrap"><div class="grid">
   <div class="photo">
-    <img src="../assets/jorge-conde.jpg" alt="Jorge Conde, Chief Strategy Officer de Pipeline Business School">
+    <img src="../assets/jorge-bio.jpg" alt="Jorge Conde, Chief Strategy Officer de Pipeline Business School">
     <span class="rib">Chief Strategy Officer · PBS</span>
   </div>
   <div>
