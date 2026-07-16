@@ -47,9 +47,12 @@ cosa, la pieza debe poder trazarse a:
 > **Regla de oro para CADA ad (y toda pieza de captación):** debe (1) **reforzar el One Thing**
 > —facturación predecible ← generación predecible de leads ← sistema AI-First—; (2) **nombrar el
 > enemigo** —la prospección de fuerza bruta humana / métodos de los años 2000-2010—; (3) **llevar la
-> promesa** —escalar el PIPELINE a +$1M en 90 días, sin rogar por primeras reuniones—; y (4) estar
-> **asignada a un avatar** (Directivo *o* Fundador). En una tanda se **balancean los dos avatares**, no
-> todo al Directivo.
+> promesa canónica, en TODOS los ads**:
+> *«Cómo escalar tu pipeline a más de un millón de dólares sin tener que rogar por primeras reuniones de
+> ventas ni usar métodos de prospección tradicionales de los años 2000 o 2010, a través de un Sistema de
+> Prospección con Inteligencia Artificial.»* (adaptada a voz hablada, pero con sus 4 elementos: +$1M ·
+> sin rogar reuniones · sin métodos 2000-2010 · vía sistema de prospección con IA); y (4) estar
+> **asignada a un avatar** (Directivo *o* Fundador).
 
 ## Contexto fijado
 - **Producto:** SPG — AI Strategic Pipeline Generation. Programa de **8 semanas**; certificado **AI
@@ -78,6 +81,10 @@ Este lanzamiento es **Evergreen**: todo debe quedar **atemporal y reutilizable**
 - ✅ **Narrativa de la concepción · datos de la oferta.** Nada fuera de esas dos fuentes.
 - ✅ Tono **B2B high-ticket** (autoridad; nada de urgencia/descuento de infoproducto barato).
 - ✅ Problema **sistémico, nunca personal** ("no es tu culpa, es el método").
+- ✅ **Nunca desprestigiar a la fuerza de ventas humana.** El enemigo es el **método** (fuerza bruta /
+  años 2000), no el vendedor. La IA **no reemplaza al equipo**: hace el trabajo pesado de prospectar y
+  **libera a los vendedores para lo que un humano hace mejor** —sentarse con decisores, construir valor y
+  cerrar—. Evitar comparaciones que pongan a la IA "por encima" del vendedor (más barata, no se enferma…).
 
 ## Convención de placeholders
 `XXX` (precio) · `[FECHA]` `[DÍA]` `[HORA]` (tiempo) · `[X DÍAS]` `[CIERRE]` (plazos) ·
