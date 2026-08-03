@@ -8,12 +8,9 @@
 > `jorge_decisions.md` o `jorge_philosophy.md`. Donde falta un dato, se marca `[FALTA]` en vez de
 > rellenarlo.
 >
-> **Pendiente de auditoría:** no fue posible acceder a la web viva (pipelinebusinessschool.com)
-> durante la construcción de este documento (bloqueada por firewall del entorno). El diagnóstico de
-> "síntomas de escuela" se basa en el patrón estándar de webs de infoproductos B2C (curso → precio →
-> testimonio → matrícula) contrastado contra lo que `contexto/` dice que PBS **realmente** es.
-> Recomiendo una auditoría de 30 min tomando screenshots de la home actual antes de la reunión, para
-> reemplazar el diagnóstico genérico por ejemplos textuales exactos ("dice X, debería decir Y").
+> **Auditoría de la web viva:** hecha sobre el HTML real de la home actual (pipelinebusinessschool.com)
+> el 2026-08-03. Todas las citas de la Sección 0 son texto **verbatim** extraído de esa página — no
+> son suposiciones sobre "cómo suelen ser" las webs de curso.
 
 ---
 
@@ -33,6 +30,35 @@ Es decir: **la firma de consultoría + aceleradora que dirección quiere proyect
 papel.** El rediseño de la web no es inventar un posicionamiento nuevo — es dejar de esconder el que
 ya está decidido detrás de una interfaz que parece Hotmart. Esto cambia el encargo: no es "reinventar
 quiénes somos", es "dejar de traicionar en la web lo que ya somos en el contrato".
+
+### Evidencia exacta — lo que dice la web hoy
+
+| Elemento | Texto/dato real encontrado en la home | Por qué es un problema |
+|---|---|---|
+| Frase de apertura (H4 sobre el H1 del hero) | *"SOMOS LA PRIMERA ESCUELA DE NEGOCIOS especializada en ESCALAMIENTO DE PIPELINE"* | La primera frase que lee cualquier visitante es "escuela de negocios". Es literalmente la categoría que dirección quiere dejar atrás, puesta en el lugar de más peso semántico de toda la página. |
+| Misión declarada | *"Nuestra misión es erradicar la pobreza de las ventas B2B"* | Registro de coach motivacional / infoproducto, no el registro "didáctico-ejecutivo con calidez de colega" que define `jorge_voice.md §4`. |
+| Botón de acceso en el header | **"INGRESO"** (portal de estudiante) | Señal estructural de plataforma de cursos (tipo Hotmart/Teachable), no de firma de consultoría — ninguna consultora (Deloitte, Simon-Kucher) tiene un botón de "login de alumno" en su header. |
+| Menú "Entrenamientos" | 5 productos individuales: *Escala tu PIPELINE (SPG), Vendiendo al C-Level (SCL), Planeación de FORECAST (FOR), Gerencia Comercial (SOM), Plan de Comisiones (IQ)* | El menú principal completo está organizado como **catálogo de cursos**, no como metodología ni como programa insignia (FAP). |
+| Sección "Nuestra Oferta **EDUCATIVA**" | 5 tarjetas de curso con precio público: SPG **997 USD** (cohort, cerrado), SCL **97 USD** (pregrabado, "acceso vitalicio"), FOR (precio no visible en el extracto), SOM **1.497 USD** (cohort, cerrado), IQ **97 USD** (pregrabado, "acceso vitalicio") | Precio público + "acceso vitalicio" + "curso pre-grabado" es exactamente el patrón de infoproducto B2C que el rediseño busca eliminar. Estos 5 productos están dirigidos a **"Vendedores B2B, Gerentes Comerciales, VPs de ventas"** — es decir, al individuo — lo opuesto al ICP real (`jorge_icp.md`: fundador/directivo de empresa ≥$1M USD, equipo de ventas). |
+| Branding de programa | *"Conviértete en un Estratega de Forecast «RAINMAKER»"* / *"Gerente de Operaciones Comerciales RAINMAKER"* | Vocabulario de curso de ventas genérico ("rainmaker") ausente por completo de `jorge_voice.md` — no es parte de la voz real de Jorge. |
+| Bloque de resultados ("Los Resultados de Nuestros Estudiantes hablan por nosotros") | Contadores animados: **40K+** profesionales entrenados en LATAM · **60%+** directores comerciales que subieron su SROI a 5X · **52%+** de "estudiantes" que "escalaron +2X su pipeline" · **40%+** crecimiento promedio de ventas 1er año · **97%** "de nuestros clientes nos recomendarían" | Dos hallazgos accionables: **(a)** los primeros cuatro números sí **calzan** con `pbs_metrics.md` (SROI>5X ≈ 60% "6 de cada 10"; +40% Sales Growth es idéntico; +52% coincide con Pipeline Growth, aunque aquí se reformula como "+2X" lo cual **distorsiona** la cifra original). **(b)** el **97% de recomendación no existe en ningún archivo de `contexto/`** — es una cifra que viola el candado #1 ("nunca inventar cifras… si falta, se pregunta") y debe removerse o sustentarse antes de que dirección la vea en su propia web. |
+| Testimonios | Carrusel de 6 personas (Hugo Trejo, Ana Santos, Jessica Vessi, Natalia Castro, Robert Ferrer, Luis Campbell) con cargo real (Sales Operation Manager, Country Manager, CEO LATAM, Managing Director) pero **sin nombre de empresa, industria ni estructura de caso** | Hay más material B2B del que parece a simple vista (cargos reales, cifras individuales como "+750% prospectos en 90 días") — el problema no es la materia prima, es el **formato** (carrusel de frases sueltas en vez de estudio de caso estructurado). Esto es una buena noticia: no hay que empezar de cero en la Sección "RENOVAR". |
+| Alianza Harvard | Ya está en la web ("Hemos Asegurado Una Alianza Exclusiva Con Harvard BPE"), pero enmarcada como *"una vez dentro de nuestra Escuela"* | El activo de mayor autoridad institucional que tiene PBS hoy está **subordinado al marco "escuela"** en vez de ser la prueba central de nivel executive-education. |
+| Diferenciadores ("Somos diferentes porque") | IA First · Metodología Probada · Enfoque en Habilidades Estratégicas · Mentalidad de Sistemas | Genéricos y no conectados a los 6 Pilares reales ni a la tabla de posicionamiento competitivo de `jorge_decisions.md` (curso vs. agencia vs. consultor vs. PBS) — esa tabla, que es la diferenciación real y ya redactada, no aparece en ningún lugar de la web. |
+| **FAP / Forecast Accelerator Program** | **Cero apariciones** en toda la home (verificado por búsqueda de texto) | Este es el hallazgo más importante del documento: **la web actual y el programa que realmente vende PBS hoy (FAP) son dos negocios que no se tocan.** La web vende 5 cursos de catálogo de $97 a $1.497 a vendedores individuales; el funnel real de captación (ads → VSL/webinar → diagnóstico) vive fuera de la web y nunca aterriza en ella. |
+| Pie de página | *"© 2024, GLOBAL INFLUENCE LLC"* / Head Office Miami | Menor, pero a revisar: la razón social visible (Global Influence LLC) no coincide con la marca (PIPELINE Business School) — detalle de credibilidad institucional para una auditoría legal/branding aparte. |
+
+**La conclusión que cambia el alcance del proyecto:** esto no es "refrescar el tono de la web
+actual". Es decidir qué pasa con **dos negocios que hoy conviven sin conectarse**: el catálogo de 5
+cursos abiertos ($97–$1.497, dirigido a individuos) y el programa insignia real, FAP (6 meses, 1:1,
+dirigido a empresas ≥$1M). Antes de tocar una sola página hay que resolver con dirección:
+
+- **¿El catálogo de cursos se mantiene?** Si sí, ¿como línea de entrada de bajo ticket bajo una
+  sub-marca separada (ej. "PBS Academy"), o se descontinúa la venta abierta y se convierte en
+  contenido de nutrición/autoridad (gratuito) que alimenta el Research Hub en vez de competir por
+  precio con Hotmart/Udemy?
+- **¿FAP se convierte en el único producto visible en la web principal?** Es la recomendación de este
+  documento, consistente con `jorge_decisions.md` ("PBS no capacita vendedores individuales").
 
 ### Diagnóstico del problema actual
 
@@ -101,18 +127,24 @@ tiene por escrito y no está mostrando.
 
 ### QUITAR
 
-- Cualquier vestigio de vocabulario de "escuela": *cursos, clases, matricúlate, estudiantes, alumnos,
-  temario, certificado de finalización*. `jorge_voice.md` ya prohíbe el marco "vendemos capacitación"
-  — hay que auditar si la web lo respeta.
-- Grids tipo catálogo (tarjetas de curso con precio + estrellas + botón "Inscribirme").
-- Testimonios sueltos de "alumnos felices" sin empresa, cargo ni cifra — contradice el candado
-  "siempre con cifras" y sirve al comprador equivocado (individuo, no fundador).
-- Urgencia de lanzamiento tipo infoproducto (countdown, "cupos limitados", "oferta se cierra hoy") si
-  existiera — no encaja con el registro "consejero de confianza" ni con el candado de cero descuentos.
-- Cualquier mención de precio de FAP en páginas de captación — el candado #3 (`contexto/README.md`)
-  ya lo prohíbe; verificar que la web no lo esté violando.
-- Doble CTA compitiendo en una misma página (ej. "agenda una llamada" y "compra el curso" a la vez) —
-  el candado #4 exige **un solo CTA por pieza**.
+- **La frase "Somos la primera escuela de negocios..."** del hero — es literalmente la categoría que
+  se busca abandonar, hoy en la posición de mayor peso de toda la página.
+- **El botón "INGRESO"** (portal de estudiante) del header — señal estructural de plataforma de
+  cursos; ninguna consultora tiene login de alumno en su nav principal.
+- **Las 5 tarjetas de "Oferta Educativa" con precio público** (SPG $997, SCL $97, SOM $1.497, IQ $97,
+  FOR) y su vocabulario asociado: *"curso pre-grabado"*, *"acceso vitalicio"*, *"Inscripciones
+  Abiertas/Cerradas"*, *"RAINMAKER"*. Antes de rediseñar hay que decidir con dirección si esta línea
+  se mantiene bajo otra sub-marca o se descontinúa (ver recomendación arriba).
+- **El vocabulario "escuela": *estudiantes, alumnos, escuela de negocios, matricúlate*** — `jorge_voice.md`
+  ya prohíbe el marco "vendemos capacitación" y hoy la web lo usa de forma literal y repetida.
+- **La cifra "97% de nuestros clientes nos recomendarían"** — no existe en ningún archivo de
+  `contexto/`. Es una violación activa del candado #1 ("nunca inventar cifras") que hoy está en
+  producción; se retira o se sustenta con fuente antes de cualquier otro cambio.
+- **El framing "+2X su PIPELINE"** sobre la cifra real de +52% Pipeline Growth (`pbs_metrics.md`) —
+  es una sobre-interpretación de la métrica original; hay que volver al dato tal como está sourced.
+- Doble CTA compitiendo en una misma página (ej. "Agendar diagnóstico" y "Acceder al programa ahora"
+  a la vez) — el candado #4 exige **un solo CTA por pieza**; hoy la web mezcla CTAs de compra directa
+  de curso con lenguaje de "más información".
 
 ### CAMBIAR
 
@@ -178,6 +210,18 @@ antes de pasar a redacción.
 
 ## 3 · Arquitectura de Navegación Recomendada
 
+### Menú actual (auditado) vs. propuesto
+
+| Hoy | Propuesto |
+|---|---|
+| Entrenamientos ▸ Escala tu PIPELINE · Vendiendo al C-Level · Planeación de FORECAST · Gerencia Comercial · Plan de Comisiones | Metodología ▸ Los 6 Pilares |
+| Recursos ▸ Frameworks · Podcast | Research Hub |
+| Conócenos ▸ Sobre Nosotros · Medios | Sobre PBS ▸ Alianza Harvard · Prensa · Equipo |
+| *(no existe)* | Industrias |
+| *(no existe)* | Casos de Estudio |
+| **INGRESO** (login de alumno) | *(se retira del nav principal; si el catálogo se mantiene, vive en una sub-marca aparte)* |
+| **QUIERO ESCALAR MI PIPELINE AHORA** (CTA a cursos) | **Agendar Diagnóstico** (único CTA, botón) |
+
 ### Menú principal
 
 ```
@@ -211,20 +255,21 @@ Metodología (Los 6 Pilares)   Industrias   Casos de Estudio   Research Hub   So
 
 ## 4 · Script para la Reunión del Lunes (resumen ejecutivo, <2 min)
 
-- **Diagnóstico:** Hoy nuestra web se percibe como escuela de ventas B2C, pero nuestro negocio real
-  ya es una firma de arquitectura de ingresos B2B — sistema de 6 pilares, acompañamiento 1:1 de 6
-  meses, alianza Harvard, +$150M en facturación generada para clientes. La brecha no es de producto:
-  es que la web no muestra lo que el contrato ya es, y eso le cuesta credibilidad frente a un
-  comprador C-level que factura +$1M al año.
+- **Diagnóstico:** Auditamos la web actual línea por línea. Hoy vende 5 cursos abiertos de $97 a
+  $1.497 a vendedores individuales, se presenta como *"la primera escuela de negocios"* y tiene un
+  login de alumno en el header — y **FAP, nuestro programa real de $1M+ en facturación por cliente,
+  no aparece ni una sola vez.** Son dos negocios que hoy no se tocan. De regalo, encontramos una
+  cifra en producción ("97% de recomendación") que no existe en ninguno de nuestros archivos de
+  verdad — hay que retirarla ya.
 - **Propuesta:** Reposicionar la web bajo un concepto único — *"No enseñamos a vender. Rediseñamos
   cómo tu empresa factura."* — aplicando lo que ya hacen McKinsey, Winning by Design, Simon-Kucher,
   Deloitte UK y V4 Company: metodología propia exhibida como IP, casos con ROI en vez de testimonios,
-  research propio, y un solo CTA (diagnóstico, no matrícula). No se toca el producto — se corrige el
-  envase.
-- **Próximo paso:** Aprobar este concepto y la nueva arquitectura de navegación esta semana. Para
-  avanzar a diseño necesitamos dos insumos de Jorge: (1) al menos un caso de cliente real con nombre
-  autorizado para el primer Estudio de Caso, y (2) acceso para auditar la web viva con capturas reales
-  antes de escribir el copy final.
+  research propio, y un solo CTA (diagnóstico, no matrícula). El producto no cambia — cambia qué
+  negocio decide mostrar la puerta de entrada.
+- **Próximo paso:** Decidir esta semana el destino del catálogo de 5 cursos (sub-marca separada o
+  descontinuar la venta abierta) y aprobar la nueva arquitectura de navegación. Para pasar a copy
+  final necesitamos de Jorge: al menos un caso de cliente real con nombre autorizado para el primer
+  Estudio de Caso.
 
 ---
 
@@ -233,9 +278,9 @@ Metodología (Los 6 Pilares)   Industrias   Casos de Estudio   Research Hub   So
 Este documento es v1 — está armado 100% desde `contexto/` (verdad interna) + benchmark internacional
 de referencia. Para robustecerlo antes de la reunión, en orden de impacto:
 
-1. **Auditoría de la web viva** — capturas de pantalla (o acceso) de la home y 2-3 páginas clave
-   actuales, para reemplazar el diagnóstico genérico de la Sección 0 por comparaciones exactas
-   ("hoy dice X, debería decir Y").
+1. **✅ Auditoría de la web viva** — hecha (Sección 0). Pendiente: repetir el mismo ejercicio sobre
+   2-3 páginas internas (una landing de curso completa, la página "Sobre Nosotros") para confirmar si
+   los hallazgos del home se repiten.
 2. **Caso ancla con nombre** — pedir a Jorge 1-2 clientes dispuestos a dar cita on-the-record; sin
    esto, la Sección 2 ("Renovar testimonios") no puede pasar de plantilla a contenido real.
 3. **Benchmark visual directo** — 3-4 capturas de home de Winning by Design, Simon-Kucher, Deloitte UK
