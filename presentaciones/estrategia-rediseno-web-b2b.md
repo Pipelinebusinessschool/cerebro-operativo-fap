@@ -60,6 +60,14 @@ dirigido a empresas ≥$1M). Antes de tocar una sola página hay que resolver co
 - **¿FAP se convierte en el único producto visible en la web principal?** Es la recomendación de este
   documento, consistente con `jorge_decisions.md` ("PBS no capacita vendedores individuales").
 
+> **Precedente real (benchmark):** Winning by Design resuelve exactamente esta tensión y lo hace
+> público en su propia web. Tienen precio transparente en su línea de training individual
+> (Growth Institute: $2.500/año; certificaciones sueltas: $500–$2.500) — y **cero precio público** en
+> el servicio de sistema completo tipo consultoría ("Diagnose/Design/Deploy"), que va a cotización
+> tras una llamada. Es el modelo que recomendamos para PBS: sub-marca de training con precio visible
+> (si se mantiene) + FAP sin precio, a diagnóstico. Ver diapositiva "Winning by Design" del deck de
+> benchmark (`Benchmark-Web-B2B-PBS.pptx`).
+
 ### Diagnóstico del problema actual
 
 Una web con forma de "catálogo de cursos" limita la venta B2B de alto ticket por cuatro razones
