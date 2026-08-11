@@ -1,36 +1,42 @@
-# VSL de FAP — carrusel de testimonios (adaptada del guión "Full Sales System")
+# VSL de FAP — carrusel de casos reales (adaptada del guión "Full Sales System")
 
 > **Generada por el cerebro FAP** · skill `fap-vsl` (+ `fap` como fuente de verdad).
 > Ruta A: Ads → **VSL** → Diagnóstico. Es el **guion hablado**; la página que la aloja la hace
 > `fap-paginas-venta`.
 >
-> **Candado #1 (el que importa en esta pieza):** el guión original es 100 % un **carrusel de
-> testimonios con cifras individuales** (R$300k→750k, 1M→13M, "vendí R$528k"…). En `contexto/`
-> **no existe** ni un solo testimonio de cliente FAP con **nombre + cargo + cifra antes→después**
-> (`prueba.md` marca el caso ancla como `[FALTA]`; los nombres del swipe —Ana Santos, Hugo Trejo,
-> Victor Girón— aparecen **sin su cita ni su cifra**). Por eso **ninguna cita de cliente se inventa**:
-> cada voz de cliente va como `[FALTA: …]` con el dato exacto que Jorge debe entregar, y lo único que
-> se pone en pantalla es la **métrica sourced** del Set B, siempre como *"promedio de clientes que
-> implementaron"*, **nunca como promesa**.
+> **Fuente de la prueba:** dos **casos de éxito reales de PBS** entregados por el cliente
+> (`Caso_de_Estudio_Software_LATAM` y `Caso_de_Estudio_Empresa_Industrial`). Las cifras de esta
+> pieza salen **verbatim de esos PDF**. El resto (voz, autoridad agregada, candados) sale de
+> `contexto/`.
+>
+> **Candado #1 honrado — dos restricciones de estos casos:**
+> 1. **Ambos están anonimizados.** El caso industrial dice textualmente *"por acuerdo con el cliente,
+>    su nombre e identidad se mantienen reservados"*. En la VSL **no se nombra** ni la empresa ni a la
+>    persona: se usan el **sector + cargo** ("empresa de software B2B enterprise", "VP de Ventas
+>    México"), que es como los publica PBS.
+> 2. **El caso de software NO trae cita textual** (es un caso de datos). Por eso **no se le inventa una
+>    frase**: va **narrado por Jorge como cifras verificadas**, no puesto en boca de nadie. La única
+>    voz de cliente literal es la del **VP de Ventas México** (sí tiene cita en el PDF).
 
 ---
 
 ## Decisión de formato (por qué así)
 
-- **Se conserva el género que pediste:** un *reel* de testimonios (voces de cliente), no la VSL
-  estándar de identidad. La estructura, el ritmo y los beats del guión Full Sales se mapean 1:1 a FAP.
-- **Optimización sobre el original (swipe + `principios-craft.md`):** el guión brasileño abre *suave*
-  (el socio se presenta). Para una VSL **en frío** eso sangra retención. Aquí abre con el **callout de
-  identidad** — el **mecanismo #1 comprobado por datos** del banco (píldora A1 y la VSL ganadora de
-  FAP, sección C del `swipe-ads.md`) — y recién después entra el carrusel. Los primeros 3 segundos son
-  la VSL entera.
+- **Se conserva el género que pediste:** un *reel* de prueba de cliente. Pero para un CEO B2B de alto
+  ticket, **dos casos reales con antes→después verificable** persuaden más que seis clips vagos de
+  "de X a Y" — y es lo que manda `principios-craft.md` ("prueba cuantificada por encima de
+  adjetivos"). Así que el reel corre como **golpes de cifra en pantalla** anclados a **dos
+  operaciones reales**.
+- **Optimización sobre el original:** el guión brasileño abre *suave* (el socio se presenta). Aquí
+  abre con el **callout de identidad** — el mecanismo #1 comprobado del banco (`swipe-ads.md`,
+  píldora A1 y la VSL ganadora de FAP). Los primeros 3 segundos son la VSL entera.
 - **Candados FAP intactos:** sin precio, CTA único al **diagnóstico** (con filtro), problema
-  **sistémico** (una sola construcción "no es X, es Y" en toda la pieza), y todo resultado con la
-  cláusula *"para quien implementa, ejecuta y sigue el paso a paso"*.
+  **sistémico** (una sola construcción "no es X, es Y"), y todo resultado con la cláusula
+  *"para quien implementa, ejecuta y sigue el paso a paso"* — encuadrado como *"esto logró un cliente
+  que implementó"*, **nunca** como *"esto vas a lograr tú"*.
 
-**Convención del guion:** `[JORGE]` = voz a cámara (la escribo yo, sourced). `[CLIENTE]` = voz de un
-cliente real en pantalla (**pendiente de dato real** → `[FALTA]`). `[en pantalla: …]` = super/gráfico;
-las cifras del super **sí** están sourced.
+**Convención del guion:** `[JORGE]` = voz a cámara (sourced). `[CLIENTE]` = cita textual real en
+pantalla. `[en pantalla: …]` = super/gráfico con cifras del PDF.
 
 ---
 
@@ -43,74 +49,69 @@ No eres el CEO fundador de tu compañía. Eres el vendedor más caro que tiene t
 Cierras tú los negocios grandes, rescatas tú los trimestres, trabajas 70 horas… y tu título dice
 director general, pero tu operación grita: *vendedor sénior exhausto*.
 
-**[JORGE — el device del reel, 8–20 s]**
+**[JORGE — reencuadre + device del reel, 8–22 s]**
 Y lo normalizaste: *"así son las ventas B2B"*. Es una gran mentira. Las ventas B2B son sistemas, no
 heroísmos; procesos escalables, no personalidades.
-Mi nombre es Jorge Conde, fundador de Pipeline Business School. Hemos estado en el backstage de más de
-**120 operaciones comerciales B2B**. No te lo voy a contar yo. Tengo tantos casos que no me alcanza
-este video — así que en los próximos 90 segundos no me vas a oír a mí. Los vas a oír a ellos.
-
-> `[FALTA: validar con Jorge el device "no me alcanza el video / no repetimos testimonio".` El
-> original ("a gente não repete depoimento") afirma que **nunca reutilizan un testimonio**. "+120
-> operaciones" **sí** está sourced (`prueba.md`); la frase de "nunca repetimos" no. Si Jorge no la
-> confirma, se queda solo con "+120 operaciones" y se borra la promesa de no-repetición.]
+Mi nombre es Jorge Conde, fundador de Pipeline Business School. No te lo voy a contar yo. Déjame
+mostrarte los números de **dos operaciones reales** que instalaron el sistema.
 
 ---
 
-### El carrusel (voces de cliente)
+### Caso 1 — La velocidad *(narrado con datos: empresa de software B2B enterprise, LATAM)*
 
-> Cada bloque = **super sourced en pantalla** + **cita real de cliente pendiente**. Los supers están
-> emparejados a su afirmación (regla de `prueba.md`), y encuadrados como promedio, no como promesa.
+**[JORGE]**
+Una empresa de software B2B enterprise en LATAM — +20 vendedores, más de 22 millones de dólares
+al año. Sus vendedores lograban **una** reunión por semana y el forecast era una adivinanza. Instalamos
+el **Programa de Aceleración de Forecast** en toda su cadena comercial. En **4 meses**:
 
-**① Velocidad del resultado** *(original: "3er mes, de R$300k a R$750k")*
-**[en pantalla: super — "−25 % ciclo de ventas · +35 % sales velocity — promedio de clientes que implementaron"]**
-`[CLIENTE — FALTA: testimonio real de un cliente FAP que aceleró su facturación en los primeros meses.`
-Necesito: **nombre · cargo · empresa/sector · cifra antes→después · plazo.** Sin inventar.]`
+**[en pantalla: supers en secuencia rápida — cifras del PDF, "resultado de un cliente real"]**
+- Reuniones por vendedor: **1 → 4 por semana** (+300 %)
+- Pipeline Coverage Ratio: **1.3X → 3.7X**
+- SROI comercial: **2.53X → 6.5X**
+- Cumplimiento de cuota: **45 % → 89 %**
+- Tasa de cierre: **10 % → 19 %**
 
-**② Diferenciación** *(original: "un programa diferente de todo lo que vi en el mercado")*
-**[en pantalla: super — "6 pilares · acompañamiento 1:1 · nadie más los ofrece completos"]**
-`[CLIENTE — FALTA: testimonio real sobre por qué FAP es distinto a lo que ya había probado`
-(CRM, consultoría, coach). Nombre · cargo · frase textual.]`
+**[JORGE]**
+No cambiaron de vendedores. Cambiaron el sistema sobre el que esos vendedores operaban.
 
-**③ Escala** *(original: "de 40–50 a 3 millones en 9 meses")*
-**[en pantalla: super — "+40 % Sales Growth · +52 % Pipeline Growth (1er año) — clientes que implementaron"]**
-`[CLIENTE — FALTA: caso de crecimiento a escala. Nombre · cargo · cifra antes→después · plazo.]`
+---
 
-**④ El "no-brainer" del método** *(original: "cuando vi el proceso, si no cierro soy un burro")*
-**[en pantalla: super — "SROI > 5X — 6 de cada 10 ejecutivos reportan retorno por vendedor superior a 5X"]**
-`[CLIENTE — FALTA: testimonio del momento en que vio el sistema/diagnóstico y decidió entrar.`
-Nombre · cargo · frase textual.]`
+### Caso 2 — La independencia del fundador *(el corazón de FAP — voz real de cliente)*
 
-**⑤ Independencia del fundador — EL corazón de FAP** *(original: "vendí R$528k en un producto en el que ya no estoy en la entrega")*
-**[en pantalla: super — "85 % Forecast Accuracy · las ventas suceden sin depender del fundador"]**
-`[CLIENTE — FALTA: testimonio de un fundador cuyas ventas ya ocurren sin él en la mesa.`
-Es el caso más importante de la pieza — el que prueba la promesa central de FAP. Nombre · cargo ·
-cifra o hecho concreto (p. ej. "cerré X sin estar yo en la reunión").]`
+**[JORGE]**
+Una multinacional industrial: más de 100 países, más de 500 canales… y solo el 10 % generaba tracción.
+Toda la facturación colgaba de la cartera de siempre. Instalamos el sistema comercial. En **120 días**:
 
-**⑥ Sistema / orden** *(original: "no vi nada tan organizado como esta entrega")*
-**[en pantalla: super — "Pipeline Coverage Ratio > 3.5X — el forecast se construye, no se adivina"]**
-`[CLIENTE — FALTA: testimonio sobre el orden/estructura del sistema. Nombre · cargo · frase textual.]`
+**[en pantalla: supers — cifras del PDF]**
+- Nuevo pipeline: **$16.7M por trimestre**
+- Velocidad de ventas: **$24K → $113K por día**
+- Pipeline Coverage Ratio: **1.4X → 3.2X**
+- SRO (retorno por vendedor): **1.8X → 5.7X**
+- Ventas trimestrales: **$4.7M → $12M**
 
-> **Dato en pantalla sin cita (uso legítimo):** entre bloques puede correr el panel cuantificado por
-> tipo de empresa (sourced del swipe): **Software** — 8→25 oportunidades/mes, win rate 9 %→22 %,
-> SROI 1.2X→5.3X, **+$553K/año**; **Industria** +$263K/año; **Servicios** +$281K/año.
-> Va como *dato agregado en pantalla*, **nunca** puesto en boca de una persona.
+**[CLIENTE — cita textual real, en pantalla con cargo: "VP de Ventas · México"]**
+> "Pasamos de una operación dependiente de cartera y pocos canales a un sistema comercial con foco,
+> supervisión predictiva y capacidad real de generar crecimiento nuevo cada trimestre."
+
+**[JORGE]**
+Eso es lo que significa dejar de ser el vendedor más caro de tu empresa: que el crecimiento ya no
+dependa de que tú estés en la mesa.
 
 ---
 
 ### Cierre (Jorge)
 
 **[JORGE — reencuadre de la oferta, sin precio]**
-Todos ellos tenían el mismo problema: directivos esclavos de su operación comercial por falta de una
-estructura de ventas escalable. Por eso creamos el **programa de aceleración de Forecast**: trabajamos
-contigo para estructurar todo tu sistema de ventas B2B —los 6 pilares, con acompañamiento uno a uno—
-de forma que genere **facturación predecible** y elimine la dependencia del directivo para que las
-ventas sucedan. Funciona **para quien implementa, ejecuta y sigue el paso a paso**.
+Los dos tenían el mismo problema: directivos y equipos esclavos de una operación sin estructura. Por
+eso creamos el **programa de aceleración de Forecast**: trabajamos contigo para estructurar todo tu
+sistema de ventas B2B —los 6 pilares, con acompañamiento uno a uno— de forma que genere **facturación
+predecible** y elimine la dependencia del directivo para que las ventas sucedan. Y funciona **para
+quien implementa, ejecuta y sigue el paso a paso** — esos números son de clientes que lo hicieron.
 
 **[JORGE — autoridad]**
 **[en pantalla: logos — Forbes · MIT · Business Insider · Harvard Business Publishing]**
 Hemos entrenado a **más de 47.000** profesionales de ventas, rediseñado **más de 120** operaciones
-comerciales y nuestros clientes reportan **más de $150 millones** en nueva facturación.
+comerciales B2B y nuestros clientes reportan **más de $150 millones** en nueva facturación.
 
 **[JORGE — CTA único al diagnóstico, con filtro]**
 Si quieres saber cómo se vería esto en tu operación, agendemos un **diagnóstico**. No es una llamada de
@@ -126,29 +127,23 @@ de cargar tú solo una operación de ventas desgastante e impredecible**. Da cli
 
 - [x] Hook de identidad en los primeros 3 seg (no el producto).
 - [x] Un solo mensaje líder (la operación depende de ti → hay un sistema que la libera).
-- [x] Cifras **sourced**, pegadas a su afirmación; encuadradas como promedio, no promesa.
+- [x] Cifras **sourced** (verbatim de los dos PDF), pegadas a su afirmación.
+- [x] Resultados encuadrados como *"logró un cliente que implementó"*, no como promesa al espectador.
 - [x] **Sin precio de FAP.**
 - [x] CTA único al diagnóstico, con filtro ("únicamente si…").
-- [x] Voz de Jorge · problema **sistémico** (una sola construcción "no es X, es Y" en toda la pieza).
-- [x] Nada prometido sin *"para quien implementa"*.
-- [x] Ritmo hablado, párrafos cortos.
-- [ ] **Voces de cliente reales** → bloqueado hasta que Jorge entregue los testimonios (ver abajo).
+- [x] Voz de Jorge · problema **sistémico** (una sola construcción "no es X, es Y").
+- [x] Anonimato respetado (sector + cargo; sin nombrar empresa ni persona).
+- [x] Sin cita inventada para el caso de software (va como datos narrados).
 
-## Lo que necesito de Jorge para cerrarla (no se inventa)
+## Opcional para reforzar (no bloquea; ya es grabable)
 
-Para que esto deje de ser plantilla y sea una VSL-testimonial de verdad, hacen falta **de 4 a 6
-testimonios reales**, cada uno con:
+La pieza **ya se puede grabar** con estos dos casos. Si quieres subir la carga humana del reel, lo que
+más ayudaría es **1–2 voces de fundador con nombre y rostro** (aunque sea video corto), con:
+**nombre · cargo · una frase textual · una cifra**. No lo invento: si me pasas ese material, lo
+integro. Los nombres del swipe (Ana Santos, Hugo Trejo, Victor Girón) siguen sin cita ni cifra en la
+fuente — si son clientes reales, necesito sus datos.
 
-1. **Nombre y cargo** del cliente (y sector/empresa si autoriza).
-2. **Cifra antes→después** o hecho concreto (facturación, ciclo, forecast, "cerré sin estar yo").
-3. **Plazo** en que ocurrió.
-4. La **frase textual** que dijo (para que sea su voz, no la mía).
-
-Prioridad #1: el testimonio del **bloque ⑤ (independencia del fundador)** — es el que prueba la
-promesa central de FAP. Los nombres del swipe (Ana Santos, Hugo Trejo, Victor Girón) existen como
-testimonios reales, pero **su cita y su cifra no están en la fuente** — si son estos clientes, necesito
-sus datos.
-
-> Nota de reconciliación con el original: la cifra de cierre del guión Full Sales ("500 millones en dos
-> años") **se reemplazó** por la sourced (**+$150M en nueva facturación reportada por clientes**). No se
-> usó la del original porque no es un dato de PBS.
+> **Nota de reconciliación con el original:** la cifra de cierre del guión Full Sales ("500 millones en
+> dos años") se reemplazó por la sourced de PBS (**+$150M en nueva facturación reportada por
+> clientes**). Las cifras de "R$300k→750k / 1M→13M / R$528k" del original **no se usaron**: se
+> sustituyeron por los antes→después reales de los dos casos.

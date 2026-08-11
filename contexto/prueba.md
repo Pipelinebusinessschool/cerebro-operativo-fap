@@ -45,9 +45,31 @@ Cierra el hueco #4. Lo cargan las skills que necesitan prueba (venta, diagnósti
 una promesa sin razón para creer. Conectar la métrica al **dolor específico** del prospecto, no
 listarla en abstracto.
 
-## Caso ancla
+## Casos ancla (reales, anonimizados) — sourced
 
-`[FALTA: caso de éxito con nombre + cifra específica]` — el handoff menciona un caso ancla (Bank of
-America), pero **no está en los archivos de contexto**. Pedir a Jorge para no inventarlo. Los
-testimonios con nombre (Ana Santos, Hugo Trejo, Victor Girón…) aparecen en las páginas de venta del
-swipe y pueden usarse como prueba de resultado.
+Dos casos de éxito oficiales de PBS entregados por el cliente (PDF, agosto 2026). **Anonimizados por
+acuerdo de confidencialidad:** se citan por **sector + cargo**, nunca con nombre de empresa o persona.
+Uso: como prueba de resultado de cliente, con la cláusula *"para quien implementa"* y encuadrados como
+*"lo que logró un cliente que implementó"*, no como promesa.
+
+**① Empresa de software B2B enterprise (LATAM) · Programa de Aceleración de Forecast · 4 meses**
+Perfil: +20 vendedores, +3.000 clientes, 50 países, **+US$22M/año**. Sin cita textual (caso de datos).
+- Reuniones por vendedor: **1 → 4/semana** (+300 %)
+- Pipeline Coverage Ratio: **1.3X → 3.7X** (+184.6 %)
+- SROI comercial: **2.53X → 6.5X** (+156.9 %)
+- Cumplimiento de cuota: **45 % → 89 %** (+97.8 %) · Tasa de cierre: **10 % → 19 %** (+90 %)
+- Ticket promedio: **+10 %** (mid market y enterprise)
+
+**② Multinacional industrial global · Sistema Operativo Comercial · 120 días**
+Perfil: +100 países, +160.000 empleados, ingresos **>€40B**. Vocero: **VP de Ventas, México** (identidad
+reservada). **Cita textual (usable literal):** *"Pasamos de una operación dependiente de cartera y pocos
+canales a un sistema comercial con foco, supervisión predictiva y capacidad real de generar crecimiento
+nuevo cada trimestre."*
+- Nuevo pipeline: **$16.7M/trimestre** · Velocidad de ventas: **$24K → $113K/día**
+- Pipeline Coverage Ratio: **1.4X → 3.2X** · SRO (retorno por vendedor): **1.8X → 5.7X**
+- Cumplimiento de cuota: **46 % → 86 %** · Reuniones nuevas/vendedor/mes: **3 → 10.1**
+- Ventas trimestrales: **$4.7M → $12M**
+
+> Testimonios con nombre (Ana Santos, Hugo Trejo, Victor Girón…) aparecen en las páginas de venta del
+> swipe **sin cita ni cifra** — no usar como prueba cuantificada hasta tener su dato. El caso ancla
+> "Bank of America" del handoff **no está en contexto**; no inventarlo.
