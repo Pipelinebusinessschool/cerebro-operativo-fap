@@ -40,7 +40,54 @@ pantalla. `[en pantalla: …]` = super/gráfico con cifras del PDF.
 
 ---
 
-## GUION
+## Locución limpia (~2 min · teleprompter)
+
+> Pista hablada pura, ~343 palabras ≈ **2:10** a ritmo de VSL. Las cifras completas van en los supers;
+> Jorge vocea solo los titulares. La cita del cliente la lee otra voz / va en pantalla.
+
+**[0:00 · HOOK]**
+No eres el CEO fundador de tu compañía. Eres el vendedor más caro que tiene tu empresa. Cierras tú los
+negocios grandes, rescatas tú los trimestres, trabajas más de setenta horas. Tu título dice director
+general, pero tu operación grita: vendedor sénior exhausto.
+
+**[0:14 · REENCUADRE]**
+Lo normalizaste: "así son las ventas B2B". Es una gran mentira. Las ventas B2B son sistemas, no
+heroísmos; procesos, no personalidades. Soy Jorge Conde, fundador de Pipeline Business School. No te lo
+voy a contar yo: mira dos operaciones reales.
+
+**[0:30 · CASO 1 — velocidad]**
+Una empresa de software B2B enterprise en Latinoamérica: más de veinte vendedores, veintidós millones de
+dólares al año. Cada vendedor lograba una reunión por semana, y el forecast era adivinanza. Instalamos
+el Programa de Aceleración de Forecast. En cuatro meses pasaron de una a cuatro reuniones por vendedor,
+triplicaron la cobertura de su pipeline, y el retorno por vendedor saltó de dos y medio a seis veces y
+media. No cambiaron de vendedores: cambiaron el sistema sobre el que operaban.
+
+**[1:03 · CASO 2 — independencia del fundador]**
+Segundo caso: una multinacional industrial. Más de cien países, quinientos canales, y solo el diez por
+ciento generaba tracción. Todo colgaba de la cartera de siempre. Instalamos el sistema, y en ciento
+veinte días generaron dieciséis punto siete millones en pipeline nuevo por trimestre; la velocidad de
+ventas pasó de veinticuatro mil a ciento trece mil dólares por día.
+
+**[1:30 · CITA — voz del VP de Ventas, México / en pantalla]**
+"Pasamos de una operación dependiente de cartera y pocos canales a un sistema comercial con foco,
+supervisión predictiva y capacidad real de generar crecimiento nuevo cada trimestre."
+
+**[1:41 · PUENTE + OFERTA]**
+Eso es dejar de ser el vendedor más caro de tu empresa: que el crecimiento ya no dependa de que estés tú
+en la mesa. Para eso creamos el Programa de Aceleración de Forecast: estructuramos tu sistema de ventas
+B2B —los seis pilares, con acompañamiento uno a uno— para generar facturación predecible. Funciona para
+quien implementa y ejecuta.
+
+**[1:56 · CTA]**
+Si estás cansado de cargar tú solo una operación desgastante e impredecible, da clic aquí abajo y agenda
+tu diagnóstico. No es una llamada de ventas: encontramos el cuello de botella de tu facturación y te
+damos los primeros pasos. Da clic.
+
+**[en pantalla: botón — "AGENDAR MI DIAGNÓSTICO"]**
+
+---
+
+## GUION (versión anotada para producción)
 
 **[en pantalla: rostro de Jorge, corte seco, sin intro musical larga]**
 
