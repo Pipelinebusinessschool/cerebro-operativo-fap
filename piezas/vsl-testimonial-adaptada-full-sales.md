@@ -44,42 +44,45 @@ pantalla. `[en pantalla: …]` = super/gráfico con cifras del PDF.
 
 > **Un solo monólogo, sin cortes a video externo.** Jorge lo dice todo de principio a fin; la cita del
 > VP de Ventas la **narra él mismo** (la atribuye, no se corta a un testimonio grabado). Sin subtítulos
-> de sección ni marcas de tiempo, para que la lectura fluya. Cifras en números. ~345 palabras ≈ 2 min.
+> de sección ni marcas de tiempo. Preguntas retóricas para dar ritmo (pregunta → respuesta, estilo de
+> Jorge). Cifras en números, porcentajes con `%`. ~360 palabras ≈ 2 min.
 
 Bienvenido, bienvenida al Programa de Aceleración de Forecast. Soy Jorge Conde, socio fundador de
-Pipeline Business School, y no te voy a contar teoría: te voy a mostrar dos operaciones reales, con
-números reales.
+Pipeline Business School, y antes de empezar déjame preguntarte algo: ¿cuánto de tu facturación depende
+hoy de que seas tú quien cierra? Porque si eres el fundador, lo más probable es que hoy seas el vendedor
+más caro de tu propia empresa. Tú cierras los negocios grandes, tú rescatas los trimestres… y con el
+tiempo lo normalizaste, diciéndote que "así son las ventas B2B". Pero, ¿y si esa fuera justo la mentira
+que te tiene atrapado? Porque las ventas B2B son sistemas, no héroes. Y para que no te quede en teoría,
+déjame mostrarte dos operaciones reales, con números reales.
 
-Empecemos por algo incómodo. Si eres el fundador, hoy eres el vendedor más caro de tu empresa: tú
-cierras los negocios grandes, tú rescatas los trimestres, y con el tiempo lo normalizaste diciéndote que
-"así son las ventas B2B". Y esa es la gran mentira, porque las ventas B2B son sistemas, no héroes.
+La primera es una empresa de software B2B que factura más de 22 millones de dólares al año, con más de
+20 vendedores. ¿El problema? Cada uno lograba apenas 1 reunión por semana, y el forecast era pura
+adivinanza. Instalamos el sistema y, en solo 4 meses, cada vendedor pasó de 1 a 4 reuniones por semana,
+su cobertura de pipeline subió de 1.3 a 3.7 veces, el retorno por vendedor saltó de 2.53 a 6.5, y su
+cumplimiento de cuota pasó del 45% al 89%. ¿Y sabes qué es lo mejor? No cambiaron un solo vendedor.
+Cambiaron el sistema sobre el que trabajaban.
 
-La primera empresa es de software B2B, factura más de 22 millones de dólares al año y tiene más de 20
-vendedores que apenas lograban 1 reunión por semana. Instalamos el sistema y, en solo 4 meses, cada
-vendedor pasó de 1 a 4 reuniones a la semana, su cobertura de pipeline subió de 1.3 a 3.7 veces, el
-retorno por vendedor saltó de 2.53 a 6.5, y su cumplimiento de cuota pasó del 45 al 89 por ciento. No
-cambiaron un solo vendedor; cambiaron el sistema sobre el que trabajaban.
+La segunda es una multinacional industrial presente en más de 100 países, con 500 canales… de los que
+solo el 10% generaba ventas. Todo lo demás dependía de la cartera de siempre. ¿El resultado en 120 días?
+16.7 millones de dólares de pipeline nuevo cada trimestre, una velocidad de ventas que pasó de 24 a 113
+mil dólares por día, y ventas trimestrales que crecieron de 4.7 a 12 millones. Su vicepresidente de
+ventas en México lo resumió mejor que yo: pasaron de una operación que dependía de la cartera y de unos
+pocos canales, a un sistema comercial con foco, con supervisión predictiva y con capacidad real de
+generar crecimiento nuevo cada trimestre.
 
-La segunda es una multinacional industrial presente en más de 100 países, con 500 canales de los que
-solo el 10 por ciento vendía, y su facturación pegada a la cartera de siempre. En 120 días generaron
-16.7 millones de dólares de pipeline nuevo cada trimestre, su velocidad de ventas pasó de 24 a 113 mil
-dólares por día, y sus ventas trimestrales crecieron de 4.7 a 12 millones. Su vicepresidente de ventas
-en México lo resumió mejor que yo: pasaron de una operación que dependía de la cartera y de unos pocos
-canales, a un sistema comercial con foco, con supervisión predictiva y con capacidad real de generar
-crecimiento nuevo cada trimestre.
-
-Y no son dos casos aislados: hemos entrenado a más de 47 mil profesionales de ventas, rediseñado más de
-120 operaciones comerciales y nuestros clientes reportan más de 150 millones de dólares en nueva
+¿Casualidad? No. Hemos entrenado a más de 47 mil profesionales de ventas, rediseñado más de 120
+operaciones comerciales, y nuestros clientes reportan más de 150 millones de dólares en nueva
 facturación.
 
 Mi ambición es simple: que la dirección comercial en Latinoamérica deje de vivir de héroes y empiece a
-vivir de sistemas, y que tu facturación deje de depender de que estés tú en la mesa. Para eso existe
-este programa: estructuramos los 6 pilares de tu operación de ventas, uno a uno, hasta que tu
-facturación sea predecible. Y funciona para quien implementa y ejecuta.
+vivir de sistemas. Que tu facturación deje de depender de que estés tú en la mesa. ¿Y cómo se logra?
+Estructurando los 6 pilares de tu operación de ventas, uno a uno, hasta que tu facturación sea
+predecible. Para eso existe este programa. Y funciona para quien implementa y ejecuta.
 
-Así que si te identificaste con esto, no saques conclusiones tú solo. Agenda un diagnóstico con
-nosotros: no es una llamada de ventas, es una sesión donde encontramos exactamente dónde se está
-frenando tu facturación y te damos los primeros pasos para destrabarla. Da clic aquí abajo y hablemos.
+Entonces, ¿qué sigue? Si te identificaste con esto, no saques conclusiones tú solo. Agenda un
+diagnóstico con nosotros: no es una llamada de ventas, es una sesión donde encontramos exactamente dónde
+se está frenando tu facturación y te damos los primeros pasos para destrabarla. Da clic aquí abajo y
+hablemos.
 
 ---
 
