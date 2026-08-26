@@ -10,11 +10,11 @@
 >
 > **Candado #1 — qué se transformó y por qué:**
 > - **✅ GARANTÍA REAL DE FAP (política oficial de Jorge).** El original promete "30% más o te
->   devolvemos tu dinero" (garantía de **resultado** — prohibida en FAP). Se reemplaza por la garantía
->   real y citable: *si en 90 días no se ha incorporado al menos el 80% de los procesos y herramientas
->   definidas, se amplía el programa hasta 6 meses, sin costo adicional, hasta lograrlo.* Es garantía de
->   **instalación del sistema**, no de resultado de ventas — coherente con "para quien implementa".
->   Registrada en `contexto/jorge_decisions.md` §4.
+>   devolvemos tu dinero". Se reemplaza por la garantía real y citable: *"si no duplicas la rentabilidad
+>   por vendedor que hoy tienes, seguimos trabajando contigo hasta conseguirlo"* — remedio = trabajar
+>   hasta lograrlo, **nunca devolución de dinero**; condicionada a "para quien implementa". Va en el
+>   **hook** y reforzada en la reversión. Respaldo operativo (90 días / 80% de procesos → extensión) y
+>   detalle en `contexto/jorge_decisions.md` §4.
 > - **✅ Mecanismo = los 6 pilares** (no "4 palancas"): metodología · habilitación · prospección con IA ·
 >   supervisión · comisiones · contratación, todos alineados al proceso de compra del cliente.
 > - **Autoridad Sandler → PBS.** Fuera Sandler / Teresa Prieto / Pinnacle Award / Selling Power /
@@ -31,8 +31,9 @@
 ## Guion
 
 ¿Cuánto dinero estás dejando de ganar porque cada cierre importante sigue dependiendo de ti? Te
-acompañamos, paso a paso, a instalar el sistema para que empieces a delegar las ventas de tu empresa y
-tu facturación deje de vivir sobre tus hombros.
+acompañamos, paso a paso, a instalar el sistema para que empieces a delegar las ventas de tu empresa; y
+si no duplicas la rentabilidad por vendedor que hoy tienes, seguimos trabajando contigo hasta
+conseguirlo.
 
 Si diriges una empresa que factura un millón de dólares o más, tienes un equipo de ventas y aun así
 eres tú el principal responsable de que los negocios de alto valor se cierren, sabes que necesitas
@@ -88,11 +89,12 @@ para pensar nuevos proyectos, para descansar, para tu familia— y dejas de ser 
 rotación y cero resultados. Déjame contarte un secreto: sin un playbook de ventas, nunca vas a poder
 delegar. Ese es el punto que casi nadie te dice.
 
-Y para que entres sin miedo, te doy una garantía que casi nadie en este mercado se atreve a dar: si en
-90 días no hemos incorporado a tu operación al menos el 80% de los procesos y las herramientas que
-definimos juntos, ampliamos el programa hasta seis meses, sin costo adicional, hasta lograrlo. Eso sí,
-te lo digo de frente: esto funciona para quien implementa, ejecuta y sigue el paso a paso. Los números
-que te doy son de clientes que lo hicieron.
+Y para que entres sin miedo, te doy una garantía que casi nadie en este mercado se atreve a dar: si al
+implementar el sistema no duplicas la rentabilidad por vendedor que hoy tienes, seguimos trabajando
+contigo, sin costo adicional, hasta que lo consigas. Eso sí, te lo digo de frente: esto funciona para
+quien implementa, ejecuta y sigue el paso a paso. Los números que te doy son de clientes que lo
+hicieron — y, de hecho, en los dos casos que te conté la rentabilidad por vendedor no se duplicó: se
+multiplicó por más de dos y medio.
 
 Ahora, si no nos conoces, me presento en 20 segundos para que sepas quién te va a llevar de la mano
 estos meses. Soy Jorge Conde, socio fundador de PIPELINE Business School. Desde 2019 hemos formado a más
