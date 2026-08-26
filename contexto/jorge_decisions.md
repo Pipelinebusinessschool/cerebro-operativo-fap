@@ -52,6 +52,11 @@ El Programa de Aceleración de Forecast (PAF) es:
   - Mastermind presencial en Bogotá una vez por semestre
   - Acceso al fondo de contratación PBS (talento certificado disponible)
   - Acceso al ecosistema de partners aliados
+- **Garantía de implementación (política oficial):** si en 90 días no se ha incorporado al menos el
+  **80% de los procesos y herramientas definidas**, se **amplía el programa hasta 6 meses**, sin costo
+  adicional, hasta lograrlo. Es garantía de **instalación del sistema**, NO de resultado de ventas —
+  coherente con "no promete resultados sin implementación". Es la **única garantía citable** en copy;
+  nunca redactar una garantía de % de ventas ni de devolución de dinero.
 
 ### 5. Precio razonable — no premium aspiracional
 El programa tiene un valor de inversión accesible para cualquier empresa B2B en Latinoamérica. No es un programa de $20,000–$25,000. Es deliberadamente razonable para no excluir a las empresas que más lo necesitan. La propuesta de valor se sostiene en el SROI (>5X promedio), no en el posicionamiento de precio alto.

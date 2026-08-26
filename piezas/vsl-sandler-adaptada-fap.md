@@ -9,12 +9,14 @@
 > **"tres razones"** → cierre anti-presión + CTA → casos de éxito post-agenda → cierre cálido.
 >
 > **Candado #1 — qué se transformó y por qué:**
-> - **🚨 GARANTÍA ELIMINADA/REENCUADRADA.** El original promete "30% más en 6 meses o te devolvemos tu
->   dinero por contrato" (×3). FAP **prohíbe** garantías de resultado y devolución ("te garantizo",
->   "garantizado" están en vocabulario prohibido; regla: *nunca prometer sin condición*). Se reemplaza
->   por la reversión real de FAP: **diagnóstico sin costo ni compromiso + "para quien implementa" +
->   calificación**. → **DECISIÓN DE JORGE:** si FAP ofrece alguna garantía, dime los **términos
->   exactos** y la reinstalo bien; no la invento.
+> - **✅ GARANTÍA REAL DE FAP (política oficial de Jorge).** El original promete "30% más o te
+>   devolvemos tu dinero" (garantía de **resultado** — prohibida en FAP). Se reemplaza por la garantía
+>   real y citable: *si en 90 días no se ha incorporado al menos el 80% de los procesos y herramientas
+>   definidas, se amplía el programa hasta 6 meses, sin costo adicional, hasta lograrlo.* Es garantía de
+>   **instalación del sistema**, no de resultado de ventas — coherente con "para quien implementa".
+>   Registrada en `contexto/jorge_decisions.md` §4.
+> - **✅ Mecanismo = los 6 pilares** (no "4 palancas"): metodología · habilitación · prospección con IA ·
+>   supervisión · comisiones · contratación, todos alineados al proceso de compra del cliente.
 > - **Autoridad Sandler → PBS.** Fuera Sandler / Teresa Prieto / Pinnacle Award / Selling Power /
 >   "método Sandler" / podcast Máquina de Ventas. Entra Jorge Conde + cifras sourced.
 > - **Testimonios del original NO se usan** (Mariana Villegas, Santiago Cala, Freddy Gallego, Natalya
@@ -47,43 +49,50 @@ cómo avanzar desde el primer contacto hasta el cierre.
 
 ¿Y cómo lo hacemos? Con el mismo sistema que aplicamos desde PYMES hasta empresas Fortune 500, y que le
 ha sumado a nuestros clientes más de 150 millones de dólares en nueva facturación. Lo adaptamos a tu
-empresa y a tu equipo, todo girando alrededor de una sola cosa —cómo compra de verdad tu cliente— y lo
-instalamos con cuatro palancas medibles.
+empresa y a tu equipo, y todo gira alrededor de una sola cosa: cómo compra de verdad tu cliente. Lo
+instalamos con nuestro sistema de 6 pilares.
 
-**Uno, prospección estratégica.** Vamos a llenar tu pipeline con compradores que sí califican, y en el
-volumen que necesitas para llegar a tu meta; adiós a las citas innecesarias, a los seguimientos eternos
-y al tiempo perdido con prospectos que nunca te iban a comprar. Mira lo que pasó con una empresa de
-software B2B que factura más de 22 millones al año: sus vendedores lograban apenas 1 reunión por semana,
-y en 4 meses cada uno pasó a 4. Los mismos vendedores. Otro sistema.
+**Uno, la metodología de ventas:** rediseñamos a quién le vendes y cómo le argumentas valor, para que
+dejes de competir por precio y dejes de ser uno más del montón.
 
-**Dos, la calificación y el cierre eficiente.** Aquí es donde más se estanca un vendedor. Te damos el
-guion de conversación para cerrar sin incomodar, sin dar descuentos y sin negociaciones eternas. Porque
-la mayoría no se paraliza por falta de capacidad, sino por falta de entrenamiento y de herramientas que
-le hagan la vida más fácil. En esa misma empresa, la tasa de cierre pasó del 10% al 19% y el
-cumplimiento de cuota, del 45% al 89% — con menos reuniones y más foco. `[FALTA: si Jorge tiene un
-testimonio con nombre específico de cierre más rápido, va aquí.]`
+**Dos, la habilitación comercial:** los guiones, los playbooks y el manejo de objeciones para que tu
+equipo cierre sin incomodar, sin dar descuentos y sin negociaciones eternas. Porque la mayoría de los
+vendedores no se paraliza por falta de capacidad, sino por falta de entrenamiento y de herramientas.
 
-**Tres, la rendición de cuentas.** Vamos a eliminar tu obstáculo más grande: la falta de accountability.
-Nos convertimos en ese gerente de ventas que te hace rendir números, llenar el CRM, prospectar y
-ejecutar lo que de verdad pone dinero en tu bolsillo. Ese peso de cargar tú solo con las ventas, el
-estrés de no saber cómo delegar, lo cargamos contigo — no vas a estar solo. Una multinacional industrial
-en más de 100 países lo vivió: instaló nuestra supervisión predictiva y, en 120 días, generó 16.7
-millones de dólares de pipeline nuevo por trimestre. Su vicepresidente de ventas en México lo dijo así:
-pasaron de depender de la cartera de siempre a un sistema con foco, con supervisión predictiva y con
-capacidad real de crecer cada trimestre.
+**Tres, la prospección a gran escala con inteligencia artificial:** para llenar tu pipeline con
+compradores que sí califican, y decirle adiós a las citas innecesarias y a los seguimientos eternos con
+quien nunca te iba a comprar. Mira lo que pasó con una empresa de software B2B que factura más de 22
+millones al año: sus vendedores lograban apenas 1 reunión por semana, y en 4 meses cada uno pasó a 4,
+con la tasa de cierre subiendo del 10% al 19% y el cumplimiento de cuota del 45% al 89%. Los mismos
+vendedores. Otro sistema.
 
-**Cuatro, la libertad de tiempo.** Te acercamos a lo que de verdad quieres: dejar de ser esclavo de tu
-empresa. Tener tiempo para pensar nuevos proyectos, para descansar, para hacer ejercicio, para tu
-familia y tus amigos. Porque cuando el sistema queda instalado, las ventas dejan de depender de que
-estés tú en la sala.
+**Cuatro, la supervisión comercial:** nos convertimos en ese gerente de ventas que te hace rendir
+números, llenar el CRM y ejecutar, y que detecta una caída antes de que golpee tu facturación. Ese peso
+de cargar tú solo con las ventas lo cargamos contigo — no vas a estar solo. Una multinacional industrial
+en más de 100 países la instaló y, en 120 días, generó 16.7 millones de dólares de pipeline nuevo por
+trimestre. Su vicepresidente de ventas en México lo dijo así: pasaron de depender de la cartera de
+siempre a un sistema con foco, con supervisión predictiva y con capacidad real de crecer cada trimestre.
+
+**Cinco, el sistema de comisiones:** para que todo tu equipo rema hacia el mismo lado, con incentivos
+que empujan la facturación que tú quieres.
+
+**Y seis, el sistema de contratación:** contratar por perfil y no por corazonada. Porque hoy, en
+Latinoamérica, de cada 4 vendedores que contratas solo 1 realmente funciona; y no es mala suerte, es que
+se contrata por feeling.
+
+Seis pilares, engranados entre sí. Y cuando quedan montados, pasa lo que de verdad quieres: las ventas
+dejan de depender de que estés tú en la sala. Ahí empiezas a delegar de verdad y a recuperar tu tiempo —
+para pensar nuevos proyectos, para descansar, para tu familia— y dejas de ser esclavo de tu empresa.
 
 ¿Y sabes por qué casi todos fracasan al intentar delegar? Porque lo intentan a punta de nómina,
 rotación y cero resultados. Déjame contarte un secreto: sin un playbook de ventas, nunca vas a poder
 delegar. Ese es el punto que casi nadie te dice.
 
-Y para que tomes esta decisión sin riesgo, el primer paso no te cuesta ni te compromete a nada. Pero,
-eso sí, quiero ser honesto contigo: esto funciona para quien implementa, ejecuta y sigue el paso a paso.
-Los números que te doy son de clientes que lo hicieron.
+Y para que entres sin miedo, te doy una garantía que casi nadie en este mercado se atreve a dar: si en
+90 días no hemos incorporado a tu operación al menos el 80% de los procesos y las herramientas que
+definimos juntos, ampliamos el programa hasta seis meses, sin costo adicional, hasta lograrlo. Eso sí,
+te lo digo de frente: esto funciona para quien implementa, ejecuta y sigue el paso a paso. Los números
+que te doy son de clientes que lo hicieron.
 
 Ahora, si no nos conoces, me presento en 20 segundos para que sepas quién te va a llevar de la mano
 estos meses. Soy Jorge Conde, socio fundador de PIPELINE Business School. Desde 2019 hemos formado a más
@@ -138,10 +147,10 @@ Charlamos pronto. Por lo pronto, te deseo mucho éxito y mucha facturación pred
 
 ## Checklist de presión (pre-entrega)
 
-- [x] Estructura y recursos retóricos del original replicados (loss-aversion, palancas numeradas,
-  "secreto" del playbook, "tres razones", reversión, anti-presión, casos post-agenda, cierre cálido).
-- [x] **Sin garantía de resultado ni devolución** (reencuadrada a diagnóstico sin riesgo + "para quien
-  implementa"). 🚨 pendiente de decisión de Jorge.
+- [x] Estructura y recursos retóricos del original replicados (loss-aversion, pilares numerados,
+  "secreto" del playbook, "tres razones", garantía, anti-presión, casos post-agenda, cierre cálido).
+- [x] **Garantía real de FAP** (instalación 90 días / 80% o extensión gratis) — sourced, no de resultado.
+- [x] Mecanismo = **6 pilares** (no 4 palancas), alineados al proceso de compra del cliente.
 - [x] Autoridad PBS (sin Sandler). · Cifras **sourced**. · ICP FAP (≥$1M, ≥2 vendedores).
 - [x] Testimonios = 2 casos reales; slots extra `[FALTA]`, no inventados.
 - [x] **Sin precio.** · CTA único a **diagnóstico**. · "para quien implementa" presente.
@@ -149,8 +158,6 @@ Charlamos pronto. Por lo pronto, te deseo mucho éxito y mucha facturación pred
 
 ## Pendientes de Jorge (no se inventan)
 
-1. **🚨 ¿FAP ofrece garantía?** Si sí, términos exactos (qué se garantiza, en cuánto tiempo, condición
-   de devolución) — para reinstalarla sin romper el canon. Si no, se queda la reversión por diagnóstico.
-2. **Testimonios con nombre** para las palancas 2 y 4 y para los "casos post-agenda".
-3. Confirmaciones abiertas de la otra VSL: Google/SAP/Cisco (clientes vs. directivos formados) y la
+1. **Testimonios con nombre** para los "casos post-agenda" (Freddy/Natalya del original no son de FAP).
+2. Confirmaciones abiertas de la otra VSL: Google/SAP/Cisco (clientes vs. directivos formados) y la
    discrepancia de cifras de autoridad con `contexto/autoridad.md`.
