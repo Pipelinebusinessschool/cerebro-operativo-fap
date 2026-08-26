@@ -71,29 +71,15 @@ recuperan más de 5 veces lo que invirtieron. Su forecast pasa a acertar un 85%,
 acortan una cuarta parte, y hasta su rentabilidad por empleado sube… sin contratar a nadie más. Nada de
 esto es suerte. Se mide.
 
-Entonces, ¿cómo lo logramos? Contigo, uno a uno, instalamos los 6 pilares de un sistema de ventas que
-escala. Te los cuento agrupados, para que los veas encajar.
+Entonces, ¿cómo lo logramos? No con una táctica suelta, sino con un sistema completo. Le llamamos los 6
+pilares, y los instalamos contigo, uno a uno: metodología de ventas, habilitación comercial, prospección
+a gran escala con inteligencia artificial, supervisión comercial, sistema de comisiones y sistema de
+contratación.
 
-Los dos primeros tienen que ver con cómo vende tu equipo. El pilar uno es la metodología de ventas.
-Y te voy a ser franco: en 87 de cada 100 operaciones que hemos visto, venden igual que su competencia y
-por eso terminan peleando por precio, porque nadie alineó el método a cómo compra de verdad el cliente.
-Eso es lo que rediseñamos: a quién le vendes, cómo le argumentas valor en lugar de descuento, y qué te
-hace diferente para que dejes de ser uno más del montón. Y el pilar dos es la habilitación comercial:
-darle a tu gente los guiones, los playbooks y el manejo de objeciones para que salga a vender con todo.
-Porque no lo olvides: el C-level no compra, invierte.
-
-El tercer pilar es la prospección a gran escala con inteligencia artificial. Porque de nada sirve el
-mejor equipo si no tiene con quién sentarse, ¿cierto? Te montamos un sistema para que tu gente esté todos
-los días frente a tomadores de decisión y deje de vivir del mismo puñado de clientes de siempre. ¿Te
-acuerdas de la empresa de software? Así fue como pasó de 1 a 4 reuniones por vendedor.
-
-Y los últimos tres pilares son los que sostienen todo sin ti. El cuarto es la supervisión comercial, que
-detecta una caída antes de que golpee tu facturación. El quinto es el sistema de comisiones, que pone a
-todo tu equipo remando hacia el mismo lado. Y el sexto es el sistema de contratación: contratar por
-perfil, y no por corazonada. Porque hoy, en Latinoamérica, de cada 4 vendedores que contratas solo 1
-realmente funciona; y no es mala suerte, es que se contrata por feeling. Cuando estos seis pilares quedan
-montados, pasa lo que de verdad importa: las ventas dejan de depender de que estés tú en la sala. Y ahí
-dejas de tener un trabajo para tener una fábrica de ingresos.
+Y ahí está la clave, porque es justo donde casi todos fallan: el mercado te vende un pilar suelto —un
+CRM, un curso de prospección, un reclutador— y te deja los otros cinco rotos. Por eso no te funciona.
+Nosotros te montamos los seis, engranados entre sí, hasta que tu operación deje de depender de que estés
+tú en la sala. Y ahí es cuando dejas de tener un trabajo para tener una fábrica de ingresos.
 
 Ah, y no te dejamos solo con la teoría. Te entregamos PIPELINE OS, nuestra plataforma, con un equipo de
 agentes de inteligencia artificial trabajando dentro de tu operación: prospectan por ti, leen tus
