@@ -71,10 +71,11 @@ recuperan más de 5 veces lo que invirtieron. Su forecast pasa a acertar un 85%,
 acortan una cuarta parte, y hasta su rentabilidad por empleado sube… sin contratar a nadie más. Nada de
 esto es suerte. Se mide.
 
-Entonces, ¿cómo lo logramos? No con una táctica suelta, sino con un sistema completo. Le llamamos los 6
-pilares, y los instalamos contigo, uno a uno: metodología de ventas, habilitación comercial, prospección
-a gran escala con inteligencia artificial, supervisión comercial, sistema de comisiones y sistema de
-contratación.
+Entonces, ¿cómo lo logramos? No con una táctica suelta, sino con un sistema completo, y todo él gira
+alrededor de una sola cosa: el proceso de compra de tu cliente. Le llamamos los 6 pilares, y los
+instalamos contigo, uno a uno: metodología de ventas, habilitación comercial, prospección a gran escala
+con inteligencia artificial, supervisión comercial, sistema de comisiones y sistema de contratación.
+Seis piezas, todas alineadas a cómo compra de verdad tu cliente.
 
 Y ahí está la clave, porque es justo donde casi todos fallan: el mercado te vende un pilar suelto —un
 CRM, un curso de prospección, un reclutador— y te deja los otros cinco rotos. Por eso no te funciona.
