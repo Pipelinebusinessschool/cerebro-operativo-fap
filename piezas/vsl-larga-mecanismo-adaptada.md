@@ -72,29 +72,28 @@ acortan una cuarta parte, y hasta su rentabilidad por empleado sube… sin contr
 esto es suerte. Se mide.
 
 Entonces, ¿cómo lo logramos? Contigo, uno a uno, instalamos los 6 pilares de un sistema de ventas que
-escala. Y déjame contártelo en tres partes.
+escala. Te los cuento agrupados, para que los veas encajar.
 
-Lo primero es cómo vende tu equipo. Y voy a ser franco contigo: en 87 de cada 100 operaciones que hemos
-visto, el problema es el mismo. Venden igual que su competencia, y por eso terminan peleando por precio.
-¿La razón de fondo? No tienen un método alineado a cómo compra de verdad su cliente. Eso es lo primero
-que arreglamos: a quién le vendes, cómo le argumentas valor en lugar de descuento, y qué te hace
-diferente para que dejes de ser uno más del montón. Y a tu gente le damos los guiones, los playbooks y
-el manejo de objeciones para que salga a vender con todo. Porque no lo olvides: el C-level no compra,
-invierte.
+Los dos primeros tienen que ver con cómo vende tu equipo. El pilar uno es la metodología de ventas.
+Y te voy a ser franco: en 87 de cada 100 operaciones que hemos visto, venden igual que su competencia y
+por eso terminan peleando por precio, porque nadie alineó el método a cómo compra de verdad el cliente.
+Eso es lo que rediseñamos: a quién le vendes, cómo le argumentas valor en lugar de descuento, y qué te
+hace diferente para que dejes de ser uno más del montón. Y el pilar dos es la habilitación comercial:
+darle a tu gente los guiones, los playbooks y el manejo de objeciones para que salga a vender con todo.
+Porque no lo olvides: el C-level no compra, invierte.
 
-Lo segundo es a quién le vende. Porque de nada sirve el mejor equipo si no tiene con quién sentarse. Ahí
-te instalamos un sistema de prospección a gran escala, apalancado en inteligencia artificial, para que
-tu equipo esté todos los días frente a tomadores de decisión y deje de vivir del mismo puñado de
-clientes de siempre. ¿Te acuerdas de la empresa de software? Así fue como pasó de 1 a 4 reuniones por
-vendedor.
+El tercer pilar es la prospección a gran escala con inteligencia artificial. Porque de nada sirve el
+mejor equipo si no tiene con quién sentarse, ¿cierto? Te montamos un sistema para que tu gente esté todos
+los días frente a tomadores de decisión y deje de vivir del mismo puñado de clientes de siempre. ¿Te
+acuerdas de la empresa de software? Así fue como pasó de 1 a 4 reuniones por vendedor.
 
-Y lo tercero es lo que sostiene todo sin ti: la estructura. Te montamos la supervisión que detecta una
-caída antes de que golpee tu facturación, el esquema de comisiones que pone a todo tu equipo remando
-hacia el mismo lado, y una forma de contratar por perfil y no por corazonada. Porque hoy, en
-Latinoamérica, de cada 4 vendedores que contratas solo 1 realmente funciona; y no es mala suerte, es que
-se contrata por feeling. Y cuando todo esto queda montado, pasa lo que de verdad importa: las ventas
-dejan de depender de que estés tú en la sala. Ahí dejas de tener un trabajo y empiezas a tener una
-fábrica de ingresos.
+Y los últimos tres pilares son los que sostienen todo sin ti. El cuarto es la supervisión comercial, que
+detecta una caída antes de que golpee tu facturación. El quinto es el sistema de comisiones, que pone a
+todo tu equipo remando hacia el mismo lado. Y el sexto es el sistema de contratación: contratar por
+perfil, y no por corazonada. Porque hoy, en Latinoamérica, de cada 4 vendedores que contratas solo 1
+realmente funciona; y no es mala suerte, es que se contrata por feeling. Cuando estos seis pilares quedan
+montados, pasa lo que de verdad importa: las ventas dejan de depender de que estés tú en la sala. Y ahí
+dejas de tener un trabajo para tener una fábrica de ingresos.
 
 Ah, y no te dejamos solo con la teoría. Te entregamos PIPELINE OS, nuestra plataforma, con un equipo de
 agentes de inteligencia artificial trabajando dentro de tu operación: prospectan por ti, leen tus
