@@ -34,85 +34,90 @@
 > mostrar, con evidencia, cómo transformar un área de ventas que hoy es desgastante, ineficiente y
 > tomapedidos, en una fábrica de ingresos rentable y escalable.
 
-Si diriges una compañía B2B con equipo de ventas y facturas más de un millón de dólares al año, esto es
-para ti.
+Si diriges una empresa B2B con equipo de ventas y facturas más de un millón de dólares al año, quédate
+conmigo estos cuatro minutos, porque esto es para ti.
 
-Seguramente ya viste a otros prometerte crecimiento. Por eso no voy a empezar con promesas, voy a
-empezar con evidencia. Soy Jorge Conde, socio fundador de PIPELINE Business School. Desde 2019 hemos
-entrenado a más de 47 mil profesionales de ventas en escalamiento de pipeline y a más de 10 mil
-directivos en la construcción de sistemas de ventas que generan facturación. Y hemos reestructurado
-directamente más de 120 empresas B2B que facturan, en promedio, más de 2 millones de dólares al año —
-algunas de ellas, Fortune 500. Los directivos que hemos formado hoy dirigen operaciones comerciales en
-marcas como Google, SAP o Cisco; otras, por contrato, no puedo nombrarlas. Nuestros clientes reportan
-más de 150 millones de dólares en nueva facturación, somos la única aceleradora de ventas que trabaja
-bajo la alianza de Harvard Business Publishing, y nos han destacado en Forbes y en el CIO Times. ¿Por
-qué te digo todo esto? Porque cada cosa que te prometa hoy, está respaldada por evidencia y
-credibilidad.
+Seguramente ya te prometieron crecimiento antes. Yo no voy a hacer eso. En vez de prometerte, déjame
+mostrarte evidencia.
 
-Mira los números. Una empresa de software B2B que factura más de 22 millones de dólares al año instaló
-nuestro Programa de Aceleración de Forecast, y en solo 4 meses cada vendedor pasó de 1 a 4 reuniones por
-semana, su cobertura de pipeline subió de 1.3 a 3.7 veces, su retorno por vendedor saltó de 2.53 a 6.5,
-y su cumplimiento de cuota pasó del 45% al 89%. ¿Cambiaron de vendedores? No. Cambiaron el sistema sobre
-el que trabajaban. Y una multinacional industrial presente en más de 100 países lo instaló y, en 120
-días, generó 16.7 millones de dólares de pipeline nuevo cada trimestre, multiplicó su velocidad de
-ventas de 24 a 113 mil dólares por día, subió su cumplimiento de cuota del 46% al 86% y su retorno por
-vendedor de 1.8 a 5.7 veces. Su vicepresidente de ventas en México lo resumió así: pasaron de una
-operación que dependía de la cartera de siempre, a un sistema con foco, supervisión predictiva y
-crecimiento nuevo cada trimestre.
+Soy Jorge Conde, socio fundador de PIPELINE Business School. Y para que sepas con quién estás hablando:
+desde 2019 hemos formado a más de 47 mil profesionales de ventas y a más de 10 mil directivos, y hemos
+entrado a reestructurar, de la mano, más de 120 empresas B2B. Hablamos de compañías que facturan en
+promedio más de 2 millones de dólares al año; algunas son Fortune 500. De hecho, muchos de los
+directivos que entrenamos hoy dirigen las ventas en marcas como Google, SAP o Cisco… y otras que, por
+contrato, no te puedo mencionar. Entre todos, nuestros clientes reportan más de 150 millones de dólares
+en nueva facturación. Somos la única aceleradora de ventas que trabaja bajo la alianza de Harvard
+Business Publishing, y nos han destacado en Forbes y en el CIO Times. ¿Por qué te cuento todo esto?
+Porque quiero que cada cosa que te diga hoy, la escuches sabiendo que está respaldada.
 
-¿Y en promedio, en todos nuestros clientes? 6 de cada 10 reportan un retorno superior a 5 veces la
-inversión. Su cobertura de pipeline supera las 3.5 veces, su forecast accuracy llega al 85%, sus ciclos
-de venta se acortan un 25%, y crecen su gross profit y sus ventas por empleado sin sumar una sola cabeza
-al equipo. Todo esto se mide; no se improvisa.
+Y ahora sí, hablemos de números. Déjame contarte de dos empresas.
 
-Ahora, ¿cómo lo hacemos? Te instalamos, con acompañamiento uno a uno, los 6 pilares de un sistema de
-ventas que escala — los mismos de esos casos. Déjame agruparlos en tres frentes.
+La primera es una compañía de software B2B que factura más de 22 millones al año. Sus vendedores estaban
+estancados: apenas lograban una reunión por semana. Instalamos nuestro Programa de Aceleración de
+Forecast y, en apenas 4 meses, cada uno pasó de 1 a 4 reuniones semanales. ¿Y lo demás? Su cobertura de
+pipeline se multiplicó por casi tres, de 1.3 a 3.7 veces; su retorno por vendedor pasó de 2.53 a 6.5; y
+su cumplimiento de cuota saltó del 45% a casi el 90%. Pero fíjate en lo importante: no cambiaron un solo
+vendedor. Eran las mismas personas. Lo que cambió fue el sistema sobre el que trabajaban.
 
-Primero, tu metodología y tu habilitación comercial. En el 87% de las operaciones que hemos visto, el
-problema era el mismo: venden igual que su competencia y terminan compitiendo por precio, porque no
-tienen una metodología alineada al proceso de compra de su cliente. ¿Qué hacemos? Rediseñamos cómo vende
-tu equipo: quién es el cliente que más te paga y mejores resultados obtiene, cómo argumentar valor en
-lugar de dar descuento, y qué mecanismo te hace distinto para que dejes de ser un commodity. Y lo
-habilitamos con los playbooks, los guiones y el manejo de objeciones para que cada vendedor opere a
-máxima capacidad. Porque el C-level no compra: invierte.
+La segunda es una multinacional industrial presente en más de 100 países. Toda su facturación colgaba de
+la cartera de siempre. En 120 días le dimos la vuelta: generó 16.7 millones de dólares de pipeline nuevo
+cada trimestre, su velocidad de ventas pasó de 24 a 113 mil dólares por día, y su cumplimiento de cuota
+subió del 46% al 86%. Su vicepresidente de ventas en México me lo resumió mejor que yo: pasaron de
+depender de la cartera de siempre a tener un sistema con foco, con supervisión predictiva y con
+capacidad real de crecer cada trimestre.
 
-Segundo, tu generación de pipeline. ¿De qué sirve un buen equipo si no tiene a quién venderle? Te
-instalamos un sistema de prospección a gran escala con inteligencia artificial para que tu gente
-converse todos los días con tomadores de decisión, no con intermediarios, y deje de depender del mismo
-pipeline de siempre. ¿Te acuerdas de la empresa de software? Así pasó de 1 a 4 reuniones por vendedor a
-la semana.
+¿Y no quieres creerme solo por dos casos? Míralo en el promedio: 6 de cada 10 de nuestros clientes
+recuperan más de 5 veces lo que invirtieron. Su forecast pasa a acertar un 85%, sus ciclos de venta se
+acortan una cuarta parte, y hasta su rentabilidad por empleado sube… sin contratar a nadie más. Nada de
+esto es suerte. Se mide.
 
-Tercero, para que ese crecimiento se sostenga sin depender de ti, te instalamos la estructura: un
-sistema de supervisión comercial que detecta las caídas antes de que impacten tu facturación, un sistema
-de comisiones que alinea a tu equipo, y un sistema de contratación por perfil de alto rendimiento.
-Porque hoy, en Latinoamérica, de cada 4 vendedores que se contratan solo 1 realmente funciona — y no por
-mala suerte, sino porque se elige por feeling y no contra un perfil definido en papel. Cuando esto queda
-instalado, las ventas dejan de depender de que estés tú en la mesa. Y ahí es cuando tienes una fábrica
-de ingresos, y ya no un trabajo.
+Entonces, ¿cómo lo logramos? Contigo, uno a uno, instalamos los 6 pilares de un sistema de ventas que
+escala. Y déjame contártelo en tres partes.
 
-Y nada de esto lo instalas a mano ni solo. Te entregamos PIPELINE OS, nuestra plataforma de sales
-enablement, con un squad de agentes de IA trabajando dentro de tu operación: prospección automatizada,
-revenue intelligence que lee tus números y te dice dónde actuar, asistentes de IA, GPTs entrenados,
-modelos de contratación y metodologías de supervisión listos para desplegar. Inteligencia artificial
-como motor central de tu operación, no como un accesorio.
+Lo primero es cómo vende tu equipo. Y voy a ser franco contigo: en 87 de cada 100 operaciones que hemos
+visto, el problema es el mismo. Venden igual que su competencia, y por eso terminan peleando por precio.
+¿La razón de fondo? No tienen un método alineado a cómo compra de verdad su cliente. Eso es lo primero
+que arreglamos: a quién le vendes, cómo le argumentas valor en lugar de descuento, y qué te hace
+diferente para que dejes de ser uno más del montón. Y a tu gente le damos los guiones, los playbooks y
+el manejo de objeciones para que salga a vender con todo. Porque no lo olvides: el C-level no compra,
+invierte.
 
-Todo esto es el Programa de Aceleración de Forecast: seis meses de acompañamiento uno a uno en los que
-no te entregamos un curso ni una plantilla; nos integramos a tu equipo directivo y a tu equipo de ventas
-para instalar y ejecutar contigo los 6 pilares, hasta que tu facturación sea predecible. Y quiero ser
-honesto contigo: esto funciona para quien implementa, ejecuta y sigue el paso a paso. Esos números son
-de clientes que lo hicieron.
+Lo segundo es a quién le vende. Porque de nada sirve el mejor equipo si no tiene con quién sentarse. Ahí
+te instalamos un sistema de prospección a gran escala, apalancado en inteligencia artificial, para que
+tu equipo esté todos los días frente a tomadores de decisión y deje de vivir del mismo puñado de
+clientes de siempre. ¿Te acuerdas de la empresa de software? Así fue como pasó de 1 a 4 reuniones por
+vendedor.
 
-Ahora, no trabajamos con todos. Calificamos antes de aceptar, porque ponemos en juego nuestra reputación
-y nuestro tiempo, y solo entramos donde tenemos certeza de que podemos generar resultado. Por eso el
-primer paso no es una llamada de ventas: es un diagnóstico. En esa sesión analizamos tu operación
-completa, te decimos exactamente dónde se está frenando tu facturación y te damos los primeros pasos
-concretos — decidas trabajar con nosotros o no.
+Y lo tercero es lo que sostiene todo sin ti: la estructura. Te montamos la supervisión que detecta una
+caída antes de que golpee tu facturación, el esquema de comisiones que pone a todo tu equipo remando
+hacia el mismo lado, y una forma de contratar por perfil y no por corazonada. Porque hoy, en
+Latinoamérica, de cada 4 vendedores que contratas solo 1 realmente funciona; y no es mala suerte, es que
+se contrata por feeling. Y cuando todo esto queda montado, pasa lo que de verdad importa: las ventas
+dejan de depender de que estés tú en la sala. Ahí dejas de tener un trabajo y empiezas a tener una
+fábrica de ingresos.
 
-Y déjame cerrar con una pregunta: ¿cuánto te cuesta cada mes que tu operación sigue dependiendo de ti?
-Cada trimestre que pasa sin el sistema instalado es facturación predecible que dejas sobre la mesa. Ese
-es tu costo más alto. Así que si todo esto te hace sentido, y quieres que la próxima operación con
-números como esos sea la tuya, sigue las instrucciones debajo de este video y agenda tu diagnóstico. Nos
-vemos ahí.
+Ah, y no te dejamos solo con la teoría. Te entregamos PIPELINE OS, nuestra plataforma, con un equipo de
+agentes de inteligencia artificial trabajando dentro de tu operación: prospectan por ti, leen tus
+números y te dicen dónde poner el foco, y hasta te ayudan a contratar y a supervisar. La inteligencia
+artificial como el motor de tu operación, no como un adorno.
+
+Todo esto es el Programa de Aceleración de Forecast. Son seis meses en los que no te entregamos un curso
+ni una plantilla y te deseamos suerte; nos metemos contigo, con tu equipo directivo y con tus
+vendedores, a instalar y ejecutar los 6 pilares hasta que tu facturación sea predecible. Eso sí, te lo
+digo de frente: esto funciona para quien implementa, ejecuta y sigue el paso a paso. Los números que te
+di son de clientes que lo hicieron.
+
+Ahora, algo importante: no trabajamos con cualquiera. Calificamos antes de aceptar, porque cuando
+entramos ponemos nuestro nombre en juego, y solo lo hacemos donde sabemos que podemos mover la aguja.
+Por eso el primer paso no es una llamada de ventas: es un diagnóstico. Nos sentamos a mirar tu operación
+completa, te decimos exactamente dónde se está frenando tu facturación y te llevas los primeros pasos
+concretos… trabajes con nosotros o no.
+
+Y te dejo con una sola pregunta: ¿cuánto te está costando cada mes que tu operación siga dependiendo de
+ti? Porque cada trimestre que pasa sin este sistema es facturación predecible que estás dejando sobre la
+mesa. Ese es tu costo más caro. Así que si todo esto te hizo sentido, y quieres que la próxima historia
+con números como estos sea la tuya, sigue las instrucciones debajo del video y agenda tu diagnóstico.
+Nos vemos ahí.
 
 ---
 
