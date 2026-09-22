@@ -2,6 +2,8 @@
 
 Extraídas el 2026-09-22 con Apify (igolaizola/facebook-ad-library-scraper) y transcritas en local con faster-whisper. 10 vídeos únicos, los más reutilizados por anunciante.
 
+Análisis: [ANALISIS.md](ANALISIS.md)
+
 Nota: la única página de Full Sales System localizada en la Ads Library es "Full Sales System LTDA." (page_id 221505481054641, 80 anuncios activos, funnel mssquiz). No se encontró una página "Full Sales System Inc." con la landing FAP01; solo 1 anuncio de LTDA apunta a fap01.fullsalessystem.com.
 
 - [Full Sales System LTDA. · 1396316675940583](full-sales-system-ltda-1396316675940583.md) — 10 anuncios con este vídeo, inicio 2026-08-31
